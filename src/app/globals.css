@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&family=Syncopate:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --bg-gradient: radial-gradient(circle at 50% 50%, #e2effa 0%, #b8d4ee 100%);
@@ -19,16 +23,10 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  background: url('/product slider bg.webp') center/cover no-repeat fixed;
   color: var(--text-primary);
   min-height: 100vh;
   overflow-x: hidden;
-}
-
-@media (max-width: 768px) {
-  body {
-    background: url('/product-slider-bg-for-mobile-screen.webp') center/cover no-repeat fixed;
-  }
+  background-color: #0a1323;
 }
 
 button {

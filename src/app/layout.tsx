@@ -1,5 +1,6 @@
 import './globals.css';
 import { ReactNode } from 'react';
+import SmoothScroll from '../components/SmoothScroll';
 
 export const metadata = {
   title: 'Certified Aminos - Retatrutide',
@@ -9,7 +10,11 @@ export const metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <SmoothScroll>
+          {children}
+        </SmoothScroll>
+      </body>
     </html>
   );
 }
