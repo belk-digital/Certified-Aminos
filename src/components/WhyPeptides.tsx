@@ -66,12 +66,12 @@ export default function WhyPeptides() {
         </div>
         
         {/* Right Side - Content */}
-        <div className="wp-content flex flex-col justify-center max-w-[600px] relative z-30 pb-20">
+        <div className="wp-content flex flex-col justify-center max-w-3xl lg:max-w-4xl relative z-30 pb-20">
           <span className="wp-text-elem text-[11px] text-gray-500 tracking-[0.2em] font-semibold uppercase mb-4">
             ORIGIN & INTENT
           </span>
-          <h2 className="wp-text-elem text-[#1e3a8a] text-3xl md:text-5xl font-medium tracking-tight leading-[1.1] mb-6">
-            Why Peptides<br />Change Everything.
+          <h2 className="wp-text-elem text-[#1e3a8a] font-syncopate text-3xl md:text-5xl font-medium tracking-wide leading-[1.1] mb-6 uppercase">
+            Why Peptides<br /><span className="whitespace-nowrap">Change Everything.</span>
           </h2>
           <p className="wp-text-elem text-gray-600 text-[15px] md:text-[17px] leading-relaxed mb-12">
             Peptides are short chains of amino acids — the signal molecules your body already speaks. By introducing clinically-dosed peptides, we direct cells to rebuild collagen, repair tissue and restore youthful function from the inside out.

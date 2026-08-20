@@ -93,7 +93,7 @@ export default function ResearchCompounds() {
             <span className="text-[10px] text-gray-500 tracking-[0.2em] font-bold uppercase block mb-3">
               THE COLLECTION
             </span>
-            <h2 className="text-[#1e3a8a] text-3xl md:text-5xl font-medium tracking-tight leading-tight">
+            <h2 className="text-[#1e3a8a] font-syncopate text-3xl md:text-5xl font-medium tracking-wide leading-tight uppercase">
               Formulated Obsessively<br />Dosed Precisely.
             </h2>
           </div>
