@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useRef } from 'react';
-import { ArrowRight, ShoppingCart } from 'lucide-react';
+import { ArrowRight, ShoppingCart, Heart } from 'lucide-react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -9,32 +9,40 @@ const products = [
     id: 1,
     category: 'WEIGHT RESEARCH',
     name: 'Retatrutide',
-    dose: '10MG',
+    description: 'Triple hormone receptor agonist designed for advanced metabolic research.',
+    doses: ['5MG', '10MG', '15MG'],
     price: '$199',
+    badge: 'NEW',
     image: '/finalized product images/certified-aminos-retatrutide-10mg.png'
   },
   {
     id: 2,
     category: 'RECOVERY RESEARCH',
     name: 'BPC-157',
-    dose: '5MG',
+    description: 'Gastric juice peptide known for accelerated tissue repair and healing.',
+    doses: ['5MG', '10MG'],
     price: '$149',
+    badge: 'SALE',
     image: '/finalized product images/certified-aminos-MT-1-10mg.png'
   },
   {
     id: 3,
     category: 'PERFORMANCE RESEARCH',
     name: 'MT-1',
-    dose: '10MG',
+    description: 'Synthetic analog of alpha-MSH used for melanogenesis studies.',
+    doses: ['10MG'],
     price: '$179',
+    badge: 'POPULAR',
     image: '/finalized product images/certified-aminos-MT-1-10mg.png'
   },
   {
     id: 4,
     category: 'WEIGHT RESEARCH',
     name: 'Semaglutide',
-    dose: '10MG',
+    description: 'GLP-1 receptor agonist widely studied for glycemic regulation.',
+    doses: ['5MG', '10MG'],
     price: '$149',
+    badge: 'POPULAR',
     image: '/finalized product images/certified-aminos-retatrutide-10mg.png'
   }
 ];
@@ -101,10 +109,29 @@ export default function ResearchCompounds() {
         {/* Products Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6 rc-cards-grid mt-4">
           {products.map((product) => (
-            <div key={product.id} className="rc-card flex flex-col group cursor-pointer h-full bg-[#f0f4fa] rounded-xl md:rounded-2xl border border-[#1e3a8a]/10 overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div key={product.id} className="rc-card flex flex-col group cursor-pointer h-full bg-[#f0f4fa] rounded-xl md:rounded-2xl border border-[#1e3a8a]/10 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 relative">
               
+              {/* Badges & Wishlist Overlay */}
+              <div className="absolute top-3 left-0 w-full px-3 flex justify-between items-start z-10 pointer-events-none">
+                {/* Status Badge */}
+                <div className={`text-[9px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider ${
+                  product.badge === 'NEW' 
+                    ? 'bg-[#1e3a8a] text-white' 
+                    : product.badge === 'SALE'
+                    ? 'bg-red-500 text-white shadow-sm'
+                    : 'bg-white text-[#1e3a8a] border border-[#1e3a8a]/10 shadow-sm'
+                }`}>
+                  {product.badge}
+                </div>
+                
+                {/* Wishlist Heart */}
+                <button className="pointer-events-auto h-7 w-7 rounded-full bg-white/70 backdrop-blur-md flex items-center justify-center text-gray-400 hover:text-red-500 hover:bg-white shadow-sm border border-white/40 transition-colors ml-auto">
+                  <Heart size={14} strokeWidth={2} />
+                </button>
+              </div>
+
               {/* Image Container */}
-              <div className="h-48 md:h-64 w-full relative flex items-center justify-center pt-6 pb-2">
+              <div className="h-48 md:h-64 w-full relative flex items-center justify-center pt-8 pb-2">
                 <img 
                   src={product.image} 
                   alt={product.name} 
@@ -119,14 +146,21 @@ export default function ResearchCompounds() {
                   {product.category}
                 </span>
                 
-                {/* Title and Badge */}
-                <div className="flex flex-col items-start gap-1 mb-4 md:mb-5">
+                {/* Title, Badge, Description */}
+                <div className="flex flex-col items-start gap-1 mb-3 md:mb-4">
                   <h3 className="text-[#141e3a] font-bold text-[15px] md:text-lg tracking-tight">
                     {product.name}
                   </h3>
-                  <div className="bg-[#fee2e2] text-[#dc2626] text-[9px] md:text-[10px] font-bold px-2 py-0.5 rounded flex items-center justify-center tracking-wide">
-                    {product.dose}
+                  <div className="flex flex-wrap gap-1.5 mb-1">
+                    {product.doses.map((dose, idx) => (
+                      <div key={idx} className="bg-[#e8f4ca] text-[#557e2a] text-[9px] md:text-[10px] font-bold px-2 py-0.5 rounded flex items-center justify-center tracking-wide">
+                        {dose}
+                      </div>
+                    ))}
                   </div>
+                  <p className="text-[10px] md:text-xs text-gray-500 leading-relaxed line-clamp-2">
+                    {product.description}
+                  </p>
                 </div>
                 
                 {/* Price and Cart */}
@@ -134,7 +168,7 @@ export default function ResearchCompounds() {
                   <span className="text-[#141e3a] font-bold text-lg md:text-xl">
                     {product.price}
                   </span>
-                  <button className="h-8 w-8 md:h-9 md:w-9 rounded-full border border-gray-300 flex items-center justify-center text-gray-500 hover:text-[#1e3a8a] hover:border-[#1e3a8a] hover:bg-white transition-colors bg-transparent flex-shrink-0">
+                  <button className="h-8 w-8 md:h-9 md:w-9 rounded-full bg-[#1e3a8a] flex items-center justify-center text-white hover:bg-[#0f172a] shadow-md transition-colors flex-shrink-0">
                     <ShoppingCart size={15} strokeWidth={2} />
                   </button>
                 </div>

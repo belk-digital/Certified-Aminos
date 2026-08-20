@@ -30,7 +30,7 @@ const categories = [
 
 export default function CategoriesSection() {
   return (
-    <section className="w-full flex flex-col md:flex-row min-h-[85vh] px-8 py-8 bg-[#f8f9fa] gap-4">
+    <section className="w-full flex flex-col md:flex-row min-h-[70vh] px-8 py-8 bg-[#f8f9fa] gap-4">
       {/* First Column - Explore Research */}
       <div className="w-full md:flex-1 bg-[#f4f3ef] flex flex-col justify-start p-8 md:p-10 relative cursor-pointer rounded-lg shadow-sm">
         <h2 className="text-[#222] font-inter text-lg md:text-xl font-medium tracking-wide mb-6">
@@ -45,7 +45,7 @@ export default function CategoriesSection() {
 
       {/* Category Columns */}
       {categories.map((cat, index) => (
-        <div key={cat.id} className="relative w-full md:flex-1 h-64 md:h-auto overflow-hidden group cursor-pointer rounded-lg shadow-sm">
+        <div key={cat.id} className="relative w-full md:flex-1 h-64 md:h-auto overflow-hidden group cursor-pointer rounded-lg shadow-sm transition-all duration-500 ease-out md:hover:flex-[1.5]">
           {/* Background Image */}
           <div 
             className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" 
