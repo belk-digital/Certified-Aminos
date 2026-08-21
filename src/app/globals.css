@@ -1,5 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&family=Syncopate:wght@400;700&display=swap');
 
+@font-face {
+  font-family: 'Vipnagorgialla';
+  src: url('/fonts/Vipnagorgialla-RgIt.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vipnagorgialla';
+  src: url('/fonts/Vipnagorgialla-BdIt.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

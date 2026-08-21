@@ -32,13 +32,13 @@ export default function CategoriesSection() {
   return (
     <section className="w-full flex flex-col md:flex-row min-h-[70vh] px-8 py-8 bg-[#f8f9fa] gap-4">
       {/* First Column - Explore Research */}
-      <div className="w-full md:flex-1 bg-[#f4f3ef] flex flex-col justify-start p-8 md:p-10 relative cursor-pointer rounded-lg shadow-sm">
-        <h2 className="text-[#222] font-syncopate text-lg md:text-xl font-medium tracking-wide mb-6 uppercase">
+      <div className="w-full md:flex-1 bg-[#011638] flex flex-col justify-start p-8 md:p-10 relative cursor-pointer rounded-lg shadow-sm">
+        <h2 className="text-white font-syncopate text-lg md:text-xl font-medium tracking-wide mb-6 uppercase">
           Explore<br />Research
         </h2>
         <div className="w-8 h-[2px] bg-[#8b3a3a]"></div>
         
-        <div className="mt-auto flex items-center text-xs font-bold font-inter text-[#222] uppercase tracking-widest mt-12">
+        <div className="mt-auto flex items-center text-xs font-bold font-inter text-white uppercase tracking-widest mt-12">
           SHOP ALL<br />COLLECTIONS <span className="ml-2 font-normal text-lg">→</span>
         </div>
       </div>

@@ -11,6 +11,7 @@ const config: Config = {
       fontFamily: {
         syncopate: ["Syncopate", "sans-serif"],
         inter: ["Inter", "sans-serif"],
+        vipnagorgialla: ["Vipnagorgialla", "sans-serif"],
       }
     },
   },

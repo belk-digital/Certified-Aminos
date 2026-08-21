@@ -9,7 +9,7 @@ const stats = [
 
 export default function StatsSection() {
   return (
-    <section className="w-full bg-[#152759] py-16 md:py-20 text-white font-inter relative overflow-hidden">
+    <section className="w-full bg-[#011638] py-16 md:py-20 text-white font-inter relative overflow-hidden">
       {/* Background texture */}
       <div className="absolute inset-0 opacity-10 flex items-center justify-center pointer-events-none">
         <img src="/hero-waves.png" alt="" className="w-full h-full object-cover mix-blend-screen" />
