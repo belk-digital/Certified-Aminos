@@ -8,6 +8,7 @@ import ResearchGradePeptides from '../components/ResearchGradePeptides';
 import FAQSection from '../components/FAQSection';
 import MilitaryDiscount from '../components/MilitaryDiscount';
 import BlogSection from '../components/BlogSection';
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
@@ -21,7 +22,7 @@ export default function Home() {
       <BlogSection />
       <MilitaryDiscount />
       <FAQSection />
-
+      <Footer />
     </main>
   );
 }

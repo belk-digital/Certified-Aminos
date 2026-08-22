@@ -57,7 +57,7 @@ export default function BlogSection() {
 
   return (
     <section className="w-full py-24 px-8 flex justify-center items-center font-inter bg-white">
-      <div className="w-full flex flex-col">
+      <div className="w-full flex flex-col min-w-0">
         
         {/* Header Row */}
         <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-8 md:gap-4">

@@ -22,7 +22,7 @@ export default function Slider() {
 
   // Prevent hydration mismatch by not rendering until client-side is ready
   if (!mounted) {
-    return <div style={{ width: '100vw', height: '100vh', background: 'transparent' }} />;
+    return <div style={{ width: '100%', height: '100vh', background: 'transparent' }} />;
   }
 
   if (isMobile) {

@@ -11,7 +11,7 @@ export default function ResearchGradePeptides() {
           <span className="text-[11px] text-gray-500 tracking-[0.2em] font-semibold uppercase mb-4">
             CERTIFIED AMINOS
           </span>
-          <h2 className="font-syncopate text-[#1e3a8a] text-4xl md:text-[3.5rem] lg:text-[4.5rem] font-medium leading-[1.1] tracking-wide mb-6 uppercase whitespace-nowrap">
+          <h2 className="font-syncopate text-[#1e3a8a] text-3xl sm:text-4xl md:text-[3.5rem] lg:text-[4.5rem] font-medium leading-[1.1] tracking-wide mb-6 uppercase break-words">
             The Lab Difference
           </h2>
           <p className="text-gray-500 font-inter text-[9px] md:text-[11px] tracking-[0.2em] uppercase font-semibold leading-relaxed max-w-2xl">

@@ -1,0 +1,278 @@
+.footer-container {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(180deg, #ffffff 0%, #e2effa 25%, #76a3da 60%, #0a1323 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 10rem 4rem 4rem 4rem;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  height: 100%;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.newsletter-section {
+  max-width: 400px;
+}
+
+.stay-connected {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0a1323;
+  margin-bottom: 1rem;
+}
+
+.newsletter-desc {
+  font-size: 0.95rem;
+  color: #5e6b7c;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.newsletter-form {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.newsletter-input {
+  flex: 1;
+  padding: 0.8rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #0a1323;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.newsletter-input::placeholder {
+  color: #5e6b7c;
+}
+
+.newsletter-input:focus {
+  border-color: #1a42a0;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.newsletter-btn {
+  background: #1a42a0;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.newsletter-btn:hover {
+  background: #123075;
+}
+
+.footer-bottom-left {
+  margin-top: 10rem;
+}
+
+.brand-huge-text {
+  font-family: 'Syncopate', sans-serif;
+  font-size: 8rem;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 0.9;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+  letter-spacing: -2px;
+}
+
+.copyright-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.copyright-links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  color: #aed2f2;
+  font-size: 0.9rem;
+}
+
+.link-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.dot-separator {
+  color: #aed2f2;
+  opacity: 0.6;
+}
+
+.copyright-links a {
+  color: #aed2f2;
+  transition: color 0.3s ease;
+}
+
+.copyright-links a:hover,
+.agency-link:hover {
+  color: #ffffff;
+}
+
+.agency-credit-container {
+  color: #aed2f2;
+  font-size: 0.9rem;
+}
+
+.agency-link {
+  color: #aed2f2;
+  transition: color 0.3s ease;
+  text-decoration: underline;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1;
+  padding-left: 4rem;
+  padding-top: 4rem;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 4rem;
+}
+
+.nav-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.nav-column a {
+  color: #0a1323;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-column a:hover {
+  color: #1a42a0;
+}
+
+.footer-image-wrapper {
+  position: absolute;
+  bottom: 0;
+  right: -2%;
+  z-index: 1;
+  pointer-events: none;
+  max-width: 45vw;
+}
+
+.footer-product-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .footer-container {
+    padding: 3rem 2rem 2rem 2rem;
+  }
+  
+  .brand-huge-text {
+    font-size: 5rem;
+  }
+  
+  .footer-image-wrapper {
+    max-width: 55vw;
+    right: 0;
+  }
+  
+  .footer-nav {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  
+  .footer-left {
+    display: contents;
+  }
+  
+  .newsletter-section {
+    order: 1;
+  }
+  
+  .footer-right {
+    order: 2;
+    padding-left: 0;
+    padding-top: 0;
+  }
+  
+  .footer-bottom-left {
+    order: 3;
+    margin-top: 1rem;
+  }
+  
+  .brand-huge-text {
+    font-size: clamp(1.5rem, 9.5vw, 4rem);
+    margin-top: 0;
+    position: relative;
+    z-index: 3;
+  }
+  
+  .footer-image-wrapper {
+    position: relative;
+    max-width: 80vw;
+    margin: 2rem auto 0;
+    right: auto;
+  }
+  
+  .copyright-group {
+    gap: 1rem;
+  }
+  
+  .copyright-links {
+    gap: 0.5rem;
+    font-size: 0.8rem;
+  }
+  
+  .link-group {
+    gap: 0.5rem;
+  }
+  
+  .agency-credit-container {
+    font-size: 0.8rem;
+  }
+}
