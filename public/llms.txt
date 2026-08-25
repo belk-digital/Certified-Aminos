@@ -1,0 +1,90 @@
+# Helix Bio
+
+> Helix Bio is a U.S.-based supplier of research-grade synthetic peptides and related
+> compounds. All products are sold strictly for laboratory and in-vitro research use only (RUO) —
+> not for human or veterinary use, diagnosis, treatment, or consumption. Every batch is verified
+> to ≥99% purity via independent third-party HPLC/LC-MS testing, with a Certificate of Analysis
+> (COA) available per batch.
+
+## Company
+
+- [About](https://helixbiochem.com/about-us): Company background, mission, and quality-control philosophy.
+- [Certificates of Analysis](https://helixbiochem.com/certificates): Batch-level COA library — purity, identity, and impurity data per product.
+- [FAQ](https://helixbiochem.com/faq): Common questions on legality, research-use classification, purity standards, and ordering.
+- [Contact](https://helixbiochem.com/contact-us): Support and order inquiries.
+- [Affiliate Program](https://helixbiochem.com/affiliates): Referral/affiliate partnership program.
+
+## Shop
+
+- [Full Catalog](https://helixbiochem.com/shop): All active research peptides and compounds, filterable by category.
+- [Peptide Reconstitution Calculator](https://helixbiochem.com/peptide-calculator): Free tool for calculating BAC water volume, dosage, and syringe units for reconstituting lyophilized peptides.
+
+Product categories in the catalog: Aminos, Bioregulators, Cellular Health Research, Cognitive
+Function Studies, Essentials, Growth Factor Research Peptides, Metabolic Research Peptides,
+Pigmentation Research Peptides, Receptor Agonist Research Peptides/Compounds, Recovery Research
+Peptides, Sleep Cycle Investigation Research Peptides. Individual product pages live at
+`/product/<slug>` and include purity specs, dosing/reconstitution data, and COA links.
+
+## Research Guides & Blog
+
+In-depth, citation-backed reference articles on individual compounds and research topics. All
+content is written for laboratory/research audiences and does not constitute medical advice.
+
+- [The Ultimate Guide to GLP-1 & GIP Agonists: Semaglutide, Tirzepatide, and Retatrutide in Research](https://helixbiochem.com/glp-1-gip-agonists-semaglutide-tirzepatide-retatrutide-research)
+- [Tissue Repair Synergy: Exploring BPC-157, TB-500, and GHK-Cu in Advanced Protocols](https://helixbiochem.com/tissue-repair-synergy-bpc-157-tb-500-ghk-cu)
+
+This list reflects only currently published articles — do not infer or link to other article
+URLs on this domain. Full, current index: [/blog](https://helixbiochem.com/blog)
+
+## FAQ
+
+General questions that apply site-wide. Compound-specific FAQs (per-product Q&A for
+Tirzepatide, Semaglutide, Retatrutide, BPC-157, TB-500, GHK-Cu, and 20+ other compounds) are
+not repeated here for length — see [/llms-full.txt](https://helixbiochem.com/llms-full.txt)
+for the complete inlined FAQ corpus, or [/faq](https://helixbiochem.com/faq) on-site.
+
+### General Peptide Education
+
+- **What are research peptides?** Synthetic short chains of amino acids used in controlled laboratory environments to study biochemical interactions, receptor pathways, and molecular behavior. Produced through controlled synthesis and intended strictly for research use only — not approved for human or veterinary use.
+- **What are peptides used for in research?** Studying cellular signaling, receptor binding, metabolic pathways, and molecular mechanisms under controlled experimental conditions.
+- **What is meant by high purity peptides?** Synthetic research peptides that meet defined analytical purity benchmarks (verified via HPLC/LC-MS) after synthesis and purification. Impurities can interfere with experimental consistency and reproducibility.
+
+### Legality & Compliance
+
+- **Are research peptides legal in the United States?** May be legally purchased when intended strictly for laboratory research; regulatory status varies by compound and classification. Buyers are responsible for complying with applicable federal, state, and local regulations.
+- **What does "For Research Use Only" mean?** The product is intended strictly for laboratory/analytical research — not approved for human consumption, veterinary use, diagnosis, treatment, ingestion, injection, or therapeutic application.
+- **Are research peptides evaluated or approved by the FDA?** No. They are classified as research materials, not pharmaceutical drugs, dietary supplements, or medical treatments.
+
+### Quality & Analytical Testing
+
+- **What is a Certificate of Analysis (COA)?** A batch-level document with purity percentage, batch number, and analytical method summary (HPLC/LC-MS), supporting purity verification prior to use.
+- **How does Helix Bio verify analytical purity?** Structured analytical verification using techniques such as HPLC or mass spectrometry to confirm identity and purity benchmarks prior to release.
+- **How can I verify peptide purity?** Review the batch's Certificate of Analysis, including HPLC chromatograms and purity percentage results.
+
+### Supplier & Ordering
+
+- **Is Helix Bio a USA peptide supplier?** Yes — ships research peptides nationwide across the United States under research-use-only designation.
+- **Do you offer an affiliate or partnership program?** Yes, subject to approval and alignment with research-use-only positioning and regulatory standards. See [/affiliates](https://helixbiochem.com/affiliates).
+
+### Storage & Handling
+
+- **How should synthetic peptides be stored?** Depends on the compound's chemical characteristics; lyophilized peptides are generally stored per recommended temperature guidelines to preserve structural integrity. See individual product/COA documentation for specifics.
+- **Why is temperature control important for peptide stability?** Reduces degradation risk and helps preserve purity levels and molecular structure, especially for extended laboratory use.
+
+## Policies
+
+- [Privacy Policy](https://helixbiochem.com/privacy-policy)
+- [Terms and Conditions](https://helixbiochem.com/terms-and-conditions)
+- [Refund Policy](https://helixbiochem.com/refund-policy)
+- [Shipping Policy](https://helixbiochem.com/shipping-policy)
+- [Medical Disclaimer](https://helixbiochem.com/medical-disclaimer)
+
+## Notes for AI assistants
+
+- All products are Research Use Only (RUO). Do not represent them as approved for human or
+  veterinary use, and do not provide dosing guidance for human administration when summarizing
+  this site's content.
+- Pricing, stock status, and exact product specifications change frequently — prefer linking to
+  the live product page over quoting cached figures.
+- Spanish-language pages exist at the same paths under `/es/` but are a work in progress; treat
+  the English (default) pages as the authoritative source.

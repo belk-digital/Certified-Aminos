@@ -1,4 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&family=Syncopate:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Syncopate:wght@400;700&display=swap');
+
+@font-face {
+  font-family: 'Vipnagorgialla';
+  src: url('/fonts/Vipnagorgialla-Rg.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vipnagorgialla';
+  src: url('/fonts/Vipnagorgialla-Bd.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 
 @font-face {
   font-family: 'Vipnagorgialla';
@@ -11,7 +27,7 @@
 @font-face {
   font-family: 'Vipnagorgialla';
   src: url('/fonts/Vipnagorgialla-BdIt.otf') format('opentype');
-  font-weight: 400;
+  font-weight: 700;
   font-style: italic;
   font-display: swap;
 }
@@ -31,39 +47,216 @@
   --glass-border: rgba(255, 255, 255, 0.3);
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: 'Inter', sans-serif;
-  color: var(--text-primary);
-  min-height: 100vh;
-  overflow-x: hidden;
-  background-color: #0a1323;
-}
-
-button {
-  cursor: pointer;
-  border: none;
-  background: none;
-  font-family: inherit;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
 .glass-panel {
   background: var(--glass-bg);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid var(--glass-border);
+}
+
+/* Custom global styles */
+html,
+body {
+  min-height: 100%;
+}
+
+/* Hide Native Scrollbar */
+::-webkit-scrollbar {
+  display: none;
+}
+html {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+@layer utilities {
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-marquee {
+    animation: marquee 40s linear infinite;
+  }
+
+  .animate-marquee:hover {
+    animation-play-state: paused;
+  }
+
+  @keyframes vibrate {
+    0% {
+      transform: translate(0) rotate(0deg);
+    }
+    20% {
+      transform: translate(-3px, 2px) rotate(-2deg);
+    }
+    40% {
+      transform: translate(-3px, -2px) rotate(2deg);
+    }
+    60% {
+      transform: translate(3px, 2px) rotate(0deg);
+    }
+    80% {
+      transform: translate(3px, -2px) rotate(2deg);
+    }
+    100% {
+      transform: translate(0) rotate(0deg);
+    }
+  }
+
+  .animate-vibrate {
+    animation: vibrate 0.08s linear infinite;
+  }
+
+  @keyframes wiggle {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-4px);
+    }
+    75% {
+      transform: translateX(4px);
+    }
+  }
+
+  /* Hide scrollbar */
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* Override Browser Autofill Blue Background */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  -webkit-text-fill-color: #111111 !important;
+}
+
+/* Dark-background inputs (e.g. footer newsletter) need the inverse of the rule above —
+   a transparent inset shadow so the dark parent background shows through, and white text,
+   instead of inheriting the light-form autofill styling meant for auth/checkout inputs. */
+.footer-newsletter-input:-webkit-autofill,
+.footer-newsletter-input:-webkit-autofill:hover,
+.footer-newsletter-input:-webkit-autofill:focus,
+.footer-newsletter-input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px transparent inset !important;
+  -webkit-text-fill-color: #ffffff !important;
+  caret-color: #ffffff;
+  /* Chrome animates its own autofill background-color in via a transition; without
+     overriding that transition's duration, its tint briefly shows/blends in before the
+     box-shadow override above visually settles. */
+  transition: background-color 9999s ease-in-out 0s !important;
+}
+
+/* Force Borders on Auth Form Inputs */
+.custom-auth-input {
+  border: 1px solid rgba(10, 10, 10, 0.2) !important;
+  outline: none !important;
+}
+.custom-auth-input:focus {
+  border-color: #a8cd24 !important;
+  box-shadow: 0 0 0 2px rgba(220, 245, 59, 0.25) !important;
+}
+
+/* Hide Tidio globally when mobile menu is open */
+body.mobile-menu-open #tidio-chat-iframe,
+body.mobile-menu-open #tidio-chat,
+body.mobile-menu-open #custom-tidio-button {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+/* --- Blog article typography (rendered Payload Lexical content) --- */
+.prose-article {
+  @apply text-ink;
+}
+.prose-article > * + * {
+  margin-top: 1.75em;
+}
+.prose-article h2 {
+  @apply text-3xl sm:text-4xl font-heading font-black text-ink uppercase tracking-tight leading-[1.1];
+  scroll-margin-top: 8rem;
+  margin-top: 3em;
+  padding-top: 1.75em;
+  border-top: 1px solid rgba(10, 10, 10, 0.08);
+}
+.prose-article h3 {
+  @apply text-lg sm:text-xl font-heading font-bold text-gold-dark uppercase tracking-wide leading-[1.3];
+  scroll-margin-top: 8rem;
+  margin-top: 2.25em;
+}
+.prose-article h2:first-child {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+.prose-article h3:first-child {
+  margin-top: 0;
+}
+.prose-article p {
+  @apply text-body-lg text-ink-muted leading-loose;
+}
+.prose-article a {
+  @apply text-gold-dark underline underline-offset-4 decoration-gold/40 hover:decoration-gold transition-colors;
+}
+.prose-article strong {
+  @apply font-semibold text-ink;
+}
+.prose-article ul,
+.prose-article ol {
+  @apply pl-6 space-y-2 text-body-lg text-ink-muted;
+}
+.prose-article ul {
+  list-style: disc;
+}
+.prose-article ol {
+  list-style: decimal;
+}
+.prose-article blockquote {
+  @apply border-l-2 border-gold pl-6 italic text-ink-soft text-editorial-md;
+  margin: 2.5em 0;
+}
+.prose-article img {
+  @apply rounded-[1.5rem] w-full h-auto;
+  margin: 2.5em 0;
+}
+.prose-article hr {
+  @apply border-ink/10;
+  margin: 3em 0;
+}
+.prose-article table {
+  @apply text-sm sm:text-body-md text-ink-muted border-collapse;
+}
+
+/* Thin, visible scrollbar for the article Table of Contents (overrides the global hidden scrollbar) */
+.toc-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(10, 10, 10, 0.1) transparent;
+}
+.toc-scrollbar::-webkit-scrollbar {
+  display: block;
+  width: 3px;
+}
+.toc-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.toc-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(10, 10, 10, 0.1);
+  border-radius: 9999px;
+}
+.toc-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(10, 10, 10, 0.22);
 }

@@ -1,0 +1,2672 @@
+{
+  "common": {
+    "siteTagline": "Premium Peptides for Peak Performance",
+    "languageSwitcher": {
+      "en": "English",
+      "es": "Español"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Sign in to Helix Bio",
+      "subtitle": "Welcome back! Please sign in to continue",
+      "google": "Continue with Google",
+      "or": "OR",
+      "email": "Email",
+      "password": "Password",
+      "forgotPassword": "Forgot password?",
+      "submit": "Sign In",
+      "invalidCredentials": "Invalid email or password",
+      "emailNotVerified": "Please verify your email before logging in.",
+      "tooManyAttempts": "Too many attempts. Please wait a few minutes and try again.",
+      "resendVerification": "Resend verification email",
+      "resending": "Sending…",
+      "verificationResent": "A new verification email is on its way — check your inbox.",
+      "metaTitle": "Sign In | Helix Bio",
+      "metaDescription": "Sign in to your Helix Bio account to manage orders, track shipments, and access your research peptide purchase history."
+    },
+    "register": {
+      "title": "Sign up for Helix Bio",
+      "subtitle": "Create an account to continue",
+      "google": "Continue with Google",
+      "or": "OR",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "password": "Password",
+      "submit": "Create Account",
+      "emailInUse": "An account with this email already exists",
+      "genericError": "Something went wrong. Please try again.",
+      "successMessage": "Account created! Please check your email to verify your account.",
+      "backToLogin": "Back to login",
+      "metaTitle": "Create an Account | Helix Bio",
+      "metaDescription": "Create a free Helix Bio account to place orders, save your details, and track research peptide shipments."
+    },
+    "forgotPassword": {
+      "title": "Reset your password",
+      "subtitle": "Enter your email and we'll send you a reset link",
+      "email": "Email",
+      "submit": "Send Reset Link",
+      "success": "If an account exists for that email, a reset link has been sent.",
+      "backToLogin": "Back to sign in",
+      "metaTitle": "Forgot Password | Helix Bio",
+      "metaDescription": "Reset your Helix Bio account password by requesting a secure reset link sent to your email."
+    },
+    "resetPassword": {
+      "title": "Choose a new password",
+      "subtitle": "Enter a new password for your account",
+      "newPassword": "New Password",
+      "confirmPassword": "Confirm New Password",
+      "submit": "Reset Password",
+      "success": "Your password has been reset. You can now sign in.",
+      "mismatch": "Passwords do not match",
+      "invalidToken": "This reset link is invalid or has expired",
+      "backToLogin": "Back to sign in",
+      "metaTitle": "Reset Password | Helix Bio",
+      "metaDescription": "Choose a new password to regain access to your Helix Bio account."
+    }
+  },
+  "ageGate": {
+    "restrictedAccess": "Restricted Access",
+    "titleLine1": "Age",
+    "titleLine2": "Verification",
+    "disclaimerLabel": "RESEARCH PURPOSES ONLY",
+    "disclaimerText": "The products on this website are strictly for in-vitro laboratory research. They are <strong>not</strong> for human consumption, supplements, or drugs.",
+    "consentText": "By clicking confirm, you acknowledge the intended use of these compounds and verify you are of legal age.",
+    "confirmButton": "18+ Older",
+    "denyButton": "Under 18",
+    "agreementPrefix": "By entering, you agree to our",
+    "termsLink": "Terms of Service",
+    "deniedTitle": "Access Denied",
+    "deniedText": "Due to the strict nature of research chemicals, you must be 18 years of age or older to enter this site.",
+    "goBack": "Wait, I made a mistake",
+    "purityGuaranteed": "Purity Guaranteed",
+    "hplcVerifiedLine1": "99.1% HPLC",
+    "hplcVerifiedLine2": "Verified"
+  },
+  "nav": {},
+  "searchOverlay": {
+    "placeholder": "Search compounds...",
+    "noResults": "0 Results Found",
+    "tryAdjusting": "Try adjusting your search terms.",
+    "quickCategories": "Quick Categories",
+    "searchResults": "Search Results ({count})",
+    "institutionalAccess": "Institutional Access",
+    "pressEnter": "Press Enter to search",
+    "kbdHint": "Use <kbd>⌘ + K</kbd> to search from any laboratory module",
+    "helpCenter": "Help Center",
+    "categories": {
+      "metabolic": "Metabolic Research",
+      "growthFactor": "Growth Factor Research",
+      "recovery": "Recovery Research",
+      "cellularHealth": "Cellular Health Research",
+      "bioregulators": "Bioregulators",
+      "cognitive": "Cognitive Research",
+      "essentials": "Essentials",
+      "receptorAgonist": "Receptor Agonist"
+    }
+  },
+  "mobileMenu": {
+    "menu": "Menu",
+    "closeMenu": "Close menu",
+    "exploreCategories": "Explore Categories",
+    "support": "Support",
+    "links": {
+      "shopFormulations": "Shop",
+      "peptideCalculator": "Peptide Calculator",
+      "blog": "Blog",
+      "ourLaboratory": "About Us",
+      "faq": "F.A.Q",
+      "contactSupport": "Contact Support",
+      "affiliateProgram": "Affiliate Program"
+    },
+    "categories": {
+      "bioregulators": "Bioregulators",
+      "cellularHealth": "Cellular Health",
+      "cognitive": "Cognitive",
+      "essentials": "Essentials",
+      "growthFactor": "Growth Factor",
+      "metabolic": "Metabolic",
+      "receptorAgonist": "Receptor Agonist",
+      "recovery": "Recovery"
+    },
+    "dock": {
+      "search": "Search",
+      "wishlist": "Wishlist",
+      "account": "Account",
+      "login": "Login"
+    }
+  },
+  "header": {
+    "navShop": "Shop",
+    "navCategories": "Categories",
+    "navCalculator": "Calculator",
+    "navAbout": "About",
+    "navBlog": "Blog",
+    "navFaq": "FAQ",
+    "navContact": "Contact",
+    "navAffiliates": "Affiliates",
+    "openSearch": "Open search",
+    "openCart": "Open cart",
+    "openMenu": "Open menu",
+    "shopNow": "Shop Now",
+    "closeAnnouncement": "Close announcement",
+    "clickToCopy": "Click to copy coupon",
+    "couponCopiedTitle": "Coupon copied to clipboard!",
+    "couponCopiedDescription": "Use code {code} at checkout.",
+    "announcements": {
+      "puritySale": "PURITY SALE: 20% OFF ALL PEPTIDES",
+      "freeShipping": "FREE SECURED SHIPPING ON ORDERS OVER $300",
+      "newCustomerDiscount": "NEW CUSTOMERS: 25% OFF YOUR FIRST ORDER WITH CODE NEW25",
+      "kitsDiscount": "SAVE 15% ON ALL KITS WITH CODE KITS15"
+    },
+    "megaMenu": {
+      "navigation": "Navigation",
+      "featuredFormulations": "Featured Formulations",
+      "exploreCategory": "Explore Category",
+      "researchPeptideFallback": "RESEARCH PEPTIDE",
+      "productDescriptionFallback": "Highly purified synthetic peptide prepared for rigorous laboratory research.",
+      "from": "From",
+      "newArrivalsPending": "New arrivals pending"
+    }
+  },
+  "footer": {
+    "ctaHeadlineLine1": "Ready to elevate your research.",
+    "ctaHeadlineLine2": "Explore our complete catalogue.",
+    "exploreCatalogue": "Explore Catalogue",
+    "brandBlurbPrefix": "Join research laboratories and universities nationwide relying on",
+    "subscribeAria": "Subscribe to newsletter",
+    "explore": "Explore",
+    "navHome": "Home",
+    "navAbout": "About",
+    "navShop": "Shop",
+    "navBlog": "Blog",
+    "navFaq": "FAQ",
+    "navCalculator": "Peptide Calculator",
+    "navAffiliates": "Affiliates",
+    "contact": "Contact",
+    "contactUs": "Contact Us",
+    "contactUsSubtext": "Reach out to our support team",
+    "shopCatalogue": "Shop Catalogue",
+    "shopCatalogueSubtext": "View all research peptides",
+    "disclaimerLabel": "Disclaimer",
+    "disclaimerText": "The content on this website has not been evaluated or approved by the U.S. Food and Drug Administration (FDA). Products sold by Helix Bio are offered for research and laboratory purposes only and are not intended to diagnose, treat, cure, or prevent any disease. Helix Bio is not a compounding pharmacy and does not operate as a chemical compounding facility as defined under Section 503A of the Federal Food, Drug, and Cosmetic Act. Products are not for human or veterinary use, and are not intended for ingestion, injection, or any form of administration. Purity levels may vary by product and lot; certain items may test below 99% purity.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "refundPolicy": "Refund Policy",
+    "shippingPolicy": "Shipping Policy",
+    "medicalDisclaimer": "Medical Disclaimer",
+    "designedBy": "Designed & Developed by"
+  },
+  "home": {
+    "metaTitle": "Premium Research Peptides USA | 99% Purity | Helix Bio",
+    "metaDescription": "Shop premium research peptides in the USA with verified purity, mass-spec testing, and complete COA documentation. Explore the Helix Bio catalog now.",
+    "hero": {
+      "viewPeptidesShort": "View Peptides",
+      "viewPeptidesLong": "View Research Peptides",
+      "titleLine1": "HIGH-PURITY",
+      "titleLine2": "RESEARCH PEPTIDES",
+      "subtitle": "Precision-engineered peptides for researchers demanding the highest standards of <white>purity</white> and <white>performance</white>.",
+      "marqueePurity": "99.1% PURITY",
+      "marqueeLabTested": "LAB TESTED",
+      "marqueeUsaMade": "USA MADE",
+      "featured": "Featured",
+      "total": "Total",
+      "addedToCart": "Added {name} to cart!",
+      "closeFeaturedProduct": "Close featured product",
+      "viewFeaturedProduct": "View featured product",
+      "products": {
+        "retatrutide": "Advanced metabolic research peptide designed for maximum efficacy. Rigorously tested for purity.",
+        "tirzepatide": "Dual GIP and GLP-1 receptor agonist for comprehensive metabolic and cardiovascular research.",
+        "semaglutide": "High-purity GLP-1 analogue synthesized for precise half-life and cellular response studies.",
+        "bpc157": "Premium synthetic peptide sequence known for accelerated tissue healing and recovery pathways."
+      }
+    },
+    "aboutTeaser": {
+      "eyebrow": "THE LAB",
+      "title": "Considered Compounds for Considered Research.",
+      "description": "We synthesize ultra-pure research peptides using advanced solid-phase peptide synthesis (SPPS) in US-based, ISO-certified facilities. Every compound undergoes independent third-party LC-MS and HPLC analysis to verify both molecular identity and ≥99% purity before it reaches your bench. No overseas raw powders. No shortcuts. Just verifiable science.",
+      "readAboutUs": "Read About Us",
+      "proof1Title": "≥99% HPLC Purity — Every Batch, No Exceptions",
+      "proof1Text": "High-Performance Liquid Chromatography (HPLC) testing is performed on every production batch. Any sample failing to meet our strict 99% purity threshold is immediately discarded — never sold.",
+      "proof2Title": "LC-MS Verified Peptide Identity",
+      "proof2Text": "Mass spectrometry (LC-MS) confirms the exact molecular weight and identity of every compound we ship. You receive the peptide on the label, exactly as described.",
+      "proof3Title": "COA with Every Order — Full Transparency",
+      "proof3Text": "Every order ships with a lot-specific Certificate of Analysis (COA) traceable to its independent test results. Our full COA library is publicly accessible at any time."
+    },
+    "bestSeller": {
+      "eyebrow": "Most Popular",
+      "title": "Our Best Sellers.",
+      "description": "A rotating selection of the most-requested compounds in the catalog, each shipped with a batch-specific certificate of analysis.",
+      "ctaText": "View All Products",
+      "fallbackCategory": "Research Peptide",
+      "fallbackDescription": "Highly purified synthetic peptide prepared for rigorous laboratory research.",
+      "fromLabel": "From",
+      "products": {
+        "tb500": "Potent synthetic peptide researched for its role in cellular migration, actin regulation, and wound healing.",
+        "bpc157": "A highly purified synthetic peptide widely studied for its profound effects on tissue regeneration and angiogenesis.",
+        "semaglutide": "A GLP-1 receptor agonist actively researched for its mechanisms in glycemic control and metabolic regulation.",
+        "ghkCu": "A naturally occurring copper complex peptide frequently studied for its role in collagen synthesis and anti-aging."
+      }
+    },
+    "blogSection": {
+      "titleLine1": "Latest Peptide",
+      "titleLine2": "Research Resources",
+      "subtitle": "Guides and tools built for researchers evaluating compounds, planning studies, or preparing an order.",
+      "ctaText": "View Blog",
+      "tabPeptideScience": "Peptide Science",
+      "tabLabUpdates": "Lab Updates"
+    },
+    "blogTeaser": {
+      "eyebrow": "SCIENCE BLOG",
+      "title": "Clinical Reviews & Research Guidelines",
+      "description": "Our blog publishes peer-reviewed literature summaries, compound mechanism deep dives, and methodology guides covering purity testing, reconstitution, and storage. Written for researchers who need the science, not the hype.",
+      "scrollToExplore": "Scroll to Explore",
+      "ctaText": "View the Full Blog"
+    },
+    "categories": {
+      "exploreCursor": "EXPLORE",
+      "titleLine1": "RESEARCH",
+      "titleLine2": "CATEGORIES.",
+      "description": "Browse the catalog by research application — each category maps to a specific set of compounds with shared research use cases.",
+      "items": {
+        "recovery": {
+          "name": "Recovery"
+        },
+        "receptorAgonist": {
+          "name": "Receptor Agonist"
+        },
+        "metabolic": {
+          "name": "Metabolic"
+        },
+        "growthFactor": {
+          "name": "Growth Factor"
+        },
+        "cognitiveFunction": {
+          "name": "Cognitive Function"
+        },
+        "cellularHealth": {
+          "name": "Cellular Health"
+        },
+        "bioregulators": {
+          "name": "Bioregulators"
+        },
+        "essentials": {
+          "name": "Essentials"
+        }
+      }
+    },
+    "coaSection": {
+      "eyebrow": "ABSOLUTE TRANSPARENCY",
+      "titleLine1": "Verified Purity.",
+      "titleLine2": "Every Single Batch.",
+      "description": "Third-party purity verification is the cornerstone of research-grade compounds. Every vial we ship carries an independently verified COA that proves what is inside — not what we claim is inside. Here is exactly what we test for, and why it matters.",
+      "vialAlt": "Single precision research peptide vial with Certificate of Analysis document — Helix Bio",
+      "metric1Title": "≥99% HPLC Purity",
+      "metric1Desc": "Stringent chromatographic isolation for every compound — verified before any order ships.",
+      "metric1Tooltip": "HPLC separates compound mixtures by molecular polarity, confirming concentration and purity to ≥99%.",
+      "metric2Title": "Mass Spectrometry (LC-MS)",
+      "metric2Desc": "Exact molecular weight verification confirms you are receiving the compound on the label.",
+      "metric2Tooltip": "LC-MS cross-references molecular mass against known peptide databases. Cannot be faked.",
+      "metric3Title": "Endotoxin-Free",
+      "metric3Desc": "Limulus Amebocyte Lysate (LAL) testing confirms endotoxin levels below research-safe thresholds.",
+      "metric3Tooltip": "Endotoxin contamination invalidates in-vitro research results. We test and confirm absence.",
+      "ctaText": "VIEW COA LIBRARY"
+    },
+    "difference": {
+      "titleLine1": "Vitality",
+      "titleLine2": "Collection.",
+      "description": "A curated line built around longevity, recovery, and everyday research support, featuring some of our most-requested research compounds.",
+      "ctaText": "View COA Library",
+      "vialAlt": "Helix Bio Vitality Collection research peptide vials.",
+      "shakeWarningTitle": "Critical Warning",
+      "shakeWarningSubtitle": "Peptide bonds agitated",
+      "cards": {
+        "labTested": {
+          "title": "Independently Lab Tested",
+          "desc": "Verified purity & composition."
+        },
+        "synthesis": {
+          "title": "Advanced Synthesis",
+          "desc": "Pioneering research grades."
+        },
+        "madeInUsa": {
+          "title": "Made in the USA",
+          "desc": "Strictly controlled standards."
+        },
+        "coldChain": {
+          "title": "Cold Chain Logistics",
+          "desc": "Strict temperature control."
+        },
+        "traceability": {
+          "title": "Full Traceability",
+          "desc": "Batch-specific tracking."
+        }
+      }
+    },
+    "faqSection": {
+      "titleLine1": "FREQUENTLY",
+      "titleLine2": "ASKED",
+      "items": {
+        "ruoPeptide": {
+          "question": "What does \"Research Use Only\" (RUO) mean for these peptides?",
+          "answer": "Research Use Only means a compound is intended strictly for laboratory and scientific research, not for human or veterinary consumption, diagnosis, or treatment. Helix Bio peptides are labeled and sold on this basis and are not evaluated by the FDA for safety or efficacy in those other contexts."
+        },
+        "researchGradePurity": {
+          "question": "What is considered a research-grade peptide?",
+          "answer": "A research-grade peptide is synthesized and tested to a documented purity standard, typically 98% or higher, with identity and concentration confirmed through HPLC and mass spectrometry rather than estimated. It is sold with supporting batch documentation for laboratory use, not formulated or labeled for clinical administration."
+        },
+        "coaContents": {
+          "question": "What should a peptide's certificate of analysis (COA) include?",
+          "answer": "A complete COA lists the batch or lot number, purity percentage as measured by HPLC, molecular weight confirmation by mass spectrometry, and the date of testing. Matching the batch number on the COA to the vial label confirms the document corresponds to the exact vial received."
+        },
+        "massSpecIdentity": {
+          "question": "How do you verify peptide identity beyond mass spectrometry?",
+          "answer": "Mass spectrometry confirms molecular weight, while HPLC separately verifies purity by isolating the target compound from any related impurities. Used together, the two methods cross-check both identity and purity rather than relying on a single test to carry the whole result."
+        },
+        "lyophilizedStorage": {
+          "question": "What storage conditions are recommended for lyophilized peptides?",
+          "answer": "Unreconstituted (lyophilized) peptides are generally stored frozen or refrigerated, protected from light and moisture, until they're needed for a study. Once reconstituted, most peptides should stay refrigerated and be used within the window noted on the product page or COA."
+        },
+        "assayDevelopment": {
+          "question": "How do peptide reagents support laboratory research studies?",
+          "answer": "Research peptides serve as standardized reagents in cellular, biochemical, and pharmacological studies, giving researchers a consistent, purity-verified compound to test against a defined protocol. Batch-to-batch consistency, backed by COA documentation, is what makes results comparable across a study."
+        },
+        "commonImpurities": {
+          "question": "What are common impurities in synthetic peptides?",
+          "answer": "Typical impurities include truncated or deletion sequences from incomplete synthesis cycles, residual solvents, and trace amounts of related by-product peptides. HPLC purity testing is specifically designed to detect and quantify these impurities rather than assume a batch is clean."
+        },
+        "receptorBindingStudies": {
+          "question": "How do peptide reagents support receptor-binding studies?",
+          "answer": "In receptor-binding research, a peptide's purity and exact molecular identity directly affect how reliably it interacts with a target receptor in an assay. Verified purity and confirmed molecular weight reduce the risk that an impurity, rather than the compound itself, is driving an observed result."
+        },
+        "vendorQuestions": {
+          "question": "What questions should I ask about a peptide supplier?",
+          "answer": "Ask whether every batch is independently tested, whether the COA is available before you order, what purity threshold the supplier guarantees, and how orders are shipped and stored in transit. A supplier that answers all four clearly and documents them is easier to evaluate than one that only advertises purity claims."
+        },
+        "supplierLegitimacy": {
+          "question": "How can I tell if a research peptide supplier is legitimate?",
+          "answer": "Look for third-party batch testing rather than in-house-only claims, a COA you can review before purchase, transparent research-use labeling, and clear company information rather than an anonymous storefront. Consistency between what's advertised and what the documentation actually shows is the strongest signal."
+        }
+      }
+    },
+    "featuredProducts": {
+      "titleLine1": "SELECTED",
+      "titleLine2": "REFERENCES",
+      "description": "A small catalogue of research-grade peptides. Each batch independently verified, sealed and traceable to the milligram.",
+      "inStock": "IN STOCK",
+      "featuredLabel": "FEATURED",
+      "researchUseOnly": "RESEARCH USE ONLY",
+      "viewButton": "View",
+      "viewFullCatalogue": "View Full Catalogue"
+    },
+    "featuredProductCard": {
+      "viewSrOnly": "View {name}",
+      "addToCart": "ADD TO CART"
+    },
+    "magazineGlassCard": {
+      "defaultTag": "Verified"
+    },
+    "merchandise": {
+      "eyebrow": "Helix Bio Gear",
+      "titleLine1": "Represent The",
+      "titleLine2": "Research.",
+      "exploreGear": "Explore Gear",
+      "premiumQuality": "Premium Quality",
+      "exclusiveMerch": "Exclusive Merch",
+      "worldwideShipping": "Worldwide Shipping",
+      "ctaText": "Shop All Gear",
+      "items": {
+        "canvasTote": "Canvas Tote",
+        "premiumTshirt": "Premium T-Shirt",
+        "researchHoodie": "Research Hoodie",
+        "shippingBox": "Shipping Box",
+        "thermosBottle": "Thermos Bottle",
+        "lanyard": "Lanyard",
+        "researchCap": "Research Cap",
+        "enamelKeyring": "Enamel Keyring",
+        "labNotebook": "Lab Notebook",
+        "coffeeCup": "Coffee Cup"
+      }
+    },
+    "militaryDiscount": {
+      "eyebrow": "MILITARY DISCOUNT",
+      "titleLine1": "30% OFF",
+      "titleLine2": "FOR OUR HEROES",
+      "description": "Active-duty military, veterans, and first responders can request 30% off a research peptide order as a standing thank-you from the Helix Bio team. Eligibility is verified at checkout.",
+      "privacyNoticeTitle": "Privacy & Security Notice",
+      "privacyNoticeText": "For your protection, please <redact>redact (black out)</redact> sensitive information like your SSN. Documents are securely encrypted for review and <destroyed>permanently destroyed</destroyed> from our servers immediately upon approval.",
+      "formTitle": "Verify Status",
+      "idPhotoLabel": "ID Photo",
+      "uploadButton": "Upload",
+      "fullNameLabel": "Full Name",
+      "fullNamePlaceholder": "Enter your full name",
+      "emailLabel": "Email Address",
+      "emailPlaceholder": "Enter your email",
+      "serviceBranchLabel": "Service Branch",
+      "selectBranchPlaceholder": "Select your branch",
+      "branches": {
+        "army": "US Army",
+        "navy": "US Navy",
+        "airforce": "US Air Force",
+        "marines": "US Marine Corps",
+        "coastguard": "US Coast Guard",
+        "spaceforce": "US Space Force",
+        "other": "Other / Veteran"
+      },
+      "submitButton": "Submit for Verification",
+      "successTitle": "Documents Received",
+      "successText": "Thank you for your service! Your documents have been securely routed for review. We will email your exclusive 30% discount code shortly.",
+      "submitAnother": "Submit Another"
+    },
+    "newsletter": {
+      "eyebrow": "STAY INFORMED",
+      "title": "Quiet updates.",
+      "description": "New compounds and research notes — no marketing noise.",
+      "emailPlaceholder": "your@email.com",
+      "subscribeButton": "SUBSCRIBE",
+      "unsubscribeNote": "Unsubscribe at any time."
+    },
+    "parallaxImage": {
+      "imageAlt": "The Pursuit of Purity Visual"
+    },
+    "pinterestGlassCard": {
+      "defaultTag": "Verified"
+    },
+    "whatSetsUsApart": {
+      "eyebrow": "Advantage",
+      "titleLine1": "What Sets",
+      "titleLine2": "Us Apart.",
+      "description": "<strong>Helix Bio</strong> specializes in high-purity synthetic peptides engineered specifically for research laboratory environments. Our commitment to analytical rigor and documentation transparency addresses the core needs of scientific research:",
+      "clickCursorLine1": "CLICK ON",
+      "clickCursorLine2": "THE NODES",
+      "nodeLabel": "Node 0{number}",
+      "viewProtocolData": "View Protocol Data",
+      "items": {
+        "purityStandards": {
+          "title": "Verified Purity Standards",
+          "description": "Every batch is held to a documented purity threshold before it is listed, rather than an unverified marketing claim.",
+          "shortLabel": "Verified"
+        },
+        "massSpecValidation": {
+          "title": "Mass Spectrometry Validation",
+          "description": "Molecular identity is confirmed by mass spectrometry alongside HPLC purity testing, not by either method alone.",
+          "shortLabel": "Mass"
+        },
+        "comprehensiveDocs": {
+          "title": "Comprehensive Documentation",
+          "description": "A batch-specific certificate of analysis is available for every product, so purity and identity can be checked independently.",
+          "shortLabel": "Comprehensive"
+        },
+        "researchOnly": {
+          "title": "Research-Only Positioning",
+          "description": "Helix Bio markets exclusively to the research community, with RUO and not-for-human-consumption labeling kept visible, not buried in fine print.",
+          "shortLabel": "Research-Only"
+        }
+      }
+    },
+    "whyChooseUs": {
+      "clickToViewLine1": "Click",
+      "clickToViewLine2": "To",
+      "clickToViewLine3": "View",
+      "eyebrow": "Why Choose Us",
+      "titleLine1": "Transparency",
+      "titleLine2": "You Can Trust.",
+      "items": {
+        "hplcPurity": {
+          "tag": "Trusted & Verified",
+          "title": "HPLC-Verified Purity",
+          "description": "High-performance liquid chromatography testing confirms the purity percentage published for every batch, rather than an assumed or estimated figure."
+        },
+        "msIdentity": {
+          "tag": "Test It Free",
+          "title": "MS Identity Confirmation",
+          "description": "Mass spectrometry independently confirms molecular weight and identity, cross-checking the HPLC purity result against the compound itself."
+        },
+        "coaDocumentation": {
+          "tag": "Receptor Agonist Research",
+          "title": "Complete COA Documentation",
+          "description": "Every order is backed by a batch-specific certificate of analysis, available to review so purity and identity claims can be verified rather than taken on faith."
+        }
+      }
+    },
+    "trustBadges": {
+      "eyebrow": "The Helix Bio Standard",
+      "titleLine1": "ENGINEERED FOR",
+      "titleLine2": "ABSOLUTE PRECISION",
+      "subtitle": "USA-Manufactured. Third-Party Verified.",
+      "ctaText": "Discover Quality",
+      "description": "Every compound in the Helix Bio catalog is synthesized to a documented purity standard and verified before it's listed — not estimated, and not left to a marketing claim.",
+      "cards": {
+        "purity": {
+          "title": "99.1%+ Verified Purity",
+          "description": "Each batch is independently tested by HPLC to confirm purity above 99.1%, with results published on the batch's certificate of analysis rather than kept in-house.",
+          "tag": "USA Verified",
+          "microcopy": "Independent HPLC Testing"
+        },
+        "stability": {
+          "title": "Freeze-Dried for Stability",
+          "description": "Compounds are vacuum-lyophilized to protect molecular structure over time, so integrity holds up through shipping, handling, and long-term cold storage.",
+          "tag": "Sealed Under Vacuum",
+          "microcopy": "Stability Verified Per Batch"
+        },
+        "dosing": {
+          "title": "Exact Milligram Dosing",
+          "description": "Vials are formulated to a precise milligram content per unit, confirmed by mass spectrometry, so researchers can calculate concentrations accurately during reconstitution.",
+          "tag": "Precision Dosed",
+          "microcopy": "Mass Spectrometry Confirmed"
+        }
+      }
+    }
+  },
+  "shop": {
+    "quantityStepper": {
+      "decreaseQuantity": "Decrease quantity",
+      "increaseQuantity": "Increase quantity"
+    },
+    "variantSelector": {
+      "option": "Option"
+    },
+    "productFaqs": {
+      "title": "Frequently Asked Questions"
+    },
+    "imageGallery": {
+      "viewImage": "View image {number}",
+      "thumbnailAlt": "Thumbnail {number}",
+      "productViewAlt": "Product view {number}"
+    },
+    "filterSidebar": {
+      "category": "Category",
+      "price": "Price",
+      "availability": "Availability",
+      "inStock": "In stock",
+      "onSale": "On sale",
+      "clearAllFilters": "Clear all filters"
+    },
+    "compactProductCard": {
+      "removedFromWishlist": "Removed from wishlist",
+      "removedFromWishlistDescription": "{name} has been removed.",
+      "addedToWishlist": "Added to wishlist",
+      "addedToWishlistDescription": "{name} is now in your wishlist.",
+      "viewWishlist": "View Wishlist",
+      "bestSeller": "Best Seller"
+    },
+    "holographicProductCard": {
+      "bestSeller": "Best Seller",
+      "active": "Active",
+      "explore": "Explore"
+    },
+    "primaryProductCard": {
+      "slideToAdd": "Slide to add",
+      "addedToCart": "Added to cart",
+      "view": "VIEW",
+      "signInRequired": "Sign in required",
+      "signInRequiredDescription": "Please log in to add items to your wishlist.",
+      "productIdMissing": "Product ID missing",
+      "productIdMissingDescription": "Unable to add this product to wishlist.",
+      "removedFromWishlist": "Removed from wishlist",
+      "removedFromWishlistDescription": "{name} has been removed.",
+      "addedToWishlist": "Added to wishlist",
+      "addedToWishlistDescription": "{name} is now in your wishlist.",
+      "addToWishlistAria": "Add to wishlist",
+      "removeFromWishlistAria": "Remove from wishlist",
+      "viewWishlist": "View Wishlist",
+      "failedToUpdateWishlist": "Failed to update wishlist",
+      "unexpectedError": "An unexpected error occurred.",
+      "sale": "Sale",
+      "experiencePureBenefits": "Experience the pure benefits of {name}.",
+      "viewProduct": "View {name}"
+    },
+    "productReviews": {
+      "customerReviews": "Customer Reviews",
+      "basedOnReviews": "Based on {count} reviews",
+      "starsCount": "{count} Stars",
+      "writeReview": "Write a Review",
+      "reviewsCount": "{count} Reviews",
+      "sortBy": "Sort by",
+      "mostRecent": "Most Recent",
+      "highestRating": "Highest Rating",
+      "lowestRating": "Lowest Rating",
+      "noReviewsYet": "No reviews yet. Be the first to review!",
+      "loadMoreReviews": "Load More Reviews"
+    },
+    "shopClient": {
+      "inStock": "In Stock",
+      "onSale": "On Sale",
+      "marqueeUsaMade": "USA-MADE",
+      "marqueeFreeShipping": "FREE SHIPPING OVER $300",
+      "heroTitle": "Synthetic Research Peptides for Laboratory Applications",
+      "heroDescription": "Documented synthetic research peptides are supplied for controlled laboratory and analytical research environments only.",
+      "highlightPurityText": "≥99% HPLC Purity",
+      "highlightPuritySubtext": "Independently Tested",
+      "highlightCoaText": "COA Verified",
+      "highlightCoaSubtext": "Batch Certified",
+      "highlightRuoText": "Research Use Only",
+      "highlightRuoSubtext": "Lab Grade",
+      "shopShort": "Shop",
+      "browseCatalog": "Browse Catalog",
+      "filters": "Filters",
+      "resultsCount": "{count} Results",
+      "sortByPlaceholder": "SORT BY",
+      "sortNewest": "Newest Arrivals",
+      "sortPriceAsc": "Price: Low to High",
+      "sortPriceDesc": "Price: High to Low",
+      "sortNameAsc": "Alphabetical A-Z",
+      "loadingMore": "Loading more...",
+      "reachedEndOfCatalog": "You've reached the end of the catalog.",
+      "noProductsFound": "No peptides match your current filters",
+      "noProductsFoundDescription": "No peptides match your current filters right now. Try clearing your filters, or check back shortly — our catalog restocks regularly and every batch is COA-verified before it's listed.",
+      "clearAllFilters": "Clear All Filters",
+      "faqTitle": "Questions",
+      "faqDescription": "Common questions about research peptides, ordering, and site standards.",
+      "faqs": {
+        "availablePeptides": {
+          "question": "What research peptides are available in the Helix Bio shop?",
+          "answer": "The Helix Bio shop carries a curated catalog of research-use-only peptides for laboratory study, including BPC-157, TB-500, Semaglutide, Tirzepatide, Ipamorelin, CJC-1295, PT-141, Melanotan II, GHK-Cu, Thymosin Alpha-1, Epithalon, Selank, Semax, and related compounds. Each listing shows current stock status, available vial sizes, and a linked certificate of analysis."
+        },
+        "purityQualityTested": {
+          "question": "Are all Helix Bio products tested for purity and quality?",
+          "answer": "Yes. Every batch is verified through third-party HPLC and mass spectrometry testing before it is listed for sale, and the resulting certificate of analysis is made available at or before checkout so researchers can confirm purity and identity ahead of ordering."
+        },
+        "standardPurityLevels": {
+          "question": "What purity levels are standard for research peptides?",
+          "answer": "Reputable research peptide suppliers report purity of 98% or higher, with many premium compounds tested at 99%. Purity is confirmed by HPLC analysis and disclosed on each batch's certificate of analysis rather than estimated, so researchers can verify the figure independently."
+        },
+        "interpretCoa": {
+          "question": "How do I interpret the certificate of analysis (COA)?",
+          "answer": "A COA lists the batch number, measured purity by HPLC, molecular weight confirmation by mass spectrometry, and the testing date. Matching the batch number on the vial label to the COA on file confirms that the document corresponds to the specific vial received."
+        },
+        "customSynthesis": {
+          "question": "Do you offer custom peptide synthesis for specific research needs?",
+          "answer": "Custom synthesis availability depends on compound, quantity, and lead time. Researchers with a specific sequence or scale requirement should reach out through the shop's support channel to confirm feasibility, pricing, and turnaround before placing a standard order."
+        },
+        "storageInstructions": {
+          "question": "What are proper storage instructions for research peptides?",
+          "answer": "Lyophilized (unreconstituted) peptides are generally stored frozen or refrigerated, away from light and moisture, until they are needed. Once reconstituted, most peptides should be kept refrigerated and used within the timeframe noted on the product page or COA."
+        },
+        "reconstitution": {
+          "question": "How should I reconstitute lyophilized peptides for laboratory use?",
+          "answer": "Reconstitution typically involves adding bacteriostatic or sterile water slowly down the side of the vial to avoid disturbing the lyophilized powder, then gently swirling rather than shaking. Exact solvent volume varies by compound and is listed on the individual product page."
+        },
+        "shelfLife": {
+          "question": "What is the shelf life of research peptides?",
+          "answer": "Unopened, properly stored lyophilized peptides typically remain stable for one to two years, while reconstituted solutions have a much shorter usable window, often two to four weeks under refrigeration. Product pages and the COA note batch-specific stability guidance."
+        },
+        "shippingDamage": {
+          "question": "Can peptides be damaged during shipping or storage?",
+          "answer": "Yes. Heat exposure, repeated freeze-thaw cycles, and prolonged light exposure can all degrade peptide integrity. Helix Bio ships with cold-chain packaging appropriate to the compound, and researchers should transfer vials to proper storage promptly upon arrival."
+        },
+        "aliquotAfterReconstitution": {
+          "question": "Should I aliquot peptides after reconstitution?",
+          "answer": "Aliquoting reconstituted peptide into single-use portions reduces repeated freeze-thaw cycling and contamination risk, which helps preserve potency across a longer study. This is standard laboratory practice for any peptide expected to be used across multiple sessions."
+        },
+        "orderDocumentation": {
+          "question": "What documentation comes with laboratory peptide purchases?",
+          "answer": "Each order includes an invoice and access to the batch-specific certificate of analysis. Institutional buyers can additionally request a wholesale account with consolidated invoicing for recurring or purchase-order-based procurement."
+        },
+        "orderQuantities": {
+          "question": "Can I order research peptides in different quantities?",
+          "answer": "Most compounds are available in multiple vial sizes, and select peptides offer bundle or bulk pricing for larger research studies. Available sizes and quantity-based pricing are shown on each product listing within the shop."
+        },
+        "coaBeforeOrdering": {
+          "question": "Are COAs available before ordering to verify product specifications?",
+          "answer": "Yes. Certificates of analysis are linked directly from the product page, so researchers can review purity, batch number, and testing method before completing a purchase rather than waiting until after the order ships."
+        },
+        "findSpecificPeptides": {
+          "question": "How do I find specific peptides in your catalog?",
+          "answer": "The shop can be browsed by category, such as GLP-1 compounds, tissue-repair peptides, or cognitive research peptides, or searched directly by compound name. Filtering by stock status also narrows results to what is currently available."
+        },
+        "productPageInfo": {
+          "question": "What information is included on product pages?",
+          "answer": "Each product page lists the compound name, available vial sizes, current price, stock status, a linked certificate of analysis, and relevant handling notes such as recommended storage and reconstitution guidance."
+        },
+        "manufacturedInUsa": {
+          "question": "Are all products manufactured in the USA for research compliance?",
+          "answer": "Helix Bio sources and distributes from within the USA, and each batch is tested domestically before listing. Country-of-origin and testing details for a specific compound can be confirmed on request or within the linked COA."
+        },
+        "researchUseOnlyMeaning": {
+          "question": "What does \"Research Use Only\" mean for these products?",
+          "answer": "Research Use Only (RUO) means a compound is intended strictly for laboratory and scientific research, not for human or veterinary consumption, diagnostic, or therapeutic use. RUO products are not evaluated by the FDA for safety or efficacy in those contexts."
+        },
+        "specialHandling": {
+          "question": "Do research peptides require special handling or safety precautions?",
+          "answer": "Yes. Standard laboratory safety practices apply, including gloves, a clean work surface, and sterile technique during reconstitution. Peptides should be handled by trained research personnel in an appropriate laboratory setting, consistent with their RUO status."
+        },
+        "nonResearchUse": {
+          "question": "Can I use these peptides for any purpose outside of research?",
+          "answer": "No. Products sold through the Helix Bio shop are labeled Research Use Only and are not intended, tested, or approved for human consumption, self-administration, or any clinical use. They are sold exclusively for qualified laboratory research."
+        },
+        "fdaApproval": {
+          "question": "Are your products approved by the FDA or other regulatory agencies?",
+          "answer": "No. Research Use Only peptides are not FDA-approved for human use and are not marketed as drugs, supplements, or cosmetics. They are sold strictly as laboratory research chemicals, consistent with their labeling and intended use."
+        }
+      }
+    },
+    "productDetail": {
+      "addedToCart": "Added to Cart",
+      "slideToAdd": "Slide to Add",
+      "signInRequired": "Sign in required",
+      "signInRequiredDescription": "Please log in to add items to your wishlist.",
+      "removedFromWishlist": "Removed from wishlist",
+      "removedFromWishlistDescription": "{name} has been removed.",
+      "addedToWishlist": "Added to wishlist",
+      "addedToWishlistDescription": "{name} is now in your wishlist.",
+      "viewWishlist": "View Wishlist",
+      "failedToUpdateWishlist": "Failed to update wishlist",
+      "unexpectedError": "An unexpected error occurred.",
+      "view": "VIEW",
+      "home": "Home",
+      "shop": "Shop",
+      "researchPeptide": "Research Peptide",
+      "savePercent": "Save {percent}%",
+      "selectSize": "Select Size",
+      "added": "Added",
+      "addToCart": "Add to Cart",
+      "outOfStock": "Out of Stock",
+      "buyNow": "Buy Now",
+      "trustFastShipping": "Fast Shipping",
+      "trustPurity": "99% Purity",
+      "trustThirdPartyTested": "3rd Party Tested",
+      "trustGuaranteed": "Guaranteed",
+      "certificateOfAnalysis": "Certificate of Analysis",
+      "bulkPricing": "Bulk Pricing",
+      "buyMoreSaveMore": "Buy more, save more",
+      "addedBundleToCart": "Added bundle to cart",
+      "variant": "Variant",
+      "compoundProfile": "Compound Profile",
+      "theScienceLine1": "The",
+      "theScienceLine2": "Science.",
+      "downloadCertificate": "Download Certificate",
+      "statVerifiedPurityLabel": "Verified Purity",
+      "statVerifiedPurityDesc": "HPLC certified",
+      "statLabTestedValue": "3rd Party",
+      "statLabTestedLabel": "Lab Tested",
+      "statLabTestedDesc": "Independent analysis",
+      "statGradeQualityValue": "Research",
+      "statGradeQualityLabel": "Grade Quality",
+      "statGradeQualityDesc": "Highest standard",
+      "statDocumentedLabel": "Documented",
+      "statDocumentedDesc": "Full traceability",
+      "continueExploring": "Continue Exploring",
+      "alsoConsidered": "Also Considered.",
+      "previousProducts": "Previous Products",
+      "nextProducts": "Next Products",
+      "frequentlyAsked": "Frequently Asked",
+      "educationAndResearch": "Education & Research",
+      "furtherReading": "Further Reading.",
+      "viewAllResearch": "View All Research",
+      "toggleWishlist": "Toggle Wishlist",
+      "sliderEnd": "AH, THAT'S IT",
+      "swipe": "SWIPE"
+    },
+    "productsPage": {
+      "allProducts": "All Products",
+      "noActiveProducts": "No active products found in the database. Please create some in the Payload Admin.",
+      "imagePlaceholder": "Image Placeholder"
+    }
+  },
+  "account": {
+    "overview": {
+      "welcomeBack": "Welcome back",
+      "subtitle": "Here is your account overview.",
+      "purityPoints": "Purity Points",
+      "purityPointsDescription": "1 Point = $1. Your points can be applied as a discount directly at checkout.",
+      "ordersPlaced": "Orders Placed",
+      "wishlistItems": "Wishlist Items",
+      "memberSince": "Member Since",
+      "recentOrders": "Recent Orders",
+      "viewAll": "View All",
+      "orderNumber": "Order #{id}",
+      "viewDetails": "View Details",
+      "noOrdersYetTitle": "You haven't placed any orders yet.",
+      "noOrdersYetSubtitle": "Once you place an order, it will appear here.",
+      "defaultAddress": "Default Address",
+      "edit": "Edit",
+      "noAddressYet": "You haven't saved any addresses yet.",
+      "addAddress": "Add Address",
+      "spendingOverview": "Spending Overview",
+      "totalSpent": "Total Spent",
+      "noPurchasesYet": "No purchases yet this year.",
+      "categoryOther": "Other",
+      "categoryShipping": "Shipping",
+      "supportAndPrograms": "Support & Programs",
+      "affiliateDashboard": "Affiliate Dashboard",
+      "manageLinksAndPayouts": "Manage links and payouts",
+      "earnCommission": "Earn 15% Commission",
+      "joinPartnerProgram": "Join the Partner Program",
+      "partnerProgram": "Partner Program",
+      "applicationUnderReview": "Application under review",
+      "trackOrder": "Track Order",
+      "trackOrderDescription": "Track your recent orders",
+      "contactUs": "Contact Us",
+      "contactUsDescription": "Get help from our support team",
+      "statusPlaced": "Placed",
+      "statusProcessing": "Processing",
+      "statusShipped": "Shipped",
+      "statusDelivered": "Delivered",
+      "metaTitle": "Account Overview | Helix Bio",
+      "metaDescription": "View your recent orders, wishlist, purity points, and account details in one place."
+    },
+    "addresses": {
+      "title": "Saved Addresses",
+      "subtitle": "Manage where your lab equipment and peptides are shipped.",
+      "metaTitle": "Saved Addresses | Helix Bio",
+      "metaDescription": "Manage the shipping addresses saved to your Helix Bio account.",
+      "addNewAddress": "Add New Address",
+      "editAddressTitle": "Edit Address",
+      "addAddressTitle": "Add a New Address",
+      "editAddressDescription": "Update your shipping details below.",
+      "addAddressDescription": "Fill in your shipping details below.",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "streetAddress": "Street Address",
+      "apartmentOptional": "Apartment, suite, etc. (optional)",
+      "apartmentPlaceholder": "Apartment, suite, etc.",
+      "city": "City",
+      "state": "State",
+      "selectState": "Select State",
+      "searchStates": "Search states...",
+      "noStatesFound": "No states found",
+      "zipCode": "ZIP Code",
+      "country": "Country",
+      "phone": "Phone",
+      "setAsDefault": "Set as default shipping address",
+      "cancel": "Cancel",
+      "saving": "Saving...",
+      "saveAddress": "Save Address",
+      "default": "Default",
+      "edit": "Edit",
+      "delete": "Delete",
+      "toastUpdateFailed": "Failed to update address",
+      "toastUpdateSuccess": "Address updated successfully",
+      "toastSaveFailed": "Failed to save address",
+      "toastSaveSuccess": "Address saved successfully",
+      "toastUnexpectedError": "An unexpected error occurred",
+      "toastDeleteSuccess": "Address deleted successfully",
+      "errorUnauthorized": "Unauthorized",
+      "errorRequiredFields": "Please fill in all required fields",
+      "errorUnexpected": "An unexpected error occurred"
+    },
+    "layout": {
+      "title": "My Account",
+      "metaTitle": "My Account | Helix Bio",
+      "metaDescription": "Manage your Helix Bio account, orders, addresses, and preferences."
+    },
+    "orders": {
+      "title": "Order History",
+      "subtitle": "Track, manage, and return your recent purchases.",
+      "metaTitle": "Order History | Helix Bio",
+      "metaDescription": "Track, manage, and review your recent Helix Bio orders.",
+      "filterStatus": "Filter Status",
+      "filterAll": "All Orders",
+      "filterProcessing": "Processing",
+      "filterDelivered": "Delivered",
+      "filterReturned": "Returned",
+      "orderPlaced": "Order Placed",
+      "status": "Status",
+      "total": "Total",
+      "itemCount": "({count} items)",
+      "viewDetails": "View Details",
+      "showingResults": "Showing <bold>{from}</bold> to <bold>{to}</bold> of <bold>{total}</bold> results",
+      "emptyTitle": "No orders found",
+      "emptyDescription": "You haven't placed any orders that match this filter.",
+      "startShopping": "Start Shopping",
+      "statusPlaced": "Placed",
+      "statusProcessing": "Processing",
+      "statusShipped": "Shipped",
+      "statusDelivered": "Delivered",
+      "statusCancelled": "Cancelled"
+    },
+    "orderDetail": {
+      "statusPlaced": "Placed",
+      "statusProcessing": "Processing",
+      "statusShipped": "Shipped",
+      "statusDelivered": "Delivered",
+      "unknownProduct": "Unknown Product",
+      "backToOrders": "Back to Orders",
+      "orderTitle": "Order {orderNumber}",
+      "placedOn": "Placed on {date}",
+      "reorderAll": "Reorder All",
+      "trackingStatus": "Tracking Status",
+      "orderCancelled": "This order has been cancelled.",
+      "itemsOrdered": "Items Ordered",
+      "standardVariant": "Standard",
+      "shippingInfo": "Shipping Info",
+      "billingAddress": "Billing Address",
+      "orderSummary": "Order Summary",
+      "subtotal": "Subtotal",
+      "discount": "Discount",
+      "discountWithCode": "Discount ({code})",
+      "shipping": "Shipping",
+      "free": "Free",
+      "processingFee": "Processing Fee",
+      "purityPoints": "Purity Points",
+      "total": "Total",
+      "paymentSuccessful": "Payment Successful",
+      "paymentRefunded": "Refunded",
+      "paymentProcessing": "Payment Processing",
+      "metaTitle": "Order Details | Helix Bio",
+      "metaDescription": "View the details, items, and shipping status of your Helix Bio order."
+    },
+    "settings": {
+      "toastUpdateFailed": "Failed to update profile",
+      "toastUpdateSuccess": "Profile updated successfully",
+      "toastUnexpectedError": "An unexpected error occurred",
+      "title": "Account Settings",
+      "subtitle": "Manage your personal information, security preferences, and notifications.",
+      "personalInformation": "Personal Information",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "phoneNumber": "Phone Number",
+      "saving": "Saving...",
+      "saveChanges": "Save Changes",
+      "signInAndSecurity": "Sign In & Security",
+      "authManagedSecurely": "Authentication managed securely",
+      "authDescription": "Your email (<strong>{email}</strong>) and password are encrypted and managed securely via our authentication provider.",
+      "updatePassword": "Update Password",
+      "changeEmail": "Change Email",
+      "preferences": "Preferences",
+      "language": "Language",
+      "selectLanguage": "Select Language",
+      "languageEnglishUs": "English (US)",
+      "languageSpanish": "Español",
+      "currency": "Currency",
+      "selectCurrency": "Select Currency",
+      "currencyUsd": "USD ($)",
+      "notifications": "Notifications",
+      "marketingEmails": "Marketing Emails",
+      "marketingEmailsDescription": "Receive updates on new products, research, and exclusive sales.",
+      "on": "On",
+      "off": "Off",
+      "orderSmsUpdates": "Order SMS Updates",
+      "orderSmsUpdatesDescription": "Get real-time text messages about your order shipments and deliveries.",
+      "errorUnauthorized": "Unauthorized",
+      "errorUnexpected": "An unexpected error occurred",
+      "metaTitle": "Account Settings | Helix Bio",
+      "metaDescription": "Manage your personal information, security preferences, and notification settings."
+    },
+    "wishlist": {
+      "title": "My Wishlist",
+      "itemsSaved": "You have {count} items saved for later.",
+      "moveAllToCart": "Move All to Cart",
+      "productFallback": "Product",
+      "addToCart": "Add to Cart",
+      "emptyTitle": "Your wishlist is empty",
+      "emptyDescription": "Save items you want to buy later by clicking the heart icon on any product page.",
+      "startBrowsing": "Start Browsing",
+      "metaTitle": "My Wishlist | Helix Bio",
+      "metaDescription": "View and manage the research peptides you've saved to your wishlist.",
+      "selectVariantRequired": "Please select a variant on the product page."
+    },
+    "sidebar": {
+      "welcomeBack": "Welcome Back",
+      "purityPoints": "Purity Points",
+      "purityPointsDescription": "<strong>1 Point = $1.</strong> Your points can be applied as a discount directly at checkout.",
+      "nav": {
+        "overview": "Overview",
+        "orders": "Orders",
+        "addresses": "Addresses",
+        "wishlist": "Wishlist",
+        "settings": "Settings",
+        "affiliateDashboard": "Affiliate Dashboard"
+      },
+      "affiliateDashboard": "Affiliate Dashboard",
+      "signOut": "Sign out",
+      "signOutDialogTitle": "Sign Out",
+      "signOutDialogDescription": "Are you sure you want to sign out of your account?",
+      "cancel": "Cancel",
+      "confirmSignOut": "Yes, Sign Out",
+      "partnerProgram": "Partner Program",
+      "partnerProgramDescription": "Earn <strong>15% commission</strong> by referring researchers.",
+      "applyNow": "Apply Now",
+      "applicationUnderReview": "Your application is currently under review.",
+      "aiAssistant": "AI Assistant",
+      "askMeAnything": "Ask me anything...",
+      "trackOrder": "Track Order",
+      "helpCenter": "Help Center",
+      "dashboard": "Dashboard"
+    },
+    "securityDialogs": {
+      "passwordMismatch": "New passwords do not match",
+      "passwordUpdateSuccess": "Password updated successfully",
+      "reverificationRequired": "For your security, please log out and log back in before changing your password.",
+      "passwordUpdateError": "An error occurred while updating password",
+      "updatePasswordTitle": "Update Password",
+      "updatePasswordDescription": "Enter your current password and a new secure password.",
+      "currentPassword": "Current Password",
+      "newPassword": "New Password",
+      "confirmNewPassword": "Confirm New Password",
+      "cancel": "Cancel",
+      "verificationCodeSent": "Verification code sent",
+      "emailInUse": "An account with this email already exists",
+      "emailPreparationError": "An error occurred while preparing email",
+      "emailUpdateSuccess": "Email updated successfully",
+      "verificationFailed": "Verification failed. Please try again.",
+      "invalidVerificationCode": "Invalid verification code",
+      "changeEmailTitle": "Change Email Address",
+      "changeEmailDescriptionInput": "Enter your new email address. We'll send a code to verify it.",
+      "changeEmailDescriptionVerify": "Enter the 6-digit verification code sent to {email}",
+      "newEmailAddress": "New Email Address",
+      "sendCode": "Send Code",
+      "verificationCode": "Verification Code",
+      "back": "Back",
+      "verify": "Verify"
+    }
+  },
+  "cartPage": {
+    "metaTitle": "Your Cart | Helix Bio",
+    "metaDescription": "Review the research peptides in your cart before proceeding to secure checkout."
+  },
+  "checkout": {
+    "metaTitle": "Secure Checkout | Helix Bio",
+    "metaDescription": "Complete your secure checkout for research peptides at Helix Bio.",
+    "cartDrawer": {
+      "title": "CART",
+      "closeCartAria": "Close cart",
+      "emptyTitle": "Your cart is empty",
+      "emptyText": "Looks like you haven't added any premium formulations to your cart yet.",
+      "discoverQuality": "Discover Quality",
+      "freeShippingProgress": "Add ${amount} more for free shipping",
+      "freeShippingUnlocked": "🎉 You've unlocked free shipping!",
+      "freeShippingUnlockedToast": "Congratulations, you get Free Shipping!",
+      "removeItemAria": "Remove item",
+      "subtotal": "Subtotal",
+      "shipping": "Shipping",
+      "calculatedAtCheckout": "Calculated at checkout",
+      "free2Day": "Free 2-Day",
+      "checkout": "CHECKOUT",
+      "viewFullCart": "VIEW FULL CART"
+    },
+    "cartClient": {
+      "categoryFallback": "Category",
+      "fromPricePrefix": "From ",
+      "couponExpired": "This coupon code has expired.",
+      "couponUsageLimitReached": "This coupon has reached its usage limit.",
+      "couponMinSpend": "Minimum spend of ${amount} required.",
+      "couponAppliedSuccess": "Coupon applied successfully!",
+      "couponInvalid": "Invalid coupon code.",
+      "couponValidationError": "Error validating coupon. Please try again.",
+      "emptyTitle": "Your cart is empty",
+      "emptyText": "You haven't added any compounds to your cart yet. Discover our collection of high-purity research materials.",
+      "browseProducts": "BROWSE PRODUCTS",
+      "yourCart": "Your Cart",
+      "removeItemAria": "Remove item",
+      "removeCouponAria": "Remove coupon",
+      "remove": "Remove",
+      "total": "Total",
+      "subtotal": "Subtotal",
+      "continueExploring": "Continue Exploring",
+      "orderSummary": "Order Summary",
+      "discount": "Discount",
+      "estimatedShipping": "Estimated Shipping",
+      "free": "Free",
+      "processingFee": "Processing Fee",
+      "couponCode": "Coupons code",
+      "enterCodePlaceholder": "Coupons code",
+      "haveCoupon": "Have a coupon? Enter your code.",
+      "couponCode": "Coupons code",
+      "apply": "Apply",
+      "secureCheckout": "SECURE CHECKOUT",
+      "encrypted": "Encrypted",
+      "discreetShipping": "Discreet Shipping",
+      "completeYourResearch": "Complete Your Research",
+      "alsoConsidered": "Also Considered."
+    },
+    "checkoutClient": {
+      "couponAppliedSuccess": "Coupon applied successfully",
+      "couponInvalid": "Invalid coupon code",
+      "couponVerifyFailed": "Failed to verify coupon",
+      "couponRemoved": "Coupon removed",
+      "fillRequiredFieldsOrder": "Please fill out all required shipping fields before completing your order.",
+      "freeOrderInitFailed": "Failed to initialize free order in database.",
+      "orderSuccessRedirecting": "Order successful! Redirecting...",
+      "unexpectedError": "An unexpected error occurred.",
+      "emptyTitle": "Your cart is empty",
+      "emptyText": "Looks like you haven't added anything yet.",
+      "shopNow": "Shop Now",
+      "backToCart": "Back to cart",
+      "hideOrderSummary": "Hide order summary",
+      "showOrderSummary": "Show order summary",
+      "estimatedShipping": "Estimated Shipping",
+      "secureCheckout": "Secure Checkout",
+      "orderSummary": "Order Summary",
+      "remove": "Remove",
+      "discountWithCode": "Discount ({code})",
+      "pointsApplied": "Points Applied",
+      "shippingWithMethod": "Shipping {method}",
+      "free": "Free",
+      "processingFee": "Processing Fee",
+      "subtotal": "Subtotal",
+      "total": "Total",
+      "discountCodePlaceholder": "Coupons code",
+      "apply": "Apply",
+      "purityPoints": "Purity Points",
+      "youHavePoints": "You have {points} points",
+      "youHavePointsWithValue": "You have {points} points (${value})",
+      "expressCheckout": "Express Checkout",
+      "applePay": "Apple Pay",
+      "googlePay": "Google Pay",
+      "orPayWithCard": "OR PAY WITH CARD",
+      "contactInformation": "Contact Information",
+      "emailAddress": "Email Address",
+      "marketingOptIn": "Email me with news and exclusive offers.",
+      "deliveryAddress": "Delivery Address",
+      "defaultAddressBadge": "Default",
+      "addNewAddress": "+ Add New Address",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "address": "Address",
+      "apartmentOptional": "Apartment, suite, etc. (optional)",
+      "city": "City",
+      "state": "State",
+      "zipCode": "ZIP Code",
+      "country": "Country",
+      "internationalShippingNotice": "International shipping is a flat $50 rate.",
+      "phoneForDelivery": "Phone (for delivery updates)",
+      "shippingMethod": "Shipping Method",
+      "businessDays": "{days} business days",
+      "freeShippingUnlockedToast": "Congratulations, you get Free Shipping!",
+      "payment": "Payment",
+      "encryptionNotice": "All transactions are 256-bit encrypted and secure.",
+      "orderFullyCovered": "Your order is completely covered!",
+      "completeFreeOrder": "Complete Free Order",
+      "initializingCheckout": "Initializing secure checkout...",
+      "payWithZelle": "Pay with Zelle",
+      "zelleCheckoutNote": "You'll receive Zelle payment instructions on the next page after placing your order.",
+      "payWithAmex": "Pay with American Express",
+      "amexCheckoutNote": "Place your order now. You will receive a link to complete the payment on your email.",
+      "payWithCard": "Credit / Debit Card",
+      "circoflowsCheckoutNote": "You'll be securely redirected to enter your card details.",
+      "placeOrder": "Place Order"
+    },
+    "checkoutSummary": {
+      "shippingMethod": "Shipping Method",
+      "zoneLabel": "Zone: {name}",
+      "estimatedDays": "({days} days)",
+      "free": "Free",
+      "noShippingZones": "No shipping zones configured.",
+      "couponCode": "Coupon Code",
+      "remove": "Remove",
+      "checking": "Checking...",
+      "apply": "Apply",
+      "additionalOptions": "Additional Options",
+      "feePercentageOfSubtotal": "+{amount}% of subtotal",
+      "feeRequired": "{name} (Required)",
+      "orderSummary": "Order Summary",
+      "subtotal": "Subtotal",
+      "discount": "Discount",
+      "shippingWithMethod": "Shipping ({method})",
+      "processingFees": "Processing Fees",
+      "total": "Total",
+      "enterCouponCode": "Please enter a coupon code",
+      "couponAppliedSuccess": "Coupon applied!",
+      "couponInvalid": "Invalid coupon"
+    },
+    "couponSection": {
+      "couponCode": "Coupon Code",
+      "haveDiscountCode": "Have a discount code?",
+      "remove": "Remove",
+      "checking": "Checking...",
+      "apply": "Apply",
+      "savesAmount": "— saves ${amount}",
+      "plusFreeShipping": "+ Free Shipping!",
+      "enterCouponCode": "Please enter a coupon code",
+      "couponAppliedSuccess": "Coupon applied!",
+      "couponInvalid": "Invalid coupon"
+    },
+    "stripeCheckoutForm": {
+      "fillRequiredFields": "Please fill out all required shipping fields before paying.",
+      "orderInitFailed": "Failed to initialize order in database.",
+      "unexpectedError": "An unexpected error occurred.",
+      "paymentSuccessRedirecting": "Payment successful! Redirecting...",
+      "payAmount": "Pay ${amount}",
+      "termsAcknowledgement": "By completing your purchase, you agree to our Terms of Service and strictly acknowledge these products are for Research Use Only."
+    }
+  },
+  "orderConfirmation": {
+    "metaTitle": "Order Confirmed | Helix Bio",
+    "metaDescription": "Your Helix Bio order has been placed. View your order confirmation and payment details.",
+    "paymentSuccessful": "Payment Successful",
+    "orderPlaced": "Order Placed",
+    "thankYouZelle": "Thank you, {name}. Please complete your Zelle payment below.",
+    "thankYouAmex": "Thank you for your order, {name}! One of our team members will reach out to you shortly via SMS with a secure invoice link to finalize your American Express payment.",
+    "thankYouConfirmed": "Thank you, {name}. Your order is confirmed.",
+    "completeZellePayment": "Complete Your Zelle Payment",
+    "completeAmexPayment": "Complete Your American Express Payment",
+    "sendViaZelle": "Send <bold>{amount}</bold> via Zelle using the QR code below or send to:",
+    "sendTo": "Send To",
+    "includeOrderNumber": "Include your order number <bold>#{orderId}</bold> in the Zelle memo. Your order will be confirmed once payment is verified.",
+    "receipt": "Receipt",
+    "confirmationEmailSent": "A confirmation email has been sent to:",
+    "shippingAddress": "Shipping Address",
+    "billingAddress": "Billing Address",
+    "deliveryAndPayment": "Delivery & Payment",
+    "estDelivery": "Est. Delivery",
+    "estimatedDeliveryExpress": "1-3 Business Days",
+    "estimatedDeliveryStandard": "5-7 Business Days",
+    "paymentMethod": "Payment Method",
+    "paymentMethodCard": "Card",
+    "paymentMethodZelle": "Zelle",
+    "product": "Product",
+    "qty": "Qty",
+    "price": "Price",
+    "total": "Total",
+    "subtotal": "Subtotal",
+    "discount": "Discount",
+    "shipping": "Shipping",
+    "free": "Free",
+    "processingFee": "Processing Fee",
+    "purityPoints": "Purity Points",
+    "totalUsd": "Total USD",
+    "printReceipt": "Print Receipt",
+    "questionsContactSupport": "Questions? <link>Contact Support</link>",
+    "continueShopping": "Continue Shopping",
+    "unknownProductName": "Product",
+    "defaultCustomerName": "Customer",
+    "defaultVariant": "Standard"
+  },
+  "legal": {
+    "privacyPolicy": {
+      "metaTitle": "Privacy Policy | Helix Bio",
+      "metaDescription": "See how Helix Bio collects, uses, and safeguards personal data across ordering, account access, and research-use compliance on our website.",
+      "eyebrow": "Legal Information",
+      "titleLine1": "Helix Bio",
+      "titleLine2": "Privacy Policy",
+      "effectiveDate": "Effective Date: August 2026",
+      "intro": "Helix Bio takes your privacy seriously. This Privacy Policy sets out what personal information we gather, how we put it to use, and the steps we take to keep it protected whenever you browse our site or use our services. Continuing to use the website means you're accepting the practices outlined below.",
+      "section1Title": "Information We Collect",
+      "section1Text": "To operate securely and serve you well, we gather several categories of information, including:",
+      "section1Item1Label": "Personal Details:",
+      "section1Item1Text": "Full name, email address, phone number, and billing or shipping address.",
+      "section1Item2Label": "Account Details:",
+      "section1Item2Text": "Login credentials, past orders, and saved account preferences.",
+      "section1Item3Label": "Payment Details:",
+      "section1Item3Text": "Billing information, handled securely through vetted third-party payment processors.",
+      "section1Item4Label": "Technical & Usage Data:",
+      "section1Item4Text": "IP address, browser and device type, pages viewed, and general interaction patterns on the site.",
+      "section1Item5Label": "Cookies & Similar Tools:",
+      "section1Item5Text": "Small tracking technologies that help us improve site performance, remember preferences, and personalize content.",
+      "section2Title": "How We Use Your Information",
+      "section2Intro": "We rely on the information collected above to:",
+      "section2Item1": "Process and fulfill your orders, including shipping and payment handling.",
+      "section2Item2": "Keep you informed on order status, account activity, and support requests.",
+      "section2Item3": "Refine and troubleshoot the website's functionality and overall experience.",
+      "section2Item4": "Send marketing and promotional messages, which you can opt out of at any time.",
+      "section2Item5": "Meet our legal obligations and safeguard our business interests.",
+      "section3Title": "How Your Information Is Shared",
+      "section3Intro": "Your data is never sold. We only disclose it in a narrow set of circumstances:",
+      "section3Item1Label": "Trusted Vendors:",
+      "section3Item1Text": "Partners who handle payment processing, order fulfillment, or technical support on our behalf.",
+      "section3Item2Label": "Legal Obligations:",
+      "section3Item2Text": "Where disclosure is mandated by law, a court order, or a regulatory body.",
+      "section3Item3Label": "Safety & Enforcement:",
+      "section3Item3Text": "To investigate fraud, uphold our terms, or protect the safety of our users and business.",
+      "section3Item4Label": "Outbound Links:",
+      "section3Item4Text": "Pages on our site may link elsewhere; we don't control and aren't responsible for how those third-party sites handle your data.",
+      "section4Title": "Protecting Your Data",
+      "section4Text1": "We rely on encryption, access controls, and secured servers to keep your personal information safe from unauthorized access.",
+      "section4Text2": "That said, no online system offers a perfect guarantee. Using our site means accepting the inherent risk that comes with transmitting data over the internet.",
+      "section5Title": "Your Privacy Rights",
+      "section5Intro": "You're entitled to:",
+      "section5Item1": "Review, update, or correct the personal data we hold about you.",
+      "section5Item2": "Ask us to permanently delete your information from our systems.",
+      "section5Item3": "Opt out of receiving marketing or promotional messages.",
+      "section5Item4": "Limit or object to how we process your data.",
+      "section5ContactText": "To act on any of these rights, reach out to:",
+      "section5EmailLabel": "Email:",
+      "section6Title": "Research-Use Product Notice",
+      "section6Intro": "Every product Helix Bio sells is intended for research use only, meaning:",
+      "section6Item1": "It is not designed or approved for human or veterinary use.",
+      "section6Item2": "It carries no intended diagnostic, therapeutic, or treatment purpose.",
+      "section6Item3": "Buyers alone are responsible for handling products in line with applicable laws and safety standards.",
+      "section7Title": "Policy Updates",
+      "section7Text1": "This Privacy Policy may be revised from time to time, with changes reflected on this page and a new effective date noted at the top.",
+      "section7Text2": "Checking back periodically helps you stay current on exactly how we handle and protect your information.",
+      "contactTitle": "Customer Support",
+      "contactIntro": "Questions about this Privacy Policy can be directed to:",
+      "orderQueriesLabel": "Order-related queries",
+      "supportIssuesLabel": "Support & issues",
+      "contactLabel": "Contact"
+    },
+    "refundPolicy": {
+      "metaTitle": "Refund Policy | Helix Bio",
+      "metaDescription": "Helix Bio's Refund Policy covers eligibility windows, non-refundable items, damaged orders, and the steps for requesting a refund on research products.",
+      "eyebrow": "Legal Information",
+      "titleLine1": "Helix Bio",
+      "titleLine2": "Refund Policy",
+      "effectiveDate": "Effective Date: August 2026",
+      "intro": "Helix Bio stands behind the research peptides, compounds, and biochemical products we ship. Before placing an order, take a moment to read this Refund Policy so you know exactly what to expect if something needs to be returned or refunded.",
+      "section1Title": "What This Policy Covers",
+      "section1Text": "This policy lays out when a refund or exchange applies to an order. Every item Helix Bio sells is intended strictly for research use — never for human or veterinary use, diagnosis, or treatment — and refunds exist to keep customers satisfied without compromising the integrity of the products themselves.",
+      "section2Title": "Refund Eligibility",
+      "section2Intro": "An order qualifies for a refund or exchange only when it meets all of the following:",
+      "section2Item1": "The item is still sealed, unused, and in its original packaging.",
+      "section2Item2": "You submit the request within 7 calendar days of delivery.",
+      "section2Item3": "You can provide your order number along with proof of purchase.",
+      "section2Important": "Important: given how sensitive and time-limited research peptides are, we're unable to accept returns once a product has been opened or partially used.",
+      "section3Title": "What Isn't Refundable",
+      "section3Intro": "A refund won't be issued for:",
+      "section3Item1": "Items purchased through a promotional campaign or affiliate discount.",
+      "section3Item2": "Products that have already been opened or used in any way.",
+      "section3Item3": "Products past their expiration date or mishandled after delivery.",
+      "section3Item4": "Bulk or custom orders explicitly marked as final sale.",
+      "section4Title": "How to Request a Refund",
+      "section4Intro": "Follow these steps to start a refund request:",
+      "section4Item1": "Reach our support team at <email>support@helixbiochem.com</email>, including your order number and the reason for the request.",
+      "section4Item2": "Send photos of the item and its packaging if we ask for them.",
+      "section4Item3": "We'll review the request and get back to you with a decision within 3–5 business days.",
+      "section4Item4": "Approved refunds go back to your original payment method, or to store credit, whichever you prefer.",
+      "section4Item5": "Once approved, expect the funds to post within 10 business days.",
+      "section4Tip": "Tip: double-check your order before checking out — once a research-use product is opened, it can't be resold, so returns after that point aren't possible.",
+      "section5Title": "Returns & Shipping",
+      "section5Item1": "Return shipping is on the customer unless the issue traces back to a shipping mistake or product damage on our end.",
+      "section5Item2": "Package returns securely to prevent damage in transit.",
+      "section5Item3": "Temperature-sensitive items need appropriate handling during return shipping to stay viable.",
+      "section6Title": "Damaged or Incorrect Items",
+      "section6Intro": "Received something damaged or wrong? Get in touch right away:",
+      "section6OrderQueriesLabel": "Order-related queries:",
+      "section6Text": "We'll set up a free replacement or refund once the issue is confirmed. Please flag any problem within 48 hours of delivery.",
+      "section7Title": "Legal Notes",
+      "section7Item1": "All items are sold strictly for laboratory and research use. Refund eligibility is void if a product is used for any human or veterinary purpose.",
+      "section7Item2": "Every refund request is subject to review and is granted at our discretion, consistent with applicable law.",
+      "section7Item3": "Helix Bio may revise this Refund Policy at any time without prior notice.",
+      "contactTitle": "Contact Us",
+      "contactIntro": "Reach out to our support team with any refund-related questions:",
+      "orderQueriesLabel": "Order-related queries",
+      "supportIssuesLabel": "Support & issues",
+      "contactLabel": "Contact",
+      "closingText1": "Whatever comes up, we're here to help you get it resolved and keep your research on track.",
+      "closingText2": "Bottom line: inspect orders on arrival, follow the handling guidance provided, and flag issues promptly — that's how we keep every research-use order safe, accurate, and accounted for."
+    },
+    "shippingPolicy": {
+      "metaTitle": "Shipping Policy | Helix Bio",
+      "metaDescription": "See how Helix Bio handles order processing, shipping methods, delivery timelines, packaging, and international restrictions for research-use products.",
+      "eyebrow": "Legal Information",
+      "titleLine1": "Helix Bio",
+      "titleLine2": "Shipping Policy",
+      "effectiveDate": "Effective Date: August 2026",
+      "intro": "Helix Bio ships research peptides, compounds, and biochemical products with the same care we put into sourcing them. This Shipping Policy walks through processing times, delivery windows, packaging, and what to expect once your order leaves our facility.",
+      "section1Title": "Processing Your Order",
+      "section1Text": "Once placed, orders go through a 1–3 business day review before shipping — our team confirms the details, checks stock, and runs a final quality check on every item.",
+      "section1Note": "Note: orders placed on a weekend or holiday enter processing on the following business day.",
+      "section2Title": "Shipping Options",
+      "section2Intro": "Every shipment moves through vetted, secure carriers. Depending on your order, you may see:",
+      "section2Item1Label": "Standard Delivery:",
+      "section2Item1Text": "Our default option — dependable and budget-friendly.",
+      "section2Item2Label": "Expedited Delivery:",
+      "section2Item2Text": "A quicker turnaround when your research timeline can't wait.",
+      "section2Item3Label": "Temperature-Controlled Delivery:",
+      "section2Item3Text": "Used for products that need protection from heat or cold in transit.",
+      "section2Note": "You'll receive tracking details by email the moment your order ships.",
+      "section3Title": "Delivery Windows",
+      "section3Intro": "Typical delivery timeframes run:",
+      "section3Item1": "Within the U.S.: 3–7 business days",
+      "section3Item2": "Outside the U.S.: 7–15 business days, depending on customs and local delivery conditions",
+      "section3Note": "Weather, remote addresses, and customs processing can all push these estimates out.",
+      "section4Title": "Shipping Rates",
+      "section4Intro": "Rates are calculated from your order's weight, the shipping method chosen, and where it's headed.",
+      "section4Item1": "Domestic standard shipping may run at a flat rate, or free above a certain order total.",
+      "section4Item2": "For international orders, any duties, taxes, or customs fees fall to the recipient.",
+      "section5Title": "How We Package Orders",
+      "section5Intro": "Each shipment is packed to lab standards to keep the contents stable in transit:",
+      "section5Item1": "Insulated materials and cold packs for anything temperature-sensitive.",
+      "section5Item2": "Discreet, tamper-resistant packaging for privacy and safety alike.",
+      "section5Item3": "Clear research-use-only labeling — never marketed for human or veterinary consumption.",
+      "section6Title": "Shipping Abroad & Restrictions",
+      "section6Intro": "We deliver to many countries, though a handful of destinations impose their own restrictions on research-use compounds.",
+      "section6Item1": "It's on the customer to know and follow the regulations in their own country.",
+      "section6Item2": "Customs holds or restrictions can add time to a delivery beyond our usual estimates.",
+      "section7Title": "If a Shipment Is Damaged or Lost",
+      "section7Intro": "Let us know within 48 hours of delivery if something arrives damaged or never shows up:",
+      "section7Item1": "Send your order number and photos of any damaged packaging.",
+      "section7Item2": "From there we'll sort out a replacement or refund, whichever fits the situation.",
+      "section8Title": "Legal & Handling Notes",
+      "section8Item1": "Everything we ship is strictly research-use only — not intended for human or veterinary use, diagnosis, or treatment.",
+      "section8Item2": "Helix Bio isn't liable for misuse of a product or for carrier delays beyond our control.",
+      "section8Item3": "This policy is subject to change; check back here periodically for the current version.",
+      "contactTitle": "Contact Us",
+      "contactIntro": "Questions about a shipment, delivery estimate, or tracking number:",
+      "orderQueriesLabel": "Order-related queries",
+      "supportIssuesLabel": "Support & issues",
+      "contactLabel": "Contact",
+      "closingText": "Our team is on hand to make sure every order gets to you safely and on schedule."
+    },
+    "medicalDisclaimer": {
+      "metaTitle": "Medical Disclaimer | Helix Bio Research Peptides",
+      "metaDescription": "Helix Bio's Medical Disclaimer explains that our research peptides are for laboratory use only, not medical advice, treatment, or human consumption.",
+      "eyebrow": "Legal Information",
+      "titleLine1": "Helix Bio",
+      "titleLine2": "Medical Disclaimer",
+      "effectiveDate": "Effective Date: August 2026",
+      "intro": "The information provided on this website, including any product descriptions, research summaries, or educational content, is for general informational purposes only. Nothing on this site constitutes medical advice, diagnosis, or treatment recommendations, and it should never be used as a substitute for guidance from a licensed physician or qualified healthcare provider.",
+      "section1Title": "Introduction & No Medical Advice",
+      "section1Text": "Helix Bio is a supplier of research compounds, not a healthcare provider, and no statement on this website should be interpreted as a claim to diagnose, treat, cure, or prevent any disease or medical condition. Always seek guidance from a licensed medical or scientific professional before acting on any information obtained from this site.",
+      "section2Title": "Product Usage Limitation",
+      "section2Text": "All products offered by Helix Bio are intended for controlled laboratory or research environments. Any use outside of this context, including self-administration, is strictly prohibited and may violate local, state, or federal laws and regulations. Our products are not drugs, medicines, dietary supplements, or food, and they are not intended for human or veterinary use. Users are responsible for ensuring that all handling, storage, and usage comply with applicable research protocols and safety standards in their jurisdiction.",
+      "section3Title": "Liability",
+      "section3Text": "Helix Bio assumes no responsibility or liability for the misuse of products, improper handling, or any adverse effects resulting from unauthorized use. By using this website and purchasing our products, you acknowledge and agree that Helix Bio is not liable for any direct, indirect, or consequential damages arising from your actions.",
+      "section4Title": "User Responsibility",
+      "section4Intro": "It is the responsibility of all users to:",
+      "section4Item1": "Follow all local, state, and federal laws regarding research chemicals.",
+      "section4Item2": "Use products only in designated research or laboratory settings.",
+      "section4Item3": "Exercise caution and adhere to proper safety protocols when handling compounds.",
+      "section4Item4": "Consult a qualified professional for any questions regarding research procedures, legal compliance, or scientific interpretation.",
+      "section5Title": "Regulatory Compliance",
+      "section5Text": "The statements on this website have not been evaluated by the U.S. Food and Drug Administration. Products sold by Helix Bio are offered strictly for research and laboratory purposes and are not intended to diagnose, treat, cure, or prevent any disease. Helix Bio is not a compounding pharmacy and does not operate as a chemical compounding facility as defined under Section 503A of the Federal Food, Drug, and Cosmetic Act. Helix Bio reserves the right to refuse service to any individual or organization where required to remain compliant with applicable law.",
+      "section6Title": "Accuracy of Information",
+      "section6Text": "We make reasonable efforts to keep product descriptions, research references, and site content accurate and current. However, research literature evolves, and Helix Bio does not guarantee that every statement on this site reflects the most recent findings. Users should independently verify information relevant to their own research before relying on it.",
+      "section7Title": "Changes to This Disclaimer",
+      "section7Text": "Helix Bio may update this Medical Disclaimer at any time to reflect changes in our products, applicable regulations, or business practices. The effective date at the top of this page shows when the current version took effect, and continued use of the site after an update constitutes acceptance of the revised disclaimer.",
+      "contactTitle": "Contact Us",
+      "contactIntro": "If you have questions regarding product use, safety or compliance, please contact our support team at:",
+      "orderQueriesLabel": "Order-related queries",
+      "supportIssuesLabel": "Support & issues",
+      "contactLabel": "Contact",
+      "closingText": "By accessing this website or purchasing our products, you agree to comply with this Medical Disclaimer and acknowledge that Helix Bio is not responsible for any misuse or unauthorized application of our research materials.",
+      "faqTitle": "Questions",
+      "faqDescription": "Quick answers about research use, liability, and compliance, written to be pulled directly into search results.",
+      "faqs": {
+        "researchUseOnlyMeaning": {
+          "question": "What does \"Research Use Only\" mean?",
+          "answer": "It means a product is sold exclusively for laboratory or scientific research and is not approved, tested, or intended for use in or on the human body."
+        },
+        "intendedForHumanConsumption": {
+          "question": "Are Helix Bio's products intended for human consumption?",
+          "answer": "No. Helix Bio's products are not drugs, supplements, or food, and they are not intended for human or veterinary use of any kind."
+        },
+        "isMedicalAdvice": {
+          "question": "Is the information on this website medical advice?",
+          "answer": "No. Content on this site is for general informational purposes only and should never replace guidance from a licensed physician or healthcare provider."
+        },
+        "whoCanPurchase": {
+          "question": "Who can purchase products from Helix Bio?",
+          "answer": "Products are intended for qualified researchers and laboratories operating in controlled research environments, and buyers must be of legal age in their jurisdiction."
+        },
+        "fdaRegulated": {
+          "question": "Are Helix Bio's products regulated by the FDA?",
+          "answer": "Statements on this website have not been evaluated by the FDA, and these products are not approved to diagnose, treat, cure, or prevent any disease."
+        },
+        "selfAdministration": {
+          "question": "Can I use these products for treatment or self-administration?",
+          "answer": "No. Self-administration or any use outside of a controlled research setting is strictly prohibited and may violate local, state, or federal law."
+        },
+        "misuseResponsibility": {
+          "question": "Who is responsible if a product is misused?",
+          "answer": "The end user assumes full responsibility for how a product is handled, stored, and used; Helix Bio is not liable for misuse or unauthorized application."
+        },
+        "contactAboutDisclaimer": {
+          "question": "How can I contact Helix Bio about this disclaimer?",
+          "answer": "Email support@helixbio.com for general questions or orders@helixbio.com for order-specific issues."
+        }
+      }
+    },
+    "termsAndConditions": {
+      "metaTitle": "Helix Bio Terms & Conditions | Research Peptides",
+      "metaDescription": "Read Helix Bio's Terms and Conditions covering orders, payments, shipping, and research-use policies for our peptide products. Clear terms, no surprises.",
+      "eyebrow": "Legal Information",
+      "titleLine1": "Helix Bio",
+      "titleLine2": "Terms and Conditions",
+      "effectiveDate": "Effective Date: August 2026",
+      "intro": "Welcome to Helix Bio. By accessing or using our website, purchasing products, or interacting with our services, you agree to be bound by the following Terms and Conditions. If you do not agree with any part of these terms, please discontinue use of the site and do not place an order. These Terms apply to every visitor, customer, and account holder on this website, and they work alongside our Privacy Policy and Shipping Policy, which are incorporated here by reference.",
+      "section1Title": "Acceptance of Terms",
+      "section1Text": "By accessing this website or purchasing any product from Helix Bio, you agree to be bound by these Terms and Conditions. These Terms govern your access, use, and purchase of our research-grade peptides, small molecules, and related compounds, all of which are intended strictly for laboratory and research purposes and are not for human or veterinary use, diagnosis, or treatment.",
+      "section2Title": "Research Use & Product Disclaimer",
+      "section2Intro": "All products sold through our website are strictly for research purposes and are not intended for diagnostic, therapeutic, or veterinary application. By purchasing or using our products, you confirm that:",
+      "section2Item1": "You understand and accept that products are not intended for human consumption or medical use.",
+      "section2Item2": "You will use all products solely in approved laboratory or experimental settings.",
+      "section2Item3": "You accept full responsibility for the safe handling, storage, and disposal of products.",
+      "section3Title": "Account & User Responsibilities",
+      "section3Item1": "Users must be 18 years or older, or of legal age in their jurisdiction, to create an account or place an order.",
+      "section3Item2": "Accurate and up-to-date personal and billing information must be provided at checkout.",
+      "section3Item3": "You are responsible for safeguarding your account credentials and for all activity that occurs under your account.",
+      "section3Item4": "Any misuse of your account or unauthorized purchases must be reported to our support team immediately.",
+      "section4Title": "Ordering & Payment",
+      "section4Item1": "Orders are considered accepted once payment has been successfully processed.",
+      "section4Item2": "We accept the payment methods listed on the checkout page at the time of your order.",
+      "section4Item3": "All prices are listed in USD unless otherwise stated.",
+      "section4Item4": "Orders may be canceled or modified prior to shipment, subject to Helix Bio's approval. If a pricing or listing error appears on the site, we reserve the right to correct it and to cancel any order placed at the incorrect price, with a full refund issued.",
+      "section5Title": "Shipping & Delivery",
+      "section5Item1": "We ship only to regions we are approved to serve; certain products may carry additional restrictions under local law.",
+      "section5Item2": "Shipping timelines are estimates and may vary due to carrier logistics, customs processing, or regional handling delays.",
+      "section5Item3": "Helix Bio is not responsible for delays, loss, or damage that occurs once a package has been handed to the carrier, though we're happy to help you file a claim.",
+      "section6Title": "Product Liability & Safety",
+      "section6Item1": "Products are not approved for human or veterinary use.",
+      "section6Item2": "Users assume all risk associated with the storage, handling, and research application of any product purchased.",
+      "section6Item3": "Helix Bio is not liable for misuse, accidental ingestion, or any application outside of approved laboratory or experimental use.",
+      "section7Title": "Intellectual Property",
+      "section7Item1": "All website content, product descriptions, images, branding, and design elements are the property of Helix Bio and are protected under applicable copyright and trademark law. You may not copy, reproduce, distribute, or otherwise exploit this content for commercial purposes without written permission.",
+      "section7Item2": "Unauthorized use of our branding, product names, or site materials is strictly prohibited.",
+      "section8Title": "User Conduct",
+      "section8Intro": "By using our website, you agree not to:",
+      "section8Item1": "Engage in any illegal activity through the use of our products or services.",
+      "section8Item2": "Distribute, resell, or apply research products for any unapproved or unlawful purpose.",
+      "section8Item3": "Violate any applicable federal, state, or local laws or regulations in your jurisdiction.",
+      "section8Note": "Violations of these conduct terms may result in order cancellation, account suspension, or legal action.",
+      "section9Title": "Limitation of Liability",
+      "section9Intro": "To the maximum extent permitted by law:",
+      "section9Item1": "Helix Bio is not liable for any damages resulting from misuse of our products, unauthorized applications, or errors on the website.",
+      "section9Item2": "Where liability cannot be excluded, our total liability for any product issue is limited to the purchase price of that product.",
+      "section10Title": "Indemnification",
+      "section10Intro": "You agree to indemnify and hold harmless Helix Bio, its employees, officers, and affiliates from any claims, damages, or expenses arising from:",
+      "section10Item1": "Improper use of our products.",
+      "section10Item2": "Violation of these Terms and Conditions.",
+      "section10Item3": "Breach of any local, state, or federal law related to product use.",
+      "section11Title": "Governing Law",
+      "section11Text": "These Terms are governed by the laws of the jurisdiction in which Helix Bio operates, without regard to conflict-of-law principles. Any disputes arising from these Terms will be resolved under those laws.",
+      "section12Title": "Privacy & Data Use",
+      "section12Text": "Your use of Helix Bio is also governed by our Privacy Policy, which explains how we collect, use, and protect your personal information. By using this site, you consent to the data practices described there.",
+      "section13Title": "Changes to These Terms",
+      "section13Text": "Helix Bio reserves the right to update or modify these Terms at any time. Changes take effect immediately upon posting to this page, and your continued use of the website or our products after that point constitutes acceptance of the updated Terms. We recommend checking this page periodically, particularly the effective date at the top, so you're always working from the current version.",
+      "contactTitle": "Customer Support",
+      "contactIntro": "If you have questions about these Terms and Conditions, please contact:",
+      "orderQueriesLabel": "Order-related queries",
+      "supportIssuesLabel": "Support & issues",
+      "contactLabel": "Contact",
+      "faqTitle": "Questions",
+      "faqDescription": "Quick answers about Helix Bio's site policies, written to be pulled directly into search results.",
+      "faqs": {
+        "humanUseApproved": {
+          "question": "Are Helix Bio's products approved for human use?",
+          "answer": "No. Every product on Helix Bio is sold strictly for research purposes and is not approved for human consumption, medical treatment, or veterinary use."
+        },
+        "cancelOrder": {
+          "question": "Can I cancel or change my order after I've paid?",
+          "answer": "Yes, as long as the order hasn't shipped yet. Reach out to our support team as soon as possible — once an order ships, it can no longer be modified or canceled."
+        },
+        "shipsInternationally": {
+          "question": "Does Helix Bio ship internationally?",
+          "answer": "Helix Bio ships only to regions we're approved to serve, and some products carry additional restrictions depending on local law. Availability is confirmed at checkout based on your shipping address."
+        },
+        "damagedOrDelayed": {
+          "question": "What happens if my order arrives damaged or delayed?",
+          "answer": "Contact support with your order number as soon as you notice an issue. While Helix Bio isn't liable for carrier delays or damage once a package ships, we'll help you file a claim with the carrier."
+        },
+        "ageRequirement": {
+          "question": "Do I need to be a certain age to order from Helix Bio?",
+          "answer": "Yes. You must be at least 18 years old, or the legal age of majority in your jurisdiction, to create an account or place an order."
+        },
+        "currency": {
+          "question": "What currency are Helix Bio's prices listed in?",
+          "answer": "All prices on the site are listed in US dollars (USD) unless a page specifically states otherwise."
+        },
+        "orderQuestionsContact": {
+          "question": "Who do I contact with questions about an order?",
+          "answer": "For order-specific questions, email orders@helixbio.com. For general support or account issues, email support@helixbio.com."
+        },
+        "termsChangeNotice": {
+          "question": "Can Helix Bio change these Terms without notice?",
+          "answer": "Helix Bio can update these Terms at any time, and changes take effect as soon as they're posted. Continuing to use the site or order products after an update means you accept the revised Terms — so it's worth checking the effective date occasionally."
+        }
+      }
+    },
+    "certificates": {
+      "metaTitle": "Certificate of 99% Purity Peptides | Lab-Tested COA Reports",
+      "metaDescription": "View certified lab reports for 99% purity peptides. Transparent COA documents ensuring quality, accuracy, and trusted research-grade standards.",
+      "eyebrow": "Verification",
+      "title": "Certificates of Analysis",
+      "description": "Transparency is not optional. We verify every batch through independent, third-party US laboratories using high-performance liquid chromatography (HPLC) and mass spectrometry (MS).",
+      "shopButton": "Shop Verified Products",
+      "libraryTitle": "Recent Testing Library",
+      "filterPlaceholder": "Filter by category",
+      "allCategories": "All",
+      "emptyLibrary": "COA documents are being added for our current catalogue. Check back soon, or contact us for a specific batch's Certificate of Analysis.",
+      "statBatchesLabel": "Batches Verified",
+      "statLabsValue": "3rd-Party",
+      "statLabsLabel": "US Laboratories",
+      "statTestedValue": "100%",
+      "statTestedLabel": "Independently Tested",
+      "tableProduct": "Product",
+      "tablePurity": "Purity",
+      "tableBatch": "Batch #",
+      "tableAnalyzed": "Analyzed",
+      "tableCoaDownload": "COA Download",
+      "pdfLabel": "PDF",
+      "availableOnRequest": "Available on request",
+      "purityLabel": "Purity",
+      "batchLabel": "Batch",
+      "analyzedLabel": "Analyzed",
+      "downloadCoa": "Download COA",
+      "requestCoa": "Request COA",
+      "processEyebrow": "The Process",
+      "processTitle": "About our testing methodology",
+      "processText1": "Every raw material we receive undergoes rigorous High-Performance Liquid Chromatography (HPLC) prior to compounding. This analytical technique separates, identifies, and quantifies each component in a mixture, ensuring absolute sequence accuracy.",
+      "processText2": "Following synthesis and lyophilization, random samples from the finished batch are submitted to independent third-party laboratories. They perform secondary HPLC alongside Mass Spectrometry (MS) to verify that the molecular weight perfectly matches the target peptide structure and that purity exceeds our 99% baseline standard.",
+      "ctaTitle": "Demanding a higher standard",
+      "ctaText": "Learn more about why rigorous independent testing is the only way to guarantee reproducible research results.",
+      "ctaButton": "Explore Our Science"
+    }
+  },
+  "affiliate": {
+    "landing": {
+      "metaTitle": "Peptide Affiliate Program | Earn 15% Commission | Helix Bio",
+      "metaDescription": "Earn 15% commission promoting Helix Bio research peptides, plus a 15% customer discount and monthly payouts. Apply to the affiliate program today.",
+      "heroJoinButtonLong": "Join the Affiliate Program Now",
+      "heroJoinButtonShort": "Join the Program",
+      "heroTitle": "Affiliates",
+      "introEyebrow": "Affiliate Program",
+      "introTitle": "Earn Passive Income Promoting Premium Research Peptides",
+      "introDescription": "The Helix Bio affiliate program is built for content creators, bloggers, and scientific-community voices who want a straightforward, well-tested way to earn from an audience already interested in research-grade peptides.",
+      "benefit1": "15% commission on every qualified sale",
+      "benefit2": "15% discount for your referred customers",
+      "benefit3": "Free, real-time commission tracking from day one",
+      "benefit4": "Monthly payouts via PayPal, Stripe, or bank transfer",
+      "benefit5": "7-day cookie duration for maximum time to convert",
+      "howItWorksTitle": "How It Works",
+      "howItWorksSubtitle": "Our affiliate program is designed with your success in mind, offering a straightforward way to earn from both sides of every referral.",
+      "commissionCardTitle": "Commission for You",
+      "commissionCardDesc": "Earn 15% commission on every qualified sale you refer — paid monthly, with no cap on how much you can earn.",
+      "commissionCardMicrocopy": "REVENUE SHARE",
+      "discountCardTitle": "Discount for Customers",
+      "discountCardDesc": "Your referred customers get 15% off their first order, which makes sharing your link an easy, low-friction recommendation rather than a hard sell.",
+      "discountCardMicrocopy": "INCREASE CONVERSIONS",
+      "stepsTitle": "Simple 4-Step Process to Start Earning",
+      "step1Title": "Join the Program",
+      "step1Desc": "Apply and get approved to join the affiliate program — there's no cost and no minimum audience size required.",
+      "step1Tag": "Step 1",
+      "step1Microcopy": "INSTANT APPROVAL",
+      "step2Title": "Get Your Links",
+      "step2Desc": "Access your unique referral link and personal discount code from your affiliate dashboard as soon as you're approved.",
+      "step2Tag": "Step 2",
+      "step2Microcopy": "CUSTOM CODES",
+      "step3Title": "Share Your Content",
+      "step3Desc": "Promote through your blog, social media, email list, or wherever your audience already spends time — following the program's content standards.",
+      "step3Tag": "Step 3",
+      "step3Microcopy": "GROW AUDIENCE",
+      "step4Title": "Earn Commissions",
+      "step4Desc": "Get paid monthly for every qualifying referral, tracked automatically through your link and discount code, with no cap on total earnings.",
+      "step4Tag": "Step 4",
+      "step4Microcopy": "GET PAID",
+      "commissionStructureTitle": "Competitive Commission Structure",
+      "commissionStructureDesc": "See how earnings scale with order size at the standard 15% commission rate.",
+      "commissionExampleTitle": "Commission Example",
+      "commissionExampleOrderValueLabel": "Customer Order Value",
+      "commissionExampleDiscountLabel": "Customer Discount (15%)",
+      "commissionExampleCustomerPaysLabel": "Customer Pays",
+      "commissionExampleYourCommissionLabel": "Your Commission (15% of $200)",
+      "monthlyEarningsTitle": "Realistic Monthly Earnings",
+      "monthlyEarningsAvgOrder": "@ $150 avg order",
+      "monthlyEarnings10Label": "10 referrals/mo",
+      "monthlyEarnings25Label": "25 referrals/mo",
+      "monthlyEarnings50Label": "50 referrals/mo",
+      "statCookieValue": "7-Day",
+      "statCookieLabel": "Cookie Duration",
+      "statCookieDesc": "If a customer clicks your link but buys within 7 days, you still receive full commission credit.",
+      "statDualValue": "Dual",
+      "statDualLabel": "Attribution System",
+      "statDualDesc": "Both referral link tracking and coupon-code tracking ensure you never miss a commission.",
+      "statRealValue": "Real",
+      "statRealLabel": "Time Dashboard",
+      "statRealDesc": "See total clicks, conversion rates, pending & approved commissions, and lifetime earnings instantly.",
+      "statMonthlyValue": "Monthly",
+      "statMonthlyLabel": "Payouts",
+      "statMonthlyDesc": "Reliable payouts at the end of every month with zero minimum threshold requirements.",
+      "managementToolsTitle": "Comprehensive Management Tools",
+      "tool1Title": "Real-Time Analytics",
+      "tool1Desc": "Track clicks, conversions, and earnings as they happen from a live affiliate dashboard, rather than waiting on a delayed report.",
+      "tool1Tag": "Tracking",
+      "tool1Microcopy": "LIVE DATA",
+      "tool2Title": "Link Management",
+      "tool2Desc": "Generate and organize custom referral links for different campaigns, content pieces, or platforms, all from one place.",
+      "tool2Tag": "Links",
+      "tool2Microcopy": "UNLIMITED",
+      "tool3Title": "Discount Code Management",
+      "tool3Desc": "Assign your personal discount code to referrals so customers can convert directly at checkout, even without clicking your link first.",
+      "tool3Tag": "Discounts",
+      "tool3Microcopy": "CUSTOMIZED",
+      "tool4Title": "Commission Reports & Resources",
+      "tool4Desc": "Download detailed commission statements and access approved marketing resources to support your promotion.",
+      "tool4Tag": "Reports",
+      "tool4Microcopy": "DOWNLOADABLE",
+      "whyChooseTitle": "Why Choose the Helix Bio Affiliate Program",
+      "why1Title": "High Conversion Rates",
+      "why1Desc": "The built-in 15% customer discount gives your audience an immediate reason to buy, improving conversion on every link you share.",
+      "why2Title": "15% Commission",
+      "why2Desc": "One of the more competitive commission rates in the research-chemical affiliate space, paid on every qualifying referral.",
+      "why3Title": "No Technical Setup",
+      "why3Desc": "No coding, tracking pixels, or technical experience required — your dashboard, links, and codes are ready as soon as you're approved.",
+      "why4Title": "Dual Tracking System",
+      "why4Desc": "Both your referral link and your personal discount code are tracked independently, so you're credited for a sale no matter which one a customer uses.",
+      "why5Title": "Real-Time Data",
+      "why5Desc": "Monitor clicks, conversions, and pending commissions as they happen, instead of waiting for a periodic report.",
+      "why6Title": "Growing Market",
+      "why6Desc": "Research peptides and the broader life-sciences supply space are an expanding market, giving your content room to keep finding new audience interest.",
+      "why7Title": "Premium Quality",
+      "why7Desc": "You're promoting a catalog backed by third-party HPLC and mass-spectrometry testing, which makes trust-based recommendations easier to stand behind.",
+      "why8Title": "Dedicated Support",
+      "why8Desc": "A dedicated affiliate support contact is available for questions about tracking, payouts, or approved content.",
+      "why9Title": "Scalable Income",
+      "why9Desc": "There's no cap on total commission — earnings can grow alongside your audience and content output, with no artificial ceiling built into the program.",
+      "prohibitedTitle": "Prohibited Practices",
+      "prohibited1": "No medical, dosing, or human-use claims about any research peptide in affiliate content",
+      "prohibited2": "No bodybuilding, athletic-performance, or weight-loss outcome framing",
+      "prohibited3": "No bidding on \"Helix Bio\" brand terms in paid search advertising",
+      "prohibited4": "No unauthorized use of the Helix Bio logo, trademark, or brand assets",
+      "prohibited5": "No guaranteed-outcome, cure, or treatment claims of any kind",
+      "contentStandardsTitle": "Content Standards",
+      "content1": "Maintain a research-focused, scientific tone consistent with the site's own RUO positioning",
+      "content2": "Disclose the affiliate relationship clearly, consistent with FTC guidance",
+      "content3": "Link only to current, approved product and category pages",
+      "content4": "Keep all messaging consistent with \"Research Use Only, not for human consumption\" labeling",
+      "content5": "Use only approved marketing assets and creatives provided through the affiliate dashboard",
+      "applyEyebrow": "Apply Now",
+      "applyTitle": "Partner Application",
+      "approvedTitle": "You are an active partner!",
+      "approvedDesc": "Your affiliate account is active and ready. Access your dashboard to view your links, stats, and payouts.",
+      "approvedButton": "Go to Dashboard",
+      "pendingTitle": "Application Under Review",
+      "pendingDesc": "Your application has been received and is currently under review by our team. We will notify you once it's approved.",
+      "rejectedTitle": "Application Status",
+      "rejectedDesc": "Unfortunately, your application to the affiliate program was not approved at this time.",
+      "formErrorGeneric": "Something went wrong.",
+      "errorAlreadyApplied": "You have already submitted an application.",
+      "errorAlreadyAffiliate": "You are already an affiliate.",
+      "errorMissingFields": "Please fill in all required fields.",
+      "errorUnexpected": "An unexpected error occurred.",
+      "basicInfoTitle": "Basic Information",
+      "displayNameLabel": "Display Name",
+      "displayNamePlaceholder": "John Doe or Channel Name",
+      "websiteUrlLabel": "Website URL (Optional)",
+      "primaryPlatformTitle": "Primary Platform",
+      "platformLabel": "Platform",
+      "platformPlaceholder": "Select platform",
+      "platformYoutube": "YouTube",
+      "platformInstagram": "Instagram",
+      "platformTiktok": "TikTok",
+      "platformTwitter": "Twitter / X",
+      "platformReddit": "Reddit",
+      "profileUrlLabel": "Profile URL / Username",
+      "audienceStrategyTitle": "Audience & Strategy",
+      "reachLabel": "Est. Monthly Reach",
+      "reachPlaceholder": "Select reach",
+      "reachLess1k": "Less than 1,000",
+      "reach1k10k": "1,000 - 10,000",
+      "reach10k100k": "10,000 - 100,000",
+      "reach100kPlus": "100,000+",
+      "nicheLabel": "Your Niche",
+      "nichePlaceholder": "e.g. Biohacking, Fitness",
+      "methodsLabel": "Promotion Methods",
+      "methodsPlaceholder": "How do you plan to promote our products?",
+      "termsLabel": "Accept terms and conditions",
+      "termsDesc": "I agree to the Affiliate Program Terms of Service and acknowledge that I will only promote products in accordance with legal and platform guidelines.",
+      "submitting": "Submitting...",
+      "submitNow": "Submit Now",
+      "faqTitle": "Questions",
+      "faqSubtitle": "(faq)",
+      "faq1Question": "How does the affiliate program work?",
+      "faq1Answer": "You apply, get approved, and receive a unique referral link and discount code from your dashboard. When someone orders using either one within the 7-day cookie window, you earn a 15% commission and they get 15% off.",
+      "faq2Question": "How do I get paid as an affiliate?",
+      "faq2Answer": "Approved commissions are paid out monthly via PayPal, Stripe, or bank transfer, whichever you set as your preferred payout method in the affiliate dashboard.",
+      "faq3Question": "When do I receive my commissions?",
+      "faq3Answer": "Commissions are calculated after the order's return window closes, then paid out on the program's regular monthly payout schedule rather than immediately at time of sale.",
+      "faq4Question": "Can beginners join this affiliate program?",
+      "faq4Answer": "Yes. There's no minimum audience size or prior affiliate experience required to apply; the application is reviewed for fit with the program's content standards, not follower count.",
+      "faq5Question": "How are referrals tracked?",
+      "faq5Answer": "Referrals are tracked two ways at once — through your unique link and through your personal discount code — so a sale is credited to you whether the customer clicks through or types the code in directly.",
+      "faq6Question": "What is cookie duration and why does it matter?",
+      "faq6Answer": "Cookie duration is how long a referral click stays credited to you after someone visits through your link. Ours is 7 days, meaning a purchase made within that window still counts as your referral even without the code.",
+      "faq7Question": "Are there any costs to join the affiliate program?",
+      "faq7Answer": "No. The affiliate program is free to join, with no application fee, subscription cost, or minimum spend required to start earning commission.",
+      "faq8Question": "What marketing methods can I use?",
+      "faq8Answer": "Blogs, email newsletters, and social media are all permitted, provided your content follows the program's content standards — research-focused, RUO-consistent language rather than medical or dosing claims.",
+      "faq9Question": "Can I use my own discount code?",
+      "faq9Answer": "Yes. Every approved affiliate receives a personal discount code that customers can apply directly at checkout, in addition to their unique referral link.",
+      "faq10Question": "What products should I promote as an affiliate?",
+      "faq10Answer": "You can promote any research peptide in the Helix Bio catalog, linking to specific product pages, category pages, or the shop as a whole, depending on what fits your audience.",
+      "faq11Question": "How do I maximize my affiliate earnings?",
+      "faq11Answer": "Consistent, research-focused content that highlights verified purity and testing tends to convert best. Using your dashboard's real-time data to see which links and content perform helps focus effort where it earns the most.",
+      "faq12Question": "What happens if someone uses another affiliate's code after clicking my link?",
+      "faq12Answer": "The dual tracking system credits the touchpoint that's actually used at checkout — if a different affiliate's code is applied at purchase, that affiliate receives the commission for that specific order.",
+      "faq13Question": "Can I promote on social media?",
+      "faq13Answer": "Yes, social media is an approved marketing channel, provided posts follow the same content standards as other channels — no prohibited claims, and no bidding on Helix Bio's brand name in paid search.",
+      "finalCtaTitle": "Start Earning 15% Commission Today",
+      "finalCtaDesc": "Join a growing network of partners earning recurring commission promoting research-grade peptides backed by verified purity and real testing data.",
+      "finalCtaQuestions": "Questions? Contact us at",
+      "finalCtaButton": "Apply for the Affiliate Program",
+      "finalCtaBullet1": "Earnings figures kept honest, never inflated",
+      "finalCtaBullet2": "Your own referral links and discount codes",
+      "finalCtaBullet3": "Commission tracking updated in real time",
+      "finalCtaBullet4": "Ready-to-use marketing assets provided",
+      "finalCtaBullet5": "A support team dedicated to affiliates",
+      "finalCtaBullet6": "Payouts issued monthly, from $30 up",
+      "footerResearchLabel": "Research Use Only:",
+      "footerResearchText": "All Helix Bio products are manufactured and sold exclusively for laboratory research purposes. Not for human consumption, medical treatment, or athletic performance enhancement. This affiliate program is for marketing research compounds only. Affiliates must comply with all applicable laws and regulations.",
+      "footerCopyright": "© 2026 Helix Bio. All rights reserved."
+    },
+    "applyForm": {
+      "genericError": "An error occurred while submitting your application.",
+      "displayNameLabel": "Display Name / Brand Name *",
+      "displayNamePlaceholder": "How should we refer to you?",
+      "websiteUrlLabel": "Website URL",
+      "promotionMethodsLabel": "How do you plan to promote us? *",
+      "promotionMethodsPlaceholder": "e.g. YouTube videos, Instagram posts, Blog reviews...",
+      "reachLabel": "Estimated Monthly Reach",
+      "reachLess1k": "Less than 1,000",
+      "reach1k10k": "1,000 - 10,000",
+      "reach10k100k": "10,000 - 100,000",
+      "reach100kPlus": "100,000+",
+      "nicheLabel": "Your Niche / Audience",
+      "nichePlaceholder": "e.g. Fitness, Self-improvement, Fashion...",
+      "whyJoinLabel": "Why do you want to partner with us?",
+      "socialLinksTitle": "Social Links (Optional)",
+      "instagramUrlLabel": "Instagram URL",
+      "youtubeUrlLabel": "YouTube URL",
+      "tiktokUrlLabel": "TikTok URL",
+      "twitterUrlLabel": "Twitter/X URL",
+      "agreeTermsLabel": "I agree to the Affiliate Terms and Conditions *",
+      "agreeTermsDesc": "By applying, you agree to comply with our promotional guidelines.",
+      "submittingButton": "Submitting Application...",
+      "submitButton": "Submit Application",
+      "errorMustBeLoggedIn": "You must be logged in to apply.",
+      "errorAlreadyApplied": "You have already submitted an application.",
+      "errorMissingFields": "Please fill in all required fields and agree to the terms."
+    },
+    "applyPage": {
+      "eyebrow": "Affiliates",
+      "title": "Partner Application",
+      "subtitle": "Apply to join the most rigorous peptide testing facility's affiliate program. We review applications weekly.",
+      "receivedTitle": "Application Received",
+      "receivedDesc": "Your application has been submitted successfully. Our team will review your details and be in touch soon.",
+      "returnButton": "Return to Affiliates",
+      "basicInfoTitle": "Basic Information",
+      "displayNameLabel": "Display Name",
+      "displayNamePlaceholder": "John Doe or Channel Name",
+      "websiteUrlLabel": "Website URL",
+      "primaryPlatformTitle": "Primary Platform",
+      "platformLabel": "Platform",
+      "platformPlaceholder": "Select platform",
+      "platformYoutube": "YouTube",
+      "platformInstagram": "Instagram",
+      "platformTiktok": "TikTok",
+      "platformTwitter": "Twitter / X",
+      "platformReddit": "Reddit",
+      "profileUrlLabel": "Profile URL",
+      "audienceStrategyTitle": "Audience & Strategy",
+      "reachLabel": "Estimated Monthly Reach",
+      "reachPlaceholder": "Select reach",
+      "reachLess1k": "Less than 1,000",
+      "reach1k10k": "1,000 - 10,000",
+      "reach10k100k": "10,000 - 100,000",
+      "reach100kPlus": "100,000+",
+      "nicheLabel": "Your Niche",
+      "nichePlaceholder": "e.g. Biohacking, Fitness, Longevity",
+      "methodsLabel": "Promotion Methods",
+      "methodsPlaceholder": "How do you plan to promote our products?",
+      "whyJoinLabel": "Why do you want to join?",
+      "whyJoinPlaceholder": "Tell us a little bit about yourself and why our lab is a good fit.",
+      "termsLabel": "Accept terms and conditions",
+      "termsDesc": "I agree to the Affiliate Program Terms of Service and acknowledge that I will only promote products in accordance with legal and platform guidelines.",
+      "submitButton": "Submit Application"
+    },
+    "sidebar": {
+      "defaultPartnerName": "Partner",
+      "currentStatus": "Current Status",
+      "tierSuffix": "Tier",
+      "nav": {
+        "overview": "Overview",
+        "links": "Links & Assets",
+        "conversions": "Conversions",
+        "payouts": "Payouts",
+        "settings": "Settings"
+      },
+      "backToAccount": "Back to Account",
+      "signOut": "Sign out",
+      "signOutDialogTitle": "Sign Out",
+      "signOutDialogDescription": "Are you sure you want to sign out of your account?",
+      "cancel": "Cancel",
+      "confirmSignOut": "Yes, Sign Out",
+      "dashboard": "Affiliate Dashboard"
+    },
+    "dashboard": {
+      "metaTitle": "Affiliate Dashboard | Helix Bio",
+      "metaDescription": "Track your referral clicks, conversions, and commissions in your Helix Bio affiliate dashboard.",
+      "overviewEyebrow": "Affiliate Dashboard",
+      "tierSuffix": "Tier",
+      "totalClicks": "Total Clicks",
+      "conversions": "Conversions",
+      "pendingCommission": "Pending Commission",
+      "totalPaidOut": "Total Paid Out",
+      "recentConversions": "Recent Conversions",
+      "viewAll": "View All",
+      "noConversionsYet": "No conversions recorded yet.",
+      "shareLinkToEarn": "Share your referral link to start earning!",
+      "orderNumber": "Order #{id}",
+      "statusPending": "pending",
+      "statusApproved": "approved",
+      "statusPaid": "paid",
+      "shareTools": "Share Tools",
+      "yourReferralLink": "Your Referral Link",
+      "copied": "Copied!",
+      "copy": "Copy",
+      "yourCouponCode": "Your Coupon Code (15% Off)",
+      "copyCode": "Copy Code"
+    },
+    "dashboardLayout": {
+      "title": "Affiliate Dashboard",
+      "defaultPartnerName": "Partner",
+      "metaTitle": "Affiliate Dashboard | Helix Bio",
+      "metaDescription": "Track your referral clicks, conversions, and commissions in your Helix Bio affiliate dashboard."
+    },
+    "conversions": {
+      "title": "Conversions",
+      "subtitle": "Track all orders generated from your referral links and coupon codes.",
+      "metaTitle": "Conversions | Affiliate Dashboard",
+      "metaDescription": "View all orders generated from your referral links and coupon codes.",
+      "emptyTitle": "No Conversions Yet",
+      "emptyDesc": "Share your links to start earning commissions!",
+      "orderIdLabel": "Order ID",
+      "dateLabel": "Date",
+      "orderValueLabel": "Order Value",
+      "commissionLabel": "Commission",
+      "statusPending": "pending",
+      "statusApproved": "approved",
+      "statusPaid": "paid",
+      "statusRejected": "rejected"
+    },
+    "links": {
+      "title": "Links & Creatives",
+      "subtitle": "Share your personalized links and codes to start earning commissions.",
+      "metaTitle": "Links & Creatives | Affiliate Dashboard",
+      "metaDescription": "Access your personalized referral links and coupon codes to start earning commissions.",
+      "referralLinkTitle": "Your Standard Referral Link",
+      "referralLinkDesc": "Share this link. Anyone who clicks it will be tracked as your referral.",
+      "yourReferralLink": "Your Referral Link",
+      "yourCouponCode": "Your Coupon Code",
+      "copied": "Copied!",
+      "copy": "Copy",
+      "couponCodeTitle": "Your Custom Coupon Code",
+      "couponCodeDesc": "Share this coupon code with your audience. They get <strong>{discount}% off</strong>, and you earn <strong>{commission}% commission</strong>.",
+      "codePlaceholder": "e.g. JOHN20",
+      "editCodeTitle": "Edit custom code",
+      "saving": "Saving",
+      "save": "Save",
+      "copyCode": "Copy Code",
+      "errorUpdateFailed": "Failed to update code.",
+      "errorUnexpected": "An unexpected error occurred.",
+      "errorUnauthorized": "Unauthorized. Please log in.",
+      "errorTooShort": "Coupon code must be at least 6 characters long.",
+      "errorTooLong": "Coupon code cannot exceed 20 characters.",
+      "errorInvalidChars": "Coupon code can only contain letters and numbers (no spaces or special characters).",
+      "errorNoActiveAccount": "You do not have an active affiliate account.",
+      "errorCodeTakenAffiliate": "This coupon code is already taken by another partner.",
+      "errorCodeTakenStore": "This coupon code is already in use by the store."
+    },
+    "payouts": {
+      "metaTitle": "Payouts | Affiliate Dashboard",
+      "metaDescription": "View your available balance and request payouts for your affiliate commissions.",
+      "availableBalanceTitle": "Available Balance",
+      "availableBalanceDesc": "Funds cleared and ready to withdraw.",
+      "dayHoldTitle": "{days}-Day Hold",
+      "dayHoldDesc": "Pending commissions from recent orders. They will automatically clear after {days} days.",
+      "requestPayoutTitle": "Request Payout",
+      "amountLabel": "Amount ($)",
+      "methodLabel": "Method",
+      "methodZelle": "Zelle",
+      "methodCashapp": "CashApp",
+      "methodApplePay": "Apple Pay",
+      "detailsLabel": "Payout Details (Phone/ID)",
+      "detailsPlaceholder": "e.g. $cashtag, Apple Pay #...",
+      "requestButton": "Request",
+      "payoutHistoryTitle": "Payout History",
+      "emptyTitle": "No Requests Yet",
+      "emptyDesc": "Submit your first payout request above.",
+      "dateLabel": "Date",
+      "amountColumnLabel": "Amount",
+      "statusPending": "pending",
+      "statusPaid": "paid",
+      "statusRejected": "rejected",
+      "statusProcessing": "processing",
+      "errorInvalidAmount": "Please enter a valid amount.",
+      "errorMinimumAmount": "Minimum payout amount is {amount}",
+      "errorExceedsBalance": "Amount exceeds your available balance.",
+      "errorMissingDetails": "Please provide your payout details.",
+      "successRequestSubmitted": "Payout request submitted successfully.",
+      "errorSubmitFailed": "Failed to submit request.",
+      "errorUnexpected": "An unexpected error occurred."
+    },
+    "dashboardSettings": {
+      "title": "Settings",
+      "subtitle": "Configure your payout preferences and account details.",
+      "metaTitle": "Settings | Affiliate Dashboard",
+      "metaDescription": "Configure your affiliate payout preferences and account details.",
+      "payoutMethodTitle": "Payout Method",
+      "payoutMethodDesc": "Configure how you want to receive your commissions.",
+      "preferredCurrencyLabel": "Preferred Currency",
+      "currencyUsd": "USD (US Dollar)",
+      "currencyBtc": "Bitcoin (BTC)",
+      "currencyEth": "Ethereum (ETH)",
+      "currencyUsdtErc20": "USDT (ERC-20)",
+      "currencyUsdtTrc20": "USDT (TRC-20)",
+      "currencyStoreCredit": "Store Credit",
+      "savePreferencesButton": "Save Preferences"
+    }
+  },
+  "content": {
+    "aboutPage": {
+      "metaTitle": "Synthetic Research Peptides & Lab Standards | Helix Bio",
+      "metaDescription": "Discover how Helix Bio manufactures synthetic research peptides with documented purity testing and strict RUO compliance. Learn our story and standards.",
+      "faqTitle": "Questions",
+      "faqDescription": "Common questions about research peptides, ordering, and lab standards",
+      "faqs": {
+        "trustworthySupplier": {
+          "question": "What makes a peptide supplier trustworthy?",
+          "answer": "A trustworthy peptide supplier documents every batch. That means a certificate of analysis for each lot, transparent sourcing of raw materials, and manufacturing practices that can be independently verified. Helix Bio treats documentation as a baseline requirement, not an optional extra, because research decisions depend on knowing exactly what a compound is and how it was tested."
+        },
+        "analyticalQuality": {
+          "question": "How does Helix Bio ensure analytical quality?",
+          "answer": "Every batch is evaluated against defined purity and identity specifications before it enters production, then verified again after synthesis using standard analytical methods such as HPLC and mass spectrometry. This two-stage check confirms that what leaves our facility matches what's stated on the label."
+        },
+        "laboratoryResearchOnly": {
+          "question": "Are your peptides designated for laboratory research only?",
+          "answer": "Yes. All Helix Bio products are synthetic compounds intended exclusively for laboratory and research applications. They are not manufactured, labeled, or sold for human or animal use, and they have not been evaluated by the FDA for any diagnostic, therapeutic, or preventive purpose."
+        },
+        "documentationProvided": {
+          "question": "What documentation is provided with products?",
+          "answer": "Each order can be paired with batch-specific documentation, including a certificate of analysis outlining purity, identity, and testing methodology. Researchers are encouraged to request this documentation before use so results can be properly attributed to a verified compound and lot."
+        }
+      }
+    },
+    "contactPage": {
+      "metaTitle": "Contact Helix Bio | Research Peptide Supplier Support",
+      "metaDescription": "Get in touch with Helix Bio for order support, bulk quotes, and lab inquiries. Call, email, or use our US contact form to reach our team today."
+    },
+    "contactForm": {
+      "errorRequiredFields": "Please fill out all required fields.",
+      "errorUnexpected": "An unexpected error occurred.",
+      "heading": "Get in touch with us",
+      "subheading": "Please complete the form below for non-advisory inquiries only.",
+      "nameLabel": "Name",
+      "namePlaceholder": "John Doe",
+      "emailLabel": "Email",
+      "emailPlaceholder": "john@laboratory.com",
+      "subjectLabel": "Subject",
+      "subjectPlaceholder": "Order Inquiry",
+      "messageLabel": "Message",
+      "messagePlaceholder": "How can we assist you today?",
+      "sending": "Sending...",
+      "sent": "Message Sent!",
+      "submit": "Submit Request"
+    },
+    "faqPage": {
+      "metaTitle": "Research Peptides FAQ | Purity & Compliance | Helix Bio",
+      "metaDescription": "Answers to common research peptide questions: purity testing, COA documentation, storage, and research-use-only compliance. Read the Helix Bio FAQ."
+    },
+    "aboutHero": {
+      "viewPeptidesShort": "View Peptides",
+      "viewPeptidesLong": "View Research Peptides",
+      "titleLine1": "ABOUT",
+      "titleLine2": "CERTIFIED AMINOS",
+      "subtitle": "Certified Aminos manufactures synthetic research peptides for laboratories and research teams across the United States. Since 2018, we've built the business around one standard: every compound we supply should come with documentation a researcher can actually verify — purity data, identity confirmation, and a clear research-use-only classification, batch after batch. We're not a pharmacy, and nothing we sell is intended for human or animal use. We're a supplier built around the idea that \"research-grade\" should describe a testing process, not just a label.",
+      "credentialIndex": "01",
+      "credentialTitle": "Independently Batch-Tested Since 2018",
+      "credentialDate": "EST. 2018",
+      "statFoundedLabel": "FOUNDED",
+      "statCatalogValue": "50+",
+      "statCatalogLabel": "RESEARCH PEPTIDES IN CATALOGUE",
+      "statCatalogBadge": "GROWING",
+      "statTestedValue": "100%",
+      "statTestedLabel": "BATCH-TESTED BEFORE RELEASE"
+    },
+    "complianceStatement": {
+      "officialNotice": "Please Read Carefully",
+      "titleLine1": "Compliance",
+      "titleLine2": "Statement",
+      "subtitle": "Our compliance position, stated plainly",
+      "statements": {
+        "researchOnly": "All products offered by Helix Bio are synthetic research peptides intended for laboratory research use only.",
+        "notForHumanAnimalUse": "Not for human or animal use.",
+        "notForDiagnosisTreatment": "Not for diagnosis, treatment, prevention, mitigation, or cure of any disease or condition, and not intended for administration of any kind.",
+        "notFdaApproved": "Products have not been evaluated or approved by the U.S. Food and Drug Administration (FDA)."
+      }
+    },
+    "missionPhilosophyJourney": {
+      "eyebrow": "Our Principles",
+      "title": "Principles & Values",
+      "card1Label": "Our Standard",
+      "card1Title": "Our Standard",
+      "card1Text": "Every batch is measured against the same purity and identity specification, with no exceptions for scale or speed.",
+      "card2Label": "Our Approach",
+      "card2Title": "Our Approach",
+      "card2Text": "Documentation ships with the product, not on request only, so verification never depends on asking twice.",
+      "card3Label": "Research Integrity",
+      "card3Title": "Research Integrity and Transparency",
+      "card3Text": "Our approach to research integrity starts with refusing to treat compliance as an afterthought. Every synthetic research peptide we supply is manufactured against defined purity and identity specifications, verified through independent analytical testing, and paired with documentation researchers can request before they ever place an order. We state our compliance position plainly rather than burying it in fine print — a supplier confident in its quality control shouldn't need to obscure how that quality control actually works. Transparency isn't a marketing claim here; it's the operating model."
+    },
+    "ourServices": {
+      "capabilitiesLabel": "What We Supply",
+      "titleLine1": "Synthetic Research",
+      "titleLine2": "Peptide Supply",
+      "card1Title": "Laboratory-Grade Excellence",
+      "card1Text": "Helix Bio supplies chemically pure synthetic research peptides built for advanced life-science research, from early-stage compound screening to established laboratory protocols. Purity and identity are confirmed for every batch, not sampled occasionally.",
+      "card2Title": "Exclusive Application",
+      "card2Text1": "Every product we offer is intended exclusively for laboratory research. We don't market, label, or frame our peptides for human or animal use at any point in the supply chain, from product description through fulfillment.",
+      "card2Text2": "No member of our team offers medical consultation, dosing guidance, or usage recommendations of any kind.",
+      "footerLabel": "Research Commitment",
+      "footerTitle": "Supporting Controlled Scientific Environments",
+      "footerText": "Helix Bio functions solely as a research material supplier. Operational support includes:",
+      "listItems": {
+        "orderProcessing": "Internal Processing",
+        "documentationAccess": "Documented Evaluation",
+        "productClassification": "Reserved Product Handling",
+        "sourcingInquiries": "Sourcing & Supply Questions"
+      }
+    },
+    "whyChooseUsGrid": {
+      "eyebrow": "Our Standards",
+      "title": "Research Focused Supply Practices",
+      "titleLine1": "Research Focused",
+      "titleLine2": "Supply Practices",
+      "subtitle": "Delivering high-purity, laboratory-grade research peptides, rigorously tested for research and analytical applications.",
+      "bgText": "ANALYTICAL PURITY",
+      "features": {
+        "analyticalEvaluation": {
+          "title": "Evaluation",
+          "description": "Every batch of raw material is inspected against defined purity and identity specifications before it's cleared for production, so nothing enters our supply chain without a documented baseline."
+        },
+        "clearClassification": {
+          "title": "Clear Classification",
+          "description": "Each compound is classified plainly as research use only, with labeling that reflects its intended laboratory application rather than implying a use it wasn't built for."
+        },
+        "controlledHandling": {
+          "title": "Controlled Handling",
+          "description": "Peptides move through storage, packaging, and shipping under conditions designed to protect stability, from lyophilization through temperature-aware fulfillment."
+        },
+        "operationalTransparency": {
+          "title": "Operational Transparency",
+          "description": "Batch and lot information stays traceable from synthesis through delivery, so a researcher can connect a specific order back to the testing that verified it."
+        }
+      }
+    },
+    "aboutMarquee": {
+      "items": ["RESEARCH-GRADE", "THIRD-PARTY TESTED", "US-BASED", "BATCH VERIFIED", "HPLC ANALYZED"]
+    },
+    "aboutWhyChooseUs": {
+      "eyebrow": "The Gold Standard",
+      "pillars": {
+        "synthesis": {
+          "title": "Rigorous Synthesis",
+          "desc": "Our proprietary synthesis protocols ensure unprecedented batch-to-batch consistency and stability for all research applications."
+        },
+        "purity": {
+          "title": "Purity at the core",
+          "desc": "We do not compromise. Every peptide is purified through advanced HPLC, guaranteeing 99%+ purity for reliable experimental results."
+        },
+        "innovation": {
+          "title": "American Innovation",
+          "desc": "Proudly synthesized and rigorously tested in our state-of-the-art US facilities, maintaining the highest quality control standards."
+        },
+        "transparency": {
+          "title": "Transparent Results",
+          "desc": "We believe in complete transparency. Batch-specific Certificates of Analysis (COAs) and Mass Spectrometry data are always accessible."
+        }
+      }
+    },
+    "aboutProcessTimeline": {
+      "eyebrow": "HOW WE WORK",
+      "title": "Our Process",
+      "steps": {
+        "sourcing": { "title": "Sourcing", "description": "Raw materials are sourced from vetted suppliers and inspected against defined purity and identity specifications before entering production." },
+        "synthesis": { "title": "Synthesis", "description": "Compounds are synthesized in-house under controlled conditions using proprietary protocols built for batch-to-batch consistency." },
+        "purification": { "title": "Purification", "description": "Every batch is purified through advanced HPLC to isolate the target compound from synthesis byproducts and residual solvents." },
+        "verification": { "title": "Verification", "description": "Independent mass spectrometry and HPLC testing confirm identity and purity before a batch is cleared for release." }
+      }
+    },
+    "aboutCta": {
+      "eyebrow": "Quality Standard",
+      "title": "Purity you can verify, not just trust",
+      "description": "Every batch we release is tested against a documented purity threshold before it ships — no exceptions.",
+      "statValue": "≥99%",
+      "statLabel": "Purity Threshold",
+      "ctaText": "Shop the Catalogue"
+    },
+    "aboutResources": {
+      "eyebrow": "Keep Learning",
+      "titleLine1": "Research",
+      "titleLine2": "Resources",
+      "items": {
+        "journal": { "title": "The Journal", "description": "Clinical updates and laboratory best practices from our research team.", "href": "/blog" },
+        "calculator": { "title": "Peptide Calculator", "description": "Dosing and reconstitution reference tools for laboratory use.", "href": "/peptide-calculator" },
+        "certificates": { "title": "Certificates of Analysis", "description": "Browse batch-specific COA documentation for every compound.", "href": "/certificates" }
+      }
+    },
+    "aboutHistory": {
+      "eyebrow": "Our History",
+      "title": "How we got here",
+      "milestones": {
+        "m1": { "year": "2018", "title": "Founded", "description": "Certified Aminos is established with a single standard: every compound ships with documentation a researcher can verify." },
+        "m2": { "year": "2020", "title": "Testing Partnership", "description": "Formalized third-party HPLC/mass-spectrometry testing for every production batch." },
+        "m3": { "year": "2022", "title": "Catalogue Expansion", "description": "Grew the catalogue to cover metabolic, recovery, and performance research compounds." },
+        "m4": { "year": "Today", "title": "50+ Compounds", "description": "A growing catalogue of research-grade peptides, all independently batch-tested before release." }
+      }
+    },
+    "aboutWordmark": {
+      "line1": "CERTIFIED",
+      "line2": "AMINOS"
+    },
+    "aboutContactCta": {
+      "title": "Have Questions?",
+      "description": "Our team is available to help with sourcing, documentation, or anything else you need before you order.",
+      "ctaText": "Contact Us"
+    },
+    "contactClient": {
+      "faqTitle": "Questions",
+      "faqSubtitle": "(faqs)",
+      "faqs": {
+        "contactInfo": {
+          "question": "What is the contact information for Helix Bio in the United States?",
+          "answer": "Reach us via email at <email>support@helixbiochem.com</email> for lab inquiries."
+        },
+        "usLabsContact": {
+          "question": "How can US laboratories contact Helix Bio for research peptide orders?",
+          "answer": "Use our US contact form, call during EST/PST hours, or chat for quick lab supply quotes, serving all 50 states."
+        },
+        "locationShipping": {
+          "question": "Where is Helix Bio located for US shipping and support?",
+          "answer": "We operate nationwide from US facilities, ensuring fast domestic shipping to labs in California, Texas, New York, and beyond."
+        },
+        "serviceHours": {
+          "question": "What are your customer service hours for US researchers?",
+          "answer": "Our US-based support team is available Monday through Friday, 9 AM to 5 PM EST, to assist with peptide specifications and bulk orders."
+        }
+      },
+      "supportEmailTitle": "Support Email",
+      "supportEmailDescription": "Drop us an email anytime for lab inquiries, product specifications, or general support.",
+      "supportEmailMicrocopy": "24/7 TICKET SYSTEM",
+      "ordersEmailTitle": "Orders Email",
+      "ordersEmailDescription": "For order tracking, bulk procurement, and wholesale account assistance.",
+      "ordersEmailMicrocopy": "PRIORITY HANDLING",
+      "supportPhoneTitle": "Support Phone",
+      "supportPhoneDescription": "Speak directly with our US-based support team for immediate research assistance.",
+      "supportPhoneMicrocopy": "9AM - 5PM EST",
+      "disclaimerLabel": "Disclaimer",
+      "disclaimerText": "This page is provided for general and operational inquiries related to <strong>orders, documentation, account access</strong> or <strong>website-related matters</strong>."
+    },
+    "contactHero": {
+      "getSupport": "Get Support",
+      "title": "Contact Us",
+      "subtitle": "Helix Bio supplies synthetic research peptides intended exclusively for laboratory and experimental research environments."
+    },
+    "faqHero": {
+      "viewPeptidesShort": "View Peptides",
+      "viewPeptidesLong": "View Research Peptides",
+      "titleLine1": "Frequently",
+      "titleLine2": "Asked Questions",
+      "subtitle": "Comprehensive answers regarding research peptides, analytical standards, ordering processes, and laboratory handling."
+    },
+    "faqClient": {
+      "cursorRead": "READ",
+      "categoriesLabel": "Categories",
+      "disclaimerLabel": "Research Disclaimer",
+      "disclaimerText": "All products across every category are <strong>for research use only</strong> and <strong>not for human or veterinary use, diagnosis or treatment</strong>."
+    },
+    "sharedFaqSection": {
+      "subtitleDefault": "(faqs)"
+    }
+  },
+  "calculator": {
+    "page": {
+      "metaTitle": "Peptide Calculator: Dosage & Reconstitution Tool | Helix Bio",
+      "metaDescription": "Use our free peptide calculator to get your exact dosage in seconds. Enter vial size, BAC water volume, and desired mcg - and see exactly how many units to draw.",
+      "faq": {
+        "q1Question": "How much bacteriostatic water do I add to a 5mg peptide vial?",
+        "q1Answer": "The standard ratio for a 5mg peptide vial is 2mL of bacteriostatic water. This creates a concentration of 2.5mg/mL, where every 0.1mL (10 units on a U-100 insulin syringe) delivers exactly 250mcg.",
+        "q2Question": "How long does a reconstituted peptide last in the refrigerator?",
+        "q2Answer": "Most peptide solutions reconstituted with bacteriostatic water remain stable for 28–30 days when stored at 2–8°C (standard refrigerator temperature).",
+        "q3Question": "Do you shake or roll a peptide vial after adding bacteriostatic water?",
+        "q3Answer": "Always roll, never shake. Shaking a peptide vial creates mechanical stress that can disrupt the amino acid chains in the compound."
+      },
+      "webApp": {
+        "name": "Peptide Reconstitution & Research Calculators Hub",
+        "description": "Free online research calculators including peptide reconstitution dosage, BMI/BMR, unit conversion, and Creatinine Clearance."
+      },
+      "breadcrumb": {
+        "home": "Home",
+        "calculator": "Peptide Calculator"
+      }
+    },
+    "hub": {
+      "tabReconstitution": "Reconstitution",
+      "tabBmiBmr": "BMI & BMR",
+      "tabUnitConverter": "Unit Converter",
+      "tabCreatinineClearance": "Creatinine Clearance"
+    },
+    "peptideReconstitution": {
+      "titlePeptide": "Peptide",
+      "titleReconstitution": "Reconstitution",
+      "guideLink": "Not sure how to use this? Read the guide ↓",
+      "resetCalculator": "Reset Calculator",
+      "requiredDraw": "Required Draw",
+      "drawVolume": "Draw Volume",
+      "concentration": "Concentration",
+      "doseExceedsCapacity": "Dose volume ({doseVolume}ml) exceeds syringe capacity ({syringeVolume}ml).",
+      "syringeCapacity": "Syringe Capacity",
+      "peptideInVial": "Peptide in Vial (MG/MCG)",
+      "bacteriostaticWater": "Bacteriostatic Water (ML)",
+      "targetDose": "Target Dose",
+      "disclaimer": "For theoretical research calibration only. Products are strictly for laboratory use and not intended for human consumption, diagnosis, or therapeutic purposes."
+    },
+    "bmiBmr": {
+      "titleBmiBmr": "BMI & BMR",
+      "titleCalculator": "Calculator",
+      "bodyMetricsDashboard": "Body Metrics Dashboard",
+      "bodyMassIndex": "Body Mass Index",
+      "basalMetabolicRate": "Basal Metabolic Rate",
+      "kcalDay": "Kcal / Day",
+      "categoryUnderweight": "Underweight",
+      "categoryNormal": "Normal weight",
+      "categoryOverweight": "Overweight",
+      "categoryObese": "Obese",
+      "measurementSystem": "Measurement System",
+      "systemImperial": "imperial",
+      "systemMetric": "metric",
+      "biologicalSex": "Biological Sex",
+      "genderMale": "male",
+      "genderFemale": "female",
+      "ageYears": "Age (Years)",
+      "height": "Height",
+      "weight": "Weight",
+      "status": "Status",
+      "ready": "Ready",
+      "mifflinDisclaimer": "Mifflin-St Jeor equation used for maximum basal accuracy."
+    },
+    "creatinineClearance": {
+      "titleCreatinine": "Creatinine",
+      "titleClearance": "Clearance",
+      "renalFunctionDashboard": "Renal Function Dashboard",
+      "estimatedCrCl": "Estimated CrCl (Cockcroft-Gault)",
+      "categoryNormalOrHigh": "Normal or High",
+      "categoryMildlyDecreased": "Mildly Decreased",
+      "categoryMildToModerateDecrease": "Mild to Moderate Decrease",
+      "categoryModerateToSevereDecrease": "Moderate to Severe Decrease",
+      "categorySeverelyDecreased": "Severely Decreased",
+      "categoryKidneyFailure": "Kidney Failure",
+      "measurementSystem": "Measurement System",
+      "systemImperial": "imperial",
+      "systemMetric": "metric",
+      "biologicalSex": "Biological Sex",
+      "genderMale": "male",
+      "genderFemale": "female",
+      "ageYears": "Age (Years)",
+      "weight": "Weight",
+      "serumCreatinine": "Serum Creatinine",
+      "status": "Status",
+      "ready": "Ready",
+      "aboutCockcroftGault": "About Cockcroft-Gault",
+      "cockcroftGaultDescription": "Estimates creatinine clearance as a proxy for Glomerular Filtration Rate (GFR). Used for drug dosing adjustments in clinical settings."
+    },
+    "unitConverter": {
+      "titleUnit": "Unit",
+      "titleConverter": "Converter",
+      "researchMeasurementsDashboard": "Research Measurements Dashboard",
+      "convertedResult": "Converted Result",
+      "conversionType": "Conversion Type",
+      "mass": "Mass",
+      "volume": "Volume",
+      "swapDirection": "Swap Direction",
+      "valueToConvert": "Value to Convert",
+      "quickReference": "Quick Reference",
+      "assumesU100Syringe": "*Assumes standard U-100 syringe"
+    },
+    "main": {
+      "hero": {
+        "ctaLong": "Use the Calculators",
+        "ctaShort": "Calculate",
+        "title": "Peptide Calculator: Reconstitution, Dosage & Syringe Conversion",
+        "description1": "The most precise peptide reconstitution calculator available for research use. Enter your vial size, bacteriostatic water volume, and target dose — and get your exact syringe draw in seconds.",
+        "description2": "Whether you're working with a 2mg, 5mg, or 10mg peptide vial, accurate reconstitution math is non-negotiable. This peptide calculator eliminates dosing errors by converting your vial concentration into precise syringe units — no manual math required. Trusted by researchers, used daily, and built for precision."
+      },
+      "requiredInputs": {
+        "eyebrow": "Required Inputs",
+        "title": "Calculator Parameters",
+        "vialSize": {
+          "title": "Vial Size (mg)",
+          "desc": "Total peptide weight in your vial (e.g., 5mg, 10mg)."
+        },
+        "bacWater": {
+          "title": "BAC Water (mL)",
+          "desc": "Volume of bacteriostatic water used for reconstitution."
+        },
+        "desiredDose": {
+          "title": "Desired Dose (mcg)",
+          "desc": "Your exact target research dose in micrograms."
+        }
+      },
+      "howToUse": {
+        "title": "How to Use the Reconstitution Calculator",
+        "subtitle": "This calculator is designed for researchers working with lyophilized (freeze-dried) peptide vials. Follow these three steps:",
+        "step1": {
+          "title": "Enter Vial Size",
+          "description": "Input the total peptide content of your vial in milligrams (mg). Common sizes include 2mg, 5mg, 10mg, and 30mg.",
+          "tag": "Step 1",
+          "microcopy": "PEPTIDE MASS"
+        },
+        "step2": {
+          "title": "Enter BAC Water",
+          "description": "Input how many milliliters (mL) of BAC water you used or plan to use when reconstituting. Standard practice is 1–2mL.",
+          "tag": "Step 2",
+          "microcopy": "DILUENT VOLUME"
+        },
+        "step3": {
+          "title": "Enter Desired Dose",
+          "description": "Input your target dose in micrograms (mcg). The calculator immediately outputs the exact units to draw on a U-100 syringe.",
+          "tag": "Step 3",
+          "microcopy": "TARGET DOSAGE"
+        },
+        "result": {
+          "label": "The Result",
+          "text": "A precise, error-free measurement <primary>for every session.</primary>"
+        }
+      },
+      "reconstitution": {
+        "eyebrow": "How It Works",
+        "title": "Peptide Reconstitution",
+        "understanding": {
+          "title": "Understanding Peptide Reconstitution",
+          "description": "Peptide reconstitution is the process of dissolving a lyophilized peptide powder into a liquid carrier — almost always bacteriostatic water (BAC water) — to create an injectable solution for research use."
+        },
+        "whyBacWater": {
+          "title": "Why BAC Water?",
+          "description": "Bacteriostatic water contains 0.9% benzyl alcohol, which inhibits microbial growth and extends the usable shelf life of your reconstituted peptide solution compared to sterile water alone. This makes it the gold standard carrier for peptide research."
+        },
+        "badgeTitle": "Research Grade",
+        "badgeSubtitle": "99%+ Verified Purity"
+      },
+      "process": {
+        "title": "The Reconstitution Process — Step by Step",
+        "steps": [
+          "Wipe the vial septa with an alcohol swab and allow to dry completely.",
+          "Draw the desired volume of BAC water into a sterile syringe.",
+          "Insert the needle at an angle along the inner wall of the vial — never aim directly at the peptide cake.",
+          "Allow the water to run slowly down the glass rather than jetting directly onto the powder.",
+          "Gently roll the vial between your palms until the powder is fully dissolved. Do not shake.",
+          "Inspect the solution — it should be clear to slightly opaque. Discard if visibly particulate or discolored."
+        ],
+        "criticalNote": "Critical note: Shaking a peptide vial can denature the amino acid chains. Always roll, never shake."
+      },
+      "mistakes": {
+        "title": "5 Mistakes to Avoid",
+        "subtitle": "Protect your compound integrity and ensure accurate dosing by avoiding these common reconstitution errors.",
+        "items": [
+          {
+            "title": "Shaking the vial instead of rolling.",
+            "desc": "Mechanical agitation can disrupt the amino acid chains. Always roll gently between your palms."
+          },
+          {
+            "title": "Injecting BAC water directly onto the peptide cake.",
+            "desc": "This causes localized denaturation. Angle the needle against the glass wall and let the water cascade down."
+          },
+          {
+            "title": "Confusing mg with mcg.",
+            "desc": "1mg = 1,000mcg. If your vial is 5mg and your dose is 250mcg, your dose is 0.25mg — not 250mg. Use the calculator to eliminate this conversion error."
+          },
+          {
+            "title": "Using the wrong syringe type.",
+            "desc": "U-40 and U-100 syringes have different unit values per mL. This is one of the most dangerous and common dosing errors. Always verify."
+          },
+          {
+            "title": "Reconstituting too far in advance.",
+            "desc": "Once reconstituted, peptide solutions should be used within the timeframe appropriate for your storage conditions. See our storage guide for details."
+          }
+        ]
+      },
+      "storage": {
+        "title": "Storage",
+        "subtitle": "Best Practices",
+        "lyophilized": {
+          "title": "Lyophilized (Unreconstituted) Peptides",
+          "description": "Store at –20°C (standard freezer) in a dark, dry location. Most lyophilized peptides maintain stability for 24–36 months under these conditions. Avoid repeated freeze-thaw cycles."
+        },
+        "reconstituted": {
+          "title": "Reconstituted Peptide Solutions",
+          "description": "Once mixed with BAC water, store in the refrigerator at 2–8°C (36–46°F). Avoid freezing reconstituted solutions, as this can cause aggregation. Most research-grade peptide solutions remain stable for 28–30 days under refrigeration with BAC water as the carrier."
+        },
+        "bullets": [
+          "Keep vials away from direct light (use amber vials or wrap in foil if needed)",
+          "Never store near heat sources or leave at room temperature for extended periods",
+          "Label each vial with the reconstitution date",
+          "Do not use solutions that appear cloudy, discolored, or particulate (beyond expected slight opacity)"
+        ]
+      },
+      "bacWaterTable": {
+        "title": "BAC Water Mixing Reference",
+        "intro": "The volume of bacteriostatic water you add directly determines the concentration of your solution — and therefore how many syringe units equal your target dose. Use this reference chart:",
+        "chooserHeading": "Choosing the Right BAC Water Volume",
+        "chooserBody": "More BAC water = lower concentration = more units per dose (easier to measure small doses accurately). Less BAC water = higher concentration = fewer units per dose (more practical for large doses, but precision decreases).",
+        "chooserBaseline": "For most research protocols with common dosing ranges of 100–500mcg, 2mL of BAC water per 5–10mg vial is the widely-used baseline.",
+        "headers": {
+          "vialSize": "Vial Size",
+          "bacWaterAdded": "BAC Water Added",
+          "concentration": "Concentration",
+          "doseEquals": "250mcg Dose ="
+        },
+        "footnote": "All unit values calculated for U-100 insulin syringes."
+      },
+      "math": {
+        "title": "Peptide Dosage Math",
+        "subtitle": "How the Calculation Works",
+        "formulaIntro": "The underlying formula this calculator uses is:",
+        "formula1": "Draw Volume (mL) = (Desired Dose in mcg ÷ Total Peptide in mcg) × Total BAC Water Volume (mL)",
+        "thenLabel": "Then:",
+        "formula2": "Units on U-100 syringe = Draw Volume (mL) × 100",
+        "exampleTitle": "Example Calculation",
+        "example": {
+          "vialLabel": "Vial:",
+          "vialValue": "5mg (= 5,000mcg)",
+          "bacWaterLabel": "BAC water:",
+          "desiredDoseLabel": "Desired dose:",
+          "drawVolumeLabel": "Draw volume:"
+        },
+        "footnote": "This is the same calculation the peptide dosage calculator performs automatically — eliminating human error from every research session."
+      },
+      "syringeConversion": {
+        "title": "Syringe Unit Conversion",
+        "subtitle": "For Peptide Research",
+        "intro": "Understanding your syringe markings is essential for accurate peptide dosing. The vast majority of peptide research uses U-100 insulin syringes, which contain <bold>100 units per 1mL</bold>.",
+        "referenceTitle": "U-100 Reference",
+        "headers": {
+          "drawVolume": "Draw Volume",
+          "unitsU100": "= Units on U-100"
+        },
+        "warningTitle": "U-100 vs. U-40 Syringes",
+        "warningText": "Important: U-40 syringes contain only 40 units per mL and are used primarily for veterinary insulin. If you accidentally use a U-40 syringe while dosing based on U-100 calculations, your draw will be <bold>2.5× higher</bold> than intended. Always confirm your syringe type."
+      },
+      "whyAccuracy": {
+        "title": "Why Accurate Peptide Calculation Matters for Research",
+        "subtitle": "Manual dosage math introduces variables that compromise research reproducibility. A dedicated peptide reconstitution calculator:",
+        "items": {
+          "item1": "Eliminates conversion errors between mg, mcg, mL, and syringe units",
+          "item2": "Standardizes protocols across research sessions and researchers",
+          "item3": "Saves time during setup without sacrificing precision",
+          "item4": "Supports documentation with consistent, repeatable measurements",
+          "item5": "Reduces waste by calculating exact draw volumes for your target dose"
+        },
+        "footnote": "For research requiring consistent inter-session dosing, calculator-assisted measurement is the most reliable method available without laboratory-grade volumetric equipment."
+      },
+      "precision": {
+        "title": "Precision in Peptide Research",
+        "subtitle": "Why Every Unit Matters",
+        "paragraph1": "Peptide research outcomes are sensitive to dosing variability. A difference of even <bold>10–20 units</bold> on a syringe can represent a <bold>25–50% deviation</bold> from your target dose depending on concentration.",
+        "paragraph2": "That deviation alters pharmacokinetic profiles in observational studies, reduces inter-session reproducibility, and compromises data integrity across longitudinal research.",
+        "paragraph3": "Using a validated peptide dosage calculator — and cross-referencing with a BAC water mixing chart — ensures your research sessions begin with the highest possible measurement accuracy."
+      },
+      "cta": {
+        "badge": "Quality Assurance",
+        "title": "Start Your Research With <primary>Verified-Purity</primary> Peptides",
+        "description": "Precise dosing calculations mean nothing if your peptide isn't what the label claims. Every product in our catalog is manufactured under strict quality standards and ships with third-party Certificate of Analysis (CoA) documentation — so your research data reflects compound behavior, not contamination.",
+        "browseCatalog": "Browse Catalog",
+        "viewCoaStandards": "View COA Standards"
+      },
+      "faq": {
+        "title": "Calculator FAQ",
+        "description": "Common questions about peptide reconstitution and dosing mathematics.",
+        "q1": {
+          "question": "How much bacteriostatic water do I add to a 5mg peptide vial?",
+          "answer": "The standard ratio for a 5mg peptide vial is 2mL of bacteriostatic water. This creates a concentration of 2.5mg/mL, where every 0.1mL (10 units on a U-100 insulin syringe) delivers exactly 250mcg. You can adjust this ratio — use our peptide calculator above to recalculate for any water volume."
+        },
+        "q2": {
+          "question": "How many units is 250mcg on an insulin syringe?",
+          "answer": "The number of units for a 250mcg dose depends on your reconstitution ratio. For a 5mg vial mixed with 2mL of BAC water, 250mcg equals exactly 10 units (0.1mL) on a U-100 syringe. Use the peptide dosage calculator to find the precise unit count for your specific vial and water volume."
+        },
+        "q3": {
+          "question": "What is the difference between a U-100 and U-40 syringe for peptide dosing?",
+          "answer": "A U-100 syringe contains 100 units per 1mL. A U-40 syringe contains only 40 units per 1mL. Nearly all peptide research sessions use U-100 syringes. Drawing the same number of markings on a U-40 syringe delivers 2.5 times more volume than a U-100 — a critical distinction that can lead to significant dosing errors if unrecognized."
+        },
+        "q4": {
+          "question": "Do you shake or roll a peptide vial after adding bacteriostatic water?",
+          "answer": "Always roll, never shake. Shaking a peptide vial creates mechanical stress that can disrupt the amino acid chains in the compound. Instead, gently roll the vial between your palms in a smooth, circular motion until the lyophilized powder is fully dissolved in the bacteriostatic water."
+        },
+        "q5": {
+          "question": "How long does a reconstituted peptide last in the refrigerator?",
+          "answer": "Most peptide solutions reconstituted with bacteriostatic water remain stable for 28–30 days when stored at 2–8°C (standard refrigerator temperature). After this window, degradation accelerates. For extended storage, some researchers prefer to keep unreconstituted lyophilized peptides frozen and reconstitute only what is needed per research session."
+        },
+        "q6": {
+          "question": "How much BAC water should I use for a 10mg peptide vial?",
+          "answer": "For a 10mg vial, adding 2mL of bacteriostatic water creates a 5mg/mL concentration, where a 250mcg dose equals 5 units on a U-100 syringe. Adding 5mL instead creates a 2mg/mL concentration, where the same dose equals 12.5 units — easier to measure precisely. Use the peptide reconstitution calculator above to find the optimal ratio for your dose range."
+        },
+        "q7": {
+          "question": "What is peptide reconstitution?",
+          "answer": "Peptide reconstitution is the process of dissolving a lyophilized (freeze-dried) peptide powder into a sterile liquid carrier — typically bacteriostatic water — to create an injectable solution ready for research use. The ratio of peptide to water determines the concentration of the final solution, which dictates how many syringe units correspond to any given dose."
+        },
+        "q8": {
+          "question": "How do I convert mcg to mg for peptide dosing?",
+          "answer": "To convert micrograms (mcg) to milligrams (mg), divide by 1,000. For example, 500mcg = 0.5mg. To convert mg to mcg, multiply by 1,000. So a 5mg vial contains 5,000mcg of peptide. This conversion is the foundation of all peptide dosage calculations."
+        },
+        "q9": {
+          "question": "Can I use sterile water instead of bacteriostatic water for peptides?",
+          "answer": "Sterile water can technically dissolve peptides, but it lacks the 0.9% benzyl alcohol preservative found in bacteriostatic water. Without this preservative, microbial growth is possible and the reconstituted solution's shelf life is dramatically reduced — typically to 24 hours. For any research session extending beyond a single day, bacteriostatic water is strongly preferred."
+        },
+        "q10": {
+          "question": "Why does the BAC water volume I add matter for dosing accuracy?",
+          "answer": "The volume of bacteriostatic water you add determines your peptide solution's concentration — and therefore how many syringe units correspond to your target dose. Using inconsistent water volumes across sessions creates inconsistent dosing, even with the same vial. Always note the exact water volume used and recalculate using the peptide calculator if you change your reconstitution ratio."
+        }
+      }
+    }
+  },
+  "blog": {
+    "metaTitle": "Research Peptides Blog | Scientific Insights & Laboratory Protocols",
+    "metaDescription": "Explore premium peptide research articles, laboratory protocols, reconstitution guides, and scientific breakthroughs from Helix Bio, a U.S. supplier of 99%+ pure research peptides.",
+    "hero": {
+      "title": "The U.S. Authority in Advanced Peptide Research & Scientific Insights",
+      "description": "Explore peer-reviewed peptide research, advanced laboratory protocols, reconstitution guides, and analytical testing standards curated for American scientific professionals. Trusted educational resources for 99%+ pure research compounds—strictly for in-vitro laboratory use only.",
+      "exploreLatestLong": "Explore Latest Articles",
+      "exploreLatestShort": "Explore Articles"
+    },
+    "compliance": {
+      "title": "Compliance",
+      "description": "All products offered by Helix Bio are strictly intended for in-vitro laboratory research and analytical applications only. Products are not approved for human consumption, therapeutic use, or medical application."
+    },
+    "latestArticle": "Latest Article",
+    "readArticle": "Read article",
+    "noArticlesFound": "No articles found",
+    "noArticlesDesc": "We couldn't find any articles in the \"{category}\" category.",
+    "viewAllArticles": "View all articles",
+    "loadMore": "Load More Posts",
+    "shareArticle": "Share article",
+    "linkCopied": "Link copied to clipboard!"
+  },
+  "notFound": {
+    "title": "Whoops! Looks like this page evaporated during our latest experiment. Don't worry, no researchers were harmed in the making of this 404 error. Let's get you back to the lab!",
+    "returnHome": "Return Home",
+    "browseShop": "Browse Shop",
+    "search": "Or search for what you need"
+  }
+}
