@@ -5,7 +5,10 @@ import configPromise from '@payload-config'
 // getPayload/configPromise are already imported above and reused across the new
 // failed-payment/refund/dispute handlers below.
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY as string, {
+// Constructing with a placeholder when the key is unset keeps this module importable at
+// build time (and in dev without Stripe configured) — real API calls below still fail
+// cleanly with a Stripe auth error instead of throwing at module load.
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || 'sk_unconfigured', {
   apiVersion: '2024-04-10' as any,
 })
 
