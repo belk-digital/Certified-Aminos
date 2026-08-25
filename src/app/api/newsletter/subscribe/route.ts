@@ -1,7 +1,10 @@
 import { NextResponse } from 'next/server'
 import { Resend } from 'resend'
 
-const resend = new Resend(process.env.RESEND_API_KEY)
+// Constructing with a placeholder when the key is unset keeps this module importable at
+// build time (and in dev without Resend configured) — real calls below still fail cleanly
+// through Resend's { error } response shape rather than throwing at module load.
+const resend = new Resend(process.env.RESEND_API_KEY || 're_unconfigured')
 
 export async function POST(req: Request) {
   try {
