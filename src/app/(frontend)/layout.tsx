@@ -10,8 +10,6 @@ import { SmoothScroll } from '@/components/shared/SmoothScroll'
 import { Toaster } from '@/components/ui/sonner'
 import { GlobalNavigationSpinner } from '@/components/shared/GlobalNavigationSpinner'
 import { CustomScrollbar } from '@/components/shared/CustomScrollbar'
-import { AgeGate } from '@/components/shared/AgeGate'
-import { HomePreloaderWrapper } from '@/components/home/HomePreloaderWrapper'
 import { getOgImageUrl } from '@/lib/utils'
 
 import '@/app/globals.css'
@@ -77,14 +75,13 @@ export default async function FrontendLayout({ children }: { children: React.Rea
         <AuthSessionProvider>
           <NextIntlClientProvider messages={messages}>
             <div className="min-h-screen bg-cream text-ink font-sans antialiased print:bg-white print:min-h-0">
-              <AgeGate />
               <React.Suspense fallback={null}>
                 <GlobalNavigationSpinner />
               </React.Suspense>
               <SmoothScroll>
                 <CustomScrollbar />
                 <LayoutClientWrapper header={<Header />} footer={<Footer />}>
-                  <HomePreloaderWrapper>{children}</HomePreloaderWrapper>
+                  {children}
                 </LayoutClientWrapper>
                 <Toaster />
               </SmoothScroll>
