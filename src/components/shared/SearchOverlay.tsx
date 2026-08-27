@@ -28,14 +28,7 @@ export function SearchOverlay({ isOpen, onClose, categories = [] }: SearchOverla
   const [query, setQuery] = useState('')
   const [results, setResults] = useState<any[]>([])
   const [isLoading, setIsLoading] = useState(false)
-  const [activeImageIndex, setActiveImageIndex] = useState(0)
   const inputRef = useRef<HTMLInputElement>(null)
-
-  const featuredImages = [
-    '/HelixBio Images/featured-research-1.webp',
-    '/HelixBio Images/featured-research-2.webp',
-    '/HelixBio Images/mutiple-vial-1.webp'
-  ]
 
   // Auto-focus input when opened
   useEffect(() => {
@@ -44,18 +37,8 @@ export function SearchOverlay({ isOpen, onClose, categories = [] }: SearchOverla
     } else {
       setQuery('')
       setResults([])
-      setActiveImageIndex(0)
     }
   }, [isOpen])
-
-  // Slider Interval
-  useEffect(() => {
-    if (!isOpen) return
-    const interval = setInterval(() => {
-      setActiveImageIndex((prev) => (prev + 1) % featuredImages.length)
-    }, 3000)
-    return () => clearInterval(interval)
-  }, [isOpen, featuredImages.length])
 
   // Handle escape key to close
   useEffect(() => {
@@ -226,29 +209,6 @@ export function SearchOverlay({ isOpen, onClose, categories = [] }: SearchOverla
                 <div className="pt-8 mt-8 border-t border-black/5 flex items-center gap-4 text-black/40 shrink-0">
                   <CornerDownLeft size={16} />
                   <span className="text-[10px] font-bold uppercase tracking-widest">{t('pressEnter')}</span>
-                </div>
-              </div>
-
-              {/* Right Column: Featured Banner (Desktop Only) */}
-              <div className="hidden lg:block w-[40%] bg-cream relative overflow-hidden border-l border-black/5">
-                <div className="absolute inset-0">
-                  {featuredImages.map((src, idx) => (
-                    <Image
-                      key={src}
-                      src={src}
-                      alt={`Featured Certified Aminos research peptide, image ${idx + 1}`}
-                      fill
-                      className={`object-cover scale-105 transition-opacity duration-1000 ${
-                        idx === activeImageIndex ? 'opacity-90' : 'opacity-0 z-[-1]'
-                      }`}
-                    />
-                  ))}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none" />
-                </div>
-                <div className="absolute bottom-0 left-0 w-full p-12 flex flex-col gap-4">
-                  <span className="px-3 py-1 bg-primary text-black text-[10px] font-bold uppercase tracking-[0.2em] rounded-full w-fit">Featured</span>
-                  <h2 className="text-4xl font-light text-white leading-tight">Advanced Research Compounds</h2>
-                  <p className="text-white/80 font-light text-sm max-w-sm">Explore our curated selection of high-purity peptides for your laboratory needs.</p>
                 </div>
               </div>
 
