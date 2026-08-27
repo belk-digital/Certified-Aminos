@@ -68,24 +68,24 @@ export function SettingsClient({ user }: AccountSettingsProps) {
       className="flex flex-col w-full max-w-[1000px] font-sans"
     >
       
-      {/* Massive Header */}
-      <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16 border-b border-gray-200 pb-12">
-        <div className="flex flex-col gap-2">
-          <h1 className="text-5xl md:text-7xl font-light text-black tracking-tight leading-none">
+      {/* Header */}
+      <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
+        <div className="flex flex-col gap-1">
+          <h1 className="text-4xl md:text-5xl font-bold text-ink tracking-tight">
             {t('title')}
           </h1>
-          <p className="text-gray-500 mt-2 max-w-lg text-sm md:text-base leading-relaxed font-light">{t('subtitle')}</p>
+          <p className="text-gray-500 mt-1 max-w-lg text-sm">{t('subtitle')}</p>
         </div>
       </div>
 
-      <div className="flex flex-col gap-16 md:gap-24">
-        
+      <div className="flex flex-col gap-6">
+
         {/* Personal Info Section */}
-        <motion.section 
+        <motion.section
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
-          className="flex flex-col md:flex-row gap-8 md:gap-24"
+          className="flex flex-col md:flex-row gap-8 md:gap-16 bg-white border border-gray-100 rounded-2xl p-6 md:p-8 shadow-[0_1px_2px_rgba(0,0,0,0.03)]"
         >
           <div className="flex flex-col gap-3 md:w-64 shrink-0">
             <h2 className="text-sm font-medium uppercase tracking-[0.2em] text-black">{t('personalInformation')}</h2>
@@ -96,18 +96,18 @@ export function SettingsClient({ user }: AccountSettingsProps) {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-10">
               <div className="flex flex-col gap-2">
                 <Label htmlFor="firstName" className="text-[10px] text-gray-400 font-medium uppercase tracking-[0.2em] font-heading">{t('firstName')}</Label>
-                <Input name="firstName" id="firstName" defaultValue={user.firstName || ''} className="h-12 bg-transparent border-0 border-b border-gray-200 rounded-none px-0 focus-visible:ring-0 focus-visible:border-black font-light text-base" />
+                <Input name="firstName" id="firstName" defaultValue={user.firstName || ''} className="h-12 bg-white border border-gray-200 rounded-xl px-4 focus-visible:ring-0 focus-visible:shadow-none focus-visible:border-navy-deep font-light text-base" />
               </div>
               <div className="flex flex-col gap-2">
                 <Label htmlFor="lastName" className="text-[10px] text-gray-400 font-medium uppercase tracking-[0.2em] font-heading">{t('lastName')}</Label>
-                <Input name="lastName" id="lastName" defaultValue={user.lastName || ''} className="h-12 bg-transparent border-0 border-b border-gray-200 rounded-none px-0 focus-visible:ring-0 focus-visible:border-black font-light text-base" />
+                <Input name="lastName" id="lastName" defaultValue={user.lastName || ''} className="h-12 bg-white border border-gray-200 rounded-xl px-4 focus-visible:ring-0 focus-visible:shadow-none focus-visible:border-navy-deep font-light text-base" />
               </div>
               <div className="flex flex-col gap-2 md:col-span-2">
                 <Label htmlFor="phone" className="text-[10px] text-gray-400 font-medium uppercase tracking-[0.2em] font-heading">{t('phoneNumber')}</Label>
-                <Input name="phone" id="phone" type="tel" defaultValue={user.phone || ''} className="h-12 bg-transparent border-0 border-b border-gray-200 rounded-none px-0 focus-visible:ring-0 focus-visible:border-black font-light text-base" />
+                <Input name="phone" id="phone" type="tel" defaultValue={user.phone || ''} className="h-12 bg-white border border-gray-200 rounded-xl px-4 focus-visible:ring-0 focus-visible:shadow-none focus-visible:border-navy-deep font-light text-base" />
               </div>
               <div className="md:col-span-2 mt-4 flex md:justify-end">
-                <button disabled={isPending} className="flex items-center gap-2 bg-black hover:bg-gray-800 text-white rounded-full px-8 py-3.5 text-[11px] font-bold uppercase tracking-[0.15em] transition-all disabled:opacity-50 font-heading w-full md:w-auto justify-center">
+                <button disabled={isPending} className="flex items-center gap-2 bg-navy-deep hover:bg-navy text-white rounded-full px-8 py-3.5 text-[11px] font-bold uppercase tracking-[0.15em] transition-all disabled:opacity-50 font-heading w-full md:w-auto justify-center">
                   <Save size={14} />
                   {isPending ? t('saving') : t('saveChanges')}
                 </button>
@@ -116,15 +116,12 @@ export function SettingsClient({ user }: AccountSettingsProps) {
           </form>
         </motion.section>
 
-        {/* Divider */}
-        <hr className="border-gray-100" />
-
         {/* Sign In & Security */}
-        <motion.section 
+        <motion.section
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="flex flex-col md:flex-row gap-8 md:gap-24"
+          className="flex flex-col md:flex-row gap-8 md:gap-16 bg-white border border-gray-100 rounded-2xl p-6 md:p-8 shadow-[0_1px_2px_rgba(0,0,0,0.03)]"
         >
           <div className="flex flex-col gap-3 md:w-64 shrink-0">
             <h2 className="text-sm font-medium uppercase tracking-[0.2em] text-black">{t('signInAndSecurity')}</h2>
@@ -146,14 +143,14 @@ export function SettingsClient({ user }: AccountSettingsProps) {
               <button
                 type="button"
                 onClick={() => setPasswordOpen(true)}
-                className="flex items-center justify-center gap-2 bg-transparent hover:bg-gray-50 border border-gray-200 hover:border-black text-black rounded-full px-8 py-3.5 text-[11px] font-bold uppercase tracking-[0.15em] transition-colors w-full sm:w-auto font-heading"
+                className="flex items-center justify-center gap-2 bg-transparent hover:bg-gray-50 border border-gray-200 hover:border-navy-deep text-black rounded-full px-8 py-3.5 text-[11px] font-bold uppercase tracking-[0.15em] transition-colors w-full sm:w-auto font-heading"
               >
                 {t('updatePassword')} <ExternalLink size={14} />
               </button>
               <button
                 type="button"
                 onClick={() => setEmailOpen(true)}
-                className="flex items-center justify-center gap-2 bg-transparent hover:bg-gray-50 border border-gray-200 hover:border-black text-black rounded-full px-8 py-3.5 text-[11px] font-bold uppercase tracking-[0.15em] transition-colors w-full sm:w-auto font-heading"
+                className="flex items-center justify-center gap-2 bg-transparent hover:bg-gray-50 border border-gray-200 hover:border-navy-deep text-black rounded-full px-8 py-3.5 text-[11px] font-bold uppercase tracking-[0.15em] transition-colors w-full sm:w-auto font-heading"
               >
                 {t('changeEmail')} <ExternalLink size={14} />
               </button>
@@ -161,15 +158,12 @@ export function SettingsClient({ user }: AccountSettingsProps) {
           </div>
         </motion.section>
 
-        {/* Divider */}
-        <hr className="border-gray-100" />
-
         {/* Preferences */}
-        <motion.section 
+        <motion.section
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
-          className="flex flex-col md:flex-row gap-8 md:gap-24"
+          className="flex flex-col md:flex-row gap-8 md:gap-16 bg-white border border-gray-100 rounded-2xl p-6 md:p-8 shadow-[0_1px_2px_rgba(0,0,0,0.03)]"
         >
           <div className="flex flex-col gap-3 md:w-64 shrink-0">
             <h2 className="text-sm font-medium uppercase tracking-[0.2em] text-black">{t('preferences')}</h2>
@@ -186,7 +180,7 @@ export function SettingsClient({ user }: AccountSettingsProps) {
                   startTransition(() => { savePreferences({ preferredLocale: value as 'en' | 'es' }) })
                 }}
               >
-                <SelectTrigger id="language" className="h-12 bg-transparent border-0 border-b border-gray-200 rounded-none px-0 focus:ring-0 focus-visible:ring-0 font-light text-base w-full">
+                <SelectTrigger id="language" className="h-12 bg-white border border-gray-200 rounded-xl px-4 focus:ring-0 focus-visible:ring-0 font-light text-base w-full">
                   <SelectValue placeholder={t('selectLanguage')} />
                 </SelectTrigger>
                 <SelectContent className="bg-white border-gray-100 rounded-xl shadow-xl">
@@ -197,22 +191,19 @@ export function SettingsClient({ user }: AccountSettingsProps) {
             </div>
             <div className="flex flex-col gap-2">
               <Label htmlFor="currency" className="text-[10px] text-gray-400 font-medium uppercase tracking-[0.2em] font-heading">{t('currency')}</Label>
-              <div id="currency" className="h-12 flex items-center bg-transparent border-b border-gray-200 px-0 text-base font-light text-gray-500">
+              <div id="currency" className="h-12 flex items-center bg-gray-50 border border-gray-200 rounded-xl px-4 text-base font-light text-gray-500">
                 {t('currencyUsd')}
               </div>
             </div>
           </div>
         </motion.section>
 
-        {/* Divider */}
-        <hr className="border-gray-100" />
-
         {/* Notifications */}
-        <motion.section 
+        <motion.section
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
-          className="flex flex-col md:flex-row gap-8 md:gap-24"
+          className="flex flex-col md:flex-row gap-8 md:gap-16 bg-white border border-gray-100 rounded-2xl p-6 md:p-8 shadow-[0_1px_2px_rgba(0,0,0,0.03)]"
         >
           <div className="flex flex-col gap-3 md:w-64 shrink-0">
             <h2 className="text-sm font-medium uppercase tracking-[0.2em] text-black">{t('notifications')}</h2>

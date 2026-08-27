@@ -3,7 +3,7 @@
 import React, { useState } from 'react'
 import { Link } from '@/i18n/navigation'
 import { usePathname } from 'next/navigation'
-import { LayoutDashboard, Package, MapPin, Heart, Settings, LogOut, ArrowLeft, Bot, Send, BarChart, ChevronRight } from 'lucide-react'
+import { LayoutDashboard, Package, MapPin, Heart, Settings, LogOut, BarChart, ChevronRight } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
 import { signOut } from 'next-auth/react'
@@ -17,13 +17,9 @@ const NAV_ITEMS = [
   { key: 'settings', href: '/account/settings', icon: Settings },
 ]
 
-export function AccountSidebar({ 
-  userName = 'User', 
-  hbPoints = 0,
-  affiliateStatus = 'none' 
-}: { 
-  userName?: string
-  hbPoints?: number
+export function AccountSidebar({
+  affiliateStatus = 'none'
+}: {
   affiliateStatus?: 'none' | 'pending' | 'approved' | 'rejected' | 'suspended'
 }) {
   const t = useTranslations('account.sidebar')
@@ -35,78 +31,67 @@ export function AccountSidebar({
     ...(affiliateStatus === 'approved' ? [{ key: 'affiliateDashboard', href: '/affiliates/dashboard', icon: BarChart }] : [])
   ]
 
-  const userInitial = userName.charAt(0).toUpperCase()
-
   return (
-    <aside className="w-full h-full flex flex-col gap-6 p-6 lg:py-10 lg:px-6">
-      
-      {/* Profile Header */}
-      <div className="flex flex-col gap-4">
-        <Link href="/shop" className="text-[10px] font-bold text-gray-400 hover:text-[#1e5661] flex items-center gap-1.5 uppercase tracking-widest transition-colors mb-2 w-max font-heading">
-          <ArrowLeft size={12} />
-          Back to Store
-        </Link>
-        
-        <div className="flex items-center gap-4">
-          <div className="relative shrink-0">
-            <div className="absolute inset-0 bg-gradient-to-tr from-[#1e5661] to-[#84d0d9] rounded-2xl blur-md opacity-40"></div>
-            <div className="relative w-14 h-14 rounded-2xl bg-gradient-to-tr from-[#1e5661] to-[#2b646c] flex items-center justify-center text-white text-2xl font-bold font-heading shadow-lg border border-white/20">
-              {userInitial}
-            </div>
-          </div>
-          <div className="flex flex-col">
-            <h2 className="text-xl font-bold text-black font-heading truncate max-w-[150px] tracking-tight">{userName}</h2>
-            <span className="text-[11px] font-bold uppercase tracking-widest text-gray-400 font-heading">HelixBio Member</span>
-          </div>
-        </div>
-      </div>
+    <aside className="w-full min-h-full flex flex-col gap-4 p-5 lg:py-7 lg:px-5">
 
-      <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent my-2" />
+      {/* Logo */}
+      <Link href="/" className="flex items-center gap-2.5">
+        <div className="w-8 h-8 rounded-lg bg-white flex items-center justify-center shrink-0 border border-white">
+          <span className="text-navy-deep font-heading text-xs font-bold">CA</span>
+        </div>
+        <span className="font-heading text-[13px] font-bold uppercase tracking-wide text-white leading-tight">
+          Certified
+          <br />
+          Aminos
+        </span>
+      </Link>
+
+      <div className="w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
 
       {/* Navigation */}
       <nav className="flex flex-col gap-1.5 relative z-10">
         {activeNavItems.map((item) => {
-          const isActive = item.href === '/account' 
-            ? pathname === '/account' 
+          const isActive = item.href === '/account'
+            ? pathname === '/account'
             : pathname.startsWith(item.href)
-            
+
           const Icon = item.icon
-          
+
           return (
-            <Link 
-              key={item.key} 
+            <Link
+              key={item.key}
               href={item.href}
               onClick={() => setOpen(false)}
               className={`
-                relative flex items-center justify-start gap-4 px-4 py-3 rounded-2xl text-[11px] font-bold uppercase tracking-[0.1em] transition-all duration-300 group
-                ${isActive ? 'text-white' : 'text-gray-500 hover:text-[#1e5661]'}
+                relative flex items-center justify-start gap-4 px-4 py-2.5 rounded-2xl text-[11px] font-bold uppercase tracking-[0.1em] transition-all duration-300 group
+                ${isActive ? 'text-navy-deep' : 'text-white/50 hover:text-white'}
               `}
             >
               {isActive && (
-                <motion.div 
+                <motion.div
                   layoutId="active-nav-bg"
-                  className="absolute inset-0 bg-gradient-to-r from-[#1e5661] to-[#2b646c] rounded-2xl shadow-md z-0 border border-[#1e5661]/50"
+                  className="absolute inset-0 bg-white rounded-2xl shadow-md z-0"
                   initial={false}
                   transition={{ type: "spring", stiffness: 400, damping: 30 }}
                 />
               )}
               {!isActive && (
-                <div className="absolute inset-0 bg-gray-50/0 group-hover:bg-gray-50 rounded-2xl z-0 transition-colors duration-300" />
+                <div className="absolute inset-0 bg-white/0 group-hover:bg-white/5 rounded-2xl z-0 transition-colors duration-300" />
               )}
-              
-              <Icon size={16} className={`relative z-10 transition-transform duration-300 ${isActive ? 'text-white scale-110' : 'group-hover:scale-110'}`} />
+
+              <Icon size={16} className={`relative z-10 transition-transform duration-300 ${isActive ? 'text-navy-deep scale-110' : 'group-hover:scale-110'}`} />
               <span className="relative z-10 font-heading">{t(`nav.${item.key}`)}</span>
             </Link>
           )
         })}
 
-        <div className="w-full h-px bg-gray-100 my-4" />
+        <div className="w-full h-px bg-white/10 my-2" />
 
         {/* Sign out */}
         <Dialog open={open} onOpenChange={setOpen}>
           <DialogTrigger asChild>
-            <button className="relative flex items-center justify-start gap-4 px-4 py-3 rounded-2xl text-[11px] font-bold uppercase tracking-[0.1em] text-red-500/80 hover:text-red-600 transition-all duration-300 group bg-transparent w-full">
-              <div className="absolute inset-0 bg-red-50/0 group-hover:bg-red-50 rounded-2xl z-0 transition-colors duration-300" />
+            <button className="relative flex items-center justify-start gap-4 px-4 py-2.5 rounded-2xl text-[11px] font-bold uppercase tracking-[0.1em] text-red-400 hover:text-red-300 transition-all duration-300 group bg-transparent w-full">
+              <div className="absolute inset-0 bg-red-500/0 group-hover:bg-red-500/10 rounded-2xl z-0 transition-colors duration-300" />
               <LogOut size={16} className="relative z-10 transition-transform duration-300 group-hover:-translate-x-1" />
               <span className="relative z-10 font-heading">{t('signOut')}</span>
             </button>
@@ -140,49 +125,24 @@ export function AccountSidebar({
         </Dialog>
       </nav>
 
-      <div className="mt-auto pt-6 flex flex-col gap-4">
-        
-        {/* HB Points Mini Card */}
-        <div className="mt-6 mx-2 mb-4">
-          <div className="bg-[#fbfcff] rounded-xl p-4 border border-gray-100 flex items-center justify-between group">
-            <div className="flex flex-col">
-              <span className="text-[10px] font-bold uppercase tracking-widest text-gray-400 font-heading">HB Points</span>
-              <div className="flex items-center gap-1 mt-1">
-                <span className="text-2xl font-bold text-black font-heading tracking-tight">{Number(hbPoints).toFixed(2)}</span>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div className="pt-2 flex flex-col gap-3">
 
         {/* Affiliate Promo or Dashboard */}
         {affiliateStatus !== 'approved' && (
-          <Link href="/affiliates" className="group relative bg-gradient-to-br from-[#1e5661] to-[#112a2e] rounded-2xl p-5 overflow-hidden shadow-lg border border-[#2b646c]/50">
-            <div className="absolute inset-0 bg-[url('https://res.cloudinary.com/denskvdyt/image/upload/v1783098784/partner_program_ub13f7.webp')] bg-cover bg-right opacity-20 mix-blend-screen group-hover:scale-105 transition-transform duration-700" />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#112a2e] to-transparent opacity-80" />
-            
+          <Link href="/affiliates" className="group relative bg-gradient-to-br from-navy to-[#050a14] rounded-2xl p-4 overflow-hidden shadow-lg border border-white/10">
+            <div className="absolute inset-0 bg-gradient-to-t from-[#050a14] to-transparent opacity-80" />
+
             <div className="relative z-10 flex flex-col gap-2">
-              <span className="text-[9px] font-bold text-[#84d0d9] tracking-[0.2em] font-heading uppercase">{t('partnerProgram')}</span>
-              <p className="text-[13px] font-bold text-white leading-snug font-heading tracking-wide">
-                Earn commissions by sharing HelixBio
+              <span className="text-[9px] font-bold text-white/60 tracking-[0.2em] font-heading uppercase">{t('partnerProgram')}</span>
+              <p className="text-[13px] font-bold text-white leading-snug font-sans tracking-wide">
+                Earn commissions by sharing Certified Aminos
               </p>
-              <div className="mt-2 inline-flex items-center gap-1.5 text-[10px] font-bold text-white uppercase tracking-widest group-hover:text-[#84d0d9] transition-colors font-heading">
+              <div className="mt-2 inline-flex items-center gap-1.5 text-[10px] font-bold text-white uppercase tracking-widest group-hover:text-white/70 transition-colors font-heading">
                 Apply Now <ChevronRight size={12} className="group-hover:translate-x-1 transition-transform" />
               </div>
             </div>
           </Link>
         )}
-        
-        {/* Help Input */}
-        <div className="relative">
-          <input
-            type="text"
-            placeholder={t('askMeAnything')}
-            className="w-full bg-white border border-gray-100 rounded-full px-5 py-3.5 text-[11px] focus:outline-none focus:ring-2 focus:ring-[#84d0d9]/30 focus:border-[#84d0d9] pr-12 font-heading shadow-[0_2px_10px_rgb(0,0,0,0.02)] transition-all placeholder:text-gray-400"
-          />
-          <button className="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-gray-50 flex items-center justify-center text-gray-400 hover:text-[#1e5661] hover:bg-[#84d0d9]/10 transition-colors">
-            <Send size={12} />
-          </button>
-        </div>
       </div>
     </aside>
   )

@@ -96,20 +96,20 @@ export function AddressesClient({ addresses }: AccountAddressesProps) {
       className="flex flex-col w-full font-sans"
     >
       
-      {/* Massive Header */}
-      <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-12 border-b border-gray-200 pb-12">
-        <div className="flex flex-col gap-2">
-          <h1 className="text-5xl md:text-7xl font-light text-black tracking-tight leading-none">
+      {/* Header */}
+      <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
+        <div className="flex flex-col gap-1">
+          <h1 className="text-4xl md:text-5xl font-bold text-ink tracking-tight">
             {t('title')}
           </h1>
-          <p className="text-gray-500 mt-2 max-w-lg text-sm md:text-base leading-relaxed font-light">{t('subtitle')}</p>
+          <p className="text-gray-500 mt-1 max-w-lg text-sm">{t('subtitle')}</p>
         </div>
 
         <Sheet open={open} onOpenChange={handleOpenChange}>
           <SheetTrigger asChild>
-            <button 
+            <button
               onClick={() => setEditingId(null)}
-              className="mt-4 md:mt-0 flex items-center gap-2 bg-black hover:bg-gray-800 text-white rounded-full px-8 py-3.5 text-[11px] font-bold uppercase tracking-[0.15em] transition-all font-heading"
+              className="mt-4 md:mt-0 flex items-center gap-2 bg-navy-deep hover:bg-navy text-white rounded-full px-8 py-3.5 text-[11px] font-bold uppercase tracking-[0.15em] transition-all font-heading"
             >
               <Plus size={16} />
               {t('addNewAddress')}
@@ -137,35 +137,35 @@ export function AddressesClient({ addresses }: AccountAddressesProps) {
                   {/* Clean Inputs */}
                   <div className="flex flex-col gap-2">
                     <Label htmlFor="firstName" className="text-[10px] text-gray-400 font-medium uppercase tracking-[0.2em] font-heading">{t('firstName')}</Label>
-                    <Input name="firstName" id="firstName" defaultValue={editingAddress?.firstName || ''} required placeholder={t('firstName')} className="h-12 bg-transparent border-0 border-b border-gray-200 rounded-none px-0 focus-visible:ring-0 focus-visible:border-black font-light text-base" />
+                    <Input name="firstName" id="firstName" defaultValue={editingAddress?.firstName || ''} required placeholder={t('firstName')} className="h-12 bg-transparent border-0 border-b border-gray-200 rounded-none px-0 focus-visible:ring-0 focus-visible:border-navy-deep font-light text-base" />
                   </div>
                   <div className="flex flex-col gap-2">
                     <Label htmlFor="lastName" className="text-[10px] text-gray-400 font-medium uppercase tracking-[0.2em] font-heading">{t('lastName')}</Label>
-                    <Input name="lastName" id="lastName" defaultValue={editingAddress?.lastName || ''} required placeholder={t('lastName')} className="h-12 bg-transparent border-0 border-b border-gray-200 rounded-none px-0 focus-visible:ring-0 focus-visible:border-black font-light text-base" />
+                    <Input name="lastName" id="lastName" defaultValue={editingAddress?.lastName || ''} required placeholder={t('lastName')} className="h-12 bg-transparent border-0 border-b border-gray-200 rounded-none px-0 focus-visible:ring-0 focus-visible:border-navy-deep font-light text-base" />
                   </div>
                   <div className="col-span-1 sm:col-span-2 flex flex-col gap-2">
                     <Label htmlFor="line1" className="text-[10px] text-gray-400 font-medium uppercase tracking-[0.2em] font-heading">{t('streetAddress')}</Label>
-                    <Input name="line1" id="line1" defaultValue={editingAddress?.line1 || ''} required placeholder={t('streetAddress')} className="h-12 bg-transparent border-0 border-b border-gray-200 rounded-none px-0 focus-visible:ring-0 focus-visible:border-black font-light text-base" />
+                    <Input name="line1" id="line1" defaultValue={editingAddress?.line1 || ''} required placeholder={t('streetAddress')} className="h-12 bg-transparent border-0 border-b border-gray-200 rounded-none px-0 focus-visible:ring-0 focus-visible:border-navy-deep font-light text-base" />
                   </div>
                   <div className="col-span-1 sm:col-span-2 flex flex-col gap-2">
                     <Label htmlFor="line2" className="text-[10px] text-gray-400 font-medium uppercase tracking-[0.2em] font-heading">{t('apartmentOptional')}</Label>
-                    <Input name="line2" id="line2" defaultValue={editingAddress?.line2 || ''} placeholder={t('apartmentPlaceholder')} className="h-12 bg-transparent border-0 border-b border-gray-200 rounded-none px-0 focus-visible:ring-0 focus-visible:border-black font-light text-base" />
+                    <Input name="line2" id="line2" defaultValue={editingAddress?.line2 || ''} placeholder={t('apartmentPlaceholder')} className="h-12 bg-transparent border-0 border-b border-gray-200 rounded-none px-0 focus-visible:ring-0 focus-visible:border-navy-deep font-light text-base" />
                   </div>
                   <div className="flex flex-col gap-2">
                     <Label htmlFor="city" className="text-[10px] text-gray-400 font-medium uppercase tracking-[0.2em] font-heading">{t('city')}</Label>
-                    <Input name="city" id="city" defaultValue={editingAddress?.city || ''} required placeholder={t('city')} className="h-12 bg-transparent border-0 border-b border-gray-200 rounded-none px-0 focus-visible:ring-0 focus-visible:border-black font-light text-base" />
+                    <Input name="city" id="city" defaultValue={editingAddress?.city || ''} required placeholder={t('city')} className="h-12 bg-transparent border-0 border-b border-gray-200 rounded-none px-0 focus-visible:ring-0 focus-visible:border-navy-deep font-light text-base" />
                   </div>
                   <div className="flex flex-col gap-2">
                     <Label htmlFor="state" className="text-[10px] text-gray-400 font-medium uppercase tracking-[0.2em] font-heading">{t('state')}</Label>
-                    <Input name="state" id="state" defaultValue={editingAddress?.state || ''} required placeholder={t('state')} className="h-12 bg-transparent border-0 border-b border-gray-200 rounded-none px-0 focus-visible:ring-0 focus-visible:border-black font-light text-base" />
+                    <Input name="state" id="state" defaultValue={editingAddress?.state || ''} required placeholder={t('state')} className="h-12 bg-transparent border-0 border-b border-gray-200 rounded-none px-0 focus-visible:ring-0 focus-visible:border-navy-deep font-light text-base" />
                   </div>
                   <div className="flex flex-col gap-2">
                     <Label htmlFor="zip" className="text-[10px] text-gray-400 font-medium uppercase tracking-[0.2em] font-heading">{t('zipCode')}</Label>
-                    <Input name="zip" id="zip" defaultValue={editingAddress?.postalCode || ''} required placeholder={t('zipCode')} className="h-12 bg-transparent border-0 border-b border-gray-200 rounded-none px-0 focus-visible:ring-0 focus-visible:border-black font-light text-base" />
+                    <Input name="zip" id="zip" defaultValue={editingAddress?.postalCode || ''} required placeholder={t('zipCode')} className="h-12 bg-transparent border-0 border-b border-gray-200 rounded-none px-0 focus-visible:ring-0 focus-visible:border-navy-deep font-light text-base" />
                   </div>
                   <div className="flex flex-col gap-2">
                     <Label htmlFor="phone" className="text-[10px] text-gray-400 font-medium uppercase tracking-[0.2em] font-heading">{t('phone')}</Label>
-                    <Input name="phone" id="phone" defaultValue={editingAddress?.phone || ''} required type="tel" placeholder="(555) 555-5555" className="h-12 bg-transparent border-0 border-b border-gray-200 rounded-none px-0 focus-visible:ring-0 focus-visible:border-black font-light text-base" />
+                    <Input name="phone" id="phone" defaultValue={editingAddress?.phone || ''} required type="tel" placeholder="(555) 555-5555" className="h-12 bg-transparent border-0 border-b border-gray-200 rounded-none px-0 focus-visible:ring-0 focus-visible:border-navy-deep font-light text-base" />
                   </div>
                   <div className="col-span-1 sm:col-span-2 flex flex-col gap-2">
                     <Label htmlFor="country" className="text-[10px] text-gray-400 font-medium uppercase tracking-[0.2em] font-heading">{t('country')}</Label>
@@ -191,7 +191,7 @@ export function AddressesClient({ addresses }: AccountAddressesProps) {
                     </Select>
                   </div>
                   <div className="col-span-1 sm:col-span-2 flex items-center space-x-3 mt-4 pt-4 border-t border-gray-100">
-                    <Checkbox name="isDefault" id="default" defaultChecked={editingAddress?.isDefault || false} className="border-gray-300 data-[state=checked]:bg-black data-[state=checked]:border-black" />
+                    <Checkbox name="isDefault" id="default" defaultChecked={editingAddress?.isDefault || false} className="border-gray-300 data-[state=checked]:bg-navy-deep data-[state=checked]:border-navy-deep" />
                     <label
                       htmlFor="default"
                       className="text-sm font-light text-gray-600 leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
@@ -203,11 +203,11 @@ export function AddressesClient({ addresses }: AccountAddressesProps) {
               </div>
 
               <div className="p-8 border-t border-gray-100 bg-white flex justify-start gap-3 shrink-0 pb-12 pr-24">
-                <button disabled={isPending} type="submit" className="px-8 py-3 rounded-full bg-black text-white text-[11px] font-bold uppercase tracking-[0.15em] hover:bg-gray-800 transition-all disabled:opacity-50 font-heading">
+                <button disabled={isPending} type="submit" className="px-8 py-3 rounded-full bg-navy-deep text-white text-[11px] font-bold uppercase tracking-[0.15em] hover:bg-navy transition-all disabled:opacity-50 font-heading">
                   {isPending ? t('saving') : t('saveAddress')}
                 </button>
                 <SheetClose asChild>
-                  <button type="button" className="px-6 py-3 rounded-full text-[11px] font-bold uppercase tracking-[0.15em] text-gray-500 hover:text-black hover:bg-gray-50 transition-colors font-heading">
+                  <button type="button" className="px-6 py-3 rounded-full text-[11px] font-bold uppercase tracking-[0.15em] text-gray-500 hover:text-ink hover:bg-gray-50 transition-colors font-heading">
                     {t('cancel')}
                   </button>
                 </SheetClose>
@@ -218,17 +218,17 @@ export function AddressesClient({ addresses }: AccountAddressesProps) {
       </div>
 
       {/* Address Ledger */}
-      <div className="flex flex-col">
+      <div className="flex flex-col bg-white border border-gray-100 rounded-2xl p-4 sm:p-6 shadow-[0_1px_2px_rgba(0,0,0,0.03)]">
         {addresses.length === 0 ? (
           <div className="w-full flex flex-col items-center justify-center py-20 text-center">
             <MapPin size={48} className="text-gray-200 mb-6" strokeWidth={1} />
-            <h2 className="text-2xl font-light text-black tracking-tight mb-2">No Addresses Found</h2>
+            <h2 className="text-2xl font-bold text-ink tracking-tight mb-2">No Addresses Found</h2>
             <p className="text-gray-500 font-light max-w-sm mb-8">You haven't saved any addresses yet.</p>
           </div>
         ) : (
           <div className="flex flex-col divide-y divide-gray-100">
             {addresses.map((address, i) => (
-              <motion.div 
+              <motion.div
                 key={address.id}
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -249,7 +249,7 @@ export function AddressesClient({ addresses }: AccountAddressesProps) {
                     <div className="flex items-center gap-4 mb-2">
                       <span className="text-2xl text-black font-light tracking-tight">{address.firstName} {address.lastName}</span>
                       {address.isDefault && (
-                        <span className="text-[9px] font-bold uppercase tracking-[0.2em] bg-[#1e5661]/5 text-[#1e5661] px-3 py-1 rounded-full font-heading">
+                        <span className="text-[9px] font-bold uppercase tracking-[0.2em] bg-navy-deep/5 text-navy-deep px-3 py-1 rounded-full font-heading">
                           {t('default')}
                         </span>
                       )}

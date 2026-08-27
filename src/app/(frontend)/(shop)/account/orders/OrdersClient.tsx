@@ -47,13 +47,13 @@ export function OrdersClient({ orders }: AccountOrdersProps) {
       className="flex flex-col w-full font-sans"
     >
       
-      {/* Massive Header */}
-      <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-12 border-b border-gray-200 pb-12">
-        <div className="flex flex-col gap-2">
-          <h1 className="text-5xl md:text-7xl font-light text-black tracking-tight leading-none">
+      {/* Header */}
+      <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
+        <div className="flex flex-col gap-1">
+          <h1 className="text-4xl md:text-5xl font-bold text-ink tracking-tight">
             {t('title')}
           </h1>
-          <p className="text-gray-500 mt-2 max-w-lg text-sm md:text-base leading-relaxed font-light">{t('subtitle')}</p>
+          <p className="text-gray-500 mt-1 max-w-lg text-sm">{t('subtitle')}</p>
         </div>
 
         <div className="flex items-center gap-3 bg-white p-1 rounded-full shadow-sm border border-gray-100 mt-4 md:mt-0">
@@ -61,14 +61,14 @@ export function OrdersClient({ orders }: AccountOrdersProps) {
             <Filter size={14} className="text-gray-400" />
           </div>
           <Select value={filter} onValueChange={setFilter}>
-            <SelectTrigger className="w-[160px] bg-transparent border-none shadow-none focus:ring-0 text-[11px] font-bold uppercase tracking-[0.1em] text-black font-heading">
+            <SelectTrigger className="w-[160px] bg-transparent border-none shadow-none focus:ring-0 text-[10px] font-bold uppercase tracking-[0.1em] text-black font-heading">
               <SelectValue placeholder={t('filterStatus')} />
             </SelectTrigger>
             <SelectContent className="bg-white border-gray-100 rounded-xl shadow-xl shadow-black/5">
-              <SelectItem value="all" className="text-[11px] font-bold uppercase tracking-[0.1em] rounded-lg font-heading">{t('filterAll')}</SelectItem>
-              <SelectItem value="processing" className="text-[11px] font-bold uppercase tracking-[0.1em] rounded-lg font-heading">{t('filterProcessing')}</SelectItem>
-              <SelectItem value="delivered" className="text-[11px] font-bold uppercase tracking-[0.1em] rounded-lg font-heading">{t('filterDelivered')}</SelectItem>
-              <SelectItem value="returned" className="text-[11px] font-bold uppercase tracking-[0.1em] rounded-lg text-red-500 font-heading">{t('filterReturned')}</SelectItem>
+              <SelectItem value="all" className="text-[10px] font-bold uppercase tracking-[0.1em] rounded-lg font-heading">{t('filterAll')}</SelectItem>
+              <SelectItem value="processing" className="text-[10px] font-bold uppercase tracking-[0.1em] rounded-lg font-heading">{t('filterProcessing')}</SelectItem>
+              <SelectItem value="delivered" className="text-[10px] font-bold uppercase tracking-[0.1em] rounded-lg font-heading">{t('filterDelivered')}</SelectItem>
+              <SelectItem value="returned" className="text-[10px] font-bold uppercase tracking-[0.1em] rounded-lg text-red-500 font-heading">{t('filterReturned')}</SelectItem>
             </SelectContent>
           </Select>
         </div>
@@ -76,12 +76,12 @@ export function OrdersClient({ orders }: AccountOrdersProps) {
 
       <AnimatePresence mode="wait">
         {filteredOrders.length > 0 ? (
-          <motion.div 
+          <motion.div
             key="list"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="flex flex-col"
+            className="flex flex-col bg-white border border-gray-100 rounded-2xl p-6 shadow-[0_1px_2px_rgba(0,0,0,0.03)]"
           >
             <div className="flex flex-col divide-y divide-gray-100">
               {filteredOrders.map((order, i) => (
@@ -96,7 +96,7 @@ export function OrdersClient({ orders }: AccountOrdersProps) {
                     </div>
 
                     <div className="flex flex-col gap-1 w-40">
-                      <span className="text-xl font-light text-black group-hover:text-[#1e5661] transition-colors">#{order.id}</span>
+                      <span className="text-xl font-light text-black group-hover:text-navy-deep transition-colors">#{order.id}</span>
                       <span className="text-[10px] font-medium uppercase tracking-[0.2em] text-gray-400 mt-2">Order ID</span>
                     </div>
 
@@ -131,7 +131,7 @@ export function OrdersClient({ orders }: AccountOrdersProps) {
                       </span>
                     </div>
                     
-                    <div className="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center text-gray-400 group-hover:bg-[#1e5661] group-hover:border-[#1e5661] group-hover:text-white transition-all transform group-hover:translate-x-1">
+                    <div className="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center text-gray-400 group-hover:bg-navy-deep group-hover:border-navy-deep group-hover:text-white transition-all transform group-hover:translate-x-1">
                       <ChevronRightIcon size={16} />
                     </div>
                   </div>
@@ -166,12 +166,12 @@ export function OrdersClient({ orders }: AccountOrdersProps) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="w-full flex flex-col items-center justify-center py-20 text-center"
+            className="w-full flex flex-col items-center justify-center py-20 text-center bg-white border border-gray-100 rounded-2xl shadow-[0_1px_2px_rgba(0,0,0,0.03)]"
           >
             <Package size={48} className="text-gray-200 mb-6" strokeWidth={1} />
-            <h2 className="text-2xl font-light text-black tracking-tight mb-2">{t('emptyTitle')}</h2>
+            <h2 className="text-2xl font-bold text-ink tracking-tight mb-2">{t('emptyTitle')}</h2>
             <p className="text-gray-500 font-light max-w-sm mb-8">{t('emptyDescription')}</p>
-            <Link href="/shop" className="border border-gray-200 hover:border-black text-black rounded-full px-8 py-3 text-[11px] font-bold uppercase tracking-widest transition-colors font-heading">
+            <Link href="/shop" className="border border-gray-200 hover:border-navy-deep text-black rounded-full px-8 py-3 text-[11px] font-bold uppercase tracking-widest transition-colors font-heading">
               {t('startShopping')}
             </Link>
           </motion.div>

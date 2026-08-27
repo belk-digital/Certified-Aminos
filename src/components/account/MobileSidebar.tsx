@@ -31,7 +31,7 @@ export function MobileSidebar({ children }: { children: React.ReactNode }) {
   return (
     <>
       {/* Mobile Header Bar */}
-      <div className="lg:hidden flex items-center justify-between p-4 bg-white border-b border-gray-100 sticky top-0 z-30">
+      <div className="lg:hidden w-full flex items-center justify-between p-4 bg-white border-b border-gray-100 sticky top-0 z-30">
         <div className="flex items-center gap-2">
           <button 
             onClick={() => setIsOpen(true)}
@@ -39,7 +39,7 @@ export function MobileSidebar({ children }: { children: React.ReactNode }) {
           >
             <Menu size={24} />
           </button>
-          <span className="text-xs font-bold uppercase tracking-[0.15em] text-[#1e5661] font-heading">
+          <span className="text-xs font-bold uppercase tracking-[0.15em] text-navy-deep font-heading">
             {t('dashboard')}
           </span>
         </div>
@@ -63,13 +63,13 @@ export function MobileSidebar({ children }: { children: React.ReactNode }) {
               animate={{ x: 0 }}
               exit={{ x: '-100%' }}
               transition={{ type: 'spring', damping: 25, stiffness: 300 }}
-              className="fixed top-0 left-0 bottom-0 w-[280px] max-w-[85vw] bg-white z-50 shadow-2xl lg:hidden flex flex-col"
+              className="fixed top-0 left-0 bottom-0 w-[280px] max-w-[85vw] bg-navy-deep z-50 shadow-2xl lg:hidden flex flex-col"
             >
               {/* Close Button */}
               <div className="absolute top-4 right-4 z-50">
-                <button 
+                <button
                   onClick={() => setIsOpen(false)}
-                  className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 text-black transition-colors shadow-sm"
+                  className="p-2 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors shadow-sm"
                 >
                   <X size={20} />
                 </button>

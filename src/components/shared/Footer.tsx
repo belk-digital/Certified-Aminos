@@ -63,9 +63,42 @@ const FooterContent = () => {
     }
   }
 
+  const navLinks = (
+    <div className="flex gap-12">
+      <div className="flex flex-col gap-4">
+        <Link href="/shop" className="text-navy text-base font-medium hover:text-[#1a42a0] transition-colors">
+          Shop
+        </Link>
+        <Link href="/shop" className="text-navy text-base font-medium hover:text-[#1a42a0] transition-colors">
+          Categories
+        </Link>
+        <Link href="/peptide-calculator" className="text-navy text-base font-medium hover:text-[#1a42a0] transition-colors">
+          Calculator
+        </Link>
+        <Link href="/about-us" className="text-navy text-base font-medium hover:text-[#1a42a0] transition-colors">
+          About
+        </Link>
+      </div>
+      <div className="flex flex-col gap-4">
+        <Link href="/blog" className="text-navy text-base font-medium hover:text-[#1a42a0] transition-colors">
+          Blog
+        </Link>
+        <Link href="/faq" className="text-navy text-base font-medium hover:text-[#1a42a0] transition-colors">
+          FAQ
+        </Link>
+        <Link href="/contact-us" className="text-navy text-base font-medium hover:text-[#1a42a0] transition-colors">
+          Contact
+        </Link>
+        <Link href="/affiliates" className="text-navy text-base font-medium hover:text-[#1a42a0] transition-colors">
+          Affiliates
+        </Link>
+      </div>
+    </div>
+  )
+
   return (
     <footer
-      className="relative w-full flex flex-col justify-end overflow-hidden box-border pt-32 md:pt-40 pb-8 md:pb-16 px-6 md:px-16"
+      className="relative w-full flex flex-col justify-end overflow-hidden box-border pt-32 md:pt-40 pb-48 md:pb-16 px-6 md:px-16"
       style={{
         background: 'linear-gradient(180deg, #ffffff 0%, #e2effa 25%, #76a3da 60%, #0a1323 100%)',
       }}
@@ -108,6 +141,11 @@ const FooterContent = () => {
                 )}
               </button>
             </form>
+          </div>
+
+          {/* Mobile-only nav — shown above the wordmark on small screens; desktop uses the right column below */}
+          <div className="order-2 flex md:hidden">
+            {navLinks}
           </div>
 
           <div className="order-3 md:order-2 mt-8 md:mt-40">
@@ -157,42 +195,13 @@ const FooterContent = () => {
           </div>
         </div>
 
-        {/* Right column - nav */}
-        <div className="order-2 md:order-3 flex flex-col md:pl-16">
-          <div className="flex gap-12">
-            <div className="flex flex-col gap-4">
-              <Link href="/shop" className="text-navy text-base font-medium hover:text-[#1a42a0] transition-colors">
-                Shop
-              </Link>
-              <Link href="/shop" className="text-navy text-base font-medium hover:text-[#1a42a0] transition-colors">
-                Categories
-              </Link>
-              <Link href="/peptide-calculator" className="text-navy text-base font-medium hover:text-[#1a42a0] transition-colors">
-                Calculator
-              </Link>
-              <Link href="/about-us" className="text-navy text-base font-medium hover:text-[#1a42a0] transition-colors">
-                About
-              </Link>
-            </div>
-            <div className="flex flex-col gap-4">
-              <Link href="/blog" className="text-navy text-base font-medium hover:text-[#1a42a0] transition-colors">
-                Blog
-              </Link>
-              <Link href="/faq" className="text-navy text-base font-medium hover:text-[#1a42a0] transition-colors">
-                FAQ
-              </Link>
-              <Link href="/contact-us" className="text-navy text-base font-medium hover:text-[#1a42a0] transition-colors">
-                Contact
-              </Link>
-              <Link href="/affiliates" className="text-navy text-base font-medium hover:text-[#1a42a0] transition-colors">
-                Affiliates
-              </Link>
-            </div>
-          </div>
+        {/* Right column - nav (desktop only; mobile shows navLinks above the wordmark instead) */}
+        <div className="hidden md:flex md:flex-col md:pl-16">
+          {navLinks}
         </div>
       </div>
 
-      <div className="pointer-events-none absolute bottom-0 right-0 max-w-[45vw] md:max-w-[45vw] z-0">
+      <div className="pointer-events-none absolute bottom-0 right-0 max-w-[70vw] md:max-w-[45vw] z-0">
         <img src="/footer-image.png" alt="Products" className="w-full h-auto block" />
       </div>
     </footer>

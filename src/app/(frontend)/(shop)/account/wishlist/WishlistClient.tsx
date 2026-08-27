@@ -97,19 +97,19 @@ export function WishlistClient({ items: serverItems }: AccountWishlistProps) {
       className="flex flex-col w-full font-sans"
     >
       
-      {/* Massive Header */}
-      <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-12 border-b border-gray-200 pb-12">
-        <div className="flex flex-col gap-2">
-          <h1 className="text-5xl md:text-7xl font-light text-black tracking-tight leading-none">
+      {/* Header */}
+      <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
+        <div className="flex flex-col gap-1">
+          <h1 className="text-4xl md:text-5xl font-bold text-ink tracking-tight">
             {t('title')}
           </h1>
-          <p className="text-gray-500 mt-2 max-w-lg text-sm md:text-base leading-relaxed font-light">{t('itemsSaved', { count: displayItems.length })}</p>
+          <p className="text-gray-500 mt-1 max-w-lg text-sm">{t('itemsSaved', { count: displayItems.length })}</p>
         </div>
 
         <button
           onClick={moveAllToCart}
           disabled={displayItems.length === 0}
-          className="flex items-center justify-center gap-2 bg-black hover:bg-gray-800 text-white rounded-full px-8 py-3.5 text-[11px] font-bold uppercase tracking-[0.15em] transition-all w-full sm:w-auto font-heading disabled:opacity-40 disabled:pointer-events-none mt-4 md:mt-0"
+          className="flex items-center justify-center gap-2 bg-navy-deep hover:bg-navy text-white rounded-full px-8 py-3.5 text-[11px] font-bold uppercase tracking-[0.15em] transition-all w-full sm:w-auto font-heading disabled:opacity-40 disabled:pointer-events-none mt-4 md:mt-0"
         >
           <ShoppingBag size={14} />
           {t('moveAllToCart')}
@@ -123,7 +123,7 @@ export function WishlistClient({ items: serverItems }: AccountWishlistProps) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 md:gap-12"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-8 md:gap-12"
           >
             {displayItems.map((product, i) => (
               <motion.div 
@@ -178,7 +178,7 @@ export function WishlistClient({ items: serverItems }: AccountWishlistProps) {
                       {/* @ts-ignore */}
                       {product.descriptor || t('productFallback')}
                     </span>
-                    <h3 className="text-xl font-light text-black tracking-tight leading-tight group-hover:text-[#1e5661] transition-colors mb-4">
+                    <h3 className="text-xl font-light text-black tracking-tight leading-tight group-hover:text-navy-deep transition-colors mb-4">
                       {product.name}
                     </h3>
                   </Link>
@@ -190,7 +190,7 @@ export function WishlistClient({ items: serverItems }: AccountWishlistProps) {
                     </span>
                     <button
                       onClick={() => addToCart(product)}
-                      className="bg-transparent hover:bg-black text-black hover:text-white border border-gray-200 hover:border-black rounded-full px-6 py-2 text-[10px] font-bold uppercase tracking-[0.1em] transition-colors shrink-0 font-heading"
+                      className="bg-transparent hover:bg-navy-deep text-black hover:text-white border border-gray-200 hover:border-navy-deep rounded-full px-6 py-2 text-[10px] font-bold uppercase tracking-[0.1em] transition-colors shrink-0 font-heading"
                     >
                       {t('addToCart')}
                     </button>
@@ -206,12 +206,12 @@ export function WishlistClient({ items: serverItems }: AccountWishlistProps) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="w-full flex flex-col items-center justify-center py-20 text-center"
+            className="w-full flex flex-col items-center justify-center py-20 text-center bg-white border border-gray-100 rounded-2xl shadow-[0_1px_2px_rgba(0,0,0,0.03)]"
           >
             <Heart size={48} className="text-gray-200 mb-6" strokeWidth={1} />
-            <h2 className="text-2xl font-light text-black tracking-tight mb-2">{t('emptyTitle')}</h2>
+            <h2 className="text-2xl font-bold text-ink tracking-tight mb-2">{t('emptyTitle')}</h2>
             <p className="text-gray-500 font-light max-w-sm mb-8">{t('emptyDescription')}</p>
-            <Link href="/shop" className="border border-gray-200 hover:border-black text-black rounded-full px-8 py-3 text-[11px] font-bold uppercase tracking-widest transition-colors font-heading">
+            <Link href="/shop" className="border border-gray-200 hover:border-navy-deep text-black rounded-full px-8 py-3 text-[11px] font-bold uppercase tracking-widest transition-colors font-heading">
               {t('startBrowsing')}
             </Link>
           </motion.div>

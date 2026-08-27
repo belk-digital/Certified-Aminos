@@ -278,11 +278,11 @@ export function ClientHeader({ cartItemCount = 0, wishlistItemCount = 0, isLogge
     }
   })
 
-  // On the homepage, before the user scrolls, the header floats transparent over the dark
-  // Hero — so text/icons go white. Everywhere else (and once scrolled) it's the light layout.
+  // Before the user scrolls, the header floats transparent over every page's hero — once
+  // scrolled it becomes the solid navy bar. On the homepage/FAQ the hero is dark, so text/icons
+  // go white while transparent too; elsewhere they stay dark until the solid bg kicks in.
   const isHomeTransparent = (pathname === '/' || pathname === '/en' || pathname === '/faq') && !isScrolled
-  const isAboutTransparent = (pathname === '/about-us' || pathname === '/shop') && !isScrolled
-  const isTransparentBackground = isHomeTransparent || isAboutTransparent
+  const isTransparentBackground = !isScrolled
   const isDarkTheme = isHomeTransparent || isScrolled
   const textColor = isDarkTheme ? 'text-white' : 'text-black'
   const textHoverColor = 'hover:text-primary transition-colors'
@@ -309,12 +309,14 @@ export function ClientHeader({ cartItemCount = 0, wishlistItemCount = 0, isLogge
         {(() => {
           const hoverTextColor = isDarkTheme ? 'hover:text-white' : 'hover:text-black'
           const underlineColor = isDarkTheme ? 'after:bg-white/40' : 'after:bg-black/20'
+          const activeColor = isTransparentBackground ? 'text-navy-deep' : 'text-primary'
+          const activeDotColor = isTransparentBackground ? 'after:bg-navy-deep' : 'after:bg-primary'
           const getNavLinkClass = (path: string) => {
             const targetPath = path.replace('/en', '');
             const isActive = targetPath === '' ? pathname === '/en' || pathname === '/' : pathname.includes(targetPath);
             return `relative text-[9px] xl:text-[10px] min-[1650px]:text-[11px] font-syncopate font-normal tracking-[0.05em] min-[1650px]:tracking-[0.1em] uppercase transition-all duration-300 h-full flex items-center py-2 whitespace-nowrap ${
               isActive
-                ? `text-primary opacity-100 after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:-translate-x-1/2 after:w-4 after:h-[2px] after:bg-primary after:rounded-full`
+                ? `${activeColor} opacity-100 after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:-translate-x-1/2 after:w-4 after:h-[2px] ${activeDotColor} after:rounded-full`
                 : `${textColor} opacity-60 hover:opacity-100 ${hoverTextColor} hover:after:w-full after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-[2px] ${underlineColor} after:transition-all after:duration-300 after:rounded-full`
             }`;
           };

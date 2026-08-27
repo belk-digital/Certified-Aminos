@@ -88,7 +88,7 @@ export function OrderDetailClient({ order }: OrderDetailProps) {
             <ArrowLeft size={14} />
             {t('backToOrders')}
           </Link>
-          <h1 className={`text-4xl text-black font-bold tracking-tighter ${spaceGrotesk.className}`}>
+          <h1 className="text-4xl md:text-5xl font-bold text-ink tracking-tight font-heading">
             {t('orderTitle', { orderNumber: order.orderNumber })}
           </h1>
           <p className="text-sm text-gray-500">{t('placedOn', { date: formattedDate })}</p>
@@ -97,7 +97,7 @@ export function OrderDetailClient({ order }: OrderDetailProps) {
         <div className="flex items-center gap-3">
           <button
             onClick={handleReorder}
-            className="flex items-center justify-center gap-2 bg-black hover:bg-gray-800 text-white rounded-full px-6 py-3.5 text-[11px] font-bold uppercase tracking-[0.1em] transition-all shadow-lg"
+            className="flex items-center justify-center gap-2 bg-navy-deep hover:bg-navy text-white rounded-full px-6 py-3.5 text-[11px] font-bold uppercase tracking-[0.1em] transition-all shadow-lg"
           >
             <Package size={14} />
             {t('reorderAll')}
@@ -119,7 +119,7 @@ export function OrderDetailClient({ order }: OrderDetailProps) {
 
               {/* Connecting Line (Progress) */}
               <div
-                className="absolute top-3 sm:top-4 left-4 h-[2px] bg-black -z-10 transition-all duration-1000 ease-out rounded-full"
+                className="absolute top-3 sm:top-4 left-4 h-[2px] bg-navy-deep -z-10 transition-all duration-1000 ease-out rounded-full"
                 style={{ width: `calc(${(Math.max(currentStepIndex, 0) / (STATUS_STEPS.length - 1)) * 100}% - 2rem)` }}
               />
 
@@ -130,7 +130,7 @@ export function OrderDetailClient({ order }: OrderDetailProps) {
                 return (
                   <div key={step} className="flex flex-col items-center gap-2 sm:gap-3 bg-white px-0.5 sm:px-2">
                     <div className={`w-6 h-6 sm:w-8 sm:h-8 rounded-full flex items-center justify-center transition-all duration-500 shadow-sm ${
-                      isCompleted ? 'bg-black text-white border-none' : 'bg-white border-2 border-gray-100 text-gray-300'
+                      isCompleted ? 'bg-navy-deep text-white border-none' : 'bg-white border-2 border-gray-100 text-gray-300'
                     }`}>
                       {isCompleted && (
                         <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-white rounded-full" />
@@ -231,14 +231,14 @@ export function OrderDetailClient({ order }: OrderDetailProps) {
                         <Image src={imageUrl} alt={title} fill className="object-cover" sizes="80px" />
                       </Link>
                       {/* Kept outside the image's overflow-hidden container so it isn't clipped */}
-                      <div className="absolute -top-2 -right-2 w-6 h-6 bg-black text-white rounded-full flex items-center justify-center text-[10px] font-bold z-10 border-2 border-white shadow-sm pointer-events-none">
+                      <div className="absolute -top-2 -right-2 w-6 h-6 bg-navy-deep text-white rounded-full flex items-center justify-center text-[10px] font-bold z-10 border-2 border-white shadow-sm pointer-events-none">
                         {item.quantity}
                       </div>
                     </div>
 
                     <div className="flex flex-col flex-1 min-w-0">
                       <Link href={`/product/${product.slug || ''}`}>
-                        <span className={`text-sm sm:text-lg text-black font-bold tracking-tight hover:text-purple-600 transition-colors line-clamp-2 ${spaceGrotesk.className}`}>
+                        <span className={`text-sm sm:text-lg text-black font-bold tracking-tight hover:text-navy-deep transition-colors line-clamp-2 ${spaceGrotesk.className}`}>
                           {title}
                         </span>
                       </Link>
@@ -265,7 +265,7 @@ export function OrderDetailClient({ order }: OrderDetailProps) {
           
           {/* Shipping Summary */}
           {order.shippingAddress && (
-            <div className="bg-white border border-gray-100 p-8 rounded-3xl shadow-sm flex flex-col gap-6">
+            <div className="bg-white border border-gray-100 p-5 sm:p-8 rounded-3xl shadow-sm flex flex-col gap-6">
               <div className="flex items-center gap-3 border-b border-gray-100 pb-4 text-black">
                 <Truck size={16} />
                 <h2 className="text-xs font-bold uppercase tracking-[0.15em]">{t('shippingInfo')}</h2>
@@ -285,7 +285,7 @@ export function OrderDetailClient({ order }: OrderDetailProps) {
 
           {/* Billing Summary */}
           {(order.billingAddress?.line1 || order.shippingAddress) && (
-            <div className="bg-white border border-gray-100 p-8 rounded-3xl shadow-sm flex flex-col gap-6">
+            <div className="bg-white border border-gray-100 p-5 sm:p-8 rounded-3xl shadow-sm flex flex-col gap-6">
               <div className="flex items-center gap-3 border-b border-gray-100 pb-4 text-black">
                 <CreditCard size={16} />
                 <h2 className="text-xs font-bold uppercase tracking-[0.15em]">{t('billingAddress', { fallback: 'Billing Address' })}</h2>
@@ -304,7 +304,7 @@ export function OrderDetailClient({ order }: OrderDetailProps) {
           )}
           
           {/* Order Summary */}
-          <div className="bg-white border border-gray-100 p-8 rounded-3xl shadow-sm flex flex-col gap-6">
+          <div className="bg-white border border-gray-100 p-5 sm:p-8 rounded-3xl shadow-sm flex flex-col gap-6">
             <div className="flex items-center gap-3 border-b border-gray-100 pb-4 text-black">
               <CreditCard size={16} />
               <h2 className="text-xs font-bold uppercase tracking-[0.15em]">{t('orderSummary')}</h2>
@@ -331,7 +331,7 @@ export function OrderDetailClient({ order }: OrderDetailProps) {
               </div>
               {!!order.redeemedPoints && order.redeemedPoints > 0 && (
                 <div className="flex justify-between text-green-500 border-b border-gray-100 pb-4 mt-1">
-                  <span>HB Points</span>
+                  <span>CA Points</span>
                   <span>-${order.redeemedPoints.toFixed(2)}</span>
                 </div>
               )}
