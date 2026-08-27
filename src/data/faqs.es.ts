@@ -10,7 +10,7 @@ export const faqData: FaqCategoryType[] = [
       },
       {
         "question": "¿Para qué se utilizan los péptidos en la investigación?",
-        "answer": "<p><span style=\"font-weight: 400;\">Los péptidos se utilizan en investigación de laboratorio para estudiar la señalización celular, la unión a receptores, las vías metabólicas y los mecanismos moleculares. En entornos científicos, los péptidos sintéticos de investigación ayudan a los investigadores a explorar procesos biológicos bajo condiciones experimentales controladas.</span></p>\r\n<p><span style=\"font-weight: 400;\">Las aplicaciones de investigación varían según la estructura y clasificación del péptido, pero todos los materiales suministrados por Helix Bio están designados exclusivamente para uso en investigación de laboratorio.</span></p>"
+        "answer": "<p><span style=\"font-weight: 400;\">Los péptidos se utilizan en investigación de laboratorio para estudiar la señalización celular, la unión a receptores, las vías metabólicas y los mecanismos moleculares. En entornos científicos, los péptidos sintéticos de investigación ayudan a los investigadores a explorar procesos biológicos bajo condiciones experimentales controladas.</span></p>\r\n<p><span style=\"font-weight: 400;\">Las aplicaciones de investigación varían según la estructura y clasificación del péptido, pero todos los materiales suministrados por Certified Aminos están designados exclusivamente para uso en investigación de laboratorio.</span></p>"
       },
       {
         "question": "¿Cómo se producen los péptidos sintéticos de investigación?",
@@ -31,7 +31,7 @@ export const faqData: FaqCategoryType[] = [
     "items": [
       {
         "question": "¿Son legales los péptidos de investigación en Estados Unidos?",
-        "answer": "<p><span style=\"font-weight: 400;\">Los péptidos de investigación pueden comprarse legalmente en Estados Unidos cuando están destinados estrictamente a fines de investigación de laboratorio. Sin embargo, el estatus regulatorio puede variar según el compuesto y su clasificación.</span></p>\r\n<p><span style=\"font-weight: 400;\">Los compradores son responsables de comprender y cumplir con las regulaciones federales, estatales y locales aplicables antes de la compra. Helix Bio suministra péptidos sintéticos de investigación bajo la designación de uso exclusivo en investigación.</span></p>"
+        "answer": "<p><span style=\"font-weight: 400;\">Los péptidos de investigación pueden comprarse legalmente en Estados Unidos cuando están destinados estrictamente a fines de investigación de laboratorio. Sin embargo, el estatus regulatorio puede variar según el compuesto y su clasificación.</span></p>\r\n<p><span style=\"font-weight: 400;\">Los compradores son responsables de comprender y cumplir con las regulaciones federales, estatales y locales aplicables antes de la compra. Certified Aminos suministra péptidos sintéticos de investigación bajo la designación de uso exclusivo en investigación.</span></p>"
       },
       {
         "question": "¿Qué significa “Solo para Uso en Investigación” (For Research Use Only)?",
@@ -59,8 +59,8 @@ export const faqData: FaqCategoryType[] = [
         "answer": "<p><span style=\"font-weight: 400;\">Un Certificado de Análisis (COA) es un documento que proporciona los resultados de las pruebas analíticas de un lote de producto específico.</span></p>\r\n<p><span style=\"font-weight: 400;\">Para los péptidos con documentación COA, el certificado generalmente incluye porcentajes de pureza, números de lote y resúmenes de métodos analíticos. La documentación COA respalda la transparencia y ayuda a los investigadores a verificar la pureza del péptido antes de su uso.</span></p>"
       },
       {
-        "question": "¿Cómo verifica Helix Bio la pureza analítica?",
-        "answer": "<p><span style=\"font-weight: 400;\">Como proveedor de péptidos probados en laboratorio, Helix Bio se apoya en procesos de verificación analítica estructurados para confirmar la identidad y los parámetros de pureza.</span></p>\r\n<p><span style=\"font-weight: 400;\">Los péptidos con pruebas analíticas pueden evaluarse mediante técnicas como HPLC o espectrometría de masas para garantizar la consistencia y la integridad estructural antes de su liberación.</span></p>"
+        "question": "¿Cómo verifica Certified Aminos la pureza analítica?",
+        "answer": "<p><span style=\"font-weight: 400;\">Como proveedor de péptidos probados en laboratorio, Certified Aminos se apoya en procesos de verificación analítica estructurados para confirmar la identidad y los parámetros de pureza.</span></p>\r\n<p><span style=\"font-weight: 400;\">Los péptidos con pruebas analíticas pueden evaluarse mediante técnicas como HPLC o espectrometría de masas para garantizar la consistencia y la integridad estructural antes de su liberación.</span></p>"
       },
       {
         "question": "¿Sus péptidos son probados por terceros?",
@@ -84,8 +84,8 @@ export const faqData: FaqCategoryType[] = [
         "answer": "<p><span style=\"font-weight: 400;\">Al evaluar cómo elegir un proveedor de péptidos, los investigadores deben buscar:</span></p>\r\n<p><span style=\"font-size: 16px;\">• Clasificación de investigación clara<br /></span><span style=\"font-size: 16px;\">• Prácticas de documentación transparentes<br /></span><span style=\"font-size: 16px;\">• Péptidos con disponibilidad de COA<br /></span><span style=\"font-size: 16px;\">• Estándares de pruebas por terceros<br /></span><span style=\"font-weight: 400;\">• Posicionamiento definido de uso exclusivo en investigación</span></p>\r\n<p><span style=\"font-weight: 400;\">Un proveedor de péptidos confiable enfatiza la verificación analítica y la claridad en el cumplimiento normativo.</span></p>"
       },
       {
-        "question": "¿Es Helix Bio un proveedor de péptidos de EE. UU.?",
-        "answer": "<p><span style=\"font-weight: 400;\">Sí. Helix Bio opera como un proveedor de péptidos en EE. UU. del que los investigadores obtienen materiales de grado laboratorio.</span></p>\r\n<p><span style=\"font-weight: 400;\">Enviamos péptidos de investigación en todo Estados Unidos de acuerdo con los estándares de designación de uso exclusivo en investigación.</span></p>"
+        "question": "¿Es Certified Aminos un proveedor de péptidos de EE. UU.?",
+        "answer": "<p><span style=\"font-weight: 400;\">Sí. Certified Aminos opera como un proveedor de péptidos en EE. UU. del que los investigadores obtienen materiales de grado laboratorio.</span></p>\r\n<p><span style=\"font-weight: 400;\">Enviamos péptidos de investigación en todo Estados Unidos de acuerdo con los estándares de designación de uso exclusivo en investigación.</span></p>"
       },
       {
         "question": "¿Envían péptidos de investigación a nivel nacional en EE. UU.?",
@@ -97,7 +97,7 @@ export const faqData: FaqCategoryType[] = [
       },
       {
         "question": "¿Ofrecen un programa de afiliados o asociación?",
-        "answer": "<p><span style=\"font-weight: 400;\">Sí. Helix Bio ofrece un programa de afiliados para socios interesados en promocionar productos de péptidos de investigación a través de canales de marketing conformes con la normativa.</span></p>\r\n<p><span style=\"font-weight: 400;\">La participación en el programa de afiliados está sujeta a aprobación y debe alinearse con el posicionamiento de uso exclusivo en investigación y los estándares regulatorios.</span></p>"
+        "answer": "<p><span style=\"font-weight: 400;\">Sí. Certified Aminos ofrece un programa de afiliados para socios interesados en promocionar productos de péptidos de investigación a través de canales de marketing conformes con la normativa.</span></p>\r\n<p><span style=\"font-weight: 400;\">La participación en el programa de afiliados está sujeta a aprobación y debe alinearse con el posicionamiento de uso exclusivo en investigación y los estándares regulatorios.</span></p>"
       }
     ]
   },
@@ -205,7 +205,7 @@ export const faqData: FaqCategoryType[] = [
         "answer": "<span style=\"font-weight: 400;\">No. Es únicamente para uso en investigación.<br />\r\n</span>"
       },
       {
-        "question": "¿Proporciona Helix Bio orientación clínica?",
+        "question": "¿Proporciona Certified Aminos orientación clínica?",
         "answer": "<p><span style=\"font-weight: 400;\">No se proporciona ninguna orientación clínica o experimental.</span></p>"
       },
       {

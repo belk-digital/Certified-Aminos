@@ -236,7 +236,7 @@ export function SearchOverlay({ isOpen, onClose, categories = [] }: SearchOverla
                     <Image
                       key={src}
                       src={src}
-                      alt={`Featured Helix Bio research peptide, image ${idx + 1}`}
+                      alt={`Featured Certified Aminos research peptide, image ${idx + 1}`}
                       fill
                       className={`object-cover scale-105 transition-opacity duration-1000 ${
                         idx === activeImageIndex ? 'opacity-90' : 'opacity-0 z-[-1]'

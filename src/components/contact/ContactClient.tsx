@@ -18,7 +18,7 @@ export function ContactClient() {
       answer: (
         <>
           {t.rich('faqs.contactInfo.answer', {
-            email: (chunks) => <a href="mailto:support@helixbiochem.com" className="text-primary font-bold underline underline-offset-4 hover:text-ink transition-colors !cursor-pointer pointer-events-auto" data-hide-cursor="true">{chunks}</a>,
+            email: (chunks) => <a href="mailto:support@certifiedaminos.com" className="text-primary font-bold underline underline-offset-4 hover:text-ink transition-colors !cursor-pointer pointer-events-auto" data-hide-cursor="true">{chunks}</a>,
           })}
         </>
       )
@@ -49,14 +49,14 @@ export function ContactClient() {
         <div className="flex flex-col gap-8 mb-24 relative max-w-md mx-auto">
           
           <motion.a
-            href="mailto:support@helixbiochem.com"
+            href="mailto:support@certifiedaminos.com"
             className="block w-full h-full cursor-pointer hover:-translate-y-2 transition-transform duration-500 ease-out"
           >
             <PinterestGlassCard
               title={t('supportEmailTitle')}
               description={t('supportEmailDescription')}
               icon={<Mail className="w-5 h-5" />}
-              tag="support@helixbiochem.com"
+              tag="support@certifiedaminos.com"
               microcopy={t('supportEmailMicrocopy')}
               scrollFanning={true}
             />

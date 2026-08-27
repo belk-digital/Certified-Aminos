@@ -14,7 +14,7 @@ export function generateContactFormEmail(
   const subject = escapeHtml(rawSubject)
   const message = escapeHtml(rawMessage)
 
-  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://helixbiochem.com';
+  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certifiedaminos.com';
 
   return emailLayout({
     title: 'New Contact Form Submission',

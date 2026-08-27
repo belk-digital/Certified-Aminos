@@ -54,17 +54,17 @@ export async function generateMetadata({
   const post = await getPost(slug)
 
   if (!post) {
-    return { title: 'Post Not Found | Helix Bio' }
+    return { title: 'Post Not Found | Certified Aminos' }
   }
 
-  const title = `${post.title} | Helix Bio`
+  const title = `${post.title} | Certified Aminos`
   const description = post.excerpt || ''
   const path = `/${slug}`
-  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://helixbiochem.com'
+  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certifiedaminos.com'
   const imageUrl = toAbsoluteUrl(baseUrl, getFeaturedImageUrl(post))
   const payload = await getPayload({ config: configPromise })
   const authorProfile = await payload.findGlobal({ slug: 'blog-author-profile' })
-  const authorName = authorProfile?.name || 'Helix Bio Team'
+  const authorName = authorProfile?.name || 'Certified Aminos Team'
   const publishedIso = post.publishedAt
     ? new Date(post.publishedAt).toISOString()
     : new Date(post.createdAt).toISOString()
@@ -77,7 +77,7 @@ export async function generateMetadata({
       ? post.keywords.split(',').map((k: string) => k.trim()).filter(Boolean)
       : undefined,
     authors: [{ name: authorName }],
-    publisher: 'Helix Bio',
+    publisher: 'Certified Aminos',
     robots: { index: true, follow: true },
     alternates: { canonical: path },
     openGraph: {
@@ -85,7 +85,7 @@ export async function generateMetadata({
       description,
       type: 'article',
       url: path,
-      siteName: 'Helix Bio',
+      siteName: 'Certified Aminos',
       publishedTime: publishedIso,
       modifiedTime: modifiedIso,
       authors: [authorName],
@@ -170,7 +170,7 @@ export default async function BlogPostPage({
 
   const { first: introContent, rest: restContent } = splitFirstParagraph(post.content)
 
-  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://helixbiochem.com'
+  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certifiedaminos.com'
   const postUrl = `${baseUrl}/${slug}`
   const isoDate = post.publishedAt ? new Date(post.publishedAt).toISOString() : new Date(post.createdAt).toISOString()
 
@@ -189,7 +189,7 @@ export default async function BlogPostPage({
       image: productImage,
       sku: product.sku || String(product.id),
       url: productUrl,
-      brand: { '@type': 'Brand', name: 'Helix Bio' },
+      brand: { '@type': 'Brand', name: 'Certified Aminos' },
       offers: {
         '@type': 'Offer',
         url: productUrl,
@@ -219,11 +219,11 @@ export default async function BlogPostPage({
         keywords: post.keywords || undefined,
         author: {
           '@type': 'Person',
-          name: authorProfile?.name || 'Helix Bio Team',
+          name: authorProfile?.name || 'Certified Aminos Team',
         },
         publisher: {
           '@type': 'Organization',
-          name: 'Helix Bio',
+          name: 'Certified Aminos',
           logo: { '@type': 'ImageObject', url: `${baseUrl}/logo.png` },
         },
         mainEntityOfPage: { '@type': 'WebPage', '@id': postUrl },
@@ -316,7 +316,7 @@ export default async function BlogPostPage({
                 )}
 
                 <AuthorCard
-                  name={authorProfile?.name || 'Helix Bio Team'}
+                  name={authorProfile?.name || 'Certified Aminos Team'}
                   title={authorProfile?.title ?? undefined}
                   bio={authorProfile?.bio ?? undefined}
                   credentials={authorProfile?.credentials ?? undefined}

@@ -51,7 +51,7 @@ export function Newsletter() {
       <div className="absolute inset-0 z-0 bg-black">
         <Image 
           src="/HelixBio Images/ChatGPT Image Jul 20, 2026, 05_36_52 AM.webp"
-          alt="Abstract dark laboratory-inspired background for the Helix Bio newsletter signup"
+          alt="Abstract dark laboratory-inspired background for the Certified Aminos newsletter signup"
           fill 
           className="object-cover opacity-60"
         />

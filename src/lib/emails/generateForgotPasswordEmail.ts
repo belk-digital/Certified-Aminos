@@ -2,7 +2,7 @@ import { emailLayout } from './emailLayout'
 
 export async function generateForgotPasswordEmail(url: string, user?: any): Promise<string> {
   const name = user?.firstName || 'there'
-  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://helixbiochem.com';
+  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certifiedaminos.com';
   
   return emailLayout({
     title: 'Reset Your Password',
@@ -10,7 +10,7 @@ export async function generateForgotPasswordEmail(url: string, user?: any): Prom
     content: `
               <h2 style="margin: 0 0 16px 0; font-size: 24px; color: #0A0A0A; font-weight: 800; letter-spacing: -0.5px;">Password Reset Request</h2>
               <p style="margin: 0 0 24px 0; font-size: 16px; color: #4A4A4A; line-height: 1.6;">Hi ${name},</p>
-              <p style="margin: 0 0 32px 0; font-size: 16px; color: #4A4A4A; line-height: 1.6;">We received a request to reset the password for your account at Helix Bio. If you made this request, please click the button below to securely set a new password.</p>
+              <p style="margin: 0 0 32px 0; font-size: 16px; color: #4A4A4A; line-height: 1.6;">We received a request to reset the password for your account at Certified Aminos. If you made this request, please click the button below to securely set a new password.</p>
               
               <!-- CTAs -->
               <table width="100%" cellpadding="0" cellspacing="0" border="0">

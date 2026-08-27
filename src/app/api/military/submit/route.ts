@@ -88,7 +88,7 @@ export async function POST(req: Request) {
     await sendTrackedEmail(payload, {
       from: `"${name} (Military)" <forms@certifiedaminos.com>`,
       replyTo: email,
-      to: 'support@helixbiochem.com',
+      to: 'support@certifiedaminos.com',
       subject: `[Military Discount] Verification Request: ${name}`,
       html: emailHtml,
       attachments: [

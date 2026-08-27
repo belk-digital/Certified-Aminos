@@ -167,7 +167,7 @@ async function run() {
     console.log(`Found ${discrepancies.length} mismatches:`);
     discrepancies.forEach(d => console.log('- ' + d));
   } else {
-    console.log(`All Helix Bio product prices and variant prices perfectly match 99 Purity Peptides + 10% markup!`);
+    console.log(`All Certified Aminos product prices and variant prices perfectly match 99 Purity Peptides + 10% markup!`);
   }
   
   process.exit(0);

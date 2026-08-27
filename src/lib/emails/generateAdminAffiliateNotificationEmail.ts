@@ -12,7 +12,7 @@ export function generateAdminAffiliateNotificationEmail(application: any, affili
     socialLinksHtml = application.socialLinks.map((link: any) => `<a href="${link.url}" style="color: #1e5661; text-decoration: underline;">${link.platform}</a>`).join(' &middot; ');
   }
 
-  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://helixbiochem.com';
+  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certifiedaminos.com';
   const adminUrl = `${serverUrl}/admin/collections/affiliates/${affiliate.id}`;
 
   return emailLayout({

@@ -27,7 +27,7 @@ export async function resetPassword(token: string, input: ResetPasswordInput) {
     try {
       // Notify admin
       await sendTrackedEmail(payload, {
-        to: 'support@helixbiochem.com',
+        to: 'support@certifiedaminos.com',
         subject: `Security Alert: User Password Reset`,
         html: `<p>The password for the user <strong>${user.email}</strong> was recently changed via the forgot password flow.</p>`
       })

@@ -108,7 +108,7 @@ export async function finalizeOrder(orderId: string | number, paymentIntentMetad
             await sendTrackedEmail(payload, {
                 from: 'Orders | Certified Aminos <support@certifiedaminos.com>',
                 to: customerEmail,
-                bcc: 'support@helixbiochem.com',
+                bcc: 'support@certifiedaminos.com',
                 subject: `Order Confirmation #${order.orderNumber || order.id}`,
                 html: invoiceHtml,
             })

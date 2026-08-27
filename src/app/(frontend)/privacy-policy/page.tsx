@@ -202,7 +202,7 @@ export default function PrivacyPolicyPage() {
                   </ul>
                   <p className="text-[15px] leading-relaxed mt-4">
                     {t('section5ContactText')}<br/>
-                    {t('section5EmailLabel')} <a href="mailto:support@helixbiochem.com" className="hover:text-[#1e5661] transition-colors break-all">support@helixbiochem.com</a>
+                    {t('section5EmailLabel')} <a href="mailto:support@certifiedaminos.com" className="hover:text-[#1e5661] transition-colors break-all">support@certifiedaminos.com</a>
                   </p>
                 </section>
 
@@ -241,7 +241,7 @@ export default function PrivacyPolicyPage() {
 
                     <div>
                       <span className="font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-black/40 block mb-1">{t('supportIssuesLabel')}</span>
-                      <a href="mailto:support@helixbiochem.com" className="text-base font-medium text-black hover:text-[#1e5661] transition-colors">support@helixbiochem.com</a>
+                      <a href="mailto:support@certifiedaminos.com" className="text-base font-medium text-black hover:text-[#1e5661] transition-colors">support@certifiedaminos.com</a>
                     </div>
 
                   </div>

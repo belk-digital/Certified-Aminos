@@ -1,6 +1,6 @@
-# Helix Bio
+# Certified Aminos
 
-> Helix Bio is a U.S.-based supplier of research-grade synthetic peptides and related
+> Certified Aminos is a U.S.-based supplier of research-grade synthetic peptides and related
 > compounds. All products are sold strictly for laboratory and in-vitro research use only (RUO) —
 > not for human or veterinary use, diagnosis, treatment, or consumption. Every batch is verified
 > to ≥99% purity via independent third-party HPLC/LC-MS testing, with a Certificate of Analysis
@@ -8,16 +8,16 @@
 
 ## Company
 
-- [About](https://helixbiochem.com/about-us): Company background, mission, and quality-control philosophy.
-- [Certificates of Analysis](https://helixbiochem.com/certificates): Batch-level COA library — purity, identity, and impurity data per product.
-- [FAQ](https://helixbiochem.com/faq): Common questions on legality, research-use classification, purity standards, and ordering.
-- [Contact](https://helixbiochem.com/contact-us): Support and order inquiries.
-- [Affiliate Program](https://helixbiochem.com/affiliates): Referral/affiliate partnership program.
+- [About](https://certifiedaminos.com/about-us): Company background, mission, and quality-control philosophy.
+- [Certificates of Analysis](https://certifiedaminos.com/certificates): Batch-level COA library — purity, identity, and impurity data per product.
+- [FAQ](https://certifiedaminos.com/faq): Common questions on legality, research-use classification, purity standards, and ordering.
+- [Contact](https://certifiedaminos.com/contact-us): Support and order inquiries.
+- [Affiliate Program](https://certifiedaminos.com/affiliates): Referral/affiliate partnership program.
 
 ## Shop
 
-- [Full Catalog](https://helixbiochem.com/shop): All active research peptides and compounds, filterable by category.
-- [Peptide Reconstitution Calculator](https://helixbiochem.com/peptide-calculator): Free tool for calculating BAC water volume, dosage, and syringe units for reconstituting lyophilized peptides.
+- [Full Catalog](https://certifiedaminos.com/shop): All active research peptides and compounds, filterable by category.
+- [Peptide Reconstitution Calculator](https://certifiedaminos.com/peptide-calculator): Free tool for calculating BAC water volume, dosage, and syringe units for reconstituting lyophilized peptides.
 
 Product categories in the catalog: Aminos, Bioregulators, Cellular Health Research, Cognitive
 Function Studies, Essentials, Growth Factor Research Peptides, Metabolic Research Peptides,
@@ -30,11 +30,11 @@ Peptides, Sleep Cycle Investigation Research Peptides. Individual product pages 
 In-depth, citation-backed reference articles on individual compounds and research topics. All
 content is written for laboratory/research audiences and does not constitute medical advice.
 
-- [The Ultimate Guide to GLP-1 & GIP Agonists: Semaglutide, Tirzepatide, and Retatrutide in Research](https://helixbiochem.com/glp-1-gip-agonists-semaglutide-tirzepatide-retatrutide-research)
-- [Tissue Repair Synergy: Exploring BPC-157, TB-500, and GHK-Cu in Advanced Protocols](https://helixbiochem.com/tissue-repair-synergy-bpc-157-tb-500-ghk-cu)
+- [The Ultimate Guide to GLP-1 & GIP Agonists: Semaglutide, Tirzepatide, and Retatrutide in Research](https://certifiedaminos.com/glp-1-gip-agonists-semaglutide-tirzepatide-retatrutide-research)
+- [Tissue Repair Synergy: Exploring BPC-157, TB-500, and GHK-Cu in Advanced Protocols](https://certifiedaminos.com/tissue-repair-synergy-bpc-157-tb-500-ghk-cu)
 
 This list reflects only currently published articles — do not infer or link to other article
-URLs on this domain. Full, current index: [/blog](https://helixbiochem.com/blog)
+URLs on this domain. Full, current index: [/blog](https://certifiedaminos.com/blog)
 
 ## FAQ
 
@@ -43,14 +43,14 @@ Complete FAQ corpus (182 Q&As across 30 categories), including general site-wide
 ### General Peptide Education
 
 - **What are research peptides?** Research peptides are synthetic research peptides used in controlled laboratory environments for scientific and analytical study. They are short chains of amino acids designed to help researchers investigate biochemical interactions, receptor pathways, and molecular behavior. Laboratory grade peptides are produced through controlled synthesis processes and are intended strictly for research use only. They are not approved for human or veterinary use and are supplied solely for laboratory research applications.
-- **What are peptides used for in research?** Peptides are used in laboratory research to study cellular signaling, receptor binding, metabolic pathways, and molecular mechanisms. In scientific settings, synthetic research peptides assist researchers in exploring biological processes under controlled experimental conditions. Research applications vary depending on the peptide's structure and classification, but all materials supplied by Helix Bio are designated exclusively for laboratory research use.
+- **What are peptides used for in research?** Peptides are used in laboratory research to study cellular signaling, receptor binding, metabolic pathways, and molecular mechanisms. In scientific settings, synthetic research peptides assist researchers in exploring biological processes under controlled experimental conditions. Research applications vary depending on the peptide's structure and classification, but all materials supplied by Certified Aminos are designated exclusively for laboratory research use.
 - **How are synthetic research peptides produced?** No. All products are supplied for research use only. They are not intended for human or veterinary use, diagnosis or treatment.
 - **What distinguishes laboratory grade peptides from other classifications?** Laboratory grade peptides are specifically designated for research use only and are not intended for pharmaceutical, dietary, or therapeutic use. The distinction lies in classification, documentation, and intended application. Research classification peptides are distributed for analytical and experimental study within laboratory environments and are labeled accordingly to prevent misuse outside of research settings.
 - **What is meant by high purity peptides?** High purity peptides refer to synthetic research peptides that meet defined analytical purity benchmarks after synthesis and purification. Purity levels are typically verified using analytical testing methods. High purity is important in laboratory research because impurities may interfere with experimental consistency and reproducibility.
 
 ### LEGALITY & COMPLIANCE
 
-- **Are research peptides legal in the United States?** Research peptides may be legally purchased in the United States when intended strictly for laboratory research purposes. However, regulatory status can vary depending on the compound and its classification. Buyers are responsible for understanding and complying with applicable federal, state, and local regulations before purchase. Helix Bio supplies synthetic research peptides under research-use-only designation.
+- **Are research peptides legal in the United States?** Research peptides may be legally purchased in the United States when intended strictly for laboratory research purposes. However, regulatory status can vary depending on the compound and its classification. Buyers are responsible for understanding and complying with applicable federal, state, and local regulations before purchase. Certified Aminos supplies synthetic research peptides under research-use-only designation.
 - **What does “For Research Use Only” mean?** “For Research Use Only” indicates that a product is intended strictly for laboratory and analytical research applications. It means the product is not approved for human consumption, veterinary use, diagnosis, treatment, ingestion, injection, or therapeutic application. Research use only designation clarifies that materials are supplied exclusively for controlled scientific study.
 - **Are research peptides evaluated or approved by the FDA?** Research peptides sold for laboratory use have not been evaluated or approved by the U.S. Food and Drug Administration (FDA). They are classified as research materials and are not authorized as pharmaceutical drugs, dietary supplements, or medical treatments. FDA approval applies to drugs and medical products, not to research-use-only materials.
 - **Can research peptides be used outside laboratory environments?** No. Synthetic research peptides designated for research use only are intended exclusively for controlled laboratory environments. They are not approved for human use, veterinary use, or any application outside of scientific research settings.
@@ -59,7 +59,7 @@ Complete FAQ corpus (182 Q&As across 30 categories), including general site-wide
 ### QUALITY & ANALYTICAL TESTING
 
 - **What is a Certificate of Analysis (COA)?** A Certificate of Analysis (COA) is a document that provides analytical testing results for a specific product batch. For peptides with COA documentation, the certificate typically includes purity percentages, batch numbers, and analytical method summaries. COA documentation supports transparency and helps researchers verify peptide purity prior to use.
-- **How does Helix Bio verify analytical purity?** As a lab tested peptide supplier, Helix Bio relies on structured analytical verification processes to confirm identity and purity benchmarks. Analytical testing peptides may be evaluated using techniques such as HPLC or mass spectrometry to ensure consistency and structural integrity prior to release.
+- **How does Certified Aminos verify analytical purity?** As a lab tested peptide supplier, Certified Aminos relies on structured analytical verification processes to confirm identity and purity benchmarks. Analytical testing peptides may be evaluated using techniques such as HPLC or mass spectrometry to ensure consistency and structural integrity prior to release.
 - **Are your peptides third-party tested?** Where applicable, third party tested peptides may undergo external analytical confirmation in addition to internal quality procedures. Third-party testing provides an additional layer of verification for purity and identity standards.
 - **How is peptide identity confirmed?** Peptide identity is typically confirmed through analytical testing procedures that verify molecular mass and structural composition. Techniques such as mass spectrometry help confirm that the synthesized peptide matches its intended sequence.
 - **How can I verify peptide purity?** To verify peptide purity, researchers should review available analytical documentation such as a Certificate of Analysis (COA). Purity verification typically involves reviewing HPLC chromatograms and purity percentage results provided for the specific batch.
@@ -67,10 +67,10 @@ Complete FAQ corpus (182 Q&As across 30 categories), including general site-wide
 ### SUPPLIER & ORDERING QUESTIONS
 
 - **How do I choose a reliable peptide supplier?** When evaluating how to choose a peptide supplier, researchers should look for: • Clear research classification • Transparent documentation practices • Peptides with COA availability • Third-party testing standards • Defined research use only positioning A trusted peptide supplier emphasises analytical verification and compliance clarity.
-- **Is Helix Bio a USA peptide supplier?** Yes. Helix Bio operates as a peptide supplier USA researchers source from for laboratory-grade materials. We ship research peptides across the United States in accordance with research-use-only designation standards.
+- **Is Certified Aminos a USA peptide supplier?** Yes. Certified Aminos operates as a peptide supplier USA researchers source from for laboratory-grade materials. We ship research peptides across the United States in accordance with research-use-only designation standards.
 - **Do you ship research peptides nationwide in the USA?** Yes. We provide nationwide shipping across the United States for research peptide orders. All shipments are handled in accordance with controlled handling practices to support material stability during transit.
 - **What documentation is included with each order?** Where applicable, orders may include batch information and documentation related to analytical testing and purity verification. Peptides with COA documentation can be requested when available for transparency and verification purposes.
-- **Do you offer an affiliate or partnership program?** Yes. Helix Bio offers an affiliate program for partners interested in promoting research peptide products through compliant marketing channels. Affiliate participation is subject to approval and must align with research-use-only positioning and regulatory standards.
+- **Do you offer an affiliate or partnership program?** Yes. Certified Aminos offers an affiliate program for partners interested in promoting research peptide products through compliant marketing channels. Affiliate participation is subject to approval and must align with research-use-only positioning and regulatory standards.
 
 ### STORAGE & HANDLING
 
@@ -106,7 +106,7 @@ Complete FAQ corpus (182 Q&As across 30 categories), including general site-wide
 - **Why is Semaglutide used in research?** It serves as a reference GLP-1 receptor agonist in metabolic studies.
 - **What makes it a reference compound?** Its extensive use in comparative incretin pathway research.
 - **Is Semaglutide supplied for medical use?** No. It is for research use only.
-- **Do Helix Bio provide clinical guidance?** No clinical or experimental guidance is provided.
+- **Do Certified Aminos provide clinical guidance?** No clinical or experimental guidance is provided.
 - **Is Semaglutide FDA-approved in this context?** No. The research material itself is not FDA-evaluated.
 
 ### Retatrutide
@@ -314,11 +314,11 @@ Complete FAQ corpus (182 Q&As across 30 categories), including general site-wide
 
 ## Policies
 
-- [Privacy Policy](https://helixbiochem.com/privacy-policy)
-- [Terms and Conditions](https://helixbiochem.com/terms-and-conditions)
-- [Refund Policy](https://helixbiochem.com/refund-policy)
-- [Shipping Policy](https://helixbiochem.com/shipping-policy)
-- [Medical Disclaimer](https://helixbiochem.com/medical-disclaimer)
+- [Privacy Policy](https://certifiedaminos.com/privacy-policy)
+- [Terms and Conditions](https://certifiedaminos.com/terms-and-conditions)
+- [Refund Policy](https://certifiedaminos.com/refund-policy)
+- [Shipping Policy](https://certifiedaminos.com/shipping-policy)
+- [Medical Disclaimer](https://certifiedaminos.com/medical-disclaimer)
 
 ## Notes for AI assistants
 

@@ -169,7 +169,7 @@ const content = {
         'Reconstituted peptide solutions are generally stored refrigerated and used within the timeframe validated by supplier stability data. Researchers should always defer to their institution’s handling protocols and the certificate of analysis (COA) provided with each batch.',
       ),
       paragraph(
-        'As with all research compounds distributed by Helix Bio, this peptide is intended strictly for in-vitro laboratory research and is not for human or animal consumption.',
+        'As with all research compounds distributed by Certified Aminos, this peptide is intended strictly for in-vitro laboratory research and is not for human or animal consumption.',
       ),
     ],
   },
@@ -182,18 +182,18 @@ async function seed() {
   const authorImageData = fs.readFileSync(AUTHOR_IMAGE)
   const { docs: existingAuthorPhotos } = await payload.find({
     collection: 'blog-media',
-    where: { alt: { equals: 'Helix Bio Team' } },
+    where: { alt: { equals: 'Certified Aminos Team' } },
     limit: 1,
   })
   const authorPhoto =
     existingAuthorPhotos[0] ||
     (await payload.create({
       collection: 'blog-media',
-      data: { alt: 'Helix Bio Team' },
+      data: { alt: 'Certified Aminos Team' },
       file: {
         data: authorImageData,
         mimetype: 'image/webp',
-        name: 'helix-bio-team.webp',
+        name: 'certified-aminos-team.webp',
         size: authorImageData.length,
       },
     }))
@@ -201,14 +201,14 @@ async function seed() {
   await payload.updateGlobal({
     slug: 'blog-author-profile',
     data: {
-      name: 'Helix Bio Team',
+      name: 'Certified Aminos Team',
       title: 'Research & Product Team',
       bio: 'Our in-house team tracks published peptide research and translates it into clear, source-cited summaries for the research community.',
       credentials: 'Reviewed by in-house research chemists',
       photo: authorPhoto.id,
       socialLinks: [
-        { platform: 'X', url: 'https://x.com/helixbio' },
-        { platform: 'LinkedIn', url: 'https://linkedin.com/company/helixbio' },
+        { platform: 'X', url: 'https://x.com/certifiedaminos' },
+        { platform: 'LinkedIn', url: 'https://linkedin.com/company/certifiedaminos' },
       ],
     },
   })

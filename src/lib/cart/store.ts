@@ -168,7 +168,7 @@ export const useCartStore = create<CartState>()(
       }
     },
     {
-      name: 'Helix Bio-cart-storage',
+      name: 'Certified Aminos-cart-storage',
     },
   ),
 )

@@ -76,8 +76,8 @@ export async function GET(req: Request) {
     <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="container">
       <tr>
         <td class="header">
-          <a href="https://helixbiochem.com">
-            <img src="https://pub-0b0f2f98407442588d161ae09cb84207.r2.dev/email-assets/hb-logo.png" alt="Helix Bio" class="logo-img" />
+          <a href="https://certifiedaminos.com" style="text-decoration: none;">
+            <span style="font-family: Arial, sans-serif; font-size: 24px; font-weight: 700; letter-spacing: 2px; color: #ffffff; text-transform: uppercase;">Certified Aminos</span>
           </a>
         </td>
       </tr>
@@ -91,14 +91,14 @@ export async function GET(req: Request) {
           <p>
             Return to the lab to secure your order and resume your research.
           </p>
-          <a href="https://helixbiochem.com/cart" class="btn">Return to Cart</a>
+          <a href="https://certifiedaminos.com/cart" class="btn">Return to Cart</a>
         </td>
       </tr>
       <tr>
         <td class="footer">
           <p class="disclaimer">
             <strong>FDA Disclaimer:</strong> These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease. All products offered are for laboratory and research use only.<br><br>
-            © 2026 HelixBio. All rights reserved.
+            © 2026 Certified Aminos. All rights reserved.
           </p>
         </td>
       </tr>

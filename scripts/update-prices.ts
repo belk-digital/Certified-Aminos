@@ -207,7 +207,7 @@ async function run() {
   await client.end();
   
   console.log(`\n=== Migration Complete ===`);
-  console.log(`Successfully updated ${updateCount} products in Helix Bio DB with strict matching.`);
+  console.log(`Successfully updated ${updateCount} products in the Certified Aminos DB with strict matching.`);
   
   process.exit(0);
 }

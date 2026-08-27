@@ -38,7 +38,7 @@ export function CalculatorHero() {
         >
           <Image
             src="/HelixBio Images/multiple-vial.webp"
-            alt="HelixBio Peptide Calculator"
+            alt="Certified Aminos Peptide Calculator"
             fill
             className="object-cover opacity-90 transition-transform duration-1000 group-hover:scale-105"
             priority

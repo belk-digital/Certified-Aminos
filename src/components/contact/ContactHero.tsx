@@ -39,7 +39,7 @@ export function ContactHero() {
         >
           <Image
             src="/HelixBio Images/helixbio-as-routine.webp"
-            alt="Contact HelixBio"
+            alt="Contact Certified Aminos"
             fill
             className="object-cover opacity-90 transition-transform duration-1000 group-hover:scale-105"
             priority

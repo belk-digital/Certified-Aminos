@@ -3,7 +3,7 @@ import { emailLayout } from './emailLayout'
 export async function generateAffiliateSaleEmail(affiliate: any, commissionAmount: number, isVoid: boolean): Promise<string> {
   const amount = (commissionAmount || 0).toFixed(2)
   const name = affiliate.displayName || 'Partner'
-  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://helixbiochem.com'
+  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certifiedaminos.com'
 
   const title = isVoid ? 'Sale Tracked (Voided)' : 'New Sale Tracked!'
   const content = isVoid 
@@ -16,7 +16,7 @@ export async function generateAffiliateSaleEmail(affiliate: any, commissionAmoun
     content: `
               <h2 style="margin: 0 0 20px 0; font-size: 24px; color: #0A0A0A; font-weight: 800; letter-spacing: -0.5px;">Hi ${name},</h2>
               ${content}
-              <p style="margin: 32px 0 0 0; font-size: 16px; color: #4A4A4A; font-weight: 600;">Best regards,<br>The Helix Bio Team</p>
+              <p style="margin: 32px 0 0 0; font-size: 16px; color: #4A4A4A; font-weight: 600;">Best regards,<br>The Certified Aminos Team</p>
     `
   })
 }

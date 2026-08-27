@@ -246,7 +246,7 @@ export default function ShippingPolicyPage() {
 
                     <div>
                       <span className="font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-black/40 block mb-1">{t('supportIssuesLabel')}</span>
-                      <a href="mailto:support@helixbiochem.com" className="text-base font-medium text-black hover:text-[#1e5661] transition-colors">support@helixbiochem.com</a>
+                      <a href="mailto:support@certifiedaminos.com" className="text-base font-medium text-black hover:text-[#1e5661] transition-colors">support@certifiedaminos.com</a>
                     </div>
 
                   </div>

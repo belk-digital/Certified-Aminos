@@ -14,7 +14,7 @@ export const faqData: FaqCategoryType[] = [
     "items": [
       {
         "question": "What is a research peptide?",
-        "answer": "<p><span style=\"font-weight: 400;\">A research peptide is a short chain of amino acids manufactured for laboratory study rather than human or veterinary use.</span></p>\r\n<p><span style=\"font-weight: 400;\"></span></p>\r\n<p><span style=\"font-weight: 400;\">Helix Bio's catalog is synthesized and tested to a documented purity standard and sold exclusively for scientific research.</span></p>"
+        "answer": "<p><span style=\"font-weight: 400;\">A research peptide is a short chain of amino acids manufactured for laboratory study rather than human or veterinary use.</span></p>\r\n<p><span style=\"font-weight: 400;\"></span></p>\r\n<p><span style=\"font-weight: 400;\">Certified Aminos' catalog is synthesized and tested to a documented purity standard and sold exclusively for scientific research.</span></p>"
       },
       {
         "question": "What are research peptides used for in laboratory research?",
@@ -22,15 +22,15 @@ export const faqData: FaqCategoryType[] = [
       },
       {
         "question": "How are research peptides classified for human use?",
-        "answer": "<p><span style=\"font-weight: 400;\">They are not classified for human use at all.</span></p>\r\n<p><span style=\"font-weight: 400;\"></span></p>\r\n<p><span style=\"font-weight: 400;\">Every compound in the Helix Bio catalog is labeled Research Use Only (RUO), meaning it is not evaluated, approved, or intended for human or veterinary consumption.</span></p>"
+        "answer": "<p><span style=\"font-weight: 400;\">They are not classified for human use at all.</span></p>\r\n<p><span style=\"font-weight: 400;\"></span></p>\r\n<p><span style=\"font-weight: 400;\">Every compound in the Certified Aminos catalog is labeled Research Use Only (RUO), meaning it is not evaluated, approved, or intended for human or veterinary consumption.</span></p>"
       },
       {
-        "question": "What quality standards does Helix Bio apply to research peptides?",
-        "answer": "<p><span style=\"font-weight: 400;\">Every batch in the Helix Bio catalog is synthesized and analytically tested before it is offered for sale, with purity and identity confirmed through HPLC and mass spectrometry.</span></p>\r\n<p><span style=\"font-weight: 400;\"></span></p>\r\n<p><span style=\"font-weight: 400;\">Results are documented on a batch-specific certificate of analysis so researchers can verify specifications independently.</span></p>"
+        "question": "What quality standards does Certified Aminos apply to research peptides?",
+        "answer": "<p><span style=\"font-weight: 400;\">Every batch in the Certified Aminos catalog is synthesized and analytically tested before it is offered for sale, with purity and identity confirmed through HPLC and mass spectrometry.</span></p>\r\n<p><span style=\"font-weight: 400;\"></span></p>\r\n<p><span style=\"font-weight: 400;\">Results are documented on a batch-specific certificate of analysis so researchers can verify specifications independently.</span></p>"
       },
       {
-        "question": "Who typically purchases research peptides from Helix Bio?",
-        "answer": "<p><span style=\"font-weight: 400;\">Academic labs, private research organizations, and institutional researchers use Helix Bio's catalog to source purity-verified compounds for laboratory study.</span></p>\r\n<p><span style=\"font-weight: 400;\"></span></p>\r\n<p><span style=\"font-weight: 400;\">All purchases are made on the understanding that materials are supplied strictly for research use only.</span></p>"
+        "question": "Who typically purchases research peptides from Certified Aminos?",
+        "answer": "<p><span style=\"font-weight: 400;\">Academic labs, private research organizations, and institutional researchers use Certified Aminos' catalog to source purity-verified compounds for laboratory study.</span></p>\r\n<p><span style=\"font-weight: 400;\"></span></p>\r\n<p><span style=\"font-weight: 400;\">All purchases are made on the understanding that materials are supplied strictly for research use only.</span></p>"
       }
     ]
   },
@@ -79,8 +79,8 @@ export const faqData: FaqCategoryType[] = [
         "answer": "<p><span style=\"font-weight: 400;\">Request the batch-specific certificate of analysis and match its lot number to the vial received.</span></p>\r\n<p><span style=\"font-weight: 400;\"></span></p>\r\n<p><span style=\"font-weight: 400;\">Researchers with in-house or third-party lab access can also run their own HPLC or mass spectrometry confirmation.</span></p>"
       },
       {
-        "question": "Is third-party testing available for Helix Bio peptides?",
-        "answer": "<p><span style=\"font-weight: 400;\">Where applicable, Helix Bio batches may undergo independent third-party analytical confirmation in addition to internal testing.</span></p>\r\n<p><span style=\"font-weight: 400;\"></span></p>\r\n<p><span style=\"font-weight: 400;\">Third-party verification adds an additional layer of assurance for purity and identity standards beyond the in-house certificate of analysis.</span></p>"
+        "question": "Is third-party testing available for Certified Aminos peptides?",
+        "answer": "<p><span style=\"font-weight: 400;\">Where applicable, Certified Aminos batches may undergo independent third-party analytical confirmation in addition to internal testing.</span></p>\r\n<p><span style=\"font-weight: 400;\"></span></p>\r\n<p><span style=\"font-weight: 400;\">Third-party verification adds an additional layer of assurance for purity and identity standards beyond the in-house certificate of analysis.</span></p>"
       }
     ]
   },
@@ -104,8 +104,8 @@ export const faqData: FaqCategoryType[] = [
         "answer": "<p><span style=\"font-weight: 400;\">Current promotions, bundles, and discount programs are listed on the shop page rather than duplicated in the FAQ, since availability changes with inventory.</span></p>\r\n<p><span style=\"font-weight: 400;\"></span></p>\r\n<p><span style=\"font-weight: 400;\">Check the shop or subscribe to the mailing list for updates.</span></p>"
       },
       {
-        "question": "Does Helix Bio ship research peptide orders nationwide in the USA?",
-        "answer": "<p><span style=\"font-weight: 400;\">Yes. Helix Bio ships research peptide orders across the United States.</span></p>\r\n<p><span style=\"font-weight: 400;\"></span></p>\r\n<p><span style=\"font-weight: 400;\">All shipments are handled using controlled packaging practices to help preserve compound stability in transit.</span></p>"
+        "question": "Does Certified Aminos ship research peptide orders nationwide in the USA?",
+        "answer": "<p><span style=\"font-weight: 400;\">Yes. Certified Aminos ships research peptide orders across the United States.</span></p>\r\n<p><span style=\"font-weight: 400;\"></span></p>\r\n<p><span style=\"font-weight: 400;\">All shipments are handled using controlled packaging practices to help preserve compound stability in transit.</span></p>"
       }
     ]
   },
@@ -135,7 +135,7 @@ export const faqData: FaqCategoryType[] = [
     "items": [
       {
         "question": "What is Tirzepatide?",
-        "answer": "<p><span style=\"font-weight: 400;\">Tirzepatide is a synthetic peptide studied as a dual GIP/GLP-1 receptor agonist in metabolic and incretin-pathway research. Helix Bio's Tirzepatide is sold strictly as a research compound.</span></p>"
+        "answer": "<p><span style=\"font-weight: 400;\">Tirzepatide is a synthetic peptide studied as a dual GIP/GLP-1 receptor agonist in metabolic and incretin-pathway research. Certified Aminos' Tirzepatide is sold strictly as a research compound.</span></p>"
       },
       {
         "question": "What research models is Tirzepatide commonly studied in?",
@@ -147,7 +147,7 @@ export const faqData: FaqCategoryType[] = [
       },
       {
         "question": "Are dosing or administration instructions provided for Tirzepatide?",
-        "answer": "<p><span style=\"font-weight: 400;\">No. Helix Bio does not provide dosing, administration, or usage guidance for Tirzepatide or any other compound in the catalog.</span></p>"
+        "answer": "<p><span style=\"font-weight: 400;\">No. Certified Aminos does not provide dosing, administration, or usage guidance for Tirzepatide or any other compound in the catalog.</span></p>"
       },
       {
         "question": "Has Tirzepatide been evaluated by the FDA?",
@@ -164,7 +164,7 @@ export const faqData: FaqCategoryType[] = [
       },
       {
         "question": "Is Survodutide a therapeutic product?",
-        "answer": "<p><span style=\"font-weight: 400;\">No. Helix Bio positions Survodutide exclusively as a research compound, not as a medical treatment or consumer health product.</span></p>"
+        "answer": "<p><span style=\"font-weight: 400;\">No. Certified Aminos positions Survodutide exclusively as a research compound, not as a medical treatment or consumer health product.</span></p>"
       },
       {
         "question": "How is Survodutide classified for research purposes?",
@@ -193,7 +193,7 @@ export const faqData: FaqCategoryType[] = [
       },
       {
         "question": "Is SLU-PP-332 cleared for any use outside research?",
-        "answer": "<p><span style=\"font-weight: 400;\">No. SLU-PP-332 is not evaluated or approved for any use outside of laboratory research, and Helix Bio sells it strictly on that basis.</span></p>"
+        "answer": "<p><span style=\"font-weight: 400;\">No. SLU-PP-332 is not evaluated or approved for any use outside of laboratory research, and Certified Aminos sells it strictly on that basis.</span></p>"
       },
       {
         "question": "Is regulatory approval claimed for SLU-PP-332?",
@@ -214,15 +214,15 @@ export const faqData: FaqCategoryType[] = [
       },
       {
         "question": "Is Semaglutide sold research use only?",
-        "answer": "<p><span style=\"font-weight: 400;\">Yes. Helix Bio's Semaglutide is labeled and sold strictly research use only, and is not intended for human or veterinary consumption.</span></p>"
+        "answer": "<p><span style=\"font-weight: 400;\">Yes. Certified Aminos' Semaglutide is labeled and sold strictly research use only, and is not intended for human or veterinary consumption.</span></p>"
       },
       {
         "question": "Is clinical or dosing guidance provided?",
-        "answer": "<p><span style=\"font-weight: 400;\">No. Helix Bio does not provide dosing, administration, or clinical guidance for Semaglutide or any other compound in the catalog.</span></p>"
+        "answer": "<p><span style=\"font-weight: 400;\">No. Certified Aminos does not provide dosing, administration, or clinical guidance for Semaglutide or any other compound in the catalog.</span></p>"
       },
       {
         "question": "Has Semaglutide been evaluated by the FDA in this research context?",
-        "answer": "<p><span style=\"font-weight: 400;\">No. The Semaglutide sold in Helix Bio's research catalog has not been evaluated or approved by the FDA for any human or veterinary use.</span></p>"
+        "answer": "<p><span style=\"font-weight: 400;\">No. The Semaglutide sold in Certified Aminos' research catalog has not been evaluated or approved by the FDA for any human or veterinary use.</span></p>"
       }
     ]
   },
@@ -234,8 +234,8 @@ export const faqData: FaqCategoryType[] = [
         "answer": "<p><span style=\"font-weight: 400;\">Retatrutide is a synthetic peptide studied as a triple hormone receptor agonist (GIP, GLP-1, and glucagon), an area of active interest in metabolic research.</span></p>"
       },
       {
-        "question": "Is Retatrutide used in human clinical research by Helix Bio?",
-        "answer": "<p><span style=\"font-weight: 400;\">No. Helix Bio's Retatrutide is a research-use-only compound unrelated to any clinical trial supply chain, and is not distributed for clinical or human-use research.</span></p>"
+        "question": "Is Retatrutide used in human clinical research by Certified Aminos?",
+        "answer": "<p><span style=\"font-weight: 400;\">No. Certified Aminos' Retatrutide is a research-use-only compound unrelated to any clinical trial supply chain, and is not distributed for clinical or human-use research.</span></p>"
       },
       {
         "question": "Are dosing protocols provided?",
@@ -297,7 +297,7 @@ export const faqData: FaqCategoryType[] = [
       },
       {
         "question": "Are medical or anti-aging claims made for Epitalon?",
-        "answer": "<p><span style=\"font-weight: 400;\">No. Helix Bio does not make medical, therapeutic, or anti-aging claims for Epitalon; it is referenced in research literature only.</span></p>"
+        "answer": "<p><span style=\"font-weight: 400;\">No. Certified Aminos does not make medical, therapeutic, or anti-aging claims for Epitalon; it is referenced in research literature only.</span></p>"
       }
     ]
   },
@@ -318,7 +318,7 @@ export const faqData: FaqCategoryType[] = [
       },
       {
         "question": "Is dosing guidance provided for AOD-9604?",
-        "answer": "<p><span style=\"font-weight: 400;\">No. Helix Bio does not provide dosing or administration guidance for AOD-9604.</span></p>"
+        "answer": "<p><span style=\"font-weight: 400;\">No. Certified Aminos does not provide dosing or administration guidance for AOD-9604.</span></p>"
       },
       {
         "question": "Has AOD-9604 been evaluated by the FDA?",
@@ -364,7 +364,7 @@ export const faqData: FaqCategoryType[] = [
       },
       {
         "question": "Is clinical testing provided for the blend?",
-        "answer": "<p><span style=\"font-weight: 400;\">No. Helix Bio does not conduct or reference clinical testing for this blend; documentation is limited to batch purity and identity testing appropriate to a research compound.</span></p>"
+        "answer": "<p><span style=\"font-weight: 400;\">No. Certified Aminos does not conduct or reference clinical testing for this blend; documentation is limited to batch purity and identity testing appropriate to a research compound.</span></p>"
       },
       {
         "question": "Is regulatory approval claimed?",
@@ -389,7 +389,7 @@ export const faqData: FaqCategoryType[] = [
       },
       {
         "question": "Is dosing guidance or a clinical framework claimed?",
-        "answer": "<p><span style=\"font-weight: 400;\">No. Helix Bio does not provide dosing guidance or reference any clinical framework for Semax; it is sold strictly as a research reagent.</span></p>"
+        "answer": "<p><span style=\"font-weight: 400;\">No. Certified Aminos does not provide dosing guidance or reference any clinical framework for Semax; it is sold strictly as a research reagent.</span></p>"
       },
       {
         "question": "Is Semax approved for any route of human administration?",
@@ -410,11 +410,11 @@ export const faqData: FaqCategoryType[] = [
       },
       {
         "question": "Is a specific effect claimed for Selank?",
-        "answer": "<p><span style=\"font-weight: 400;\">No. Helix Bio does not make effect or outcome claims for Selank; findings referenced in research literature are not a guarantee of any particular result.</span></p>"
+        "answer": "<p><span style=\"font-weight: 400;\">No. Certified Aminos does not make effect or outcome claims for Selank; findings referenced in research literature are not a guarantee of any particular result.</span></p>"
       },
       {
         "question": "Is guidance provided for experimental use?",
-        "answer": "<p><span style=\"font-weight: 400;\">No. Helix Bio does not provide experimental-use or dosing guidance for Selank; researchers are expected to design their own protocols appropriate to their institution.</span></p>"
+        "answer": "<p><span style=\"font-weight: 400;\">No. Certified Aminos does not provide experimental-use or dosing guidance for Selank; researchers are expected to design their own protocols appropriate to their institution.</span></p>"
       },
       {
         "question": "Is Selank a therapeutic or consumer product?",
@@ -443,11 +443,11 @@ export const faqData: FaqCategoryType[] = [
       },
       {
         "question": "Are sleep benefits guaranteed for DSIP research?",
-        "answer": "<p><span style=\"font-weight: 400;\">No. Helix Bio does not claim or guarantee any sleep-related benefit for DSIP.</span></p>"
+        "answer": "<p><span style=\"font-weight: 400;\">No. Certified Aminos does not claim or guarantee any sleep-related benefit for DSIP.</span></p>"
       },
       {
         "question": "Is administration guidance included with DSIP?",
-        "answer": "<p><span style=\"font-weight: 400;\">No. Helix Bio does not provide administration or dosing guidance for DSIP.</span></p>"
+        "answer": "<p><span style=\"font-weight: 400;\">No. Certified Aminos does not provide administration or dosing guidance for DSIP.</span></p>"
       }
     ]
   },
@@ -493,7 +493,7 @@ export const faqData: FaqCategoryType[] = [
       },
       {
         "question": "Is clinical data provided for BPC-157?",
-        "answer": "<p><span style=\"font-weight: 400;\">No. Helix Bio does not provide or reference clinical data for BPC-157; documentation is limited to batch purity and identity testing.</span></p>"
+        "answer": "<p><span style=\"font-weight: 400;\">No. Certified Aminos does not provide or reference clinical data for BPC-157; documentation is limited to batch purity and identity testing.</span></p>"
       },
       {
         "question": "Is FDA approval claimed for BPC-157?",
@@ -510,7 +510,7 @@ export const faqData: FaqCategoryType[] = [
       },
       {
         "question": "Is this a combination product with claimed effects?",
-        "answer": "<p><span style=\"font-weight: 400;\">No. Helix Bio does not make combined-effect claims for this product; it is sold strictly as two research-use-only compounds packaged together.</span></p>"
+        "answer": "<p><span style=\"font-weight: 400;\">No. Certified Aminos does not make combined-effect claims for this product; it is sold strictly as two research-use-only compounds packaged together.</span></p>"
       },
       {
         "question": "Is a specific research use claimed for the combination?",
@@ -522,7 +522,7 @@ export const faqData: FaqCategoryType[] = [
       },
       {
         "question": "Are experimental protocols supplied with this combination?",
-        "answer": "<p><span style=\"font-weight: 400;\">No. Helix Bio does not supply experimental protocols; researchers design their own studies appropriate to their institution.</span></p>"
+        "answer": "<p><span style=\"font-weight: 400;\">No. Certified Aminos does not supply experimental protocols; researchers design their own studies appropriate to their institution.</span></p>"
       }
     ]
   },
@@ -547,7 +547,7 @@ export const faqData: FaqCategoryType[] = [
       },
       {
         "question": "Is usage guidance provided?",
-        "answer": "<p><span style=\"font-weight: 400;\">No. Helix Bio does not provide dosing, administration, or human-use guidance for KLOW or any other compound in the catalog.</span></p>"
+        "answer": "<p><span style=\"font-weight: 400;\">No. Certified Aminos does not provide dosing, administration, or human-use guidance for KLOW or any other compound in the catalog.</span></p>"
       }
     ]
   },
@@ -564,7 +564,7 @@ export const faqData: FaqCategoryType[] = [
       },
       {
         "question": "Are aesthetic outcomes implied?",
-        "answer": "<p><span style=\"font-weight: 400;\">No. Helix Bio does not make aesthetic or outcome claims for GLOW; any research findings referenced in literature are not a guarantee of a particular result.</span></p>"
+        "answer": "<p><span style=\"font-weight: 400;\">No. Certified Aminos does not make aesthetic or outcome claims for GLOW; any research findings referenced in literature are not a guarantee of a particular result.</span></p>"
       },
       {
         "question": "Is it FDA-approved?",
@@ -572,7 +572,7 @@ export const faqData: FaqCategoryType[] = [
       },
       {
         "question": "Is usage or application guidance provided for GLOW?",
-        "answer": "<p><span style=\"font-weight: 400;\">No. Helix Bio does not provide dosing, application, or human-use guidance for GLOW.</span></p>"
+        "answer": "<p><span style=\"font-weight: 400;\">No. Certified Aminos does not provide dosing, application, or human-use guidance for GLOW.</span></p>"
       }
     ]
   },
@@ -585,15 +585,15 @@ export const faqData: FaqCategoryType[] = [
       },
       {
         "question": "Is this product a dietary supplement?",
-        "answer": "<p><span style=\"font-weight: 400;\">No. Although glutathione is available in some consumer supplement forms elsewhere, Helix Bio's glutathione is sold strictly for laboratory research and is not offered as a dietary supplement.</span></p>"
+        "answer": "<p><span style=\"font-weight: 400;\">No. Although glutathione is available in some consumer supplement forms elsewhere, Certified Aminos' glutathione is sold strictly for laboratory research and is not offered as a dietary supplement.</span></p>"
       },
       {
         "question": "Is an antioxidant benefit claimed?",
-        "answer": "<p><span style=\"font-weight: 400;\">Helix Bio references glutathione's documented role in antioxidant research literature but does not make a personal-benefit or outcome claim for its product.</span></p>"
+        "answer": "<p><span style=\"font-weight: 400;\">Certified Aminos references glutathione's documented role in antioxidant research literature but does not make a personal-benefit or outcome claim for its product.</span></p>"
       },
       {
         "question": "Is ingestion allowed?",
-        "answer": "<p><span style=\"font-weight: 400;\">No. Helix Bio's glutathione is not intended for ingestion or human consumption in any form; it is sold research use only.</span></p>"
+        "answer": "<p><span style=\"font-weight: 400;\">No. Certified Aminos' glutathione is not intended for ingestion or human consumption in any form; it is sold research use only.</span></p>"
       },
       {
         "question": "Is analytical testing performed?",
@@ -639,7 +639,7 @@ export const faqData: FaqCategoryType[] = [
       },
       {
         "question": "Are these compounds tested for cognitive-relevant endpoints?",
-        "answer": "<p><span style=\"font-weight: 400;\">Published research on these compounds includes cognitive- and behavior-relevant endpoints in animal models; Helix Bio does not conduct or claim its own cognitive testing.</span></p>"
+        "answer": "<p><span style=\"font-weight: 400;\">Published research on these compounds includes cognitive- and behavior-relevant endpoints in animal models; Certified Aminos does not conduct or claim its own cognitive testing.</span></p>"
       },
       {
         "question": "Which peptides are commonly used in cognitive research?",
@@ -714,7 +714,7 @@ export const faqData: FaqCategoryType[] = [
       },
       {
         "question": "Are these compounds tested for antioxidant capacity?",
-        "answer": "<p><span style=\"font-weight: 400;\">Published literature on these compounds includes antioxidant-capacity testing in laboratory settings; Helix Bio references that literature without making its own outcome claims.</span></p>"
+        "answer": "<p><span style=\"font-weight: 400;\">Published literature on these compounds includes antioxidant-capacity testing in laboratory settings; Certified Aminos references that literature without making its own outcome claims.</span></p>"
       },
       {
         "question": "Are these compounds typically studied in combination with other research compounds?",
@@ -763,7 +763,7 @@ export const faqData: FaqCategoryType[] = [
       },
       {
         "question": "Can GHK-Cu be studied in anti-wrinkle research contexts?",
-        "answer": "<p><span style=\"font-weight: 400;\">Yes, GHK-Cu appears in published research examining skin-aging-related endpoints, though Helix Bio does not sell it as, or claim it functions as, a cosmetic anti-wrinkle product.</span></p>"
+        "answer": "<p><span style=\"font-weight: 400;\">Yes, GHK-Cu appears in published research examining skin-aging-related endpoints, though Certified Aminos does not sell it as, or claim it functions as, a cosmetic anti-wrinkle product.</span></p>"
       },
       {
         "question": "What research exists on GHK-Cu and skin elasticity?",

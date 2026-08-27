@@ -1,7 +1,7 @@
 import { emailLayout } from './emailLayout'
 
 export async function generateAffiliateWelcomeEmail(affiliate: any, user: any): Promise<string> {
-  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://helixbiochem.com';
+  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certifiedaminos.com';
   
   const affiliateName = affiliate.displayName || user?.firstName || 'Partner';
   const referralLink = `${serverUrl}/ref/${affiliate.referralSlug}`;
@@ -15,7 +15,7 @@ export async function generateAffiliateWelcomeEmail(affiliate: any, user: any): 
     heroImage: 'https://pub-0b0f2f98407442588d161ae09cb84207.r2.dev/email-assets/ChatGPT%20Image%20Jul%2020%2C%202026%2C%2005_23_31%20AM.webp',
     content: `
               <h2 style="margin: 0 0 16px 0; font-size: 24px; color: #0A0A0A; font-weight: 800; letter-spacing: -0.5px;">Hi ${affiliateName},</h2>
-              <p style="margin: 0 0 24px 0; font-size: 16px; color: #4A4A4A; line-height: 1.6;">Your application has been instantly approved! We're thrilled to have you join Helix Bio as an official partner. You can now start earning ${commissionRate}% commission on every referral.</p>
+              <p style="margin: 0 0 24px 0; font-size: 16px; color: #4A4A4A; line-height: 1.6;">Your application has been instantly approved! We're thrilled to have you join Certified Aminos as an official partner. You can now start earning ${commissionRate}% commission on every referral.</p>
               
               <!-- Toolkit Card -->
               <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #fdfbf7; border-radius: 12px; border: 1px solid #e2ddd3; margin-bottom: 32px; box-shadow: 0 4px 6px rgba(0,0,0,0.02);">

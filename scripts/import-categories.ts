@@ -20,13 +20,13 @@ async function run() {
 
   console.log(`Found ${categoriesToImport.length} categories to import.`);
 
-  // 1. Fetch all existing categories in HelixBio and delete them
+  // 1. Fetch all existing categories and delete them
   const existingCategories = await p.find({
     collection: 'categories',
     limit: 1000,
   });
 
-  console.log(`Found ${existingCategories.totalDocs} existing categories in HelixBio. Deleting them...`);
+  console.log(`Found ${existingCategories.totalDocs} existing categories. Deleting them...`);
   for (const cat of existingCategories.docs) {
     await p.delete({
       collection: 'categories',

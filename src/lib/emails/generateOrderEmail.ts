@@ -4,7 +4,7 @@ import { emailLayout } from './emailLayout'
 export async function generateOrderInvoiceHtml(order: any, payload?: any, customNote?: string, statusContext: 'success' | 'failed' | 'cancelled' | 'refunded' = 'success'): Promise<string> {
   const orderNumber = order.orderNumber || order.id;
   const orderDate = order.createdAt ? new Date(order.createdAt).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) : new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
-  const serverUrl = 'https://helixbiochem.com';
+  const serverUrl = 'https://certifiedaminos.com';
   
   const formatMoney = (amount: number) => `$${(amount).toFixed(2)}`;
   
@@ -212,7 +212,7 @@ export async function generateOrderInvoiceHtml(order: any, payload?: any, custom
                 <div style="display: block; margin-bottom: 16px;">
                   <div style="background-color: #ffffff; border-radius: 8px; padding: 12px 24px; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">
                     <p style="margin: 0 0 4px 0; color: #A855F7; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">Send To</p>
-                    <p style="margin: 0; color: #6B21A8; font-size: 16px; font-weight: 700;">support@helixbiochem.com</p>
+                    <p style="margin: 0; color: #6B21A8; font-size: 16px; font-weight: 700;">support@certifiedaminos.com</p>
                   </div>
                 </div>
                 

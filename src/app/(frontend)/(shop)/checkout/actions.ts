@@ -510,7 +510,7 @@ export async function createPayloadOrder(
                await sendTrackedEmail(payload, {
                    from: 'Orders | Certified Aminos <support@certifiedaminos.com>',
                    to: customerEmail,
-                   bcc: 'support@helixbiochem.com',
+                   bcc: 'support@certifiedaminos.com',
                    subject: `Order Invoice #${order.orderNumber || order.id}`,
                    html: invoiceHtml,
                })
@@ -682,7 +682,7 @@ export async function notifyAdminFailedPayment(orderId: string, errorMessage: st
 
     await sendTrackedEmail(payload, {
       from: 'Support | Certified Aminos <support@certifiedaminos.com>',
-      to: 'support@helixbiochem.com',
+      to: 'support@certifiedaminos.com',
       subject: `⚠️ Payment Failed - Order #${orderNumber}`,
       html: html,
     })

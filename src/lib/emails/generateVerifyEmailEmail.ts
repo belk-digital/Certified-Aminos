@@ -3,7 +3,7 @@ import { emailLayout } from './emailLayout'
 
 export function generateVerifyEmailEmail(firstName: string | null | undefined, verifyUrl: string): string {
   const name = escapeHtml(firstName || 'there')
-  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://helixbiochem.com';
+  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certifiedaminos.com';
   return emailLayout({
     title: 'Verify your email',
     serverUrl,

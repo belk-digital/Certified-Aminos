@@ -170,10 +170,10 @@ async function run() {
     ? await resolveRelatedProducts(payload, draft.relatedProducts, warnings)
     : []
 
-  // 5. Fixed single author — the Helix Bio Team admin account
+  // 5. Fixed single author — the Certified Aminos Team admin account
   const { docs: admins } = await payload.find({ collection: 'users', where: { role: { equals: 'admin' } }, limit: 1 })
   if (admins.length === 0) {
-    console.error('No admin user found — create/designate the Helix Bio Team admin account before importing.')
+    console.error('No admin user found — create/designate the Certified Aminos Team admin account before importing.')
     process.exit(1)
   }
   const authorUser = admins[0]

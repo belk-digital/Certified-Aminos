@@ -44,7 +44,9 @@ export function AffiliateTopNav({
             </Link>
 
             <Link href="/" className="shrink-0 flex items-center">
-              <img src="/HelixBio Images/hb-logo.png" alt="HelixBio" className="h-9 sm:h-10 w-auto object-contain" />
+              <span className="font-syncopate text-base sm:text-lg font-medium tracking-tight text-black">
+                CERTIFIED AMINOS
+              </span>
             </Link>
 
             <div className="h-6 w-px bg-gray-200 hidden sm:block" />

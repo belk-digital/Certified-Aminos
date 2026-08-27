@@ -131,7 +131,7 @@ export async function attributeOrder(
   try {
     const adminHtml = generateAdminAffiliateConversionEmail(order, affiliate, isVoid ? 0 : commissionAmount)
     await sendTrackedEmail(payload, {
-      to: 'support@helixbiochem.com',
+      to: 'support@certifiedaminos.com',
       subject: `New Affiliate Sale! ${affiliate.displayName} made a conversion`,
       html: adminHtml,
     })

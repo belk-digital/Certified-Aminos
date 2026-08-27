@@ -143,10 +143,10 @@ export async function updatePasswordAction(input: {
         <div style="font-family: sans-serif; color: #111827; width: 100%; max-width: 600px; margin: 0 auto; background: #ffffff; padding: 20px; line-height: 1.6;">
           <h2 style="color: #000; border-bottom: 2px solid #e5e7eb; padding-bottom: 10px;">Security Alert: Password Changed</h2>
           <p>Hi ${user.firstName || 'there'},</p>
-          <p>This is a confirmation that the password for your Helix Bio account (${user.email}) has been changed.</p>
+          <p>This is a confirmation that the password for your Certified Aminos account (${user.email}) has been changed.</p>
           <p>If you made this change, no further action is required.</p>
           <p><strong>If you did not make this change, please contact our support team immediately.</strong></p>
-          <p style="margin-top: 30px;">Best regards,<br>The Helix Bio Team</p>
+          <p style="margin-top: 30px;">Best regards,<br>The Certified Aminos Team</p>
         </div>
 </body>
 </html>
@@ -160,7 +160,7 @@ export async function updatePasswordAction(input: {
 
       // Notify admin
       await sendTrackedEmail(payload, {
-        to: 'support@helixbiochem.com',
+        to: 'support@certifiedaminos.com',
         subject: `Security Alert: User Password Changed`,
         html: `<p>The password for the user <strong>${user.email}</strong> was recently changed.</p>`
       })

@@ -160,11 +160,11 @@ export const afterAffiliateApplicationChange: CollectionAfterChangeHook = async 
           const adminHtml = generateAdminAffiliateNotificationEmail(doc, newAffiliate, userDoc)
           await sendTrackedEmail(req.payload, {
             from: `"Affiliate System" <forms@certifiedaminos.com>`,
-            to: 'support@helixbiochem.com',
+            to: 'support@certifiedaminos.com',
             subject: `New Affiliate Registered: ${newAffiliate.displayName}`,
             html: adminHtml,
           })
-          req.payload.logger.info(`Sent admin notification to support@helixbiochem.com`)
+          req.payload.logger.info(`Sent admin notification to support@certifiedaminos.com`)
         }
       } catch (emailErr) {
         req.payload.logger.error({ err: emailErr }, 'Error sending affiliate emails')

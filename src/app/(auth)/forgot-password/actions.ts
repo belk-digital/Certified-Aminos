@@ -36,7 +36,7 @@ export async function requestPasswordReset(input: ForgotPasswordInput) {
 
       if (userDocs.docs.length > 0) {
         const user = userDocs.docs[0]
-        const base = process.env.NEXT_PUBLIC_SERVER_URL || 'https://helixbiochem.com'
+        const base = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certifiedaminos.com'
         const locale = ''
         const url = `${base}${locale}/reset-password/${token}`
         
@@ -46,7 +46,7 @@ export async function requestPasswordReset(input: ForgotPasswordInput) {
         await sendTrackedEmail(payload, {
           from: 'support@certifiedaminos.com',
           to: parsed.data.email,
-          subject: 'Reset Your Password - Helix Bio',
+          subject: 'Reset Your Password - Certified Aminos',
           html,
         })
       }

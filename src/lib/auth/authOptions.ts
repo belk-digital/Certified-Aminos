@@ -102,7 +102,7 @@ export const authOptions: NextAuthOptions = {
             from: 'Support | Certified Aminos <support@certifiedaminos.com>',
             to: linked.email,
             subject: 'A new sign-in method was added to your account',
-            html: `<p>Google sign-in was just linked to your Helix Bio account (${linked.email}). If this wasn't you, please contact support immediately.</p>`,
+            html: `<p>Google sign-in was just linked to your Certified Aminos account (${linked.email}). If this wasn't you, please contact support immediately.</p>`,
           })
         } catch (err) {
           console.error('Failed to send Google-link notice email:', err)

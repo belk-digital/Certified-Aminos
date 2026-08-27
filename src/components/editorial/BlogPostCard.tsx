@@ -44,7 +44,7 @@ export function BlogPostCard({
             {excerpt}
           </p>
           <div className="mt-auto pt-6 border-t border-ink/10 flex items-center justify-between">
-             <span className="text-sm font-semibold text-ink/70">HelixBio</span>
+             <span className="text-sm font-semibold text-ink/70">Certified Aminos</span>
              <div className="flex items-center gap-3">
                {date && (
                  <span className="text-xs text-ink/40 font-medium hidden sm:inline-block">{date}</span>

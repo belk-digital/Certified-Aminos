@@ -180,7 +180,7 @@ export default function RefundPolicyPage() {
                   </h2>
                   <p className="text-[15px] leading-relaxed">{t('section4Intro')}</p>
                   <ul className="list-disc pl-5 space-y-2 mt-4 text-[15px] marker:text-[#1e5661]">
-                    <li>{t.rich('section4Item1', { email: (chunks) => <a href="mailto:support@helixbiochem.com" className="hover:text-[#1e5661] transition-colors break-all">{chunks}</a> })}</li>
+                    <li>{t.rich('section4Item1', { email: (chunks) => <a href="mailto:support@certifiedaminos.com" className="hover:text-[#1e5661] transition-colors break-all">{chunks}</a> })}</li>
                     <li>{t('section4Item2')}</li>
                     <li>{t('section4Item3')}</li>
                     <li>{t('section4Item4')}</li>
@@ -210,7 +210,7 @@ export default function RefundPolicyPage() {
                   </h2>
                   <p className="text-[15px] leading-relaxed">{t('section6Intro')}</p>
                   <ul className="list-disc pl-5 space-y-2 mt-4 text-[15px] marker:text-[#1e5661]">
-                    <li>{t('section6OrderQueriesLabel')} <a href="mailto:support@helixbiochem.com" className="hover:text-[#1e5661] transition-colors break-all">support@helixbiochem.com</a></li>
+                    <li>{t('section6OrderQueriesLabel')} <a href="mailto:support@certifiedaminos.com" className="hover:text-[#1e5661] transition-colors break-all">support@certifiedaminos.com</a></li>
                   </ul>
                   <p className="text-[15px] leading-relaxed mt-4">{t('section6Text')}</p>
                 </section>
@@ -240,7 +240,7 @@ export default function RefundPolicyPage() {
 
                     <div>
                       <span className="font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-black/40 block mb-1">{t('supportIssuesLabel')}</span>
-                      <a href="mailto:support@helixbiochem.com" className="text-base font-medium text-black hover:text-[#1e5661] transition-colors">support@helixbiochem.com</a>
+                      <a href="mailto:support@certifiedaminos.com" className="text-base font-medium text-black hover:text-[#1e5661] transition-colors">support@certifiedaminos.com</a>
                     </div>
 
                   </div>

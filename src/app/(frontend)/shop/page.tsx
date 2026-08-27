@@ -30,8 +30,8 @@ const SHOP_FAQ_KEYS = [
   'fdaApproval',
 ]
 
-const title = 'Research Peptides Shop | Lab-Verified Purity | Helix Bio'
-const description = 'Shop research peptides online with verified COA on every batch, 99% purity, and fast USA shipping. Browse the Helix Bio catalog and order today.'
+const title = 'Research Peptides Shop | Lab-Verified Purity | Certified Aminos'
+const description = 'Shop research peptides online with verified COA on every batch, 99% purity, and fast USA shipping. Browse the Certified Aminos catalog and order today.'
 
 export async function generateMetadata({
   params,
@@ -107,7 +107,7 @@ export default async function ShopPage() {
     )
   }
 
-  const siteUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://helixbiochem.com'
+  const siteUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certifiedaminos.com'
 
   const t = await getTranslations('shop.shopClient')
   const shopFaqs = SHOP_FAQ_KEYS.map((key) => ({
@@ -156,12 +156,12 @@ export default async function ShopPage() {
                 '@type': 'WebSite',
                 '@id': `${siteUrl}/#website`,
                 url: siteUrl,
-                name: 'Helix Bio',
+                name: 'Certified Aminos',
               },
               {
                 '@type': 'Organization',
                 '@id': `${siteUrl}/#organization`,
-                name: 'Helix Bio',
+                name: 'Certified Aminos',
                 url: siteUrl,
                 description: 'USA-based supplier of research-use-only synthetic peptides for laboratory research.',
               },

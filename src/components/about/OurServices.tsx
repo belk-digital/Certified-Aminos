@@ -79,7 +79,7 @@ export function OurServices() {
           >
             {/* Background Image Fade */}
             <div className="absolute top-0 right-0 w-full md:w-2/3 h-full opacity-10 group-hover:opacity-15 transition-opacity duration-700 pointer-events-none mask-image-gradient-to-l from-black to-transparent">
-              <Image src="/HelixBio Images/mutiple-vial-1.webp" alt="Row of multiple Helix Bio research peptide vials" fill className="object-cover object-right" />
+              <Image src="/HelixBio Images/mutiple-vial-1.webp" alt="Row of multiple Certified Aminos research peptide vials" fill className="object-cover object-right" />
             </div>
 
             <div className="relative z-10 max-w-xl">

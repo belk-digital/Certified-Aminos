@@ -1,6 +1,6 @@
-# Helix Bio
+# Certified Aminos
 
-> Helix Bio is a U.S.-based supplier of research-grade synthetic peptides and related
+> Certified Aminos is a U.S.-based supplier of research-grade synthetic peptides and related
 > compounds. All products are sold strictly for laboratory and in-vitro research use only (RUO) —
 > not for human or veterinary use, diagnosis, treatment, or consumption. Every batch is verified
 > to ≥99% purity via independent third-party HPLC/LC-MS testing, with a Certificate of Analysis
@@ -8,16 +8,16 @@
 
 ## Company
 
-- [About](https://helixbiochem.com/about-us): Company background, mission, and quality-control philosophy.
-- [Certificates of Analysis](https://helixbiochem.com/certificates): Batch-level COA library — purity, identity, and impurity data per product.
-- [FAQ](https://helixbiochem.com/faq): Common questions on legality, research-use classification, purity standards, and ordering.
-- [Contact](https://helixbiochem.com/contact-us): Support and order inquiries.
-- [Affiliate Program](https://helixbiochem.com/affiliates): Referral/affiliate partnership program.
+- [About](https://certifiedaminos.com/about-us): Company background, mission, and quality-control philosophy.
+- [Certificates of Analysis](https://certifiedaminos.com/certificates): Batch-level COA library — purity, identity, and impurity data per product.
+- [FAQ](https://certifiedaminos.com/faq): Common questions on legality, research-use classification, purity standards, and ordering.
+- [Contact](https://certifiedaminos.com/contact-us): Support and order inquiries.
+- [Affiliate Program](https://certifiedaminos.com/affiliates): Referral/affiliate partnership program.
 
 ## Shop
 
-- [Full Catalog](https://helixbiochem.com/shop): All active research peptides and compounds, filterable by category.
-- [Peptide Reconstitution Calculator](https://helixbiochem.com/peptide-calculator): Free tool for calculating BAC water volume, dosage, and syringe units for reconstituting lyophilized peptides.
+- [Full Catalog](https://certifiedaminos.com/shop): All active research peptides and compounds, filterable by category.
+- [Peptide Reconstitution Calculator](https://certifiedaminos.com/peptide-calculator): Free tool for calculating BAC water volume, dosage, and syringe units for reconstituting lyophilized peptides.
 
 Product categories in the catalog: Aminos, Bioregulators, Cellular Health Research, Cognitive
 Function Studies, Essentials, Growth Factor Research Peptides, Metabolic Research Peptides,
@@ -30,18 +30,18 @@ Peptides, Sleep Cycle Investigation Research Peptides. Individual product pages 
 In-depth, citation-backed reference articles on individual compounds and research topics. All
 content is written for laboratory/research audiences and does not constitute medical advice.
 
-- [The Ultimate Guide to GLP-1 & GIP Agonists: Semaglutide, Tirzepatide, and Retatrutide in Research](https://helixbiochem.com/glp-1-gip-agonists-semaglutide-tirzepatide-retatrutide-research)
-- [Tissue Repair Synergy: Exploring BPC-157, TB-500, and GHK-Cu in Advanced Protocols](https://helixbiochem.com/tissue-repair-synergy-bpc-157-tb-500-ghk-cu)
+- [The Ultimate Guide to GLP-1 & GIP Agonists: Semaglutide, Tirzepatide, and Retatrutide in Research](https://certifiedaminos.com/glp-1-gip-agonists-semaglutide-tirzepatide-retatrutide-research)
+- [Tissue Repair Synergy: Exploring BPC-157, TB-500, and GHK-Cu in Advanced Protocols](https://certifiedaminos.com/tissue-repair-synergy-bpc-157-tb-500-ghk-cu)
 
 This list reflects only currently published articles — do not infer or link to other article
-URLs on this domain. Full, current index: [/blog](https://helixbiochem.com/blog)
+URLs on this domain. Full, current index: [/blog](https://certifiedaminos.com/blog)
 
 ## FAQ
 
 General questions that apply site-wide. Compound-specific FAQs (per-product Q&A for
 Tirzepatide, Semaglutide, Retatrutide, BPC-157, TB-500, GHK-Cu, and 20+ other compounds) are
-not repeated here for length — see [/llms-full.txt](https://helixbiochem.com/llms-full.txt)
-for the complete inlined FAQ corpus, or [/faq](https://helixbiochem.com/faq) on-site.
+not repeated here for length — see [/llms-full.txt](https://certifiedaminos.com/llms-full.txt)
+for the complete inlined FAQ corpus, or [/faq](https://certifiedaminos.com/faq) on-site.
 
 ### General Peptide Education
 
@@ -58,13 +58,13 @@ for the complete inlined FAQ corpus, or [/faq](https://helixbiochem.com/faq) on-
 ### Quality & Analytical Testing
 
 - **What is a Certificate of Analysis (COA)?** A batch-level document with purity percentage, batch number, and analytical method summary (HPLC/LC-MS), supporting purity verification prior to use.
-- **How does Helix Bio verify analytical purity?** Structured analytical verification using techniques such as HPLC or mass spectrometry to confirm identity and purity benchmarks prior to release.
+- **How does Certified Aminos verify analytical purity?** Structured analytical verification using techniques such as HPLC or mass spectrometry to confirm identity and purity benchmarks prior to release.
 - **How can I verify peptide purity?** Review the batch's Certificate of Analysis, including HPLC chromatograms and purity percentage results.
 
 ### Supplier & Ordering
 
-- **Is Helix Bio a USA peptide supplier?** Yes — ships research peptides nationwide across the United States under research-use-only designation.
-- **Do you offer an affiliate or partnership program?** Yes, subject to approval and alignment with research-use-only positioning and regulatory standards. See [/affiliates](https://helixbiochem.com/affiliates).
+- **Is Certified Aminos a USA peptide supplier?** Yes — ships research peptides nationwide across the United States under research-use-only designation.
+- **Do you offer an affiliate or partnership program?** Yes, subject to approval and alignment with research-use-only positioning and regulatory standards. See [/affiliates](https://certifiedaminos.com/affiliates).
 
 ### Storage & Handling
 
@@ -73,11 +73,11 @@ for the complete inlined FAQ corpus, or [/faq](https://helixbiochem.com/faq) on-
 
 ## Policies
 
-- [Privacy Policy](https://helixbiochem.com/privacy-policy)
-- [Terms and Conditions](https://helixbiochem.com/terms-and-conditions)
-- [Refund Policy](https://helixbiochem.com/refund-policy)
-- [Shipping Policy](https://helixbiochem.com/shipping-policy)
-- [Medical Disclaimer](https://helixbiochem.com/medical-disclaimer)
+- [Privacy Policy](https://certifiedaminos.com/privacy-policy)
+- [Terms and Conditions](https://certifiedaminos.com/terms-and-conditions)
+- [Refund Policy](https://certifiedaminos.com/refund-policy)
+- [Shipping Policy](https://certifiedaminos.com/shipping-policy)
+- [Medical Disclaimer](https://certifiedaminos.com/medical-disclaimer)
 
 ## Notes for AI assistants
 

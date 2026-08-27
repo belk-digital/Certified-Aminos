@@ -8,7 +8,7 @@
   },
   "auth": {
     "login": {
-      "title": "Sign in to Helix Bio",
+      "title": "Sign in to Certified Aminos",
       "subtitle": "Welcome back! Please sign in to continue",
       "google": "Continue with Google",
       "or": "OR",
@@ -22,11 +22,11 @@
       "resendVerification": "Resend verification email",
       "resending": "Sending…",
       "verificationResent": "A new verification email is on its way — check your inbox.",
-      "metaTitle": "Sign In | Helix Bio",
-      "metaDescription": "Sign in to your Helix Bio account to manage orders, track shipments, and access your research peptide purchase history."
+      "metaTitle": "Sign In | Certified Aminos",
+      "metaDescription": "Sign in to your Certified Aminos account to manage orders, track shipments, and access your research peptide purchase history."
     },
     "register": {
-      "title": "Sign up for Helix Bio",
+      "title": "Sign up for Certified Aminos",
       "subtitle": "Create an account to continue",
       "google": "Continue with Google",
       "or": "OR",
@@ -39,8 +39,8 @@
       "genericError": "Something went wrong. Please try again.",
       "successMessage": "Account created! Please check your email to verify your account.",
       "backToLogin": "Back to login",
-      "metaTitle": "Create an Account | Helix Bio",
-      "metaDescription": "Create a free Helix Bio account to place orders, save your details, and track research peptide shipments."
+      "metaTitle": "Create an Account | Certified Aminos",
+      "metaDescription": "Create a free Certified Aminos account to place orders, save your details, and track research peptide shipments."
     },
     "forgotPassword": {
       "title": "Reset your password",
@@ -49,8 +49,8 @@
       "submit": "Send Reset Link",
       "success": "If an account exists for that email, a reset link has been sent.",
       "backToLogin": "Back to sign in",
-      "metaTitle": "Forgot Password | Helix Bio",
-      "metaDescription": "Reset your Helix Bio account password by requesting a secure reset link sent to your email."
+      "metaTitle": "Forgot Password | Certified Aminos",
+      "metaDescription": "Reset your Certified Aminos account password by requesting a secure reset link sent to your email."
     },
     "resetPassword": {
       "title": "Choose a new password",
@@ -62,8 +62,8 @@
       "mismatch": "Passwords do not match",
       "invalidToken": "This reset link is invalid or has expired",
       "backToLogin": "Back to sign in",
-      "metaTitle": "Reset Password | Helix Bio",
-      "metaDescription": "Choose a new password to regain access to your Helix Bio account."
+      "metaTitle": "Reset Password | Certified Aminos",
+      "metaDescription": "Choose a new password to regain access to your Certified Aminos account."
     }
   },
   "ageGate": {
@@ -190,7 +190,7 @@
     "shopCatalogue": "Shop Catalogue",
     "shopCatalogueSubtext": "View all research peptides",
     "disclaimerLabel": "Disclaimer",
-    "disclaimerText": "The content on this website has not been evaluated or approved by the U.S. Food and Drug Administration (FDA). Products sold by Helix Bio are offered for research and laboratory purposes only and are not intended to diagnose, treat, cure, or prevent any disease. Helix Bio is not a compounding pharmacy and does not operate as a chemical compounding facility as defined under Section 503A of the Federal Food, Drug, and Cosmetic Act. Products are not for human or veterinary use, and are not intended for ingestion, injection, or any form of administration. Purity levels may vary by product and lot; certain items may test below 99% purity.",
+    "disclaimerText": "The content on this website has not been evaluated or approved by the U.S. Food and Drug Administration (FDA). Products sold by Certified Aminos are offered for research and laboratory purposes only and are not intended to diagnose, treat, cure, or prevent any disease. Certified Aminos is not a compounding pharmacy and does not operate as a chemical compounding facility as defined under Section 503A of the Federal Food, Drug, and Cosmetic Act. Products are not for human or veterinary use, and are not intended for ingestion, injection, or any form of administration. Purity levels may vary by product and lot; certain items may test below 99% purity.",
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service",
     "refundPolicy": "Refund Policy",
@@ -199,8 +199,8 @@
     "designedBy": "Designed & Developed by"
   },
   "home": {
-    "metaTitle": "Premium Research Peptides USA | 99% Purity | Helix Bio",
-    "metaDescription": "Shop premium research peptides in the USA with verified purity, mass-spec testing, and complete COA documentation. Explore the Helix Bio catalog now.",
+    "metaTitle": "Premium Research Peptides USA | 99% Purity | Certified Aminos",
+    "metaDescription": "Shop premium research peptides in the USA with verified purity, mass-spec testing, and complete COA documentation. Explore the Certified Aminos catalog now.",
     "hero": {
       "viewPeptidesShort": "View Peptides",
       "viewPeptidesLong": "View Research Peptides",
@@ -301,7 +301,7 @@
       "titleLine1": "Verified Purity.",
       "titleLine2": "Every Single Batch.",
       "description": "Third-party purity verification is the cornerstone of research-grade compounds. Every vial we ship carries an independently verified COA that proves what is inside — not what we claim is inside. Here is exactly what we test for, and why it matters.",
-      "vialAlt": "Single precision research peptide vial with Certificate of Analysis document — Helix Bio",
+      "vialAlt": "Single precision research peptide vial with Certificate of Analysis document — Certified Aminos",
       "metric1Title": "≥99% HPLC Purity",
       "metric1Desc": "Stringent chromatographic isolation for every compound — verified before any order ships.",
       "metric1Tooltip": "HPLC separates compound mixtures by molecular polarity, confirming concentration and purity to ≥99%.",
@@ -318,7 +318,7 @@
       "titleLine2": "Collection.",
       "description": "A curated line built around longevity, recovery, and everyday research support, featuring some of our most-requested research compounds.",
       "ctaText": "View COA Library",
-      "vialAlt": "Helix Bio Vitality Collection research peptide vials.",
+      "vialAlt": "Certified Aminos Vitality Collection research peptide vials.",
       "shakeWarningTitle": "Critical Warning",
       "shakeWarningSubtitle": "Peptide bonds agitated",
       "cards": {
@@ -350,7 +350,7 @@
       "items": {
         "ruoPeptide": {
           "question": "What does \"Research Use Only\" (RUO) mean for these peptides?",
-          "answer": "Research Use Only means a compound is intended strictly for laboratory and scientific research, not for human or veterinary consumption, diagnosis, or treatment. Helix Bio peptides are labeled and sold on this basis and are not evaluated by the FDA for safety or efficacy in those other contexts."
+          "answer": "Research Use Only means a compound is intended strictly for laboratory and scientific research, not for human or veterinary consumption, diagnosis, or treatment. Certified Aminos peptides are labeled and sold on this basis and are not evaluated by the FDA for safety or efficacy in those other contexts."
         },
         "researchGradePurity": {
           "question": "What is considered a research-grade peptide?",
@@ -408,7 +408,7 @@
       "defaultTag": "Verified"
     },
     "merchandise": {
-      "eyebrow": "Helix Bio Gear",
+      "eyebrow": "Certified Aminos Gear",
       "titleLine1": "Represent The",
       "titleLine2": "Research.",
       "exploreGear": "Explore Gear",
@@ -433,7 +433,7 @@
       "eyebrow": "MILITARY DISCOUNT",
       "titleLine1": "30% OFF",
       "titleLine2": "FOR OUR HEROES",
-      "description": "Active-duty military, veterans, and first responders can request 30% off a research peptide order as a standing thank-you from the Helix Bio team. Eligibility is verified at checkout.",
+      "description": "Active-duty military, veterans, and first responders can request 30% off a research peptide order as a standing thank-you from the Certified Aminos team. Eligibility is verified at checkout.",
       "privacyNoticeTitle": "Privacy & Security Notice",
       "privacyNoticeText": "For your protection, please <redact>redact (black out)</redact> sensitive information like your SSN. Documents are securely encrypted for review and <destroyed>permanently destroyed</destroyed> from our servers immediately upon approval.",
       "formTitle": "Verify Status",
@@ -477,7 +477,7 @@
       "eyebrow": "Advantage",
       "titleLine1": "What Sets",
       "titleLine2": "Us Apart.",
-      "description": "<strong>Helix Bio</strong> specializes in high-purity synthetic peptides engineered specifically for research laboratory environments. Our commitment to analytical rigor and documentation transparency addresses the core needs of scientific research:",
+      "description": "<strong>Certified Aminos</strong> specializes in high-purity synthetic peptides engineered specifically for research laboratory environments. Our commitment to analytical rigor and documentation transparency addresses the core needs of scientific research:",
       "clickCursorLine1": "CLICK ON",
       "clickCursorLine2": "THE NODES",
       "nodeLabel": "Node 0{number}",
@@ -500,7 +500,7 @@
         },
         "researchOnly": {
           "title": "Research-Only Positioning",
-          "description": "Helix Bio markets exclusively to the research community, with RUO and not-for-human-consumption labeling kept visible, not buried in fine print.",
+          "description": "Certified Aminos markets exclusively to the research community, with RUO and not-for-human-consumption labeling kept visible, not buried in fine print.",
           "shortLabel": "Research-Only"
         }
       }
@@ -531,12 +531,12 @@
       }
     },
     "trustBadges": {
-      "eyebrow": "The Helix Bio Standard",
+      "eyebrow": "The Certified Aminos Standard",
       "titleLine1": "ENGINEERED FOR",
       "titleLine2": "ABSOLUTE PRECISION",
       "subtitle": "USA-Manufactured. Third-Party Verified.",
       "ctaText": "Discover Quality",
-      "description": "Every compound in the Helix Bio catalog is synthesized to a documented purity standard and verified before it's listed — not estimated, and not left to a marketing claim.",
+      "description": "Every compound in the Certified Aminos catalog is synthesized to a documented purity standard and verified before it's listed — not estimated, and not left to a marketing claim.",
       "cards": {
         "purity": {
           "title": "99.1%+ Verified Purity",
@@ -661,11 +661,11 @@
       "faqDescription": "Common questions about research peptides, ordering, and site standards.",
       "faqs": {
         "availablePeptides": {
-          "question": "What research peptides are available in the Helix Bio shop?",
-          "answer": "The Helix Bio shop carries a curated catalog of research-use-only peptides for laboratory study, including BPC-157, TB-500, Semaglutide, Tirzepatide, Ipamorelin, CJC-1295, PT-141, Melanotan II, GHK-Cu, Thymosin Alpha-1, Epithalon, Selank, Semax, and related compounds. Each listing shows current stock status, available vial sizes, and a linked certificate of analysis."
+          "question": "What research peptides are available in the Certified Aminos shop?",
+          "answer": "The Certified Aminos shop carries a curated catalog of research-use-only peptides for laboratory study, including BPC-157, TB-500, Semaglutide, Tirzepatide, Ipamorelin, CJC-1295, PT-141, Melanotan II, GHK-Cu, Thymosin Alpha-1, Epithalon, Selank, Semax, and related compounds. Each listing shows current stock status, available vial sizes, and a linked certificate of analysis."
         },
         "purityQualityTested": {
-          "question": "Are all Helix Bio products tested for purity and quality?",
+          "question": "Are all Certified Aminos products tested for purity and quality?",
           "answer": "Yes. Every batch is verified through third-party HPLC and mass spectrometry testing before it is listed for sale, and the resulting certificate of analysis is made available at or before checkout so researchers can confirm purity and identity ahead of ordering."
         },
         "standardPurityLevels": {
@@ -694,7 +694,7 @@
         },
         "shippingDamage": {
           "question": "Can peptides be damaged during shipping or storage?",
-          "answer": "Yes. Heat exposure, repeated freeze-thaw cycles, and prolonged light exposure can all degrade peptide integrity. Helix Bio ships with cold-chain packaging appropriate to the compound, and researchers should transfer vials to proper storage promptly upon arrival."
+          "answer": "Yes. Heat exposure, repeated freeze-thaw cycles, and prolonged light exposure can all degrade peptide integrity. Certified Aminos ships with cold-chain packaging appropriate to the compound, and researchers should transfer vials to proper storage promptly upon arrival."
         },
         "aliquotAfterReconstitution": {
           "question": "Should I aliquot peptides after reconstitution?",
@@ -722,7 +722,7 @@
         },
         "manufacturedInUsa": {
           "question": "Are all products manufactured in the USA for research compliance?",
-          "answer": "Helix Bio sources and distributes from within the USA, and each batch is tested domestically before listing. Country-of-origin and testing details for a specific compound can be confirmed on request or within the linked COA."
+          "answer": "Certified Aminos sources and distributes from within the USA, and each batch is tested domestically before listing. Country-of-origin and testing details for a specific compound can be confirmed on request or within the linked COA."
         },
         "researchUseOnlyMeaning": {
           "question": "What does \"Research Use Only\" mean for these products?",
@@ -734,7 +734,7 @@
         },
         "nonResearchUse": {
           "question": "Can I use these peptides for any purpose outside of research?",
-          "answer": "No. Products sold through the Helix Bio shop are labeled Research Use Only and are not intended, tested, or approved for human consumption, self-administration, or any clinical use. They are sold exclusively for qualified laboratory research."
+          "answer": "No. Products sold through the Certified Aminos shop are labeled Research Use Only and are not intended, tested, or approved for human consumption, self-administration, or any clinical use. They are sold exclusively for qualified laboratory research."
         },
         "fdaApproval": {
           "question": "Are your products approved by the FDA or other regulatory agencies?",
@@ -847,14 +847,14 @@
       "statusProcessing": "Processing",
       "statusShipped": "Shipped",
       "statusDelivered": "Delivered",
-      "metaTitle": "Account Overview | Helix Bio",
+      "metaTitle": "Account Overview | Certified Aminos",
       "metaDescription": "View your recent orders, wishlist, purity points, and account details in one place."
     },
     "addresses": {
       "title": "Saved Addresses",
       "subtitle": "Manage where your lab equipment and peptides are shipped.",
-      "metaTitle": "Saved Addresses | Helix Bio",
-      "metaDescription": "Manage the shipping addresses saved to your Helix Bio account.",
+      "metaTitle": "Saved Addresses | Certified Aminos",
+      "metaDescription": "Manage the shipping addresses saved to your Certified Aminos account.",
       "addNewAddress": "Add New Address",
       "editAddressTitle": "Edit Address",
       "addAddressTitle": "Add a New Address",
@@ -892,14 +892,14 @@
     },
     "layout": {
       "title": "My Account",
-      "metaTitle": "My Account | Helix Bio",
-      "metaDescription": "Manage your Helix Bio account, orders, addresses, and preferences."
+      "metaTitle": "My Account | Certified Aminos",
+      "metaDescription": "Manage your Certified Aminos account, orders, addresses, and preferences."
     },
     "orders": {
       "title": "Order History",
       "subtitle": "Track, manage, and return your recent purchases.",
-      "metaTitle": "Order History | Helix Bio",
-      "metaDescription": "Track, manage, and review your recent Helix Bio orders.",
+      "metaTitle": "Order History | Certified Aminos",
+      "metaDescription": "Track, manage, and review your recent Certified Aminos orders.",
       "filterStatus": "Filter Status",
       "filterAll": "All Orders",
       "filterProcessing": "Processing",
@@ -948,8 +948,8 @@
       "paymentSuccessful": "Payment Successful",
       "paymentRefunded": "Refunded",
       "paymentProcessing": "Payment Processing",
-      "metaTitle": "Order Details | Helix Bio",
-      "metaDescription": "View the details, items, and shipping status of your Helix Bio order."
+      "metaTitle": "Order Details | Certified Aminos",
+      "metaDescription": "View the details, items, and shipping status of your Certified Aminos order."
     },
     "settings": {
       "toastUpdateFailed": "Failed to update profile",
@@ -985,7 +985,7 @@
       "orderSmsUpdatesDescription": "Get real-time text messages about your order shipments and deliveries.",
       "errorUnauthorized": "Unauthorized",
       "errorUnexpected": "An unexpected error occurred",
-      "metaTitle": "Account Settings | Helix Bio",
+      "metaTitle": "Account Settings | Certified Aminos",
       "metaDescription": "Manage your personal information, security preferences, and notification settings."
     },
     "wishlist": {
@@ -997,7 +997,7 @@
       "emptyTitle": "Your wishlist is empty",
       "emptyDescription": "Save items you want to buy later by clicking the heart icon on any product page.",
       "startBrowsing": "Start Browsing",
-      "metaTitle": "My Wishlist | Helix Bio",
+      "metaTitle": "My Wishlist | Certified Aminos",
       "metaDescription": "View and manage the research peptides you've saved to your wishlist.",
       "selectVariantRequired": "Please select a variant on the product page."
     },
@@ -1057,12 +1057,12 @@
     }
   },
   "cartPage": {
-    "metaTitle": "Your Cart | Helix Bio",
+    "metaTitle": "Your Cart | Certified Aminos",
     "metaDescription": "Review the research peptides in your cart before proceeding to secure checkout."
   },
   "checkout": {
-    "metaTitle": "Secure Checkout | Helix Bio",
-    "metaDescription": "Complete your secure checkout for research peptides at Helix Bio.",
+    "metaTitle": "Secure Checkout | Certified Aminos",
+    "metaDescription": "Complete your secure checkout for research peptides at Certified Aminos.",
     "cartDrawer": {
       "title": "CART",
       "closeCartAria": "Close cart",
@@ -1227,8 +1227,8 @@
     }
   },
   "orderConfirmation": {
-    "metaTitle": "Order Confirmed | Helix Bio",
-    "metaDescription": "Your Helix Bio order has been placed. View your order confirmation and payment details.",
+    "metaTitle": "Order Confirmed | Certified Aminos",
+    "metaDescription": "Your Certified Aminos order has been placed. View your order confirmation and payment details.",
     "paymentSuccessful": "Payment Successful",
     "orderPlaced": "Order Placed",
     "thankYouZelle": "Thank you, {name}. Please complete your Zelle payment below.",
@@ -1270,13 +1270,13 @@
   },
   "legal": {
     "privacyPolicy": {
-      "metaTitle": "Privacy Policy | Helix Bio",
-      "metaDescription": "See how Helix Bio collects, uses, and safeguards personal data across ordering, account access, and research-use compliance on our website.",
+      "metaTitle": "Privacy Policy | Certified Aminos",
+      "metaDescription": "See how Certified Aminos collects, uses, and safeguards personal data across ordering, account access, and research-use compliance on our website.",
       "eyebrow": "Legal Information",
-      "titleLine1": "Helix Bio",
+      "titleLine1": "Certified Aminos",
       "titleLine2": "Privacy Policy",
       "effectiveDate": "Effective Date: August 2026",
-      "intro": "Helix Bio takes your privacy seriously. This Privacy Policy sets out what personal information we gather, how we put it to use, and the steps we take to keep it protected whenever you browse our site or use our services. Continuing to use the website means you're accepting the practices outlined below.",
+      "intro": "Certified Aminos takes your privacy seriously. This Privacy Policy sets out what personal information we gather, how we put it to use, and the steps we take to keep it protected whenever you browse our site or use our services. Continuing to use the website means you're accepting the practices outlined below.",
       "section1Title": "Information We Collect",
       "section1Text": "To operate securely and serve you well, we gather several categories of information, including:",
       "section1Item1Label": "Personal Details:",
@@ -1318,7 +1318,7 @@
       "section5ContactText": "To act on any of these rights, reach out to:",
       "section5EmailLabel": "Email:",
       "section6Title": "Research-Use Product Notice",
-      "section6Intro": "Every product Helix Bio sells is intended for research use only, meaning:",
+      "section6Intro": "Every product Certified Aminos sells is intended for research use only, meaning:",
       "section6Item1": "It is not designed or approved for human or veterinary use.",
       "section6Item2": "It carries no intended diagnostic, therapeutic, or treatment purpose.",
       "section6Item3": "Buyers alone are responsible for handling products in line with applicable laws and safety standards.",
@@ -1332,15 +1332,15 @@
       "contactLabel": "Contact"
     },
     "refundPolicy": {
-      "metaTitle": "Refund Policy | Helix Bio",
-      "metaDescription": "Helix Bio's Refund Policy covers eligibility windows, non-refundable items, damaged orders, and the steps for requesting a refund on research products.",
+      "metaTitle": "Refund Policy | Certified Aminos",
+      "metaDescription": "Certified Aminos' Refund Policy covers eligibility windows, non-refundable items, damaged orders, and the steps for requesting a refund on research products.",
       "eyebrow": "Legal Information",
-      "titleLine1": "Helix Bio",
+      "titleLine1": "Certified Aminos",
       "titleLine2": "Refund Policy",
       "effectiveDate": "Effective Date: August 2026",
-      "intro": "Helix Bio stands behind the research peptides, compounds, and biochemical products we ship. Before placing an order, take a moment to read this Refund Policy so you know exactly what to expect if something needs to be returned or refunded.",
+      "intro": "Certified Aminos stands behind the research peptides, compounds, and biochemical products we ship. Before placing an order, take a moment to read this Refund Policy so you know exactly what to expect if something needs to be returned or refunded.",
       "section1Title": "What This Policy Covers",
-      "section1Text": "This policy lays out when a refund or exchange applies to an order. Every item Helix Bio sells is intended strictly for research use — never for human or veterinary use, diagnosis, or treatment — and refunds exist to keep customers satisfied without compromising the integrity of the products themselves.",
+      "section1Text": "This policy lays out when a refund or exchange applies to an order. Every item Certified Aminos sells is intended strictly for research use — never for human or veterinary use, diagnosis, or treatment — and refunds exist to keep customers satisfied without compromising the integrity of the products themselves.",
       "section2Title": "Refund Eligibility",
       "section2Intro": "An order qualifies for a refund or exchange only when it meets all of the following:",
       "section2Item1": "The item is still sealed, unused, and in its original packaging.",
@@ -1355,7 +1355,7 @@
       "section3Item4": "Bulk or custom orders explicitly marked as final sale.",
       "section4Title": "How to Request a Refund",
       "section4Intro": "Follow these steps to start a refund request:",
-      "section4Item1": "Reach our support team at <email>support@helixbiochem.com</email>, including your order number and the reason for the request.",
+      "section4Item1": "Reach our support team at <email>support@certifiedaminos.com</email>, including your order number and the reason for the request.",
       "section4Item2": "Send photos of the item and its packaging if we ask for them.",
       "section4Item3": "We'll review the request and get back to you with a decision within 3–5 business days.",
       "section4Item4": "Approved refunds go back to your original payment method, or to store credit, whichever you prefer.",
@@ -1372,7 +1372,7 @@
       "section7Title": "Legal Notes",
       "section7Item1": "All items are sold strictly for laboratory and research use. Refund eligibility is void if a product is used for any human or veterinary purpose.",
       "section7Item2": "Every refund request is subject to review and is granted at our discretion, consistent with applicable law.",
-      "section7Item3": "Helix Bio may revise this Refund Policy at any time without prior notice.",
+      "section7Item3": "Certified Aminos may revise this Refund Policy at any time without prior notice.",
       "contactTitle": "Contact Us",
       "contactIntro": "Reach out to our support team with any refund-related questions:",
       "orderQueriesLabel": "Order-related queries",
@@ -1382,13 +1382,13 @@
       "closingText2": "Bottom line: inspect orders on arrival, follow the handling guidance provided, and flag issues promptly — that's how we keep every research-use order safe, accurate, and accounted for."
     },
     "shippingPolicy": {
-      "metaTitle": "Shipping Policy | Helix Bio",
-      "metaDescription": "See how Helix Bio handles order processing, shipping methods, delivery timelines, packaging, and international restrictions for research-use products.",
+      "metaTitle": "Shipping Policy | Certified Aminos",
+      "metaDescription": "See how Certified Aminos handles order processing, shipping methods, delivery timelines, packaging, and international restrictions for research-use products.",
       "eyebrow": "Legal Information",
-      "titleLine1": "Helix Bio",
+      "titleLine1": "Certified Aminos",
       "titleLine2": "Shipping Policy",
       "effectiveDate": "Effective Date: August 2026",
-      "intro": "Helix Bio ships research peptides, compounds, and biochemical products with the same care we put into sourcing them. This Shipping Policy walks through processing times, delivery windows, packaging, and what to expect once your order leaves our facility.",
+      "intro": "Certified Aminos ships research peptides, compounds, and biochemical products with the same care we put into sourcing them. This Shipping Policy walks through processing times, delivery windows, packaging, and what to expect once your order leaves our facility.",
       "section1Title": "Processing Your Order",
       "section1Text": "Once placed, orders go through a 1–3 business day review before shipping — our team confirms the details, checks stock, and runs a final quality check on every item.",
       "section1Note": "Note: orders placed on a weekend or holiday enter processing on the following business day.",
@@ -1425,7 +1425,7 @@
       "section7Item2": "From there we'll sort out a replacement or refund, whichever fits the situation.",
       "section8Title": "Legal & Handling Notes",
       "section8Item1": "Everything we ship is strictly research-use only — not intended for human or veterinary use, diagnosis, or treatment.",
-      "section8Item2": "Helix Bio isn't liable for misuse of a product or for carrier delays beyond our control.",
+      "section8Item2": "Certified Aminos isn't liable for misuse of a product or for carrier delays beyond our control.",
       "section8Item3": "This policy is subject to change; check back here periodically for the current version.",
       "contactTitle": "Contact Us",
       "contactIntro": "Questions about a shipment, delivery estimate, or tracking number:",
@@ -1435,19 +1435,19 @@
       "closingText": "Our team is on hand to make sure every order gets to you safely and on schedule."
     },
     "medicalDisclaimer": {
-      "metaTitle": "Medical Disclaimer | Helix Bio Research Peptides",
-      "metaDescription": "Helix Bio's Medical Disclaimer explains that our research peptides are for laboratory use only, not medical advice, treatment, or human consumption.",
+      "metaTitle": "Medical Disclaimer | Certified Aminos Research Peptides",
+      "metaDescription": "Certified Aminos' Medical Disclaimer explains that our research peptides are for laboratory use only, not medical advice, treatment, or human consumption.",
       "eyebrow": "Legal Information",
-      "titleLine1": "Helix Bio",
+      "titleLine1": "Certified Aminos",
       "titleLine2": "Medical Disclaimer",
       "effectiveDate": "Effective Date: August 2026",
       "intro": "The information provided on this website, including any product descriptions, research summaries, or educational content, is for general informational purposes only. Nothing on this site constitutes medical advice, diagnosis, or treatment recommendations, and it should never be used as a substitute for guidance from a licensed physician or qualified healthcare provider.",
       "section1Title": "Introduction & No Medical Advice",
-      "section1Text": "Helix Bio is a supplier of research compounds, not a healthcare provider, and no statement on this website should be interpreted as a claim to diagnose, treat, cure, or prevent any disease or medical condition. Always seek guidance from a licensed medical or scientific professional before acting on any information obtained from this site.",
+      "section1Text": "Certified Aminos is a supplier of research compounds, not a healthcare provider, and no statement on this website should be interpreted as a claim to diagnose, treat, cure, or prevent any disease or medical condition. Always seek guidance from a licensed medical or scientific professional before acting on any information obtained from this site.",
       "section2Title": "Product Usage Limitation",
-      "section2Text": "All products offered by Helix Bio are intended for controlled laboratory or research environments. Any use outside of this context, including self-administration, is strictly prohibited and may violate local, state, or federal laws and regulations. Our products are not drugs, medicines, dietary supplements, or food, and they are not intended for human or veterinary use. Users are responsible for ensuring that all handling, storage, and usage comply with applicable research protocols and safety standards in their jurisdiction.",
+      "section2Text": "All products offered by Certified Aminos are intended for controlled laboratory or research environments. Any use outside of this context, including self-administration, is strictly prohibited and may violate local, state, or federal laws and regulations. Our products are not drugs, medicines, dietary supplements, or food, and they are not intended for human or veterinary use. Users are responsible for ensuring that all handling, storage, and usage comply with applicable research protocols and safety standards in their jurisdiction.",
       "section3Title": "Liability",
-      "section3Text": "Helix Bio assumes no responsibility or liability for the misuse of products, improper handling, or any adverse effects resulting from unauthorized use. By using this website and purchasing our products, you acknowledge and agree that Helix Bio is not liable for any direct, indirect, or consequential damages arising from your actions.",
+      "section3Text": "Certified Aminos assumes no responsibility or liability for the misuse of products, improper handling, or any adverse effects resulting from unauthorized use. By using this website and purchasing our products, you acknowledge and agree that Certified Aminos is not liable for any direct, indirect, or consequential damages arising from your actions.",
       "section4Title": "User Responsibility",
       "section4Intro": "It is the responsibility of all users to:",
       "section4Item1": "Follow all local, state, and federal laws regarding research chemicals.",
@@ -1455,17 +1455,17 @@
       "section4Item3": "Exercise caution and adhere to proper safety protocols when handling compounds.",
       "section4Item4": "Consult a qualified professional for any questions regarding research procedures, legal compliance, or scientific interpretation.",
       "section5Title": "Regulatory Compliance",
-      "section5Text": "The statements on this website have not been evaluated by the U.S. Food and Drug Administration. Products sold by Helix Bio are offered strictly for research and laboratory purposes and are not intended to diagnose, treat, cure, or prevent any disease. Helix Bio is not a compounding pharmacy and does not operate as a chemical compounding facility as defined under Section 503A of the Federal Food, Drug, and Cosmetic Act. Helix Bio reserves the right to refuse service to any individual or organization where required to remain compliant with applicable law.",
+      "section5Text": "The statements on this website have not been evaluated by the U.S. Food and Drug Administration. Products sold by Certified Aminos are offered strictly for research and laboratory purposes and are not intended to diagnose, treat, cure, or prevent any disease. Certified Aminos is not a compounding pharmacy and does not operate as a chemical compounding facility as defined under Section 503A of the Federal Food, Drug, and Cosmetic Act. Certified Aminos reserves the right to refuse service to any individual or organization where required to remain compliant with applicable law.",
       "section6Title": "Accuracy of Information",
-      "section6Text": "We make reasonable efforts to keep product descriptions, research references, and site content accurate and current. However, research literature evolves, and Helix Bio does not guarantee that every statement on this site reflects the most recent findings. Users should independently verify information relevant to their own research before relying on it.",
+      "section6Text": "We make reasonable efforts to keep product descriptions, research references, and site content accurate and current. However, research literature evolves, and Certified Aminos does not guarantee that every statement on this site reflects the most recent findings. Users should independently verify information relevant to their own research before relying on it.",
       "section7Title": "Changes to This Disclaimer",
-      "section7Text": "Helix Bio may update this Medical Disclaimer at any time to reflect changes in our products, applicable regulations, or business practices. The effective date at the top of this page shows when the current version took effect, and continued use of the site after an update constitutes acceptance of the revised disclaimer.",
+      "section7Text": "Certified Aminos may update this Medical Disclaimer at any time to reflect changes in our products, applicable regulations, or business practices. The effective date at the top of this page shows when the current version took effect, and continued use of the site after an update constitutes acceptance of the revised disclaimer.",
       "contactTitle": "Contact Us",
       "contactIntro": "If you have questions regarding product use, safety or compliance, please contact our support team at:",
       "orderQueriesLabel": "Order-related queries",
       "supportIssuesLabel": "Support & issues",
       "contactLabel": "Contact",
-      "closingText": "By accessing this website or purchasing our products, you agree to comply with this Medical Disclaimer and acknowledge that Helix Bio is not responsible for any misuse or unauthorized application of our research materials.",
+      "closingText": "By accessing this website or purchasing our products, you agree to comply with this Medical Disclaimer and acknowledge that Certified Aminos is not responsible for any misuse or unauthorized application of our research materials.",
       "faqTitle": "Questions",
       "faqDescription": "Quick answers about research use, liability, and compliance, written to be pulled directly into search results.",
       "faqs": {
@@ -1474,19 +1474,19 @@
           "answer": "It means a product is sold exclusively for laboratory or scientific research and is not approved, tested, or intended for use in or on the human body."
         },
         "intendedForHumanConsumption": {
-          "question": "Are Helix Bio's products intended for human consumption?",
-          "answer": "No. Helix Bio's products are not drugs, supplements, or food, and they are not intended for human or veterinary use of any kind."
+          "question": "Are Certified Aminos' products intended for human consumption?",
+          "answer": "No. Certified Aminos' products are not drugs, supplements, or food, and they are not intended for human or veterinary use of any kind."
         },
         "isMedicalAdvice": {
           "question": "Is the information on this website medical advice?",
           "answer": "No. Content on this site is for general informational purposes only and should never replace guidance from a licensed physician or healthcare provider."
         },
         "whoCanPurchase": {
-          "question": "Who can purchase products from Helix Bio?",
+          "question": "Who can purchase products from Certified Aminos?",
           "answer": "Products are intended for qualified researchers and laboratories operating in controlled research environments, and buyers must be of legal age in their jurisdiction."
         },
         "fdaRegulated": {
-          "question": "Are Helix Bio's products regulated by the FDA?",
+          "question": "Are Certified Aminos' products regulated by the FDA?",
           "answer": "Statements on this website have not been evaluated by the FDA, and these products are not approved to diagnose, treat, cure, or prevent any disease."
         },
         "selfAdministration": {
@@ -1495,24 +1495,24 @@
         },
         "misuseResponsibility": {
           "question": "Who is responsible if a product is misused?",
-          "answer": "The end user assumes full responsibility for how a product is handled, stored, and used; Helix Bio is not liable for misuse or unauthorized application."
+          "answer": "The end user assumes full responsibility for how a product is handled, stored, and used; Certified Aminos is not liable for misuse or unauthorized application."
         },
         "contactAboutDisclaimer": {
-          "question": "How can I contact Helix Bio about this disclaimer?",
-          "answer": "Email support@helixbio.com for general questions or orders@helixbio.com for order-specific issues."
+          "question": "How can I contact Certified Aminos about this disclaimer?",
+          "answer": "Email support@certifiedaminos.com for general questions or orders@certifiedaminos.com for order-specific issues."
         }
       }
     },
     "termsAndConditions": {
-      "metaTitle": "Helix Bio Terms & Conditions | Research Peptides",
-      "metaDescription": "Read Helix Bio's Terms and Conditions covering orders, payments, shipping, and research-use policies for our peptide products. Clear terms, no surprises.",
+      "metaTitle": "Certified Aminos Terms & Conditions | Research Peptides",
+      "metaDescription": "Read Certified Aminos' Terms and Conditions covering orders, payments, shipping, and research-use policies for our peptide products. Clear terms, no surprises.",
       "eyebrow": "Legal Information",
-      "titleLine1": "Helix Bio",
+      "titleLine1": "Certified Aminos",
       "titleLine2": "Terms and Conditions",
       "effectiveDate": "Effective Date: August 2026",
-      "intro": "Welcome to Helix Bio. By accessing or using our website, purchasing products, or interacting with our services, you agree to be bound by the following Terms and Conditions. If you do not agree with any part of these terms, please discontinue use of the site and do not place an order. These Terms apply to every visitor, customer, and account holder on this website, and they work alongside our Privacy Policy and Shipping Policy, which are incorporated here by reference.",
+      "intro": "Welcome to Certified Aminos. By accessing or using our website, purchasing products, or interacting with our services, you agree to be bound by the following Terms and Conditions. If you do not agree with any part of these terms, please discontinue use of the site and do not place an order. These Terms apply to every visitor, customer, and account holder on this website, and they work alongside our Privacy Policy and Shipping Policy, which are incorporated here by reference.",
       "section1Title": "Acceptance of Terms",
-      "section1Text": "By accessing this website or purchasing any product from Helix Bio, you agree to be bound by these Terms and Conditions. These Terms govern your access, use, and purchase of our research-grade peptides, small molecules, and related compounds, all of which are intended strictly for laboratory and research purposes and are not for human or veterinary use, diagnosis, or treatment.",
+      "section1Text": "By accessing this website or purchasing any product from Certified Aminos, you agree to be bound by these Terms and Conditions. These Terms govern your access, use, and purchase of our research-grade peptides, small molecules, and related compounds, all of which are intended strictly for laboratory and research purposes and are not for human or veterinary use, diagnosis, or treatment.",
       "section2Title": "Research Use & Product Disclaimer",
       "section2Intro": "All products sold through our website are strictly for research purposes and are not intended for diagnostic, therapeutic, or veterinary application. By purchasing or using our products, you confirm that:",
       "section2Item1": "You understand and accept that products are not intended for human consumption or medical use.",
@@ -1527,17 +1527,17 @@
       "section4Item1": "Orders are considered accepted once payment has been successfully processed.",
       "section4Item2": "We accept the payment methods listed on the checkout page at the time of your order.",
       "section4Item3": "All prices are listed in USD unless otherwise stated.",
-      "section4Item4": "Orders may be canceled or modified prior to shipment, subject to Helix Bio's approval. If a pricing or listing error appears on the site, we reserve the right to correct it and to cancel any order placed at the incorrect price, with a full refund issued.",
+      "section4Item4": "Orders may be canceled or modified prior to shipment, subject to Certified Aminos' approval. If a pricing or listing error appears on the site, we reserve the right to correct it and to cancel any order placed at the incorrect price, with a full refund issued.",
       "section5Title": "Shipping & Delivery",
       "section5Item1": "We ship only to regions we are approved to serve; certain products may carry additional restrictions under local law.",
       "section5Item2": "Shipping timelines are estimates and may vary due to carrier logistics, customs processing, or regional handling delays.",
-      "section5Item3": "Helix Bio is not responsible for delays, loss, or damage that occurs once a package has been handed to the carrier, though we're happy to help you file a claim.",
+      "section5Item3": "Certified Aminos is not responsible for delays, loss, or damage that occurs once a package has been handed to the carrier, though we're happy to help you file a claim.",
       "section6Title": "Product Liability & Safety",
       "section6Item1": "Products are not approved for human or veterinary use.",
       "section6Item2": "Users assume all risk associated with the storage, handling, and research application of any product purchased.",
-      "section6Item3": "Helix Bio is not liable for misuse, accidental ingestion, or any application outside of approved laboratory or experimental use.",
+      "section6Item3": "Certified Aminos is not liable for misuse, accidental ingestion, or any application outside of approved laboratory or experimental use.",
       "section7Title": "Intellectual Property",
-      "section7Item1": "All website content, product descriptions, images, branding, and design elements are the property of Helix Bio and are protected under applicable copyright and trademark law. You may not copy, reproduce, distribute, or otherwise exploit this content for commercial purposes without written permission.",
+      "section7Item1": "All website content, product descriptions, images, branding, and design elements are the property of Certified Aminos and are protected under applicable copyright and trademark law. You may not copy, reproduce, distribute, or otherwise exploit this content for commercial purposes without written permission.",
       "section7Item2": "Unauthorized use of our branding, product names, or site materials is strictly prohibited.",
       "section8Title": "User Conduct",
       "section8Intro": "By using our website, you agree not to:",
@@ -1547,58 +1547,58 @@
       "section8Note": "Violations of these conduct terms may result in order cancellation, account suspension, or legal action.",
       "section9Title": "Limitation of Liability",
       "section9Intro": "To the maximum extent permitted by law:",
-      "section9Item1": "Helix Bio is not liable for any damages resulting from misuse of our products, unauthorized applications, or errors on the website.",
+      "section9Item1": "Certified Aminos is not liable for any damages resulting from misuse of our products, unauthorized applications, or errors on the website.",
       "section9Item2": "Where liability cannot be excluded, our total liability for any product issue is limited to the purchase price of that product.",
       "section10Title": "Indemnification",
-      "section10Intro": "You agree to indemnify and hold harmless Helix Bio, its employees, officers, and affiliates from any claims, damages, or expenses arising from:",
+      "section10Intro": "You agree to indemnify and hold harmless Certified Aminos, its employees, officers, and affiliates from any claims, damages, or expenses arising from:",
       "section10Item1": "Improper use of our products.",
       "section10Item2": "Violation of these Terms and Conditions.",
       "section10Item3": "Breach of any local, state, or federal law related to product use.",
       "section11Title": "Governing Law",
-      "section11Text": "These Terms are governed by the laws of the jurisdiction in which Helix Bio operates, without regard to conflict-of-law principles. Any disputes arising from these Terms will be resolved under those laws.",
+      "section11Text": "These Terms are governed by the laws of the jurisdiction in which Certified Aminos operates, without regard to conflict-of-law principles. Any disputes arising from these Terms will be resolved under those laws.",
       "section12Title": "Privacy & Data Use",
-      "section12Text": "Your use of Helix Bio is also governed by our Privacy Policy, which explains how we collect, use, and protect your personal information. By using this site, you consent to the data practices described there.",
+      "section12Text": "Your use of Certified Aminos is also governed by our Privacy Policy, which explains how we collect, use, and protect your personal information. By using this site, you consent to the data practices described there.",
       "section13Title": "Changes to These Terms",
-      "section13Text": "Helix Bio reserves the right to update or modify these Terms at any time. Changes take effect immediately upon posting to this page, and your continued use of the website or our products after that point constitutes acceptance of the updated Terms. We recommend checking this page periodically, particularly the effective date at the top, so you're always working from the current version.",
+      "section13Text": "Certified Aminos reserves the right to update or modify these Terms at any time. Changes take effect immediately upon posting to this page, and your continued use of the website or our products after that point constitutes acceptance of the updated Terms. We recommend checking this page periodically, particularly the effective date at the top, so you're always working from the current version.",
       "contactTitle": "Customer Support",
       "contactIntro": "If you have questions about these Terms and Conditions, please contact:",
       "orderQueriesLabel": "Order-related queries",
       "supportIssuesLabel": "Support & issues",
       "contactLabel": "Contact",
       "faqTitle": "Questions",
-      "faqDescription": "Quick answers about Helix Bio's site policies, written to be pulled directly into search results.",
+      "faqDescription": "Quick answers about Certified Aminos' site policies, written to be pulled directly into search results.",
       "faqs": {
         "humanUseApproved": {
-          "question": "Are Helix Bio's products approved for human use?",
-          "answer": "No. Every product on Helix Bio is sold strictly for research purposes and is not approved for human consumption, medical treatment, or veterinary use."
+          "question": "Are Certified Aminos' products approved for human use?",
+          "answer": "No. Every product on Certified Aminos is sold strictly for research purposes and is not approved for human consumption, medical treatment, or veterinary use."
         },
         "cancelOrder": {
           "question": "Can I cancel or change my order after I've paid?",
           "answer": "Yes, as long as the order hasn't shipped yet. Reach out to our support team as soon as possible — once an order ships, it can no longer be modified or canceled."
         },
         "shipsInternationally": {
-          "question": "Does Helix Bio ship internationally?",
-          "answer": "Helix Bio ships only to regions we're approved to serve, and some products carry additional restrictions depending on local law. Availability is confirmed at checkout based on your shipping address."
+          "question": "Does Certified Aminos ship internationally?",
+          "answer": "Certified Aminos ships only to regions we're approved to serve, and some products carry additional restrictions depending on local law. Availability is confirmed at checkout based on your shipping address."
         },
         "damagedOrDelayed": {
           "question": "What happens if my order arrives damaged or delayed?",
-          "answer": "Contact support with your order number as soon as you notice an issue. While Helix Bio isn't liable for carrier delays or damage once a package ships, we'll help you file a claim with the carrier."
+          "answer": "Contact support with your order number as soon as you notice an issue. While Certified Aminos isn't liable for carrier delays or damage once a package ships, we'll help you file a claim with the carrier."
         },
         "ageRequirement": {
-          "question": "Do I need to be a certain age to order from Helix Bio?",
+          "question": "Do I need to be a certain age to order from Certified Aminos?",
           "answer": "Yes. You must be at least 18 years old, or the legal age of majority in your jurisdiction, to create an account or place an order."
         },
         "currency": {
-          "question": "What currency are Helix Bio's prices listed in?",
+          "question": "What currency are Certified Aminos' prices listed in?",
           "answer": "All prices on the site are listed in US dollars (USD) unless a page specifically states otherwise."
         },
         "orderQuestionsContact": {
           "question": "Who do I contact with questions about an order?",
-          "answer": "For order-specific questions, email orders@helixbio.com. For general support or account issues, email support@helixbio.com."
+          "answer": "For order-specific questions, email orders@certifiedaminos.com. For general support or account issues, email support@certifiedaminos.com."
         },
         "termsChangeNotice": {
-          "question": "Can Helix Bio change these Terms without notice?",
-          "answer": "Helix Bio can update these Terms at any time, and changes take effect as soon as they're posted. Continuing to use the site or order products after an update means you accept the revised Terms — so it's worth checking the effective date occasionally."
+          "question": "Can Certified Aminos change these Terms without notice?",
+          "answer": "Certified Aminos can update these Terms at any time, and changes take effect as soon as they're posted. Continuing to use the site or order products after an update means you accept the revised Terms — so it's worth checking the effective date occasionally."
         }
       }
     },
@@ -1920,8 +1920,8 @@
       "dashboard": "Affiliate Dashboard"
     },
     "dashboard": {
-      "metaTitle": "Affiliate Dashboard | Helix Bio",
-      "metaDescription": "Track your referral clicks, conversions, and commissions in your Helix Bio affiliate dashboard.",
+      "metaTitle": "Affiliate Dashboard | Certified Aminos",
+      "metaDescription": "Track your referral clicks, conversions, and commissions in your Certified Aminos affiliate dashboard.",
       "overviewEyebrow": "Affiliate Dashboard",
       "tierSuffix": "Tier",
       "totalClicks": "Total Clicks",
@@ -1946,8 +1946,8 @@
     "dashboardLayout": {
       "title": "Affiliate Dashboard",
       "defaultPartnerName": "Partner",
-      "metaTitle": "Affiliate Dashboard | Helix Bio",
-      "metaDescription": "Track your referral clicks, conversions, and commissions in your Helix Bio affiliate dashboard."
+      "metaTitle": "Affiliate Dashboard | Certified Aminos",
+      "metaDescription": "Track your referral clicks, conversions, and commissions in your Certified Aminos affiliate dashboard."
     },
     "conversions": {
       "title": "Conversions",
@@ -2045,22 +2045,22 @@
   },
   "content": {
     "aboutPage": {
-      "metaTitle": "Synthetic Research Peptides & Lab Standards | Helix Bio",
-      "metaDescription": "Discover how Helix Bio manufactures synthetic research peptides with documented purity testing and strict RUO compliance. Learn our story and standards.",
+      "metaTitle": "Synthetic Research Peptides & Lab Standards | Certified Aminos",
+      "metaDescription": "Discover how Certified Aminos manufactures synthetic research peptides with documented purity testing and strict RUO compliance. Learn our story and standards.",
       "faqTitle": "Questions",
       "faqDescription": "Common questions about research peptides, ordering, and lab standards",
       "faqs": {
         "trustworthySupplier": {
           "question": "What makes a peptide supplier trustworthy?",
-          "answer": "A trustworthy peptide supplier documents every batch. That means a certificate of analysis for each lot, transparent sourcing of raw materials, and manufacturing practices that can be independently verified. Helix Bio treats documentation as a baseline requirement, not an optional extra, because research decisions depend on knowing exactly what a compound is and how it was tested."
+          "answer": "A trustworthy peptide supplier documents every batch. That means a certificate of analysis for each lot, transparent sourcing of raw materials, and manufacturing practices that can be independently verified. Certified Aminos treats documentation as a baseline requirement, not an optional extra, because research decisions depend on knowing exactly what a compound is and how it was tested."
         },
         "analyticalQuality": {
-          "question": "How does Helix Bio ensure analytical quality?",
+          "question": "How does Certified Aminos ensure analytical quality?",
           "answer": "Every batch is evaluated against defined purity and identity specifications before it enters production, then verified again after synthesis using standard analytical methods such as HPLC and mass spectrometry. This two-stage check confirms that what leaves our facility matches what's stated on the label."
         },
         "laboratoryResearchOnly": {
           "question": "Are your peptides designated for laboratory research only?",
-          "answer": "Yes. All Helix Bio products are synthetic compounds intended exclusively for laboratory and research applications. They are not manufactured, labeled, or sold for human or animal use, and they have not been evaluated by the FDA for any diagnostic, therapeutic, or preventive purpose."
+          "answer": "Yes. All Certified Aminos products are synthetic compounds intended exclusively for laboratory and research applications. They are not manufactured, labeled, or sold for human or animal use, and they have not been evaluated by the FDA for any diagnostic, therapeutic, or preventive purpose."
         },
         "documentationProvided": {
           "question": "What documentation is provided with products?",
@@ -2069,8 +2069,8 @@
       }
     },
     "contactPage": {
-      "metaTitle": "Contact Helix Bio | Research Peptide Supplier Support",
-      "metaDescription": "Get in touch with Helix Bio for order support, bulk quotes, and lab inquiries. Call, email, or use our US contact form to reach our team today."
+      "metaTitle": "Contact Certified Aminos | Research Peptide Supplier Support",
+      "metaDescription": "Get in touch with Certified Aminos for order support, bulk quotes, and lab inquiries. Call, email, or use our US contact form to reach our team today."
     },
     "contactForm": {
       "errorRequiredFields": "Please fill out all required fields.",
@@ -2090,8 +2090,8 @@
       "submit": "Submit Request"
     },
     "faqPage": {
-      "metaTitle": "Research Peptides FAQ | Purity & Compliance | Helix Bio",
-      "metaDescription": "Answers to common research peptide questions: purity testing, COA documentation, storage, and research-use-only compliance. Read the Helix Bio FAQ."
+      "metaTitle": "Research Peptides FAQ | Purity & Compliance | Certified Aminos",
+      "metaDescription": "Answers to common research peptide questions: purity testing, COA documentation, storage, and research-use-only compliance. Read the Certified Aminos FAQ."
     },
     "aboutHero": {
       "viewPeptidesShort": "View Peptides",
@@ -2115,7 +2115,7 @@
       "titleLine2": "Statement",
       "subtitle": "Our compliance position, stated plainly",
       "statements": {
-        "researchOnly": "All products offered by Helix Bio are synthetic research peptides intended for laboratory research use only.",
+        "researchOnly": "All products offered by Certified Aminos are synthetic research peptides intended for laboratory research use only.",
         "notForHumanAnimalUse": "Not for human or animal use.",
         "notForDiagnosisTreatment": "Not for diagnosis, treatment, prevention, mitigation, or cure of any disease or condition, and not intended for administration of any kind.",
         "notFdaApproved": "Products have not been evaluated or approved by the U.S. Food and Drug Administration (FDA)."
@@ -2139,13 +2139,13 @@
       "titleLine1": "Synthetic Research",
       "titleLine2": "Peptide Supply",
       "card1Title": "Laboratory-Grade Excellence",
-      "card1Text": "Helix Bio supplies chemically pure synthetic research peptides built for advanced life-science research, from early-stage compound screening to established laboratory protocols. Purity and identity are confirmed for every batch, not sampled occasionally.",
+      "card1Text": "Certified Aminos supplies chemically pure synthetic research peptides built for advanced life-science research, from early-stage compound screening to established laboratory protocols. Purity and identity are confirmed for every batch, not sampled occasionally.",
       "card2Title": "Exclusive Application",
       "card2Text1": "Every product we offer is intended exclusively for laboratory research. We don't market, label, or frame our peptides for human or animal use at any point in the supply chain, from product description through fulfillment.",
       "card2Text2": "No member of our team offers medical consultation, dosing guidance, or usage recommendations of any kind.",
       "footerLabel": "Research Commitment",
       "footerTitle": "Supporting Controlled Scientific Environments",
-      "footerText": "Helix Bio functions solely as a research material supplier. Operational support includes:",
+      "footerText": "Certified Aminos functions solely as a research material supplier. Operational support includes:",
       "listItems": {
         "orderProcessing": "Internal Processing",
         "documentationAccess": "Documented Evaluation",
@@ -2255,15 +2255,15 @@
       "faqSubtitle": "(faqs)",
       "faqs": {
         "contactInfo": {
-          "question": "What is the contact information for Helix Bio in the United States?",
-          "answer": "Reach us via email at <email>support@helixbiochem.com</email> for lab inquiries."
+          "question": "What is the contact information for Certified Aminos in the United States?",
+          "answer": "Reach us via email at <email>support@certifiedaminos.com</email> for lab inquiries."
         },
         "usLabsContact": {
-          "question": "How can US laboratories contact Helix Bio for research peptide orders?",
+          "question": "How can US laboratories contact Certified Aminos for research peptide orders?",
           "answer": "Use our US contact form, call during EST/PST hours, or chat for quick lab supply quotes, serving all 50 states."
         },
         "locationShipping": {
-          "question": "Where is Helix Bio located for US shipping and support?",
+          "question": "Where is Certified Aminos located for US shipping and support?",
           "answer": "We operate nationwide from US facilities, ensuring fast domestic shipping to labs in California, Texas, New York, and beyond."
         },
         "serviceHours": {
@@ -2286,7 +2286,7 @@
     "contactHero": {
       "getSupport": "Get Support",
       "title": "Contact Us",
-      "subtitle": "Helix Bio supplies synthetic research peptides intended exclusively for laboratory and experimental research environments."
+      "subtitle": "Certified Aminos supplies synthetic research peptides intended exclusively for laboratory and experimental research environments."
     },
     "faqHero": {
       "viewPeptidesShort": "View Peptides",
@@ -2307,7 +2307,7 @@
   },
   "calculator": {
     "page": {
-      "metaTitle": "Peptide Calculator: Dosage & Reconstitution Tool | Helix Bio",
+      "metaTitle": "Peptide Calculator: Dosage & Reconstitution Tool | Certified Aminos",
       "metaDescription": "Use our free peptide calculator to get your exact dosage in seconds. Enter vial size, BAC water volume, and desired mcg - and see exactly how many units to draw.",
       "faq": {
         "q1Question": "How much bacteriostatic water do I add to a 5mg peptide vial?",
@@ -2646,7 +2646,7 @@
   },
   "blog": {
     "metaTitle": "Research Peptides Blog | Scientific Insights & Laboratory Protocols",
-    "metaDescription": "Explore premium peptide research articles, laboratory protocols, reconstitution guides, and scientific breakthroughs from Helix Bio, a U.S. supplier of 99%+ pure research peptides.",
+    "metaDescription": "Explore premium peptide research articles, laboratory protocols, reconstitution guides, and scientific breakthroughs from Certified Aminos, a U.S. supplier of 99%+ pure research peptides.",
     "hero": {
       "title": "The U.S. Authority in Advanced Peptide Research & Scientific Insights",
       "description": "Explore peer-reviewed peptide research, advanced laboratory protocols, reconstitution guides, and analytical testing standards curated for American scientific professionals. Trusted educational resources for 99%+ pure research compounds—strictly for in-vitro laboratory use only.",
@@ -2655,7 +2655,7 @@
     },
     "compliance": {
       "title": "Compliance",
-      "description": "All products offered by Helix Bio are strictly intended for in-vitro laboratory research and analytical applications only. Products are not approved for human consumption, therapeutic use, or medical application."
+      "description": "All products offered by Certified Aminos are strictly intended for in-vitro laboratory research and analytical applications only. Products are not approved for human consumption, therapeutic use, or medical application."
     },
     "latestArticle": "Latest Article",
     "readArticle": "Read article",

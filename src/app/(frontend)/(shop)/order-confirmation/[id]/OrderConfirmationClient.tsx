@@ -53,7 +53,7 @@ type OrderData = {
   paymentMethod: 'stripe' | 'zelle' | 'amex' | 'circoflows' | 'stripe_link'
 }
 
-const ZELLE_RECIPIENT_EMAIL = 'support@helixbiochem.com'
+const ZELLE_RECIPIENT_EMAIL = 'support@certifiedaminos.com'
 
 const CONFETTI_PIECES = [
   { x: -80, y: -60, color: '#92DCE5', delay: 0.0, rotation: 45, scale: 1.2 },
@@ -220,7 +220,7 @@ export function OrderConfirmationClient({ order }: { order: OrderData }) {
       <div className="mt-6 text-center print:hidden">
         <span className="text-[11px] text-gray-400 font-medium">
           {t.rich('questionsContactSupport', {
-            link: (chunks) => <a href="mailto:support@helixbiochem.com" className="text-gray-600 underline hover:text-black transition-colors">{chunks}</a>,
+            link: (chunks) => <a href="mailto:support@certifiedaminos.com" className="text-gray-600 underline hover:text-black transition-colors">{chunks}</a>,
           })}
         </span>
       </div>
@@ -247,8 +247,9 @@ export function OrderConfirmationClient({ order }: { order: OrderData }) {
           {/* Print Header (Visible ONLY when printing) */}
           <div className="hidden print:flex items-center justify-between mb-8 pb-4 border-b border-black">
              <div className="flex items-center gap-3">
-               {/* eslint-disable-next-line @next/next/no-img-element */}
-               <img src="/HelixBio Images/hb-logo.png" alt="HelixBio" className="h-10 w-auto object-contain" />
+               <span className="font-syncopate text-lg font-medium tracking-tight text-black">
+                 CERTIFIED AMINOS
+               </span>
              </div>
              <div className="text-right">
                <p className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-1">{t('receipt')}</p>

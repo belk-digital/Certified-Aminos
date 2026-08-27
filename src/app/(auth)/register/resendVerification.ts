@@ -24,13 +24,13 @@ export async function resendVerificationEmail(rawEmail: string) {
   if (user && !user.emailVerified && user.authProvider !== 'google') {
     try {
       const token = jwt.sign({ userId: user.id, purpose: 'verify-email' }, process.env.PAYLOAD_SECRET, { expiresIn: '48h' })
-      const base = process.env.NEXT_PUBLIC_SERVER_URL || 'https://helixbiochem.com'
+      const base = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certifiedaminos.com'
       const verifyUrl = `${base}/api/verify-email?token=${token}`
       const html = generateVerifyEmailEmail(user.firstName, verifyUrl)
       await sendTrackedEmail(payload, {
         from: 'Support | Certified Aminos <support@certifiedaminos.com>',
         to: email,
-        subject: 'Verify your email - Helix Bio',
+        subject: 'Verify your email - Certified Aminos',
         html,
       })
     } catch (err) {

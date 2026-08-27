@@ -8,21 +8,20 @@ export async function GET(req: NextRequest) {
     const { searchParams } = new URL(req.url)
 
     let title = searchParams.has('title')
-      ? searchParams.get('title') || 'Helix Bio'
-      : 'Helix Bio'
-      
+      ? searchParams.get('title') || 'Certified Aminos'
+      : 'Certified Aminos'
+
     // Strip redundant brand name to keep text short and clean
-    if (title.includes(' | HelixBioPeptides')) {
-      title = title.replace(' | HelixBioPeptides', '')
+    if (title.includes(' | Certified Aminos')) {
+      title = title.replace(' | Certified Aminos', '')
     }
     title = title.slice(0, 90)
-      
+
     let description = searchParams.has('description')
       ? searchParams.get('description')?.slice(0, 120) // Shorter limit for description
       : 'Research-grade excellence. Dedicated to purity.'
 
-    const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://helixbiochem.com'
-    const logoUrl = `${serverUrl}/HelixBio%20Images/hb-logo.png`
+    const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certifiedaminos.com'
 
     // We must use a PNG or JPG because OG image generator does not support WebP —
     // og-background.png is a pre-converted copy of HelixBio Images/multiple-vial.webp.
@@ -69,13 +68,19 @@ export async function GET(req: NextRequest) {
               justifyContent: 'space-between',
             }}
           >
-            {/* Logo - Made bigger */}
+            {/* Wordmark */}
             <div style={{ display: 'flex', alignItems: 'center' }}>
-              <img
-                src={logoUrl}
-                alt="Helix Bio"
-                style={{ height: '95px', objectFit: 'contain' }}
-              />
+              <span
+                style={{
+                  fontSize: '38px',
+                  fontWeight: 800,
+                  color: '#ffffff',
+                  letterSpacing: '0.08em',
+                  textTransform: 'uppercase',
+                }}
+              >
+                Certified Aminos
+              </span>
             </div>
 
             {/* Content block */}
@@ -133,7 +138,7 @@ export async function GET(req: NextRequest) {
                   letterSpacing: '0.02em',
                 }}
               >
-                helixbiochem.com
+                certifiedaminos.com
               </div>
             </div>
           </div>

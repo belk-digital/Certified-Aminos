@@ -2,7 +2,7 @@ import { escapeHtml } from './escapeHtml'
 import { emailLayout } from './emailLayout'
 
 export function generateMilitaryAdminEmail(rawName: string, rawEmail: string, rawBranch: string, token: string): string {
-  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://helixbiochem.com';
+  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certifiedaminos.com';
   const approveUrl = `${serverUrl}/api/military/action?action=approve&token=${token}`;
   const rejectUrl = `${serverUrl}/api/military/action?action=reject&token=${token}`;
   const name = escapeHtml(rawName)

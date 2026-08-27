@@ -38,7 +38,7 @@ export function BlogHero() {
         >
           <Image
             src="/HelixBio Images/multiple-vial.webp"
-            alt="HelixBio Research Blog"
+            alt="Certified Aminos Research Blog"
             fill
             className="object-cover opacity-90 transition-transform duration-1000 group-hover:scale-105"
             priority

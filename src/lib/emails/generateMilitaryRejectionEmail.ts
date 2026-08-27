@@ -1,7 +1,7 @@
 import { emailLayout } from './emailLayout'
 
 export function generateMilitaryRejectionEmail(name: string): string {
-  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://helixbiochem.com';
+  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certifiedaminos.com';
   
   return emailLayout({
     title: 'Verification Update',
@@ -15,7 +15,7 @@ export function generateMilitaryRejectionEmail(name: string): string {
                 <p style="margin: 0; font-size: 15px; color: #2A2A2A; line-height: 1.6;">If you believe this was an error, please try submitting a clearer photo of your ID on our website, or reply directly to this email to speak with our support team.</p>
               </div>
               
-              <p style="margin: 0; font-size: 16px; color: #4A4A4A; line-height: 1.6; font-weight: 600;">Best regards,<br>The Helix Bio Team</p>
+              <p style="margin: 0; font-size: 16px; color: #4A4A4A; line-height: 1.6; font-weight: 600;">Best regards,<br>The Certified Aminos Team</p>
     `
   })
 }

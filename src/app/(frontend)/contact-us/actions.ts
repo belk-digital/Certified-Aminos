@@ -33,7 +33,7 @@ export async function submitContactForm(formData: FormData) {
 
     await sendTrackedEmail(payload, {
       from: `"${name}" <forms@certifiedaminos.com>`,
-      to: 'support@helixbiochem.com',
+      to: 'support@certifiedaminos.com',
       replyTo: email,
       subject: `[Contact Form] ${subject}`,
       html: html,

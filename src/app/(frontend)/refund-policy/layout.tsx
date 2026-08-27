@@ -45,7 +45,7 @@ export default async function RefundPolicyLayout({
   const t = await getTranslations('legal.refundPolicy')
   const title = t('metaTitle')
   const description = t('metaDescription')
-  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://helixbiochem.com'
+  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certifiedaminos.com'
   const path = true ? '/refund-policy' : `/${locale}/refund-policy`
   const url = `${baseUrl}${path}`
 

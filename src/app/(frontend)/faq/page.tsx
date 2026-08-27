@@ -70,7 +70,7 @@ export default async function FaqPage({
     }))
   );
 
-  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://helixbiochem.com'
+  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certifiedaminos.com'
   const path = true ? `/${slug}` : `/${locale}/${slug}`
   const url = `${baseUrl}${path}`
 
@@ -97,12 +97,12 @@ export default async function FaqPage({
         '@type': 'WebSite',
         '@id': `${baseUrl}/#website`,
         url: baseUrl,
-        name: 'Helix Bio',
+        name: 'Certified Aminos',
       },
       {
         '@type': 'Organization',
         '@id': `${baseUrl}/#organization`,
-        name: 'Helix Bio',
+        name: 'Certified Aminos',
         url: baseUrl,
       },
     ],

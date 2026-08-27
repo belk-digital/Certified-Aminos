@@ -6,9 +6,9 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { cn } from '@/lib/utils'
 
 const slides = [
-  { id: 1, src: '/HelixBio Images/slide-1.webp', alt: 'Helix Bio Slide 1' },
-  { id: 2, src: '/HelixBio Images/slide-2.webp', alt: 'Helix Bio Slide 2' },
-  { id: 3, src: '/HelixBio Images/slide-3.webp', alt: 'Helix Bio Slide 3' },
+  { id: 1, src: '/HelixBio Images/slide-1.webp', alt: 'Certified Aminos Slide 1' },
+  { id: 2, src: '/HelixBio Images/slide-2.webp', alt: 'Certified Aminos Slide 2' },
+  { id: 3, src: '/HelixBio Images/slide-3.webp', alt: 'Certified Aminos Slide 3' },
 ]
 
 export function ImageSliderSection() {

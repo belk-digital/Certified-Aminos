@@ -38,7 +38,7 @@ export async function generateMetadata({
   if (product.images && product.images.length > 0 && typeof product.images[0].image === 'object' && product.images[0].image?.url) {
     imageUrl = product.images[0].image.url
     if (imageUrl.startsWith('/')) {
-      imageUrl = `${process.env.NEXT_PUBLIC_SERVER_URL || 'https://helixbiochem.com'}${imageUrl}`
+      imageUrl = `${process.env.NEXT_PUBLIC_SERVER_URL || 'https://certifiedaminos.com'}${imageUrl}`
     }
   }
 
@@ -412,7 +412,7 @@ export default async function ProductPage({
 
   productData.suggestedBlogs = mappedBlogs
 
-  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://helixbiochem.com'
+  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certifiedaminos.com'
   const productUrl = `${baseUrl}/product/${slug}`
   
   const productSchema = {
@@ -436,11 +436,11 @@ export default async function ProductPage({
     } : {}),
     brand: {
       '@type': 'Brand',
-      name: 'Helix Bio'
+      name: 'Certified Aminos'
     },
     manufacturer: {
       '@type': 'Organization',
-      name: 'Helix Bio'
+      name: 'Certified Aminos'
     },
     offers: productData.variants.length > 1 ? {
       '@type': 'AggregateOffer',

@@ -38,7 +38,7 @@ export function WhatSetsUsApart() {
         
         <div className="mb-20 lg:mb-32">
           <div className="inline-block border border-white/10 rounded-full px-4 py-1.5 mb-6 bg-white/5 backdrop-blur-sm">
-            <span className="text-white/70 text-xs font-bold tracking-[0.2em] uppercase">The HelixBio Standard</span>
+            <span className="text-white/70 text-xs font-bold tracking-[0.2em] uppercase">The Certified Aminos Standard</span>
           </div>
           <h2 className="font-heading text-5xl sm:text-7xl md:text-8xl lg:text-[10rem] font-black text-white leading-[0.9] tracking-tighter uppercase break-words drop-shadow-2xl">
             {t('titleLine1')}<br />

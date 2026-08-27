@@ -216,7 +216,7 @@ function ShopClientInner({ initialProducts, totalPages, categories }: ShopClient
               Shop
             </h1>
             <p className="text-white/80 text-sm md:text-base font-medium leading-relaxed">
-              Browse Helix Bio&apos;s full catalog of research-use-only peptides. Every batch is third-party tested for purity, shipped from the USA, and backed by a certificate of analysis you can review before you order.
+              Browse Certified Aminos&apos;s full catalog of research-use-only peptides. Every batch is third-party tested for purity, shipped from the USA, and backed by a certificate of analysis you can review before you order.
             </p>
           </motion.div>
           

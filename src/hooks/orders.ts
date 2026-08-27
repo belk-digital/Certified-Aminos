@@ -208,7 +208,7 @@ export const afterOrderChange: CollectionAfterChangeHook = async ({ doc, previou
             to: customerEmail,
             // On payment failure, admin gets the identical invoice email (same cart/totals)
             // the customer receives, rather than a separate summary-only alert.
-            ...(label === 'failed' ? { bcc: 'support@helixbiochem.com' } : {}),
+            ...(label === 'failed' ? { bcc: 'support@certifiedaminos.com' } : {}),
             subject,
             html,
           })

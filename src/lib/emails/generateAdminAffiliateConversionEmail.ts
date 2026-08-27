@@ -1,7 +1,7 @@
 import { emailLayout } from './emailLayout'
 
 export function generateAdminAffiliateConversionEmail(order: any, affiliate: any, commissionAmount: number): string {
-  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://helixbiochem.com';
+  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certifiedaminos.com';
   
   const affiliateName = affiliate.displayName || 'Partner';
   const orderNumber = order.orderNumber || order.id || 'N/A';

@@ -39,7 +39,7 @@ export function AboutTeaser() {
         >
           <Image 
             src="/Featured%20Images/scientist-at-microscope.webp"
-            alt="US-based peptide synthesis facility — ISO-certified laboratory where Helix Bio compounds are produced"
+            alt="US-based peptide synthesis facility — ISO-certified laboratory where Certified Aminos compounds are produced"
             fill
             className="object-cover opacity-100"
           />
@@ -92,7 +92,7 @@ export function AboutTeaser() {
         >
           <Image 
             src="/Featured%20Images/vial-no-bg.webp"
-            alt="Helix Bio research peptide vial, front view"
+            alt="Certified Aminos research peptide vial, front view"
             fill
             className="object-contain drop-shadow-xl transform-gpu"
           />

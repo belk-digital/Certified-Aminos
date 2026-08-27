@@ -7,7 +7,7 @@ export async function GET(req: Request) {
   const url = new URL(req.url)
   const token = url.searchParams.get('token')
   const locale = url.searchParams.get('locale') === 'es' ? '/es' : ''
-  const base = process.env.NEXT_PUBLIC_SERVER_URL || 'https://helixbiochem.com'
+  const base = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certifiedaminos.com'
 
   if (!token) {
     return NextResponse.redirect(`${base}${locale}/login?verifyError=missing_token`)

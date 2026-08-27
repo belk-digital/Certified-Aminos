@@ -2,7 +2,7 @@ export function emailLayout({
   title, 
   content, 
   heroImage = null, 
-  serverUrl = 'https://helixbiochem.com' 
+  serverUrl = 'https://certifiedaminos.com' 
 }: { 
   title: string, 
   content: string, 
@@ -10,7 +10,7 @@ export function emailLayout({
   serverUrl?: string 
 }): string {
   // Enforce production domain for emails
-  serverUrl = 'https://helixbiochem.com';
+  serverUrl = 'https://certifiedaminos.com';
   
   return `
 <!DOCTYPE html>
@@ -31,7 +31,7 @@ export function emailLayout({
           <tr>
             <td style="background-color: #ffffff; padding: 48px 48px 24px 48px; text-align: center;">
               <a href="${serverUrl}" target="_blank" style="text-decoration: none; display: inline-block;">
-                <img src="https://pub-0b0f2f98407442588d161ae09cb84207.r2.dev/email-assets/hb-logo.png" alt="Helix Bio" style="height: 44px; width: auto; max-width: 100%; display: block; margin: 0 auto;" />
+                <span style="font-family: Arial, sans-serif; font-size: 22px; font-weight: 700; letter-spacing: 2px; color: #0a1323; text-transform: uppercase;">Certified Aminos</span>
               </a>
             </td>
           </tr>
@@ -58,7 +58,7 @@ export function emailLayout({
           <tr>
             <td style="background-color: #FAFAFA; padding: 48px; text-align: center;">
               <p style="margin: 0 0 16px 0; color: #0A0A0A; font-weight: 800; font-size: 13px; text-transform: uppercase; letter-spacing: 0.15em;">
-                <a href="${serverUrl}" target="_blank" style="color: #0A0A0A; text-decoration: none;">Helix Bio</a>
+                <a href="${serverUrl}" target="_blank" style="color: #0A0A0A; text-decoration: none;">Certified Aminos</a>
               </p>
               <p style="margin: 0 0 24px 0; color: #6B7280; font-size: 13px; line-height: 1.6;">Research-grade excellence.<br/>Dedicated to purity.</p>
               
@@ -72,7 +72,7 @@ export function emailLayout({
                 </tr>
               </table>
 
-              <p style="margin: 0; color: #9CA3AF; font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em;">&copy; ${new Date().getFullYear()} <a href="${serverUrl}" target="_blank" style="color: inherit; text-decoration: none;">Helix Bio</a>. All rights reserved.</p>
+              <p style="margin: 0; color: #9CA3AF; font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em;">&copy; ${new Date().getFullYear()} <a href="${serverUrl}" target="_blank" style="color: inherit; text-decoration: none;">Certified Aminos</a>. All rights reserved.</p>
             </td>
           </tr>
         </table>

@@ -2,13 +2,13 @@ import { emailLayout } from './emailLayout'
 
 export async function generateWelcomeEmail(user: any): Promise<string> {
   const name = user.firstName || 'there'
-  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://helixbiochem.com'
+  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certifiedaminos.com'
   
   const content = `
     <!-- Huge Header -->
     <h2 style="margin: 0 0 24px 0; font-size: 40px; color: #0A0A0A; font-weight: 800; letter-spacing: -2px; line-height: 1.1;">Welcome,<br/>${name}.</h2>
     
-    <p style="margin: 0 0 48px 0; font-size: 18px; color: #4A4A4A; line-height: 1.6; max-width: 480px;">We're absolutely thrilled to have you join the Helix Bio community. You now have full access to our catalog of premium, research-grade peptides.</p>
+    <p style="margin: 0 0 48px 0; font-size: 18px; color: #4A4A4A; line-height: 1.6; max-width: 480px;">We're absolutely thrilled to have you join the Certified Aminos community. You now have full access to our catalog of premium, research-grade peptides.</p>
     
     <!-- Editorial Benefits List -->
     <p style="margin: 0 0 32px 0; font-size: 12px; font-weight: 800; color: #0A0A0A; text-transform: uppercase; letter-spacing: 0.15em; border-bottom: 2px solid #0A0A0A; padding-bottom: 16px;">Your Account Benefits</p>
@@ -54,7 +54,7 @@ export async function generateWelcomeEmail(user: any): Promise<string> {
   `
 
   return emailLayout({
-    title: 'Welcome to Helix Bio',
+    title: 'Welcome to Certified Aminos',
     content,
     heroImage: 'https://pub-0b0f2f98407442588d161ae09cb84207.r2.dev/email-assets/ChatGPT%20Image%20Jul%2020%2C%202026%2C%2005_23_31%20AM.webp',
     serverUrl

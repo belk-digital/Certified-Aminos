@@ -52,7 +52,7 @@ export function DifferenceSection() {
             {/* The Floating Badge */}
             <div className="absolute top-6 left-6 md:top-8 md:left-8 z-20 bg-white/95 backdrop-blur-md px-6 py-3 rounded-2xl shadow-sm border border-white/60">
               <span className="text-ink font-bold text-sm tracking-tight">
-                Why choose Helix Bio?
+                Why choose Certified Aminos?
               </span>
             </div>
 

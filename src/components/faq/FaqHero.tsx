@@ -39,7 +39,7 @@ export function FaqHero() {
         >
           <Image
             src="/HelixBio Images/package-box.webp"
-            alt="FAQ HelixBio Support and Resources"
+            alt="FAQ Certified Aminos Support and Resources"
             fill
             className="object-cover opacity-90 transition-transform duration-1000 group-hover:scale-105"
             priority

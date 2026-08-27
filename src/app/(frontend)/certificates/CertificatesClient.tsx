@@ -209,7 +209,7 @@ export function CertificatesClient({ coas }: { coas: COA[] }) {
               <div className="relative w-full aspect-square md:aspect-[4/3] rounded-2xl overflow-hidden">
                 <Image
                   src="/hplc-machine-lab.png"
-                  alt="HPLC (high-performance liquid chromatography) instrument used to verify Helix Bio peptide purity for each batch's Certificate of Analysis"
+                  alt="HPLC (high-performance liquid chromatography) instrument used to verify Certified Aminos peptide purity for each batch's Certificate of Analysis"
                   fill
                   className="object-cover"
                 />

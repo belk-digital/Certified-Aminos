@@ -50,7 +50,7 @@ export default async function ContactPage({
   const tClient = await getTranslations({ locale, namespace: 'content.contactClient' })
   const title = t('metaTitle')
   const description = t('metaDescription')
-  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://helixbiochem.com'
+  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certifiedaminos.com'
   const path = true ? `/${slug}` : `/${locale}/${slug}`
   const url = `${baseUrl}${path}`
 
@@ -61,7 +61,7 @@ export default async function ContactPage({
   const contactInfoFaq = {
     question: tClient('faqs.contactInfo.question'),
     answer:
-      'Reach us via email at support@helixbiochem.com for lab inquiries.',
+      'Reach us via email at support@certifiedaminos.com for lab inquiries.',
   }
 
   const schema = {
@@ -86,15 +86,15 @@ export default async function ContactPage({
       {
         '@type': 'Organization',
         '@id': `${baseUrl}/#organization`,
-        name: 'Helix Bio',
+        name: 'Certified Aminos',
         url: baseUrl,
-        email: 'support@helixbiochem.com',
+        email: 'support@certifiedaminos.com',
 
         contactPoint: [
           {
             '@type': 'ContactPoint',
             contactType: 'customer support',
-            email: 'support@helixbiochem.com',
+            email: 'support@certifiedaminos.com',
             areaServed: 'US',
             availableLanguage: ['English', 'Spanish'],
             hoursAvailable: 'Mo-Fr 09:00-17:00',

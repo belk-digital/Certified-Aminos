@@ -14,14 +14,14 @@ export const BLOG_SCHEMAS: Record<string, SchemaScript[]> = {
         description: 'An in-depth, systematic comparison of Semaglutide, Tirzepatide, and Retatrutide. Explore the mechanisms of action, receptor affinities, and research applications.',
         author: {
           '@type': 'Organization',
-          name: 'Helix Bio Research',
+          name: 'Certified Aminos Research',
         },
         publisher: {
           '@type': 'Organization',
-          name: 'Helix Bio',
+          name: 'Certified Aminos',
           logo: {
             '@type': 'ImageObject',
-            url: 'https://helixbiochem.com/icon.png',
+            url: 'https://certifiedaminos.com/icon.png',
           },
         },
         datePublished: '2026-08-04T08:00:00Z',
@@ -167,14 +167,14 @@ export const BLOG_SCHEMAS: Record<string, SchemaScript[]> = {
         description: 'Discover the profound synergistic effects of BPC-157, TB-500, and GHK-Cu. This comprehensive guide outlines the molecular mechanisms behind advanced tissue repair.',
         author: {
           '@type': 'Organization',
-          name: 'Helix Bio Research',
+          name: 'Certified Aminos Research',
         },
         publisher: {
           '@type': 'Organization',
-          name: 'Helix Bio',
+          name: 'Certified Aminos',
           logo: {
             '@type': 'ImageObject',
-            url: 'https://helixbiochem.com/icon.png',
+            url: 'https://certifiedaminos.com/icon.png',
           },
         },
         datePublished: '2026-08-04T08:00:00Z',

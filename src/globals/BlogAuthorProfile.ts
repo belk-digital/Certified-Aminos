@@ -5,14 +5,14 @@ export const BlogAuthorProfile: GlobalConfig = {
   label: 'Blog Author Profile',
   admin: {
     group: 'Blog',
-    description: 'The single byline used across every blog post (the Helix Bio Team account is the only author). Feeds Author/Person schema.org markup for E-E-A-T.',
+    description: 'The single byline used across every blog post (the Certified Aminos Team account is the only author). Feeds Author/Person schema.org markup for E-E-A-T.',
   },
   access: {
     read: () => true,
     update: ({ req: { user } }) => !!user && ['admin', 'staff'].includes(user.role as string),
   },
   fields: [
-    { name: 'name', type: 'text', required: true, defaultValue: 'Helix Bio Team' },
+    { name: 'name', type: 'text', required: true, defaultValue: 'Certified Aminos Team' },
     { name: 'title', type: 'text', admin: { description: 'e.g. "Research & Product Team"' } },
     { name: 'bio', type: 'textarea', admin: { description: 'Short author bio shown on post pages and used in Author/Person schema.' } },
     { name: 'credentials', type: 'text', admin: { description: 'e.g. "Reviewed by in-house research chemists"' } },

@@ -54,7 +54,7 @@ export function TrustBadges() {
           
           <div className="flex flex-col items-start md:items-end gap-6 sm:gap-8 max-w-md mt-2 sm:mt-6 md:mt-0">
             <div title={`${t('ctaText')} →`}>
-              <FluidButton href="/about-us" text={t('ctaText')} ariaLabel="Learn more about Helix Bio's purity standards" className="relative z-10" />
+              <FluidButton href="/about-us" text={t('ctaText')} ariaLabel="Learn more about Certified Aminos' purity standards" className="relative z-10" />
             </div>
             <p className="text-zinc-600 text-sm sm:text-base md:text-lg text-left md:text-right leading-relaxed font-medium">
               {t('description')}
