@@ -80,7 +80,7 @@ export default function PeptideCalculatorPage() {
             <div className="lg:col-span-7 flex flex-col gap-8">
               <FadeUp delay={0.2}>
                 <div className="relative w-full aspect-[4/3] rounded-[2rem] md:rounded-[3rem] overflow-hidden shadow-2xl group">
-                  <Image src="/HelixBio Images/vial-on-sand.webp" alt="Peptide Vials" fill className="object-cover group-hover:scale-105 transition-transform duration-1000 ease-out" />
+                  <Image src="/HelixBio Images/vial_on_sand_minimal.jpg" alt="Peptide Vials" fill className="object-cover group-hover:scale-105 transition-transform duration-1000 ease-out" />
                   <div className="absolute inset-0 bg-black/10" />
                   <div className="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-md p-6 rounded-2xl border border-white/40">
                     <h3 className="font-black text-xl text-ink uppercase tracking-tighter mb-2">The Solution? Automation.</h3>

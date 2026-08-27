@@ -37,7 +37,7 @@ export function CalculatorHero() {
           className="relative w-full h-[400px] sm:h-[450px] md:h-[550px] rounded-[2rem] md:rounded-[3rem] overflow-hidden mb-4 sm:mb-6 shadow-2xl group cursor-pointer bg-zinc-900"
         >
           <Image
-            src="/HelixBio Images/multiple-vial.webp"
+            src="/HelixBio Images/hero_vials_lab.jpg"
             alt="Certified Aminos Peptide Calculator"
             fill
             className="object-cover opacity-90 transition-transform duration-1000 group-hover:scale-105"
