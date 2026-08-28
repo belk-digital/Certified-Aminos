@@ -70,14 +70,14 @@ export function MilitaryDiscountSection() {
   }
 
   return (
-    <section className="w-full relative py-16 md:py-24 px-8 flex justify-center items-center font-inter overflow-hidden">
+    <section className="w-full relative py-16 md:py-24 px-6 md:px-12 flex justify-center items-center font-inter overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center pointer-events-none"
         style={{ backgroundImage: "url('/military-discount-banner.png')" }}
       ></div>
       <div className="absolute inset-0 bg-[#060a12]/30 pointer-events-none"></div>
 
-      <div className="relative z-10 w-full max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center text-white">
+      <div className="relative z-10 w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center text-white">
         {/* Left Column: Heading */}
         <div className="flex flex-col items-start text-left">
           <div className="flex items-center gap-3 mb-4">

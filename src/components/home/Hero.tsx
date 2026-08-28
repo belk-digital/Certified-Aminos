@@ -24,7 +24,7 @@ export function Hero() {
   return (
     <section
       ref={container}
-      className="relative w-full h-screen lg:h-screen flex flex-col text-white overflow-hidden pb-[350px] lg:pb-0"
+      className="relative w-full min-h-[88vh] lg:h-screen flex flex-col text-white overflow-hidden pb-[300px] lg:pb-0"
       style={{ background: 'radial-gradient(ellipse at 70% 30%, #151d30 0%, #060a12 100%)' }}
     >
       <div className="flex flex-1 relative px-8 pb-8 pt-36 sm:pt-40 lg:pt-44 flex-col lg:flex-row items-center lg:items-stretch">
@@ -65,8 +65,8 @@ export function Hero() {
               PRECISION BEYOND
             </h1>
           </div>
-          <div className="flex justify-between items-start mt-6 flex-col lg:flex-row items-center lg:items-start">
-            <div className="pt-2 text-center lg:text-left flex flex-col items-center lg:items-start mb-4 lg:mb-0">
+          <div className="flex justify-between items-start mt-0 lg:mt-6 flex-col lg:flex-row items-center lg:items-start">
+            <div className="order-2 lg:order-1 pt-2 text-center lg:text-left flex flex-col items-center lg:items-start mb-4 lg:mb-0">
               <p className="hero-subtitle font-inter text-[0.9rem] sm:text-base leading-relaxed opacity-80 font-light max-w-[400px] mb-6 lg:mb-10 px-4 lg:px-0">
                 Research-grade peptides created for reliable
                 <br className="hidden lg:block" /> quality, clear testing, and consistent
@@ -76,7 +76,7 @@ export function Hero() {
                 EXPLORE CATALOGUE <span>→</span>
               </button>
             </div>
-            <h1 className="hero-title-sub font-syncopate font-normal uppercase leading-[1.1] tracking-wide text-[2.2rem] sm:text-[8vw] lg:text-[5.5vw] text-center lg:text-left">
+            <h1 className="order-1 lg:order-2 hero-title-sub font-syncopate font-normal uppercase leading-[1.1] tracking-wide text-[2.2rem] sm:text-[8vw] lg:text-[5.5vw] text-center lg:text-left">
               PURITY
             </h1>
           </div>
@@ -94,9 +94,9 @@ export function Hero() {
         src="/finalized product images/hero-product-image.png"
         alt="Hero Product"
         className="hero-product-img absolute object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.7)] z-[15] pointer-events-none
-          w-[90vw] max-w-[320px] bottom-[-1rem] left-1/2 -translate-x-1/2
-          sm:w-[70vw] sm:min-w-[250px] sm:max-w-none
-          lg:h-[70vh] lg:max-h-[650px] lg:w-auto lg:bottom-[2%] lg:right-[22%] lg:left-auto lg:translate-x-0"
+          w-[115vw] max-w-[480px] bottom-0 left-1/2 -translate-x-1/2
+          sm:w-[80vw] sm:min-w-[300px] sm:max-w-none
+          lg:w-auto lg:h-[70vh] lg:max-h-[650px] lg:bottom-[2%] lg:right-[22%] lg:left-auto lg:translate-x-0"
       />
     </section>
   )

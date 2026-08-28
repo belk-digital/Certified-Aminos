@@ -55,7 +55,7 @@ export function WhyPeptides() {
       className="w-full bg-[#f4f7fa] min-h-screen pt-20 px-8 flex items-stretch overflow-hidden font-inter relative"
     >
       <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 items-stretch">
-        <div className="relative w-full flex items-end justify-center pt-10">
+        <div className="order-2 md:order-1 relative w-full flex items-end justify-center pt-10">
           <img
             src="/finalized product images/products-image-for-section.png"
             alt="Certified Aminos Products"
@@ -63,7 +63,7 @@ export function WhyPeptides() {
           />
         </div>
 
-        <div className="wp-content flex flex-col justify-center max-w-3xl lg:max-w-4xl relative z-30 pb-20">
+        <div className="order-1 md:order-2 wp-content flex flex-col justify-center max-w-3xl lg:max-w-4xl relative z-30 pb-20">
           <span className="wp-text-elem text-[11px] text-gray-500 tracking-[0.2em] font-semibold uppercase mb-4">
             ORIGIN &amp; INTENT
           </span>

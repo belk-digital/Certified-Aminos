@@ -50,20 +50,20 @@ function CategoryCard({ category, index }: { category: HomeCategory; index: numb
   return (
     <Link
       href={`/shop?category=${encodeURIComponent(category.name)}`}
-      className="relative w-full h-64 md:h-auto md:flex-1 overflow-hidden group cursor-pointer rounded-lg shadow-sm transition-all duration-500 ease-out md:hover:flex-[1.5]"
+      className="relative w-full h-64 md:h-auto md:flex-1 overflow-hidden group cursor-pointer rounded-lg shadow-sm transition-all duration-500 ease-out md:hover:flex-[1.5] bg-navy-deep"
     >
       <div
         className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
         style={{ backgroundImage: `url('${image}')` }}
       ></div>
 
-      <div className="absolute inset-0 bg-black/10 transition-colors duration-300 group-hover:bg-black/30"></div>
+      <div className="absolute inset-0 bg-black/55 transition-colors duration-300 group-hover:bg-black/65"></div>
 
-      <div className="absolute inset-0 p-8 flex flex-col justify-between text-white">
+      <div className="absolute inset-0 p-4 md:p-8 flex flex-col justify-between text-white">
         <span className="font-inter text-2xl font-light opacity-90">{String(index + 1).padStart(2, '0')}</span>
 
         <div>
-          <h3 className="font-syncopate text-[0.8rem] md:text-[0.95rem] font-normal mb-4 leading-relaxed tracking-wider uppercase">
+          <h3 className="font-syncopate text-[0.7rem] md:text-[0.95rem] font-normal mb-4 leading-relaxed tracking-wider uppercase">
             {displayName}
           </h3>
           <div className="flex items-center text-[0.65rem] font-bold font-inter uppercase tracking-widest opacity-90 group-hover:opacity-100 transition-opacity">
@@ -104,7 +104,7 @@ export function CategoriesSection({ categories = [] }: CategoriesSectionProps) {
 
   return (
     <section className="w-full flex flex-col px-8 py-8 bg-[#f8f9fa] gap-4">
-      <div className="flex flex-col md:flex-row min-h-[70vh] gap-4">
+      <div className="flex flex-col md:flex-row min-h-0 md:min-h-[70vh] gap-4">
         {/* First Column - Explore Research CTA (stays fixed, doesn't slide) */}
         <Link
           href="/shop"
@@ -124,8 +124,25 @@ export function CategoriesSection({ categories = [] }: CategoriesSectionProps) {
           </div>
         </Link>
 
-        {/* Sliding track viewport */}
-        <div className="w-full md:flex-1 overflow-hidden">
+        {/* Mobile: flat horizontal scroll strip, ~2 cards visible at a time */}
+        <div className="flex md:hidden flex-col gap-3">
+          <div className="flex w-full overflow-x-auto snap-x snap-mandatory gap-4 pb-1 -mx-8 px-8">
+            {categories.map((category, i) => (
+              <div key={category.id} className="w-[46vw] shrink-0 snap-start h-64">
+                <CategoryCard category={category} index={i} />
+              </div>
+            ))}
+          </div>
+          {categories.length > 2 && (
+            <div className="flex items-center justify-center gap-2 text-navy-deep/50 text-[11px] font-inter font-semibold uppercase tracking-[0.15em]">
+              <Hand size={14} className="animate-[wiggle_1.6s_ease-in-out_infinite]" strokeWidth={2} />
+              Swipe to explore
+            </div>
+          )}
+        </div>
+
+        {/* Desktop: paged slider (4-at-a-time) */}
+        <div className="hidden md:block w-full md:flex-1 overflow-hidden">
           <div
             ref={trackRef}
             className="flex h-full"
@@ -146,9 +163,9 @@ export function CategoriesSection({ categories = [] }: CategoriesSectionProps) {
         </div>
       </div>
 
-      {/* Slider controls — only needed when there's more than one page of categories */}
+      {/* Slider controls — desktop paged slider only; mobile uses native touch scroll */}
       {pageCount > 1 && (
-        <div className="flex flex-col items-center gap-3 pt-2">
+        <div className="hidden md:flex flex-col items-center gap-3 pt-2">
           <div className="flex items-center gap-2 text-navy-deep/50 text-[11px] font-inter font-semibold uppercase tracking-[0.15em]">
             <Hand size={14} className="animate-[wiggle_1.6s_ease-in-out_infinite]" strokeWidth={2} />
             Slide to discover more categories

@@ -43,17 +43,17 @@ export function ResearchGradePeptides() {
         <img
           src="/research-grade-peptides-image.png"
           alt="Research Grade Peptides"
-          className="w-full h-auto object-cover"
+          className="w-full h-[420px] sm:h-[480px] md:h-auto object-cover"
         />
         <img
           src="/transparent_vial.png"
           alt="Transparent Vial"
-          className="absolute z-10 left-[48%] bottom-[8%] md:bottom-[10%] transform -translate-x-1/2 h-[55%] md:h-[60%] lg:h-[65%] w-auto object-contain pointer-events-none drop-shadow-2xl"
+          className="absolute z-10 left-[48%] bottom-[8%] md:bottom-[10%] transform -translate-x-1/2 h-[62%] sm:h-[65%] md:h-[60%] lg:h-[65%] w-auto object-contain pointer-events-none drop-shadow-2xl"
         />
 
         <div className="absolute inset-x-0 top-0 h-32 md:h-64 bg-gradient-to-b from-white via-white/50 to-transparent pointer-events-none"></div>
 
-        <div className="absolute inset-0 hidden md:block pointer-events-none">
+        <div className="absolute inset-0 pointer-events-none">
           <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1000 1000" preserveAspectRatio="none">
             <line x1="500" y1="200" x2="500" y2="480" stroke="#566c9c" strokeWidth="1" vectorEffect="non-scaling-stroke" />
             <polyline points="150,400 350,700 440,700" fill="none" stroke="#566c9c" strokeWidth="1" vectorEffect="non-scaling-stroke" />
@@ -61,27 +61,27 @@ export function ResearchGradePeptides() {
           </svg>
 
           <div className="absolute" style={{ left: '50%', top: '20%', transform: 'translate(-50%, -50%)' }}>
-            <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 flex items-center gap-2 text-[#354363] font-inter text-[11px] lg:text-[13px] font-bold uppercase tracking-[0.15em] whitespace-nowrap">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" /><polyline points="14 2 14 8 20 8" /></svg>
+            <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 flex items-center gap-1.5 sm:gap-2 text-[#354363] font-inter text-[8px] sm:text-[11px] lg:text-[13px] font-bold uppercase tracking-[0.1em] sm:tracking-[0.15em] whitespace-nowrap">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-3 h-3 sm:w-4 sm:h-4"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" /><polyline points="14 2 14 8 20 8" /></svg>
               <span>Independently Lab Tested</span>
             </div>
-            <div className="w-2.5 h-2.5 rounded-full bg-[#566c9c] border-[2px] border-white shadow-md relative z-10"></div>
+            <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-[#566c9c] border-[2px] border-white shadow-md relative z-10"></div>
           </div>
 
           <div className="absolute" style={{ left: '15%', top: '40%', transform: 'translate(-50%, -50%)' }}>
-            <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 flex items-center gap-2 text-[#354363] font-inter text-[11px] lg:text-[13px] font-bold uppercase tracking-[0.15em] whitespace-nowrap">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" /><path d="m9 12 2 2 4-4" /></svg>
+            <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 flex items-center gap-1.5 sm:gap-2 text-[#354363] font-inter text-[8px] sm:text-[11px] lg:text-[13px] font-bold uppercase tracking-[0.1em] sm:tracking-[0.15em] whitespace-nowrap">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-3 h-3 sm:w-4 sm:h-4"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" /><path d="m9 12 2 2 4-4" /></svg>
               <span>Made in USA</span>
             </div>
-            <div className="w-2.5 h-2.5 rounded-full bg-[#566c9c] border-[2px] border-white shadow-md relative z-10"></div>
+            <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-[#566c9c] border-[2px] border-white shadow-md relative z-10"></div>
           </div>
 
           <div className="absolute" style={{ left: '85%', top: '40%', transform: 'translate(-50%, -50%)' }}>
-            <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 flex items-center gap-2 text-[#354363] font-inter text-[11px] lg:text-[13px] font-bold uppercase tracking-[0.15em] whitespace-nowrap">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M10 2v7.31" /><path d="M14 9.3V1.99" /><path d="M8.5 2h7" /><path d="M14 9.3a6.5 6.5 0 1 1-4 0" /><path d="M5.52 16h12.96" /></svg>
+            <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 flex items-center gap-1.5 sm:gap-2 text-[#354363] font-inter text-[8px] sm:text-[11px] lg:text-[13px] font-bold uppercase tracking-[0.1em] sm:tracking-[0.15em] whitespace-nowrap">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-3 h-3 sm:w-4 sm:h-4"><path d="M10 2v7.31" /><path d="M14 9.3V1.99" /><path d="M8.5 2h7" /><path d="M14 9.3a6.5 6.5 0 1 1-4 0" /><path d="M5.52 16h12.96" /></svg>
               <span>&gt;99% Purity Guaranteed</span>
             </div>
-            <div className="w-2.5 h-2.5 rounded-full bg-[#566c9c] border-[2px] border-white shadow-md relative z-10"></div>
+            <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-[#566c9c] border-[2px] border-white shadow-md relative z-10"></div>
           </div>
         </div>
       </div>

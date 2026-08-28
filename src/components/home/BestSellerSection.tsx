@@ -93,7 +93,7 @@ export function BestSellerSection({ products = [] }: { products?: any[] }) {
   return (
     <section
       ref={sectionRef}
-      className="w-full bg-white min-h-screen py-16 px-8 flex flex-col justify-center font-inter overflow-hidden"
+      className="w-full bg-white min-h-screen py-16 px-2 md:px-8 flex flex-col justify-center font-inter overflow-hidden"
     >
       <div className="w-full">
         <div className="flex justify-between items-end mb-12 rc-header">
@@ -101,7 +101,7 @@ export function BestSellerSection({ products = [] }: { products?: any[] }) {
             <span className="text-[10px] text-gray-500 tracking-[0.2em] font-bold uppercase block mb-3">
               THE COLLECTION
             </span>
-            <h2 className="text-navy-deep font-syncopate text-3xl md:text-5xl font-medium tracking-wide leading-tight uppercase">
+            <h2 className="text-navy-deep font-syncopate text-2xl md:text-5xl font-medium tracking-wide leading-tight uppercase">
               Formulated Obsessively
               <br />
               Dosed Precisely.
