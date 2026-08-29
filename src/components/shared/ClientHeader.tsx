@@ -4,7 +4,7 @@ import React, { useState, useRef, useEffect } from 'react'
 import { Link, usePathname } from '@/i18n/navigation'
 import Image from 'next/image'
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'framer-motion'
-import { ShoppingBag, Menu, Search, X, User, Copy, Timer } from 'lucide-react'
+import { ShoppingBag, Menu, Search, X, User, Copy, Timer, ArrowRight } from 'lucide-react'
 import { MobileMenu } from './MobileMenu'
 import { useCartStore } from '@/lib/cart/store'
 import { useUiStore } from '@/lib/ui/store'
@@ -548,93 +548,67 @@ export function ClientHeader({ cartItemCount = 0, wishlistItemCount = 0, isLogge
           onMouseEnter={handleMenuLeave}
         />
 
-        {/* Full-Width Mega Menu Dropdown */}
-        <div 
-          className={`absolute left-0 right-0 top-0 w-full z-50 transition-all duration-300 ${isMegaMenuOpen ? 'pointer-events-auto' : 'pointer-events-none'}`}
+        {/* Mega Menu Dropdown — compact floating card, centered under the nav */}
+        <div
+          className={`absolute left-0 right-0 top-0 w-full z-50 px-4 sm:px-6 lg:px-10 pt-3 transition-all duration-300 ${isMegaMenuOpen ? 'pointer-events-auto' : 'pointer-events-none'}`}
           onMouseEnter={handleMenuEnter}
           onMouseLeave={handleMenuLeave}
         >
-          <div 
-            className={`w-full max-h-[100dvh] lg:max-h-[85vh] overflow-hidden no-scrollbar bg-white border-b border-black/5 shadow-2xl transition-all duration-300 ${isMegaMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'}`}
+          <div
+            className={`max-w-4xl mx-auto w-full max-h-[85vh] overflow-hidden no-scrollbar bg-white rounded-2xl border border-black/5 shadow-2xl transition-all duration-300 ${isMegaMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'}`}
           >
 
-          <div className="max-w-[1440px] mx-auto w-full flex flex-col relative z-10 text-black p-6 sm:p-8 lg:p-12 lg:py-10 max-h-[100dvh] lg:max-h-[85vh] overflow-y-auto">
+          <div className="w-full flex flex-col relative z-10 text-black p-5 sm:p-6 max-h-[85vh] overflow-y-auto">
             {/* Header */}
-            <div className="w-full flex justify-between items-end mb-8 xl:mb-12 relative z-20 shrink-0">
-              <div className="flex flex-col">
-                <span className="text-[10px] font-bold text-black/40 uppercase tracking-[0.3em] mb-2">{t('megaMenu.navigation')}</span>
-                <h2 className="text-3xl xl:text-4xl font-light text-black">Explore Categories</h2>
-              </div>
+            <div className="w-full flex justify-between items-center mb-5 relative z-20 shrink-0">
+              <span className="text-[10px] font-bold text-black/40 uppercase tracking-[0.3em]">{t('megaMenu.navigation')}</span>
               <Link
                 href="/shop"
                 onClick={() => setIsMegaMenuOpen(false)}
-                className="hidden sm:inline-flex items-center gap-2 px-6 py-3 rounded-full border border-black/10 hover:border-black hover:bg-black hover:text-white transition-colors text-[10px] font-bold uppercase tracking-[0.2em]"
+                className="inline-flex items-center gap-1.5 text-black/50 hover:text-black transition-colors text-[10px] font-bold uppercase tracking-[0.2em]"
               >
-                View All Compounds &rarr;
+                View All <ArrowRight size={12} />
               </Link>
             </div>
 
             {/* Visual Grid */}
-            <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-3 sm:gap-4 lg:gap-5 pb-8">
+            <div className="w-full grid grid-cols-2 lg:grid-cols-4 gap-3">
               {isLoadingMenu ? (
-                Array.from({ length: 9 }).map((_, i) => (
-                  <div key={i} className="w-full aspect-video bg-black/5 rounded-[20px] animate-pulse" />
+                Array.from({ length: 8 }).map((_, i) => (
+                  <div key={i} className="w-full aspect-[4/3] bg-black/5 rounded-xl animate-pulse" />
                 ))
               ) : categoriesData.map((cat: any, index: number) => (
-                <div key={`cat-${cat.name || index}-${index}`} className="group relative w-full aspect-[4/3] sm:aspect-video rounded-[20px] overflow-hidden bg-black/5 flex flex-col justify-end">
+                <div key={`cat-${cat.id ?? cat.name ?? index}`} className="group relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-navy-deep border border-black/5 flex flex-col justify-end shadow-sm">
                   {/* Background Image */}
                   <div className="absolute inset-0">
-                    <Image 
-                      src={`/HelixBio Images/category-${(index % 8) + 1}.webp`} 
-                      alt={cat.name} 
-                      fill 
-                      className="object-cover transition-transform duration-700 group-hover:scale-110" 
+                    <Image
+                      src={`/HelixBio Images/category-${(index % 8) + 1}.webp`}
+                      alt={cat.name}
+                      fill
+                      className="object-cover transition-transform duration-700 group-hover:scale-110"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/10 opacity-80 group-hover:opacity-90 transition-opacity duration-500" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-black/10 group-hover:from-black/90 group-hover:via-black/45 transition-colors duration-500" />
                   </div>
 
+                  {/* Index badge */}
+                  <span className="absolute top-3 left-3 z-20 font-inter text-[10px] font-light text-white/70">
+                    {String(index + 1).padStart(2, '0')}
+                  </span>
+
                   {/* Content */}
-                  <div className="relative z-20 p-4 sm:p-5 w-full flex flex-col justify-end h-full">
+                  <div className="relative z-20 p-3 w-full flex flex-col justify-end h-full">
                     <Link
                       href={`/shop?category=${encodeURIComponent(cat.name)}`}
                       onClick={() => setIsMegaMenuOpen(false)}
-                      className="w-full block mb-2"
+                      className="w-full block"
                     >
-                      <h3 className="text-lg sm:text-xl font-light text-white tracking-tight group-hover:translate-x-1.5 transition-transform duration-500 line-clamp-2">
+                      <h3 className="text-sm font-medium text-white tracking-tight group-hover:translate-x-1 transition-transform duration-500 truncate">
                         {getCategoryDisplayName(cat.name)}
                       </h3>
                     </Link>
-
-                    {/* Quick Product Links */}
-                    {cat.products && cat.products.length > 0 && (
-                      <div className="flex flex-col gap-1.5 border-t border-white/20 pt-3 opacity-0 -translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 pointer-events-none group-hover:pointer-events-auto">
-                        {cat.products.slice(0, 3).map((prod: any, i: number) => (
-                          <Link 
-                            href={`/product/${prod.slug}`} 
-                            key={`prod-${cat.name}-${prod.id || prod.slug || i}-${i}`} 
-                            onClick={() => setIsMegaMenuOpen(false)}
-                            className="text-[10px] sm:text-xs text-white/70 hover:text-white flex items-center justify-between group/link transition-colors"
-                          >
-                            <span className="line-clamp-1 flex-1 pr-2 font-medium">{prod.name}</span>
-                            <span className="opacity-0 -translate-x-2 group-hover/link:opacity-100 group-hover/link:translate-x-0 transition-all">&rarr;</span>
-                          </Link>
-                        ))}
-                      </div>
-                    )}
                   </div>
                 </div>
               ))}
-            </div>
-            
-            {/* Mobile View All Button */}
-            <div className="w-full flex sm:hidden pb-12 shrink-0">
-              <Link
-                href="/shop"
-                onClick={() => setIsMegaMenuOpen(false)}
-                className="w-full inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full border border-black/10 hover:border-black hover:bg-black hover:text-white transition-colors text-xs font-bold uppercase tracking-[0.2em]"
-              >
-                View All Compounds &rarr;
-              </Link>
             </div>
           </div>
           </div>

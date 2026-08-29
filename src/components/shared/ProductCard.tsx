@@ -3,7 +3,6 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useRouter } from 'next/navigation'
 import { Heart, ShoppingCart, Loader2 } from 'lucide-react'
 import { useSession } from 'next-auth/react'
 import { useWishlistStore } from '@/lib/wishlist/store'
@@ -15,6 +14,13 @@ export interface ProductCardProps {
   product: Product | any
 }
 
+interface ProductVariant {
+  sku: string
+  price: number
+  dose: string
+  image?: string
+}
+
 const getImageUrl = (prod: any) =>
   prod.imageUrl || prod.image || prod.images?.[0]?.image?.url || '/HelixBio Images/featured-research-2.webp'
 const getCategory = (prod: any) => prod.category || prod.categories?.[0]?.title || 'RESEARCH PEPTIDE'
@@ -23,12 +29,8 @@ const getDescription = (prod: any) =>
   prod.meta?.description ||
   'Highly purified synthetic peptide prepared for rigorous laboratory research.'
 const getPrice = (prod: any) => (prod.isFrom ? `From $${prod.price}` : (prod.priceRange ?? prod.price))
-const getDoses = (prod: any): string[] => {
-  if (Array.isArray(prod.doses) && prod.doses.length > 0) {
-    return prod.doses.map((d: any) => (typeof d === 'string' ? d : d.value)).filter(Boolean)
-  }
-  return []
-}
+const getVariants = (prod: any): ProductVariant[] =>
+  Array.isArray(prod.variants) ? prod.variants.filter((v: any) => v && v.sku) : []
 const getBadge = (prod: any): string | null => prod.badge && prod.badge !== 'none' ? prod.badge : null
 
 export function ProductCard({ product }: ProductCardProps) {
@@ -38,10 +40,13 @@ export function ProductCard({ product }: ProductCardProps) {
   const { status } = useSession()
   const isSignedIn = status === 'authenticated'
   const cartStore = useCartStore()
-  const router = useRouter()
 
   const [inWishlist, setInWishlist] = useState(isWishlistedGlobal)
   const [isPending, setIsPending] = useState(false)
+
+  const variants = getVariants(product)
+  const [selectedDoseIdx, setSelectedDoseIdx] = useState(0)
+  const selectedVariant = variants[selectedDoseIdx]
 
   React.useEffect(() => {
     setInWishlist(isWishlistedGlobal)
@@ -85,12 +90,27 @@ export function ProductCard({ product }: ProductCardProps) {
     }
   }
 
+  const handleSelectDose = (e: React.MouseEvent<HTMLButtonElement>, idx: number) => {
+    e.preventDefault()
+    e.stopPropagation()
+    setSelectedDoseIdx(idx)
+  }
+
   const handleAddToCart = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault()
     e.stopPropagation()
 
-    if (product.hasVariants) {
-      router.push(`/product/${product.slug}`)
+    if (variants.length > 0) {
+      const variant = selectedVariant || variants[0]
+      cartStore.addItem(
+        { id: product.id || product.slug, name: product.name, imageUrl: variant.image || getImageUrl(product), slug: product.slug },
+        variant.sku,
+        1,
+        variant.price || 0,
+        variant.dose,
+      )
+      toast.success(`Added ${variant.dose} to cart`, { action: { label: 'VIEW', onClick: cartStore.openCart } })
+      cartStore.openCart()
       return
     }
 
@@ -107,8 +127,11 @@ export function ProductCard({ product }: ProductCardProps) {
     cartStore.openCart()
   }
 
-  const doses = getDoses(product)
   const badge = getBadge(product)
+  const displayPrice = selectedVariant ? `$${selectedVariant.price}` : (() => {
+    const price = getPrice(product)
+    return typeof price === 'string' && price.includes('$') ? price.replace('From ', '') : `$${price}`
+  })()
 
   return (
     <div className="w-full h-full flex flex-col group cursor-pointer bg-[#f0f4fa] rounded-xl md:rounded-2xl border border-navy-deep/10 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 relative">
@@ -145,7 +168,7 @@ export function ProductCard({ product }: ProductCardProps) {
       {/* Image */}
       <div className="h-48 md:h-64 w-full relative flex items-center justify-center pt-8 pb-2">
         <Image
-          src={getImageUrl(product)}
+          src={(selectedVariant && selectedVariant.image) || getImageUrl(product)}
           alt={product.name}
           fill
           unoptimized
@@ -161,15 +184,21 @@ export function ProductCard({ product }: ProductCardProps) {
 
         <div className="flex flex-col items-start gap-1 mb-3 md:mb-4">
           <h3 className="text-navy-deep font-bold text-[15px] md:text-lg tracking-tight">{product.name}</h3>
-          {doses.length > 0 && (
-            <div className="flex flex-wrap gap-1.5 mb-1">
-              {doses.map((dose, idx) => (
-                <div
-                  key={idx}
-                  className="bg-[#e8f4ca] text-[#557e2a] text-[9px] md:text-[10px] font-bold px-2 py-0.5 rounded flex items-center justify-center tracking-wide"
+          {variants.length > 0 && (
+            <div className="flex flex-wrap gap-1.5 mb-1 pointer-events-auto">
+              {variants.map((v, idx) => (
+                <button
+                  key={v.sku}
+                  onClick={(e) => handleSelectDose(e, idx)}
+                  aria-pressed={idx === selectedDoseIdx}
+                  className={`text-[9px] md:text-[10px] font-bold px-2 py-0.5 rounded flex items-center justify-center tracking-wide transition-colors ${
+                    idx === selectedDoseIdx
+                      ? 'bg-navy-deep text-white'
+                      : 'bg-[#e8f4ca] text-[#557e2a] hover:bg-[#dcecb0]'
+                  }`}
                 >
-                  {dose}
-                </div>
+                  {v.dose}
+                </button>
               ))}
             </div>
           )}
@@ -180,10 +209,7 @@ export function ProductCard({ product }: ProductCardProps) {
 
         <div className="flex justify-between items-center mt-auto pointer-events-auto">
           <span className="text-navy-deep font-bold text-lg md:text-xl">
-            {(() => {
-              const price = getPrice(product)
-              return typeof price === 'string' && price.includes('$') ? price.replace('From ', '') : `$${price}`
-            })()}
+            {displayPrice}
           </span>
           <button
             onClick={handleAddToCart}

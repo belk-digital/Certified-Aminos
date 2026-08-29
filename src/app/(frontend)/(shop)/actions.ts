@@ -584,6 +584,36 @@ export async function getShopProducts(params: {
         category: categoryName,
         badge: (doc as any).badge && (doc as any).badge !== 'none' ? (doc as any).badge : undefined,
         doses: Array.isArray((doc as any).doses) ? (doc as any).doses.map((d: any) => d.value).filter(Boolean) : undefined,
+        // Lightweight per-dose data so product cards can let the shopper pick a dose and
+        // add the exact variant (correct sku/price/image) to the cart without a page visit.
+        variants: doc.hasVariants && Array.isArray(doc.variants) && doc.variants.length > 0
+          ? doc.variants.map((v: any) => {
+              const doseOption = Array.isArray(v.options) ? v.options.find((o: any) => o.key === 'Dose') : null
+              let variantImage: string | undefined
+              if (Array.isArray(v.images) && v.images.length > 0 && typeof v.images[0].image === 'object' && v.images[0].image) {
+                const url = (v.images[0].image as any).url as string
+                if (url) {
+                  try {
+                    if (url.startsWith('http://') || url.startsWith('https://')) {
+                      const parsed = new URL(url)
+                      parsed.pathname = parsed.pathname.split('/').map((s: string) => encodeURIComponent(decodeURIComponent(s))).join('/')
+                      variantImage = parsed.toString()
+                    } else {
+                      variantImage = url.split('/').map((s: string) => encodeURIComponent(decodeURIComponent(s))).join('/')
+                    }
+                  } catch (e) {
+                    variantImage = url
+                  }
+                }
+              }
+              return {
+                sku: v.sku,
+                price: typeof v.salePrice === 'number' && v.salePrice > 0 ? v.salePrice : v.price,
+                dose: doseOption?.value || v.sku,
+                image: variantImage,
+              }
+            })
+          : undefined,
       }
     })
 

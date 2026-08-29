@@ -46,10 +46,17 @@ const nextConfig: NextConfig = {
         pathname: '/**',
       },
       {
-        // Current R2 bucket (set via R2_PUBLIC_URL) — the old hostname above is kept in
-        // case any already-stored media URLs still point at it.
+        // Older R2 bucket (set via R2_PUBLIC_URL) — kept in case any already-stored
+        // media URLs still point at it.
         protocol: 'https',
         hostname: 'pub-82f90d490a8048aa9629f0ae3ea6f567.r2.dev',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        // Current R2 bucket (set via R2_PUBLIC_URL).
+        protocol: 'https',
+        hostname: 'pub-17ae9cf475264daaa29549c21a6efdee.r2.dev',
         port: '',
         pathname: '/**',
       },
