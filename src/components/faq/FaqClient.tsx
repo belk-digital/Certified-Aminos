@@ -128,7 +128,7 @@ export function FaqClient() {
   return (
     <div className="bg-navy-deep min-h-screen relative font-sans text-white">
       
-      <div className="max-w-[1920px] mx-auto px-6 lg:px-12 py-24 md:py-32 flex flex-col lg:flex-row gap-12 lg:gap-24 relative">
+      <div className="max-w-[1920px] mx-auto px-6 lg:px-12 pt-[160px] md:pt-[200px] pb-24 md:pb-32 flex flex-col lg:flex-row gap-12 lg:gap-24 relative">
         
         {/* Left Sidebar */}
         <div className="lg:w-[35%] xl:w-[25%] relative">
@@ -136,7 +136,7 @@ export function FaqClient() {
             
             {/* Title */}
             <div className="mb-2">
-               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight leading-[1.1]">
+               <h1 className="text-3xl md:text-4xl lg:text-5xl font-syncopate uppercase font-bold text-white tracking-tight leading-[1.1]">
                  Frequently Asked<br/>Questions
                </h1>
             </div>

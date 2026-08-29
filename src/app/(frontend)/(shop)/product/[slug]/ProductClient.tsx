@@ -394,7 +394,7 @@ export function ProductClient({ product }: ProductClientProps) {
           {/* Meta Row: Category · Badges */}
           <div className="flex items-center flex-wrap gap-x-4 gap-y-2 mb-6">
             {/* Vibrant Gradient Category Pill */}
-            <div className="inline-flex items-center gap-1.5 bg-gradient-to-r from-primary to-primary-dark text-white px-3.5 py-1.5 rounded-full text-[10px] font-black tracking-[0.2em] uppercase shadow-lg shadow-primary/30">
+            <div className="inline-flex items-center gap-1.5 bg-[#011638] text-white px-3.5 py-1.5 rounded-full text-[10px] font-black tracking-[0.2em] uppercase shadow-md shadow-black/20">
               <FlaskConical size={12} strokeWidth={2.5} />
               {(product.category as any)?.name || product.category || t('researchPeptide')}
             </div>
@@ -640,7 +640,7 @@ export function ProductClient({ product }: ProductClientProps) {
       </section>
 
       {/* 2. Dark Credentials Section */}
-      <section className="relative overflow-hidden bg-[#121212] mx-4 sm:mx-6 lg:mx-8 xl:mx-12 w-[calc(100%-2rem)] sm:w-[calc(100%-3rem)] lg:w-[calc(100%-4rem)] xl:w-[calc(100%-6rem)] rounded-[32px] lg:rounded-[40px] mb-8 lg:mb-12">
+      <section className="relative overflow-hidden bg-[#011638] mx-4 sm:mx-6 lg:mx-8 xl:mx-12 w-[calc(100%-2rem)] sm:w-[calc(100%-3rem)] lg:w-[calc(100%-4rem)] xl:w-[calc(100%-6rem)] rounded-[32px] lg:rounded-[40px] mb-8 lg:mb-12">
         {/* Ghost watermark */}
         <div className="absolute right-0 top-1/2 -translate-y-1/2 font-heading font-black text-white/[0.025] select-none pointer-events-none leading-none tracking-tighter text-[180px] sm:text-[260px] lg:text-[380px] pr-4">
           99.9
@@ -668,7 +668,7 @@ export function ProductClient({ product }: ProductClientProps) {
             )}
           </div>
 
-          <div className="flex flex-wrap lg:flex-nowrap items-start gap-12 lg:gap-0 lg:divide-x lg:divide-white/10 mt-8 sm:mt-12 lg:mt-0 border-t lg:border-t-0 border-white/10 pt-12 lg:pt-0">
+          <div className="flex flex-wrap xl:flex-nowrap items-start gap-12 xl:gap-0 xl:divide-x xl:divide-white/10 mt-8 sm:mt-12 xl:mt-0 border-t xl:border-t-0 border-white/10 pt-12 xl:pt-0">
             {[
               { value: '≥99%',    label: t('statVerifiedPurityLabel'),  desc: t('statVerifiedPurityDesc')          },
               { value: t('statLabTestedValue'), label: t('statLabTestedLabel'),       desc: t('statLabTestedDesc')    },
@@ -677,7 +677,7 @@ export function ProductClient({ product }: ProductClientProps) {
             ].map((stat, i) => (
               <div 
                 key={stat.label} 
-                className="w-full sm:w-[calc(50%-1.5rem)] lg:w-1/4 lg:px-6 xl:px-8 first:lg:pl-0 last:lg:pr-0 group"
+                className="w-full sm:w-[calc(50%-1.5rem)] xl:w-1/4 xl:px-6 2xl:px-8 first:xl:pl-0 last:xl:pr-0 group"
               >
                 <div className="flex items-center gap-2 mb-4">
                   <div className="w-1.5 h-1.5 rounded-full bg-primary/40 group-hover:bg-primary transition-colors duration-300" />
@@ -685,7 +685,7 @@ export function ProductClient({ product }: ProductClientProps) {
                     {stat.label}
                   </span>
                 </div>
-                <div className="font-heading font-black text-white text-5xl sm:text-[3.5rem] tracking-tighter leading-none mb-3 group-hover:text-primary transition-colors duration-300 whitespace-nowrap">
+                <div className="font-heading font-black text-white text-4xl sm:text-5xl lg:text-5xl xl:text-3xl 2xl:text-4xl tracking-tighter leading-none mb-3 group-hover:text-primary transition-colors duration-300 whitespace-nowrap">
                   {stat.value}
                 </div>
                 <p className="text-white/50 text-sm font-medium tracking-wide leading-relaxed max-w-[200px]">

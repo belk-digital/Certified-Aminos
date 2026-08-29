@@ -195,7 +195,7 @@ function ShopClientInner({ initialProducts, totalPages, categories }: ShopClient
     <div className="w-full bg-[#FAFAFA] min-h-screen font-sans">
       
       {/* Hero Section */}
-      <div className="w-full h-[85vh] min-h-[600px] p-4 md:p-6 bg-[#FAFAFA] pt-[160px] md:pt-[200px] flex flex-col pb-0 mb-4 sm:mb-8">
+      <div className="w-full h-[95vh] min-h-[750px] p-4 md:p-6 bg-[#FAFAFA] pt-[160px] md:pt-[200px] flex flex-col pb-0 mb-4 sm:mb-8">
         <div className="relative w-full h-full flex-grow rounded-3xl overflow-hidden bg-[#111] flex flex-col justify-between shadow-2xl">
           {/* Background Image */}
           <div 
