@@ -149,11 +149,11 @@ const FooterContent = () => {
           </div>
 
           <div className="order-3 md:order-2 mt-8 md:mt-40">
-            <h1 className="font-syncopate text-white uppercase leading-[0.9] tracking-tight mb-10 text-[clamp(2rem,9.5vw,8rem)] md:text-[5rem] lg:text-[8rem] font-semibold">
+            <div className="font-syncopate text-white uppercase leading-[0.9] tracking-tight mb-10 text-[clamp(2rem,9.5vw,8rem)] md:text-[5rem] lg:text-[8rem] font-semibold">
               Certified
               <br />
               Aminos
-            </h1>
+            </div>
             <div className="flex flex-col gap-3">
               <div className="flex items-center flex-wrap gap-2 sm:gap-4 text-[#aed2f2] text-sm">
                 <span>© {new Date().getFullYear()} Certified Aminos</span>

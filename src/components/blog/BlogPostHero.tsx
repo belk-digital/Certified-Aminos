@@ -27,7 +27,7 @@ export function BlogPostHero({
 }) {
   return (
     <div className="w-full bg-[#FAFAFA] font-sans">
-      <div className="w-full px-4 sm:px-6 md:px-8 lg:px-10 pt-32 sm:pt-36 md:pt-44 pb-8 mx-auto max-w-[1920px]">
+      <div className="w-full px-4 sm:px-6 md:px-8 lg:px-10 pt-[160px] sm:pt-[180px] md:pt-[220px] pb-8 mx-auto max-w-[1920px]">
 
         {/* Breadcrumb */}
         <motion.div

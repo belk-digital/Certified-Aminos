@@ -278,12 +278,13 @@ export function ClientHeader({ cartItemCount = 0, wishlistItemCount = 0, isLogge
     }
   })
 
-  // Before the user scrolls, the header floats transparent over every page's hero — once
-  // scrolled it becomes the solid navy bar. On the homepage/FAQ the hero is dark, so text/icons
-  // go white while transparent too; elsewhere they stay dark until the solid bg kicks in.
+  // Before the user scrolls, the header floats transparent over every page's hero.
+  // Once scrolled, it becomes a solid white bar.
+  // On the homepage/FAQ the hero is dark, so text/icons go white while transparent.
+  // When scrolled, it's always light theme (white bg).
   const isHomeTransparent = (pathname === '/' || pathname === '/en' || pathname === '/faq') && !isScrolled
   const isTransparentBackground = !isScrolled
-  const isDarkTheme = isHomeTransparent || isScrolled
+  const isDarkTheme = isHomeTransparent
   const textColor = isDarkTheme ? 'text-white' : 'text-black'
   const textHoverColor = 'hover:text-primary transition-colors'
   const iconColor = isDarkTheme ? '#ffffff' : '#000000'
@@ -298,9 +299,14 @@ export function ClientHeader({ cartItemCount = 0, wishlistItemCount = 0, isLogge
           href="/"
           className="flex items-center hover:opacity-80 transition-opacity gap-2"
         >
-          <span className={`font-syncopate text-lg sm:text-xl font-medium tracking-tight transition-colors duration-300 ${textColor}`}>
-            CERTIFIED AMINOS
-          </span>
+          <Image 
+            src="/logo.png" 
+            alt="Certified Aminos Logo" 
+            width={180} 
+            height={40} 
+            className={`transition-all duration-300 w-[60px] sm:w-[90px] h-auto object-contain ${isDarkTheme ? 'brightness-0 invert' : ''}`}
+            priority
+          />
         </a>
       </div>
 
@@ -314,7 +320,7 @@ export function ClientHeader({ cartItemCount = 0, wishlistItemCount = 0, isLogge
           const getNavLinkClass = (path: string) => {
             const targetPath = path.replace('/en', '');
             const isActive = targetPath === '' ? pathname === '/en' || pathname === '/' : pathname.includes(targetPath);
-            return `relative text-[9px] xl:text-[10px] min-[1650px]:text-[11px] font-syncopate font-normal tracking-[0.05em] min-[1650px]:tracking-[0.1em] uppercase transition-all duration-300 h-full flex items-center py-2 whitespace-nowrap ${
+            return `relative text-[11px] xl:text-[12px] min-[1650px]:text-[13px] font-syncopate font-normal tracking-[0.05em] min-[1650px]:tracking-[0.1em] uppercase transition-all duration-300 h-full flex items-center py-2 whitespace-nowrap ${
               isActive
                 ? `${activeColor} opacity-100 after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:-translate-x-1/2 after:w-4 after:h-[2px] ${activeDotColor} after:rounded-full`
                 : `${textColor} opacity-60 hover:opacity-100 ${hoverTextColor} hover:after:w-full after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-[2px] ${underlineColor} after:transition-all after:duration-300 after:rounded-full`
@@ -332,7 +338,7 @@ export function ClientHeader({ cartItemCount = 0, wishlistItemCount = 0, isLogge
                 onMouseEnter={handleMenuEnter}
                 onMouseLeave={handleMenuLeave}
               >
-                <Link href="/shop" onClick={() => setIsMegaMenuOpen(false)} className={`group relative flex items-center gap-1.5 text-[9px] xl:text-[10px] min-[1650px]:text-[11px] font-syncopate font-normal tracking-[0.05em] min-[1650px]:tracking-[0.1em] uppercase transition-all duration-300 h-full py-2 whitespace-nowrap ${textColor} opacity-60 hover:opacity-100 ${hoverTextColor} hover:after:w-full after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-[2px] ${underlineColor} after:transition-all after:duration-300 after:rounded-full`}>
+                <Link href="/shop" onClick={() => setIsMegaMenuOpen(false)} className={`group relative flex items-center gap-1.5 text-[11px] xl:text-[12px] min-[1650px]:text-[13px] font-syncopate font-normal tracking-[0.05em] min-[1650px]:tracking-[0.1em] uppercase transition-all duration-300 h-full py-2 whitespace-nowrap ${textColor} opacity-60 hover:opacity-100 ${hoverTextColor} hover:after:w-full after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-[2px] ${underlineColor} after:transition-all after:duration-300 after:rounded-full`}>
                   {t('navCategories')}
                   <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="opacity-70 group-hover:opacity-100 transition-transform duration-300 group-hover:rotate-180"><path d="m6 9 6 6 6-6"/></svg>
                 </Link>
@@ -514,7 +520,7 @@ export function ClientHeader({ cartItemCount = 0, wishlistItemCount = 0, isLogge
               background: isTransparentBackground
                 ? 'transparent'
                 : isScrolled
-                  ? '#011638'
+                  ? '#ffffff'
                   : 'linear-gradient(180deg, #ffffff 0%, #e2effa 45%, #cbe0f3 100%)',
               transition: 'background 0.5s ease',
             }}

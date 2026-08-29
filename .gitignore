@@ -35,6 +35,10 @@ pnpm-debug.log*
 # vercel
 .vercel
 
+# source product photography — uploaded to R2 via scripts/seed-real-products.ts,
+# served from there in production; kept out of git to avoid bloating the repo.
+/public/CA Product images/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

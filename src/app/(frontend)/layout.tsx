@@ -29,6 +29,9 @@ export async function generateMetadata() {
       card: 'summary_large_image',
       images: [getOgImageUrl('Certified Aminos', t('siteTagline'))],
     },
+    icons: {
+      icon: '/favicon.jpeg',
+    },
   }
 }
 

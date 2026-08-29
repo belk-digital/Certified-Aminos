@@ -50,7 +50,7 @@ function CategoryCard({ category, index }: { category: HomeCategory; index: numb
   return (
     <Link
       href={`/shop?category=${encodeURIComponent(category.name)}`}
-      className="relative w-full h-64 md:h-auto md:flex-1 overflow-hidden group cursor-pointer rounded-lg shadow-sm transition-all duration-500 ease-out md:hover:flex-[1.5] bg-navy-deep"
+      className="block relative w-full h-64 md:h-auto md:flex-1 overflow-hidden group cursor-pointer rounded-lg shadow-sm transition-all duration-500 ease-out md:hover:flex-[1.5] bg-navy-deep"
     >
       <div
         className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
@@ -125,10 +125,13 @@ export function CategoriesSection({ categories = [] }: CategoriesSectionProps) {
         </Link>
 
         {/* Mobile: flat horizontal scroll strip, ~2 cards visible at a time */}
-        <div className="flex md:hidden flex-col gap-3">
-          <div className="flex w-full overflow-x-auto snap-x snap-mandatory gap-4 pb-1 -mx-8 px-8">
+        <div className="flex md:hidden flex-col gap-3 min-h-[17rem]">
+          <div 
+            className="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-2 -mx-8 px-8 scroll-pl-8 min-h-[16.5rem] items-start hide-scrollbar"
+            style={{ width: 'calc(100% + 4rem)' }}
+          >
             {categories.map((category, i) => (
-              <div key={category.id} className="w-[46vw] shrink-0 snap-start h-64">
+              <div key={category.id} className="w-[60vw] sm:w-[46vw] shrink-0 snap-start h-64">
                 <CategoryCard category={category} index={i} />
               </div>
             ))}

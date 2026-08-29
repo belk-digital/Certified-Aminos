@@ -7,56 +7,9 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { ProductCard } from '@/components/shared/ProductCard'
 
-const FALLBACK_PRODUCTS = [
-  {
-    key: 'tb500',
-    name: 'TB-500',
-    categories: [{ title: 'Muscle Repair' }],
-    meta: { description: 'Potent synthetic peptide researched for its role in cellular migration, actin regulation, and wound healing.' },
-    price: '55',
-    images: [{ image: { url: 'https://pub-0b0f2f98407442588d161ae09cb84207.r2.dev/Product Images/TB500 5MG-2.webp' } }],
-    slug: 'tb-500',
-    badge: 'NEW',
-    doses: ['5MG', '10MG'],
-  },
-  {
-    key: 'bpc157',
-    name: 'BPC-157',
-    categories: [{ title: 'Recovery & Healing' }],
-    meta: { description: 'A highly purified synthetic peptide widely studied for its profound effects on tissue regeneration and angiogenesis.' },
-    price: '45',
-    images: [{ image: { url: 'https://pub-0b0f2f98407442588d161ae09cb84207.r2.dev/Product Images/BPC 157 5MG-3.webp' } }],
-    slug: 'bpc-157',
-    badge: 'SALE',
-    doses: ['5MG', '10MG'],
-  },
-  {
-    key: 'semaglutide',
-    name: 'Semaglutide',
-    categories: [{ title: 'Metabolic Research' }],
-    meta: { description: 'A GLP-1 receptor agonist actively researched for its mechanisms in glycemic control and metabolic regulation.' },
-    price: '85',
-    images: [{ image: { url: 'https://pub-0b0f2f98407442588d161ae09cb84207.r2.dev/Product Images/SEMAGLUTIDE 5MG-2.webp' } }],
-    slug: 'semaglutide',
-    badge: 'POPULAR',
-    doses: ['5MG', '10MG'],
-  },
-  {
-    key: 'ghkCu',
-    name: 'GHK-Cu',
-    categories: [{ title: 'Cellular Aging' }],
-    meta: { description: 'A naturally occurring copper complex peptide frequently studied for its role in collagen synthesis and anti-aging.' },
-    price: '35',
-    images: [{ image: { url: 'https://pub-0b0f2f98407442588d161ae09cb84207.r2.dev/Product Images/GHK-CU 50MG-1.webp' } }],
-    slug: 'ghk-cu',
-    doses: ['50MG'],
-  },
-]
-
 export function BestSellerSection({ products = [] }: { products?: any[] }) {
   const sectionRef = useRef<HTMLElement>(null)
-  const sourceProducts = products.length > 0 ? products : FALLBACK_PRODUCTS
-  const displayProducts = sourceProducts.slice(0, 4)
+  const displayProducts = products.slice(0, 4)
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger)

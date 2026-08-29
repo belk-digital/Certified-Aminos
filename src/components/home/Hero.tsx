@@ -76,9 +76,9 @@ export function Hero() {
                 EXPLORE CATALOGUE <span>→</span>
               </button>
             </div>
-            <h1 className="order-1 lg:order-2 hero-title-sub font-syncopate font-normal uppercase leading-[1.1] tracking-wide text-[2.2rem] sm:text-[8vw] lg:text-[5.5vw] text-center lg:text-left">
+            <div className="order-1 lg:order-2 hero-title-sub font-syncopate font-normal uppercase leading-[1.1] tracking-wide text-[2.2rem] sm:text-[8vw] lg:text-[5.5vw] text-center lg:text-left">
               PURITY
-            </h1>
+            </div>
           </div>
         </div>
       </div>

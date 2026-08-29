@@ -195,7 +195,7 @@ function ShopClientInner({ initialProducts, totalPages, categories }: ShopClient
     <div className="w-full bg-[#FAFAFA] min-h-screen font-sans">
       
       {/* Hero Section */}
-      <div className="w-full h-[85vh] min-h-[600px] p-4 md:p-6 bg-[#FAFAFA] pt-24 md:pt-32 flex flex-col pb-0 mb-4 sm:mb-8">
+      <div className="w-full h-[85vh] min-h-[600px] p-4 md:p-6 bg-[#FAFAFA] pt-[160px] md:pt-[200px] flex flex-col pb-0 mb-4 sm:mb-8">
         <div className="relative w-full h-full flex-grow rounded-3xl overflow-hidden bg-[#111] flex flex-col justify-between shadow-2xl">
           {/* Background Image */}
           <div 
@@ -225,7 +225,7 @@ function ShopClientInner({ initialProducts, totalPages, categories }: ShopClient
 
       <Container size="wide" className="pb-12 max-w-[1600px] w-full" id="products-grid">
         {/* Modern Minimal Category Pills */}
-        <div className={`flex flex-col gap-3 sm:gap-4 mb-8 sm:mb-12 py-4 sticky z-40 transition-all duration-300 ${isScrollingDown ? 'top-4 sm:top-6 opacity-100 translate-y-0' : 'top-[130px] sm:top-[140px] md:top-[150px] opacity-100 translate-y-0'}`}>
+        <div className={`flex flex-col gap-3 sm:gap-4 mb-8 sm:mb-12 py-4 sticky z-40 transition-all duration-300 ${isScrollingDown ? 'top-4 sm:top-6 opacity-100 translate-y-0' : 'top-[160px] sm:top-[180px] md:top-[200px] opacity-100 translate-y-0'}`}>
           <div className="flex flex-col sm:flex-row sm:items-center justify-between w-full bg-white/95 backdrop-blur-3xl rounded-2xl p-2 sm:p-3 border border-black/5 shadow-[0_4px_25px_rgb(0,0,0,0.04)] gap-2 sm:gap-0">
             
             {/* Scrollable Categories */}
