@@ -546,6 +546,10 @@ export interface Product {
    */
   isBestSeller?: boolean | null;
   /**
+   * Higher numbers appear first in shop/homepage listings. Leave at 0 for default (newest-first) ordering.
+   */
+  sortOrder?: number | null;
+  /**
    * Optional badge shown on the product card (homepage, shop, related products).
    */
   badge?: ('none' | 'NEW' | 'SALE' | 'POPULAR') | null;
@@ -1861,6 +1865,7 @@ export interface ProductsSelect<T extends boolean = true> {
   status?: T;
   isVisible?: T;
   isBestSeller?: T;
+  sortOrder?: T;
   badge?: T;
   doses?:
     | T

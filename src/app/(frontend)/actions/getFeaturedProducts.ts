@@ -14,6 +14,7 @@ export async function getFeaturedProducts() {
       where: {
         status: { equals: 'active' }
       },
+      sort: ['-sortOrder', '-createdAt'],
       locale: locale as 'en' | 'es',
       fallbackLocale: 'en',
     })

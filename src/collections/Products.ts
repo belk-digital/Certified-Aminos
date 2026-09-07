@@ -336,6 +336,15 @@ export const Products: CollectionConfig = {
       },
     },
     {
+      name: 'sortOrder',
+      type: 'number',
+      defaultValue: 0,
+      admin: {
+        description: 'Higher numbers appear first in shop/homepage listings. Leave at 0 for default (newest-first) ordering.',
+        position: 'sidebar',
+      },
+    },
+    {
       name: 'badge',
       type: 'select',
       options: [

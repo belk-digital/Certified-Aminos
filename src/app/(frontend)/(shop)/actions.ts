@@ -453,7 +453,7 @@ export async function getShopProducts(params: {
       where.and.push({ price: priceQuery })
     }
 
-    let sortParam = '-createdAt'
+    let sortParam: string | string[] = ['-sortOrder', '-createdAt']
     if (params.sort === 'price-asc') sortParam = 'price'
     if (params.sort === 'price-desc') sortParam = '-price'
     if (params.sort === 'newest') sortParam = '-createdAt'
@@ -583,6 +583,7 @@ export async function getShopProducts(params: {
         hasVariants: !!(doc.hasVariants && (doc.variants?.length || 0) > 1),
         category: categoryName,
         badge: (doc as any).badge && (doc as any).badge !== 'none' ? (doc as any).badge : undefined,
+        isBestSeller: !!(doc as any).isBestSeller,
         doses: Array.isArray((doc as any).doses) ? (doc as any).doses.map((d: any) => d.value).filter(Boolean) : undefined,
         // Lightweight per-dose data so product cards can let the shopper pick a dose and
         // add the exact variant (correct sku/price/image) to the cart without a page visit.

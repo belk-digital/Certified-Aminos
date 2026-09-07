@@ -9,6 +9,7 @@ import { useWishlistStore } from '@/lib/wishlist/store'
 import { useCartStore } from '@/lib/cart/store'
 import { toast } from 'sonner'
 import { Product } from '@/components/shop/PrimaryProductCard' // Re-using the interface for now
+import { ShinyBadge } from '@/components/ui/ShinyBadge'
 
 export interface ProductCardProps {
   product: Product | any
@@ -139,17 +140,26 @@ export function ProductCard({ product }: ProductCardProps) {
 
       {/* Badges & Wishlist Overlay */}
       <div className="absolute top-3 left-0 w-full px-3 flex justify-between items-start z-30 pointer-events-none">
-        {badge ? (
-          <div
-            className={`text-[9px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider ${
-              badge === 'NEW'
-                ? 'bg-navy-deep text-white'
-                : badge === 'SALE'
-                  ? 'bg-red-500 text-white shadow-sm'
-                  : 'bg-white text-navy-deep border border-navy-deep/10 shadow-sm'
-            }`}
-          >
-            {badge}
+        {/* NEW/POPULAR badges hidden for now per request — SALE and Best Seller still show */}
+        {badge === 'SALE' || product.isBestSeller ? (
+          <div className="flex flex-col items-start gap-1">
+            {product.isBestSeller && (
+              <ShinyBadge
+                speed={2.2}
+                color="#0a1f44"
+                shineColor="#5b9bf0"
+                spread={120}
+                direction="left"
+                className="text-[9px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider text-white shadow-sm border border-white/20"
+              >
+                Best Seller
+              </ShinyBadge>
+            )}
+            {badge === 'SALE' && (
+              <div className="text-[9px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider bg-red-500 text-white shadow-sm">
+                {badge}
+              </div>
+            )}
           </div>
         ) : (
           <span />
@@ -214,9 +224,13 @@ export function ProductCard({ product }: ProductCardProps) {
           <button
             onClick={handleAddToCart}
             aria-label="Add to cart"
-            className="h-8 w-8 md:h-9 md:w-9 rounded-full bg-navy-deep flex items-center justify-center text-white hover:bg-[#0f172a] shadow-md transition-colors flex-shrink-0"
+            className="group/cart h-8 w-8 md:h-9 md:w-9 rounded-full bg-navy-deep flex items-center justify-center text-white hover:bg-[#0f172a] shadow-md hover:shadow-lg hover:scale-110 active:scale-95 transition-all duration-300 flex-shrink-0"
           >
-            <ShoppingCart size={15} strokeWidth={2} />
+            <ShoppingCart
+              size={15}
+              strokeWidth={2}
+              className="transition-transform duration-300 group-hover/cart:-translate-y-0.5 group-hover/cart:rotate-6"
+            />
           </button>
         </div>
       </div>

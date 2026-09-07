@@ -85,7 +85,7 @@ export default async function Homepage() {
     console.error('Failed to fetch blog posts', e)
   }
   try {
-    const bestSellers = await getShopProducts({ limit: 8, sort: 'newest', bestSellersOnly: true })
+    const bestSellers = await getShopProducts({ limit: 8, bestSellersOnly: true })
     products = bestSellers.success && bestSellers.products ? (bestSellers.products as any[]) : []
 
     // Fill any remaining slots with other live products so the section is never sparse
