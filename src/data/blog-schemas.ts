@@ -59,22 +59,6 @@ export const BLOG_SCHEMAS: Record<string, SchemaScript[]> = {
           },
           {
             '@type': 'Question',
-            name: 'Can these peptides be reconstituted with standard BAC water?',
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: 'Yes. Lyophilized Semaglutide, Tirzepatide, and Retatrutide must be reconstituted using Bacteriostatic Water to ensure sterility and stability during the research phase.',
-            },
-          },
-          {
-            '@type': 'Question',
-            name: 'What is the shelf life of these peptides post-reconstitution?',
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: 'Once reconstituted with BAC water and stored appropriately in refrigeration (2-8°C), the chemical integrity of these peptides is generally maintained for approximately 28 to 30 days.',
-            },
-          },
-          {
-            '@type': 'Question',
             name: 'Are there specific storage requirements for lyophilized vials?',
             acceptedAnswer: {
               '@type': 'Answer',
@@ -135,14 +119,6 @@ export const BLOG_SCHEMAS: Record<string, SchemaScript[]> = {
             acceptedAnswer: {
               '@type': 'Answer',
               text: 'Extensive models indicate Semaglutide provides cardiovascular protective effects, lowering the incidence of major adverse cardiovascular events (MACE) in applicable research cohorts.',
-            },
-          },
-          {
-            '@type': 'Question',
-            name: 'How should one prepare a 5mg Tirzepatide vial?',
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: 'A standard protocol involves slowly adding 1mL or 2mL of Bacteriostatic Water to the 5mg vial, gently swirling (never shaking) until the lyophilized powder is completely dissolved.',
             },
           },
           {
@@ -263,7 +239,7 @@ export const BLOG_SCHEMAS: Record<string, SchemaScript[]> = {
             name: 'How should BPC-157 be stored?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Lyophilized BPC-157 is stable at room temperature for several weeks but should be stored in a freezer for long-term preservation. Once reconstituted, it must be refrigerated.',
+              text: 'Lyophilized BPC-157 is stable at room temperature for several weeks but should be stored in a freezer for long-term preservation.',
             },
           },
           {

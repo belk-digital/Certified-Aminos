@@ -72,9 +72,6 @@ const FooterContent = () => {
         <Link href="/shop" className="text-navy text-base font-medium hover:text-[#1a42a0] transition-colors">
           Categories
         </Link>
-        <Link href="/peptide-calculator" className="text-navy text-base font-medium hover:text-[#1a42a0] transition-colors">
-          Calculator
-        </Link>
         <Link href="/about-us" className="text-navy text-base font-medium hover:text-[#1a42a0] transition-colors">
           About
         </Link>

@@ -9,7 +9,6 @@ const FAQ_KEYS = [
   'researchGradePurity',
   'coaContents',
   'massSpecIdentity',
-  'lyophilizedStorage',
   'assayDevelopment',
   'commonImpurities',
   'receptorBindingStudies',

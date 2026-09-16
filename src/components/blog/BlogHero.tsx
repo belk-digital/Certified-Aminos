@@ -53,7 +53,7 @@ export function BlogHero() {
                 KNOWLEDGE BASE
               </span>
               <p className="text-white text-xs sm:text-base md:text-lg font-medium tracking-wide mb-1 leading-relaxed line-clamp-3 sm:line-clamp-none">
-                Stay updated with our latest scientific articles, comprehensive guides, and expert perspectives on synthetic research peptides. Our database provides valuable information regarding reconstitution, storage protocols, and advanced analytical testing methods.
+                Stay updated with our latest scientific articles, comprehensive guides, and expert perspectives on synthetic research peptides. Our database provides valuable information regarding storage protocols and advanced analytical testing methods.
               </p>
             </div>
           </div>

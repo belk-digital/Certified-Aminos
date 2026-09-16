@@ -344,9 +344,6 @@ export function ClientHeader({ cartItemCount = 0, wishlistItemCount = 0, isLogge
                 </Link>
               </div>
 
-              <Link href="/peptide-calculator" className={getNavLinkClass('/peptide-calculator')}>
-                {t('navCalculator')}
-              </Link>
               <Link href="/about-us" className={getNavLinkClass('/about-us')}>
                 {t('navAbout')}
               </Link>

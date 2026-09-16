@@ -107,51 +107,39 @@ export const BLOG_POSTS: {
             <p className="text-ink/80">Glucagon increases basal metabolic rate and promotes lipolysis. By combining it with GLP-1 and GIP, researchers can induce a higher caloric deficit via energy expenditure without sacrificing the glycemic control provided by the incretins.</p>
           </div>
           <div>
-            <h4 className="font-bold text-lg mb-2">4. Can these peptides be reconstituted with standard BAC water?</h4>
-            <p className="text-ink/80">Yes. Lyophilized Semaglutide, Tirzepatide, and Retatrutide must be reconstituted using Bacteriostatic Water to ensure sterility and stability during the research phase.</p>
-          </div>
-          <div>
-            <h4 className="font-bold text-lg mb-2">5. What is the shelf life of these peptides post-reconstitution?</h4>
-            <p className="text-ink/80">Once reconstituted with BAC water and stored appropriately in refrigeration (2-8°C), the chemical integrity of these peptides is generally maintained for approximately 28 to 30 days.</p>
-          </div>
-          <div>
-            <h4 className="font-bold text-lg mb-2">6. Are there specific storage requirements for lyophilized vials?</h4>
+            <h4 className="font-bold text-lg mb-2">4. Are there specific storage requirements for lyophilized vials?</h4>
             <p className="text-ink/80">Lyophilized vials should be kept in a cold, dark environment, ideally in a freezer at -20°C for long-term storage, preventing premature peptide degradation.</p>
           </div>
           <div>
-            <h4 className="font-bold text-lg mb-2">7. How does the half-life of Tirzepatide compare to Retatrutide?</h4>
+            <h4 className="font-bold text-lg mb-2">5. How does the half-life of Tirzepatide compare to Retatrutide?</h4>
             <p className="text-ink/80">Both Tirzepatide and Retatrutide exhibit extended half-lives of roughly 5 to 7 days, primarily due to their engineered fatty acid chains that facilitate strong binding to serum albumin, allowing for once-weekly research applications.</p>
           </div>
           <div>
-            <h4 className="font-bold text-lg mb-2">8. Do GLP-1 agonists cross the blood-brain barrier?</h4>
+            <h4 className="font-bold text-lg mb-2">6. Do GLP-1 agonists cross the blood-brain barrier?</h4>
             <p className="text-ink/80">Yes. GLP-1 receptors are expressed in the central nervous system, particularly the hypothalamus. Peptides like Semaglutide cross the blood-brain barrier, which is a primary mechanism by which they modulate satiety and appetite.</p>
           </div>
           <div>
-            <h4 className="font-bold text-lg mb-2">9. What role does the DPP-4 enzyme play in this research?</h4>
+            <h4 className="font-bold text-lg mb-2">7. What role does the DPP-4 enzyme play in this research?</h4>
             <p className="text-ink/80">Native GLP-1 has a half-life of less than 2 minutes due to rapid cleavage by the DPP-4 enzyme. All modern incretin mimetics are synthetically altered (e.g., via Aib substitution) to resist DPP-4 degradation.</p>
           </div>
           <div>
-            <h4 className="font-bold text-lg mb-2">10. Can these peptides be stacked with other metabolic compounds?</h4>
+            <h4 className="font-bold text-lg mb-2">8. Can these peptides be stacked with other metabolic compounds?</h4>
             <p className="text-ink/80">While research protocols vary, combining incretins with compounds like MOTS-c or AOD9604 is an active area of investigation for synergistic metabolic and mitochondrial benefits.</p>
           </div>
           <div>
-            <h4 className="font-bold text-lg mb-2">11. Is Retatrutide more potent than Tirzepatide?</h4>
+            <h4 className="font-bold text-lg mb-2">9. Is Retatrutide more potent than Tirzepatide?</h4>
             <p className="text-ink/80">Current data indicates that Retatrutide's tri-agonism leads to a significantly steeper mass reduction curve compared to Tirzepatide, primarily due to the added energy expenditure mechanism of the Glucagon receptor.</p>
           </div>
           <div>
-            <h4 className="font-bold text-lg mb-2">12. What is the impact of Tirzepatide on lean muscle mass?</h4>
+            <h4 className="font-bold text-lg mb-2">10. What is the impact of Tirzepatide on lean muscle mass?</h4>
             <p className="text-ink/80">Significant mass reduction universally carries the risk of muscle catabolism. Researchers often monitor lean body mass carefully when administering Tirzepatide, sometimes mitigating catabolism with exercise protocols or anabolic peptide research.</p>
           </div>
           <div>
-            <h4 className="font-bold text-lg mb-2">13. Does Semaglutide impact cardiovascular models?</h4>
+            <h4 className="font-bold text-lg mb-2">11. Does Semaglutide impact cardiovascular models?</h4>
             <p className="text-ink/80">Extensive models indicate Semaglutide provides cardiovascular protective effects, lowering the incidence of major adverse cardiovascular events (MACE) in applicable research cohorts.</p>
           </div>
           <div>
-            <h4 className="font-bold text-lg mb-2">14. How should one prepare a 5mg Tirzepatide vial?</h4>
-            <p className="text-ink/80">A standard protocol involves slowly adding 1mL or 2mL of Bacteriostatic Water to the 5mg vial, gently swirling (never shaking) until the lyophilized powder is completely dissolved.</p>
-          </div>
-          <div>
-            <h4 className="font-bold text-lg mb-2">15. Where is the most accurate place to source research-grade incretins?</h4>
+            <h4 className="font-bold text-lg mb-2">12. Where is the most accurate place to source research-grade incretins?</h4>
             <p className="text-ink/80">High-purity, third-party tested peptides are paramount for accurate research. Reliable scientific suppliers provide detailed Certificates of Analysis (COA) verifying purity &gt;99%.</p>
           </div>
         </div>
@@ -218,7 +206,7 @@ export const BLOG_POSTS: {
           </div>
           <div>
             <h4 className="font-bold text-lg mb-2">3. Does GHK-Cu cause localized irritation?</h4>
-            <p className="text-ink/80">Because it is a copper-binding peptide, subcutaneous administration of GHK-Cu can sometimes cause localized pain or irritation at the injection site in research models. Diluting with additional Bacteriostatic Water or co-administering with BPC-157 often mitigates this.</p>
+            <p className="text-ink/80">Because it is a copper-binding peptide, subcutaneous administration of GHK-Cu can sometimes cause localized pain or irritation at the injection site in research models. Co-administering with BPC-157 often mitigates this.</p>
           </div>
           <div>
             <h4 className="font-bold text-lg mb-2">4. How often is TB-500 administered in a standard research protocol?</h4>
@@ -246,7 +234,7 @@ export const BLOG_POSTS: {
           </div>
           <div>
             <h4 className="font-bold text-lg mb-2">10. How should BPC-157 be stored?</h4>
-            <p className="text-ink/80">Lyophilized BPC-157 is stable at room temperature for several weeks but should be stored in a freezer for long-term preservation. Once reconstituted, it must be refrigerated.</p>
+            <p className="text-ink/80">Lyophilized BPC-157 is stable at room temperature for several weeks but should be stored in a freezer for long-term preservation.</p>
           </div>
           <div>
             <h4 className="font-bold text-lg mb-2">11. Can BPC-157 heal nerve damage?</h4>

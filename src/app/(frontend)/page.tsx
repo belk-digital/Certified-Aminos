@@ -175,14 +175,6 @@ export default async function Homepage() {
                 },
                 {
                   '@type': 'Question',
-                  name: 'What storage conditions are recommended for lyophilized peptides?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: "Unreconstituted (lyophilized) peptides are generally stored frozen or refrigerated, protected from light and moisture, until they're needed for a study. Once reconstituted, most peptides should stay refrigerated and be used within the window noted on the product page or COA.",
-                  },
-                },
-                {
-                  '@type': 'Question',
                   name: 'How do peptide reagents support laboratory research studies?',
                   acceptedAnswer: {
                     '@type': 'Answer',

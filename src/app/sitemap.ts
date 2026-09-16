@@ -12,7 +12,6 @@ const STATIC_PATHS: { path: string; priority: number; changeFrequency: MetadataR
   { path: '', priority: 1.0, changeFrequency: 'daily' },
   { path: '/shop', priority: 0.9, changeFrequency: 'daily' },
   { path: '/blog', priority: 0.8, changeFrequency: 'daily' },
-  { path: '/peptide-calculator', priority: 0.7, changeFrequency: 'monthly' },
   { path: '/certificates', priority: 0.6, changeFrequency: 'weekly' },
   { path: '/about-us', priority: 0.6, changeFrequency: 'monthly' },
   { path: '/faq', priority: 0.6, changeFrequency: 'monthly' },

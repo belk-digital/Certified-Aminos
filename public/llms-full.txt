@@ -8,33 +8,32 @@
 
 ## Company
 
-- [About](https://certifiedaminos.com/about-us): Company background, mission, and quality-control philosophy.
-- [Certificates of Analysis](https://certifiedaminos.com/certificates): Batch-level COA library — purity, identity, and impurity data per product.
-- [FAQ](https://certifiedaminos.com/faq): Common questions on legality, research-use classification, purity standards, and ordering.
-- [Contact](https://certifiedaminos.com/contact-us): Support and order inquiries.
-- [Affiliate Program](https://certifiedaminos.com/affiliates): Referral/affiliate partnership program.
+- [About](https://certified-aminos.com/about-us): Company background, mission, and quality-control philosophy.
+- [Certificates of Analysis](https://certified-aminos.com/certificates): Batch-level COA library — purity, identity, and impurity data per product.
+- [FAQ](https://certified-aminos.com/faq): Common questions on legality, research-use classification, purity standards, and ordering.
+- [Contact](https://certified-aminos.com/contact-us): Support and order inquiries.
+- [Affiliate Program](https://certified-aminos.com/affiliates): Referral/affiliate partnership program.
 
 ## Shop
 
-- [Full Catalog](https://certifiedaminos.com/shop): All active research peptides and compounds, filterable by category.
-- [Peptide Reconstitution Calculator](https://certifiedaminos.com/peptide-calculator): Free tool for calculating BAC water volume, dosage, and syringe units for reconstituting lyophilized peptides.
+- [Full Catalog](https://certified-aminos.com/shop): All active research peptides and compounds, filterable by category.
 
 Product categories in the catalog: Aminos, Bioregulators, Cellular Health Research, Cognitive
 Function Studies, Essentials, Growth Factor Research Peptides, Metabolic Research Peptides,
 Pigmentation Research Peptides, Receptor Agonist Research Peptides/Compounds, Recovery Research
 Peptides, Sleep Cycle Investigation Research Peptides. Individual product pages live at
-`/product/<slug>` and include purity specs, dosing/reconstitution data, and COA links.
+`/product/<slug>` and include purity specs and COA links.
 
 ## Research Guides & Blog
 
 In-depth, citation-backed reference articles on individual compounds and research topics. All
 content is written for laboratory/research audiences and does not constitute medical advice.
 
-- [The Ultimate Guide to GLP-1 & GIP Agonists: Semaglutide, Tirzepatide, and Retatrutide in Research](https://certifiedaminos.com/glp-1-gip-agonists-semaglutide-tirzepatide-retatrutide-research)
-- [Tissue Repair Synergy: Exploring BPC-157, TB-500, and GHK-Cu in Advanced Protocols](https://certifiedaminos.com/tissue-repair-synergy-bpc-157-tb-500-ghk-cu)
+- [The Ultimate Guide to GLP-1 & GIP Agonists: Semaglutide, Tirzepatide, and Retatrutide in Research](https://certified-aminos.com/glp-1-gip-agonists-semaglutide-tirzepatide-retatrutide-research)
+- [Tissue Repair Synergy: Exploring BPC-157, TB-500, and GHK-Cu in Advanced Protocols](https://certified-aminos.com/tissue-repair-synergy-bpc-157-tb-500-ghk-cu)
 
 This list reflects only currently published articles — do not infer or link to other article
-URLs on this domain. Full, current index: [/blog](https://certifiedaminos.com/blog)
+URLs on this domain. Full, current index: [/blog](https://certified-aminos.com/blog)
 
 ## FAQ
 
@@ -291,9 +290,8 @@ Complete FAQ corpus (182 Q&As across 30 categories), including general site-wide
 - **How does GHK-Cu affect scars and wound healing?** Animal-model studies report improved tensile strength of healed wounds, reduced scar volume, and accelerated closure with GHK-Cu treatment. The mechanism is multifactorial: fibroblast activation, matrix-protein modulation, and inflammatory damping.
 - **Is GHK-Cu safe for pre-clinical research?** GHK-Cu is generally well-tolerated in published in-vitro and animal-model work at standard research concentrations. Safety in human therapeutic contexts is not established, and the compound is not FDA-approved. Standard laboratory handling and personal protective equipment apply.
 - **What is the typical GHK-Cu concentration used in studies?** Published in-vitro work commonly uses GHK-Cu in the range of 10 nM to 10 μM, with 1 μM as a frequently reported working concentration. Animal-model topical studies have used 0.05–0.2% (w/v) formulations. These figures describe research literature, not clinical guidance.
-- **What solvent is used to dissolve GHK-Cu peptide powder?** GHK-Cu is water-soluble. Common research solvents include sterile water, bacteriostatic water (0.9% benzyl alcohol), and buffered saline at neutral pH. Stock solutions of 1–10 mg/mL are typical and are then diluted into culture medium for working concentrations.
-- **How should GHK-Cu be stored for research purposes?** Lyophilized GHK-Cu is stored at −20 °C in sealed vials with desiccant, protected from light. Reconstituted solutions are typically kept at 2–8 °C and used within weeks, with long-term storage as frozen aliquots to minimize freeze-thaw degradation.
-- **What is the shelf life of GHK-Cu peptide in lab settings?** Lyophilized GHK-Cu at −20 °C retains stability for 24 months or longer under typical research-storage conditions. Reconstituted aqueous solutions stored at 2–8 °C are generally used within 14–28 days for sensitive applications.
+- **How should GHK-Cu be stored for research purposes?** Lyophilized GHK-Cu is stored at −20 °C in sealed vials with desiccant, protected from light.
+- **What is the shelf life of GHK-Cu peptide in lab settings?** Lyophilized GHK-Cu at −20 °C retains stability for 24 months or longer under typical research-storage conditions.
 - **What analytical methods are used to test GHK-Cu purity?** Reversed-phase HPLC quantifies purity (the ≥99% threshold for research grade), and liquid-chromatography mass spectrometry (LC-MS) confirms identity by measuring molecular weight. Both analyses appear on a complete certificate of analysis.
 - **What impurities should be checked in GHK-Cu peptide?** Common impurities to check include truncated peptide sequences (Gly-His or His-Lys fragments), residual coupling reagents and protecting groups, counterion residues, free (uncomplexed) GHK, and excess copper salts. A complete COA quantifies these as part of the impurity profile.
 - **What is the difference between lab-grade GHK-Cu and cosmetic-grade copper peptide?** Lab-grade GHK-Cu is supplied as lyophilized powder with verified ≥99% HPLC purity, LC-MS identity confirmation, and a full COA — designated for research use only. Cosmetic-grade copper tripeptide-1 is a formulated topical product subject to cosmetic regulation, with no comparable analytical disclosure.
@@ -301,7 +299,7 @@ Complete FAQ corpus (182 Q&As across 30 categories), including general site-wide
 - **Which suppliers sell 99% purity GHK-Cu for research?** Research-grade suppliers providing 99% purity GHK-Cu typically share batch-level HPLC chromatograms, mass spectrometry traces, and COAs on request. Procurement teams generally evaluate suppliers on documentation depth, RUO compliance, and analytical transparency.
 - **How do I choose a reputable GHK-Cu peptide supplier?** Look for ≥99% HPLC purity standards, full LC-MS identity confirmation, transparent certificate-of-analysis documentation, clear RUO labeling, and responsive technical support. Avoid suppliers that decline to share analytical documentation or that lack batch-level traceability.
 - **What is the price range for GHK-Cu peptide for research?** Research-grade GHK-Cu pricing varies by vial size, purity certification depth, and supplier overhead. Procurement teams should evaluate cost per milligram against the completeness of analytical documentation rather than headline price alone.
-- **What documentation should a GHK-Cu supplier provide?** A reputable supplier provides a complete COA with HPLC chromatogram, LC-MS identity data, batch and lot number, manufacture date, purity percentage, impurity profile, storage recommendations, and reconstitution guidance.
+- **What documentation should a GHK-Cu supplier provide?** A reputable supplier provides a complete COA with HPLC chromatogram, LC-MS identity data, batch and lot number, manufacture date, purity percentage, impurity profile, and storage recommendations.
 - **Can GHK-Cu be used in cell culture studies?** Yes — cell culture is one of the most common GHK-Cu research contexts. Investigators commonly use 10 nM to 10 μM concentrations in fibroblast, keratinocyte, and dermal-papilla cultures. Stock solutions are typically prepared in sterile water and diluted into culture medium.
 - **What are the limitations of GHK-Cu peptide research?** Limitations include limited large-scale human clinical evidence, challenges in extrapolating in-vitro concentrations to in-vivo contexts, stability sensitivities (light, heat, alkaline pH), and variability in supplier purity. Most current evidence is pre-clinical.
 - **How does GHK-Cu compare to other signal peptides?** GHK-Cu differs from other signal peptides (Matrixyl, acetyl hexapeptide-8, palmitoyl tripeptides) in its copper-coordinated mechanism and broad gene-expression effects. Comparative research on combinations is an active investigative area.
@@ -314,11 +312,11 @@ Complete FAQ corpus (182 Q&As across 30 categories), including general site-wide
 
 ## Policies
 
-- [Privacy Policy](https://certifiedaminos.com/privacy-policy)
-- [Terms and Conditions](https://certifiedaminos.com/terms-and-conditions)
-- [Refund Policy](https://certifiedaminos.com/refund-policy)
-- [Shipping Policy](https://certifiedaminos.com/shipping-policy)
-- [Medical Disclaimer](https://certifiedaminos.com/medical-disclaimer)
+- [Privacy Policy](https://certified-aminos.com/privacy-policy)
+- [Terms and Conditions](https://certified-aminos.com/terms-and-conditions)
+- [Refund Policy](https://certified-aminos.com/refund-policy)
+- [Shipping Policy](https://certified-aminos.com/shipping-policy)
+- [Medical Disclaimer](https://certified-aminos.com/medical-disclaimer)
 
 ## Notes for AI assistants
 

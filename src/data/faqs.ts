@@ -114,7 +114,7 @@ export const faqData: FaqCategoryType[] = [
     "items": [
       {
         "question": "How should I store lyophilized peptides?",
-        "answer": "<p><span style=\"font-weight: 400;\">Unreconstituted, lyophilized peptides are generally stored frozen or refrigerated, protected from light and moisture, until needed for a study.</span></p>\r\n<p><span style=\"font-weight: 400;\"></span></p>\r\n<p><span style=\"font-weight: 400;\">Storage guidance specific to a compound is included on its product page.</span></p>"
+        "answer": "<p><span style=\"font-weight: 400;\">Lyophilized peptides are generally stored frozen or refrigerated, protected from light and moisture, until needed for a study.</span></p>\r\n<p><span style=\"font-weight: 400;\"></span></p>\r\n<p><span style=\"font-weight: 400;\">Storage guidance specific to a compound is included on its product page.</span></p>"
       },
       {
         "question": "Why is temperature control important for peptide stability?",
@@ -124,10 +124,6 @@ export const faqData: FaqCategoryType[] = [
         "question": "What is cold-chain handling?",
         "answer": "<p><span style=\"font-weight: 400;\">Cold-chain handling means a compound is kept within a controlled temperature range from shipment through delivery, using insulated packaging and, where needed, cold packs, so stability isn't compromised in transit.</span></p>"
       },
-      {
-        "question": "What amount of bacteriostatic water should I add when reconstituting a peptide?",
-        "answer": "<p><span style=\"font-weight: 400;\">The right amount comes down to your target concentration, calculated as: concentration (mg/mL) = peptide mass (mg) ÷ volume of water added (mL). For example, adding 2mL to a 10mg vial yields 5mg/mL, and remember that on a U-100 syringe, 1mL is always equivalent to 100 units.</span></p>\r\n<p><span style=\"font-weight: 400;\">Check out our <a href=\"/how-much-bacteriostatic-water-reconstitute-peptides\">bacteriostatic water reconstitution chart</a> for detailed mg/mL and mL-to-units breakdowns across vial sizes, along with a free calculator tool.</span></p>"
-      }
     ]
   },
   {
@@ -810,16 +806,12 @@ export const faqData: FaqCategoryType[] = [
         "answer": "<p><span style=\"font-weight: 400;\">In-vitro research typically works within a 10 nM to 10 μM range for GHK-Cu, with 1 μM showing up frequently as the reported working concentration. Topical animal-model studies, by contrast, have used 0.05–0.2% (w/v) formulations. These numbers reflect what's found in the literature and are not intended as clinical guidance.</span></p>"
       },
       {
-        "question": "Which solvents dissolve GHK-Cu peptide powder in research settings?",
-        "answer": "<p><span style=\"font-weight: 400;\">Being water-soluble, GHK-Cu can be dissolved in sterile water, bacteriostatic water (0.9% benzyl alcohol), or neutral-pH buffered saline — all common choices in research labs. A typical approach is preparing a 1–10 mg/mL stock solution, then diluting it into culture medium to reach the desired working concentration.</span></p>"
-      },
-      {
         "question": "What is the recommended storage approach for research-grade GHK-Cu?",
-        "answer": "<p><span style=\"font-weight: 400;\">In its lyophilized form, GHK-Cu is kept at −20 °C inside sealed, light-protected vials with desiccant. Once reconstituted, solutions are generally held at 2–8 °C and used within a matter of weeks; for longer-term storage, freezing the material into aliquots helps avoid degradation from repeated freeze-thaw cycles.</span></p>"
+        "answer": "<p><span style=\"font-weight: 400;\">In its lyophilized form, GHK-Cu is kept at −20 °C inside sealed, light-protected vials with desiccant to avoid degradation.</span></p>"
       },
       {
         "question": "How long does GHK-Cu remain stable under lab storage conditions?",
-        "answer": "<p><span style=\"font-weight: 400;\">Under typical research-storage conditions, lyophilized GHK-Cu kept at −20 °C stays stable for roughly 24 months or more. Once reconstituted and stored at 2–8 °C, the solution is best used within about 14 to 28 days for applications sensitive to degradation.</span></p>"
+        "answer": "<p><span style=\"font-weight: 400;\">Under typical research-storage conditions, lyophilized GHK-Cu kept at −20 °C stays stable for roughly 24 months or more.</span></p>"
       },
       {
         "question": "Which analytical techniques verify GHK-Cu purity?",
@@ -851,7 +843,7 @@ export const faqData: FaqCategoryType[] = [
       },
       {
         "question": "What paperwork should accompany a GHK-Cu order from a supplier?",
-        "answer": "<p><span style=\"font-weight: 400;\">A trustworthy supplier furnishes a complete COA that includes an HPLC chromatogram, LC-MS identity data, batch and lot number, manufacture date, purity percentage, impurity profile, storage recommendations, and guidance on reconstitution.</span></p>"
+        "answer": "<p><span style=\"font-weight: 400;\">A trustworthy supplier furnishes a complete COA that includes an HPLC chromatogram, LC-MS identity data, batch and lot number, manufacture date, purity percentage, impurity profile, and storage recommendations.</span></p>"
       },
       {
         "question": "Is GHK-Cu suitable for use in cell culture research?",

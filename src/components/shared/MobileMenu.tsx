@@ -4,7 +4,7 @@ import { motion, AnimatePresence, Variants } from 'framer-motion'
 import {
   X, Search, Heart, User, LogIn,
   Activity, Dna, Brain, ShieldPlus, Sparkles, Zap, Network, BatteryCharging,
-  BookOpen, Microscope, Calculator, HelpCircle, Mail, Users, ArrowRight
+  BookOpen, Microscope, HelpCircle, Mail, Users, ArrowRight
 } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/navigation'
@@ -30,7 +30,6 @@ const CATEGORY_ICONS = [Activity, Dna, Brain, ShieldPlus, Sparkles, Zap, Network
 
 const MAIN_LINKS = [
   { key: 'shopFormulations', href: '/shop' },
-  { key: 'peptideCalculator', href: '/peptide-calculator' },
   { key: 'blog', href: '/blog' },
   { key: 'ourLaboratory', href: '/about-us' },
 ]

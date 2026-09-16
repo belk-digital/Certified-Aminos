@@ -81,7 +81,7 @@ export const useCartStore = create<CartState>()(
         })
 
         if (addedNames.length > 0) {
-          toast.success(`Added ${addedNames.join(' & ')} — required for reconstitution`)
+          toast.success(`Added ${addedNames.join(' & ')} — commonly used alongside this compound`)
         }
       }
 

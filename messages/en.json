@@ -113,7 +113,6 @@
     "support": "Support",
     "links": {
       "shopFormulations": "Shop",
-      "peptideCalculator": "Peptide Calculator",
       "blog": "Blog",
       "ourLaboratory": "About Us",
       "faq": "F.A.Q",
@@ -140,7 +139,6 @@
   "header": {
     "navShop": "Shop",
     "navCategories": "Categories",
-    "navCalculator": "Calculator",
     "navAbout": "About",
     "navBlog": "Blog",
     "navFaq": "FAQ",
@@ -182,7 +180,6 @@
     "navShop": "Shop",
     "navBlog": "Blog",
     "navFaq": "FAQ",
-    "navCalculator": "Peptide Calculator",
     "navAffiliates": "Affiliates",
     "contact": "Contact",
     "contactUs": "Contact Us",
@@ -260,7 +257,7 @@
     "blogTeaser": {
       "eyebrow": "SCIENCE BLOG",
       "title": "Clinical Reviews & Research Guidelines",
-      "description": "Our blog publishes peer-reviewed literature summaries, compound mechanism deep dives, and methodology guides covering purity testing, reconstitution, and storage. Written for researchers who need the science, not the hype.",
+      "description": "Our blog publishes peer-reviewed literature summaries, compound mechanism deep dives, and methodology guides covering purity testing and storage. Written for researchers who need the science, not the hype.",
       "scrollToExplore": "Scroll to Explore",
       "ctaText": "View the Full Blog"
     },
@@ -363,10 +360,6 @@
         "massSpecIdentity": {
           "question": "Why run both mass spectrometry and HPLC instead of just one test?",
           "answer": "They check different things: mass spec confirms the compound's molecular weight, while HPLC isolates it from related impurities to establish purity. Neither test alone tells the full story, which is why a credible batch report includes both rather than leaning on a single number."
-        },
-        "lyophilizedStorage": {
-          "question": "How should lyophilized peptides be stored before and after reconstitution?",
-          "answer": "Before use, keep unreconstituted vials frozen or refrigerated and shielded from light and moisture. Once a peptide is reconstituted, refrigerate it and use it within the timeframe listed on the product page or COA — that window varies by compound."
         },
         "assayDevelopment": {
           "question": "What role do research peptides play in lab study design?",
@@ -552,7 +545,7 @@
         },
         "dosing": {
           "title": "Milligram-Accurate Fill",
-          "description": "Vials are formulated to a precise milligram content per unit, confirmed by mass spectrometry, so researchers can calculate concentrations accurately during reconstitution.",
+          "description": "Vials are formulated to a precise milligram content per unit, confirmed by mass spectrometry, so researchers can calculate concentrations accurately for their protocol.",
           "tag": "Precision Dosed",
           "microcopy": "Mass Spectrometry Confirmed"
         }
@@ -680,25 +673,9 @@
           "question": "Can you synthesize a peptide to a custom spec?",
           "answer": "Sometimes, depending on the sequence, quantity, and how much lead time you can give. Reach out through support with your requirement before assuming it's off the shelf — we'll confirm feasibility, pricing, and turnaround directly."
         },
-        "storageInstructions": {
-          "question": "How should research peptides be stored?",
-          "answer": "Keep lyophilized (unreconstituted) vials frozen or refrigerated and out of light until you're ready to use them. After reconstitution, refrigerate and use within the window listed on that product's page or COA — it varies by compound."
-        },
-        "reconstitution": {
-          "question": "What's the right way to reconstitute a lyophilized peptide?",
-          "answer": "Add bacteriostatic or sterile water down the inside wall of the vial slowly, then swirl gently rather than shaking — agitation can damage the peptide bonds. The exact volume of solvent depends on the compound and is listed on its product page."
-        },
-        "shelfLife": {
-          "question": "How long do research peptides last?",
-          "answer": "Stored properly and left unopened, lyophilized peptide is generally stable for one to two years. Once reconstituted, that window shrinks dramatically — often just two to four weeks refrigerated. Batch-specific guidance is on the COA and product page."
-        },
         "shippingDamage": {
           "question": "Can shipping conditions damage a peptide?",
           "answer": "Yes — heat, repeated freeze-thaw cycling, and extended light exposure all degrade integrity. Orders ship in cold-chain packaging suited to the compound, but move vials into proper storage as soon as they arrive rather than leaving them on a counter."
-        },
-        "aliquotAfterReconstitution": {
-          "question": "Is it worth aliquoting after reconstitution?",
-          "answer": "For anything you'll use across more than one session, yes — splitting into single-use portions avoids repeated freeze-thaw cycles and cuts contamination risk, which keeps potency more consistent over the life of the study."
         },
         "orderDocumentation": {
           "question": "What paperwork ships with an order?",
@@ -718,7 +695,7 @@
         },
         "productPageInfo": {
           "question": "What's actually on a product page?",
-          "answer": "Compound name, the vial sizes we carry, current price, live stock status, a linked COA, and handling notes — storage conditions and reconstitution guidance specific to that peptide."
+          "answer": "Compound name, the vial sizes we carry, current price, live stock status, and a linked COA for that batch."
         },
         "manufacturedInUsa": {
           "question": "Is everything sourced and tested domestically?",
@@ -727,10 +704,6 @@
         "researchUseOnlyMeaning": {
           "question": "What exactly does \"Research Use Only\" mean here?",
           "answer": "It means the compound is sold strictly for laboratory and scientific research — not for human or animal consumption, diagnosis, or treatment. RUO products haven't been reviewed by the FDA for safety or efficacy outside that context, and we don't market them as if they had."
-        },
-        "specialHandling": {
-          "question": "Do I need any special precautions handling these?",
-          "answer": "Standard lab practice applies — gloves, a clean surface, sterile technique when reconstituting. These are RUO compounds, so handling belongs to trained research personnel working in an appropriate lab setting, not a kitchen counter."
         },
         "nonResearchUse": {
           "question": "Can these be used for anything other than lab research?",
@@ -2227,7 +2200,6 @@
       "titleLine2": "Resources",
       "items": {
         "journal": { "title": "The Journal", "description": "Clinical updates and laboratory best practices from our research team.", "href": "/blog" },
-        "calculator": { "title": "Peptide Calculator", "description": "Dosing and reconstitution reference tools for laboratory use.", "href": "/peptide-calculator" },
         "certificates": { "title": "Certificates of Analysis", "description": "Browse batch-specific COA documentation for every compound.", "href": "/certificates" }
       }
     },
@@ -2305,351 +2277,12 @@
       "subtitleDefault": "(faqs)"
     }
   },
-  "calculator": {
-    "page": {
-      "metaTitle": "Peptide Calculator: Dosage & Reconstitution Tool | Certified Aminos",
-      "metaDescription": "Use our free peptide calculator to get your exact dosage in seconds. Enter vial size, BAC water volume, and desired mcg - and see exactly how many units to draw.",
-      "faq": {
-        "q1Question": "How much bacteriostatic water do I add to a 5mg peptide vial?",
-        "q1Answer": "The standard ratio for a 5mg peptide vial is 2mL of bacteriostatic water. This creates a concentration of 2.5mg/mL, where every 0.1mL (10 units on a U-100 insulin syringe) delivers exactly 250mcg.",
-        "q2Question": "How long does a reconstituted peptide last in the refrigerator?",
-        "q2Answer": "Most peptide solutions reconstituted with bacteriostatic water remain stable for 28–30 days when stored at 2–8°C (standard refrigerator temperature).",
-        "q3Question": "Do you shake or roll a peptide vial after adding bacteriostatic water?",
-        "q3Answer": "Always roll, never shake. Shaking a peptide vial creates mechanical stress that can disrupt the amino acid chains in the compound."
-      },
-      "webApp": {
-        "name": "Peptide Reconstitution & Research Calculators Hub",
-        "description": "Free online research calculators including peptide reconstitution dosage, BMI/BMR, unit conversion, and Creatinine Clearance."
-      },
-      "breadcrumb": {
-        "home": "Home",
-        "calculator": "Peptide Calculator"
-      }
-    },
-    "hub": {
-      "tabReconstitution": "Reconstitution",
-      "tabBmiBmr": "BMI & BMR",
-      "tabUnitConverter": "Unit Converter",
-      "tabCreatinineClearance": "Creatinine Clearance"
-    },
-    "peptideReconstitution": {
-      "titlePeptide": "Peptide",
-      "titleReconstitution": "Reconstitution",
-      "guideLink": "Not sure how to use this? Read the guide ↓",
-      "resetCalculator": "Reset Calculator",
-      "requiredDraw": "Required Draw",
-      "drawVolume": "Draw Volume",
-      "concentration": "Concentration",
-      "doseExceedsCapacity": "Dose volume ({doseVolume}ml) exceeds syringe capacity ({syringeVolume}ml).",
-      "syringeCapacity": "Syringe Capacity",
-      "peptideInVial": "Peptide in Vial (MG/MCG)",
-      "bacteriostaticWater": "Bacteriostatic Water (ML)",
-      "targetDose": "Target Dose",
-      "disclaimer": "For theoretical research calibration only. Products are strictly for laboratory use and not intended for human consumption, diagnosis, or therapeutic purposes."
-    },
-    "bmiBmr": {
-      "titleBmiBmr": "BMI & BMR",
-      "titleCalculator": "Calculator",
-      "bodyMetricsDashboard": "Body Metrics Dashboard",
-      "bodyMassIndex": "Body Mass Index",
-      "basalMetabolicRate": "Basal Metabolic Rate",
-      "kcalDay": "Kcal / Day",
-      "categoryUnderweight": "Underweight",
-      "categoryNormal": "Normal weight",
-      "categoryOverweight": "Overweight",
-      "categoryObese": "Obese",
-      "measurementSystem": "Measurement System",
-      "systemImperial": "imperial",
-      "systemMetric": "metric",
-      "biologicalSex": "Biological Sex",
-      "genderMale": "male",
-      "genderFemale": "female",
-      "ageYears": "Age (Years)",
-      "height": "Height",
-      "weight": "Weight",
-      "status": "Status",
-      "ready": "Ready",
-      "mifflinDisclaimer": "Mifflin-St Jeor equation used for maximum basal accuracy."
-    },
-    "creatinineClearance": {
-      "titleCreatinine": "Creatinine",
-      "titleClearance": "Clearance",
-      "renalFunctionDashboard": "Renal Function Dashboard",
-      "estimatedCrCl": "Estimated CrCl (Cockcroft-Gault)",
-      "categoryNormalOrHigh": "Normal or High",
-      "categoryMildlyDecreased": "Mildly Decreased",
-      "categoryMildToModerateDecrease": "Mild to Moderate Decrease",
-      "categoryModerateToSevereDecrease": "Moderate to Severe Decrease",
-      "categorySeverelyDecreased": "Severely Decreased",
-      "categoryKidneyFailure": "Kidney Failure",
-      "measurementSystem": "Measurement System",
-      "systemImperial": "imperial",
-      "systemMetric": "metric",
-      "biologicalSex": "Biological Sex",
-      "genderMale": "male",
-      "genderFemale": "female",
-      "ageYears": "Age (Years)",
-      "weight": "Weight",
-      "serumCreatinine": "Serum Creatinine",
-      "status": "Status",
-      "ready": "Ready",
-      "aboutCockcroftGault": "About Cockcroft-Gault",
-      "cockcroftGaultDescription": "Estimates creatinine clearance as a proxy for Glomerular Filtration Rate (GFR). Used for drug dosing adjustments in clinical settings."
-    },
-    "unitConverter": {
-      "titleUnit": "Unit",
-      "titleConverter": "Converter",
-      "researchMeasurementsDashboard": "Research Measurements Dashboard",
-      "convertedResult": "Converted Result",
-      "conversionType": "Conversion Type",
-      "mass": "Mass",
-      "volume": "Volume",
-      "swapDirection": "Swap Direction",
-      "valueToConvert": "Value to Convert",
-      "quickReference": "Quick Reference",
-      "assumesU100Syringe": "*Assumes standard U-100 syringe"
-    },
-    "main": {
-      "hero": {
-        "ctaLong": "Use the Calculators",
-        "ctaShort": "Calculate",
-        "title": "Peptide Calculator: Reconstitution, Dosage & Syringe Conversion",
-        "description1": "The most precise peptide reconstitution calculator available for research use. Enter your vial size, bacteriostatic water volume, and target dose — and get your exact syringe draw in seconds.",
-        "description2": "Whether you're working with a 2mg, 5mg, or 10mg peptide vial, accurate reconstitution math is non-negotiable. This peptide calculator eliminates dosing errors by converting your vial concentration into precise syringe units — no manual math required. Trusted by researchers, used daily, and built for precision."
-      },
-      "requiredInputs": {
-        "eyebrow": "Required Inputs",
-        "title": "Calculator Parameters",
-        "vialSize": {
-          "title": "Vial Size (mg)",
-          "desc": "Total peptide weight in your vial (e.g., 5mg, 10mg)."
-        },
-        "bacWater": {
-          "title": "BAC Water (mL)",
-          "desc": "Volume of bacteriostatic water used for reconstitution."
-        },
-        "desiredDose": {
-          "title": "Desired Dose (mcg)",
-          "desc": "Your exact target research dose in micrograms."
-        }
-      },
-      "howToUse": {
-        "title": "How to Use the Reconstitution Calculator",
-        "subtitle": "This calculator is designed for researchers working with lyophilized (freeze-dried) peptide vials. Follow these three steps:",
-        "step1": {
-          "title": "Enter Vial Size",
-          "description": "Input the total peptide content of your vial in milligrams (mg). Common sizes include 2mg, 5mg, 10mg, and 30mg.",
-          "tag": "Step 1",
-          "microcopy": "PEPTIDE MASS"
-        },
-        "step2": {
-          "title": "Enter BAC Water",
-          "description": "Input how many milliliters (mL) of BAC water you used or plan to use when reconstituting. Standard practice is 1–2mL.",
-          "tag": "Step 2",
-          "microcopy": "DILUENT VOLUME"
-        },
-        "step3": {
-          "title": "Enter Desired Dose",
-          "description": "Input your target dose in micrograms (mcg). The calculator immediately outputs the exact units to draw on a U-100 syringe.",
-          "tag": "Step 3",
-          "microcopy": "TARGET DOSAGE"
-        },
-        "result": {
-          "label": "The Result",
-          "text": "A precise, error-free measurement <primary>for every session.</primary>"
-        }
-      },
-      "reconstitution": {
-        "eyebrow": "How It Works",
-        "title": "Peptide Reconstitution",
-        "understanding": {
-          "title": "Understanding Peptide Reconstitution",
-          "description": "Peptide reconstitution is the process of dissolving a lyophilized peptide powder into a liquid carrier — almost always bacteriostatic water (BAC water) — to create an injectable solution for research use."
-        },
-        "whyBacWater": {
-          "title": "Why BAC Water?",
-          "description": "Bacteriostatic water contains 0.9% benzyl alcohol, which inhibits microbial growth and extends the usable shelf life of your reconstituted peptide solution compared to sterile water alone. This makes it the gold standard carrier for peptide research."
-        },
-        "badgeTitle": "Research Grade",
-        "badgeSubtitle": "99%+ Verified Purity"
-      },
-      "process": {
-        "title": "The Reconstitution Process — Step by Step",
-        "steps": [
-          "Wipe the vial septa with an alcohol swab and allow to dry completely.",
-          "Draw the desired volume of BAC water into a sterile syringe.",
-          "Insert the needle at an angle along the inner wall of the vial — never aim directly at the peptide cake.",
-          "Allow the water to run slowly down the glass rather than jetting directly onto the powder.",
-          "Gently roll the vial between your palms until the powder is fully dissolved. Do not shake.",
-          "Inspect the solution — it should be clear to slightly opaque. Discard if visibly particulate or discolored."
-        ],
-        "criticalNote": "Critical note: Shaking a peptide vial can denature the amino acid chains. Always roll, never shake."
-      },
-      "mistakes": {
-        "title": "5 Mistakes to Avoid",
-        "subtitle": "Protect your compound integrity and ensure accurate dosing by avoiding these common reconstitution errors.",
-        "items": [
-          {
-            "title": "Shaking the vial instead of rolling.",
-            "desc": "Mechanical agitation can disrupt the amino acid chains. Always roll gently between your palms."
-          },
-          {
-            "title": "Injecting BAC water directly onto the peptide cake.",
-            "desc": "This causes localized denaturation. Angle the needle against the glass wall and let the water cascade down."
-          },
-          {
-            "title": "Confusing mg with mcg.",
-            "desc": "1mg = 1,000mcg. If your vial is 5mg and your dose is 250mcg, your dose is 0.25mg — not 250mg. Use the calculator to eliminate this conversion error."
-          },
-          {
-            "title": "Using the wrong syringe type.",
-            "desc": "U-40 and U-100 syringes have different unit values per mL. This is one of the most dangerous and common dosing errors. Always verify."
-          },
-          {
-            "title": "Reconstituting too far in advance.",
-            "desc": "Once reconstituted, peptide solutions should be used within the timeframe appropriate for your storage conditions. See our storage guide for details."
-          }
-        ]
-      },
-      "storage": {
-        "title": "Storage",
-        "subtitle": "Best Practices",
-        "lyophilized": {
-          "title": "Lyophilized (Unreconstituted) Peptides",
-          "description": "Store at –20°C (standard freezer) in a dark, dry location. Most lyophilized peptides maintain stability for 24–36 months under these conditions. Avoid repeated freeze-thaw cycles."
-        },
-        "reconstituted": {
-          "title": "Reconstituted Peptide Solutions",
-          "description": "Once mixed with BAC water, store in the refrigerator at 2–8°C (36–46°F). Avoid freezing reconstituted solutions, as this can cause aggregation. Most research-grade peptide solutions remain stable for 28–30 days under refrigeration with BAC water as the carrier."
-        },
-        "bullets": [
-          "Keep vials away from direct light (use amber vials or wrap in foil if needed)",
-          "Never store near heat sources or leave at room temperature for extended periods",
-          "Label each vial with the reconstitution date",
-          "Do not use solutions that appear cloudy, discolored, or particulate (beyond expected slight opacity)"
-        ]
-      },
-      "bacWaterTable": {
-        "title": "BAC Water Mixing Reference",
-        "intro": "The volume of bacteriostatic water you add directly determines the concentration of your solution — and therefore how many syringe units equal your target dose. Use this reference chart:",
-        "chooserHeading": "Choosing the Right BAC Water Volume",
-        "chooserBody": "More BAC water = lower concentration = more units per dose (easier to measure small doses accurately). Less BAC water = higher concentration = fewer units per dose (more practical for large doses, but precision decreases).",
-        "chooserBaseline": "For most research protocols with common dosing ranges of 100–500mcg, 2mL of BAC water per 5–10mg vial is the widely-used baseline.",
-        "headers": {
-          "vialSize": "Vial Size",
-          "bacWaterAdded": "BAC Water Added",
-          "concentration": "Concentration",
-          "doseEquals": "250mcg Dose ="
-        },
-        "footnote": "All unit values calculated for U-100 insulin syringes."
-      },
-      "math": {
-        "title": "Peptide Dosage Math",
-        "subtitle": "How the Calculation Works",
-        "formulaIntro": "The underlying formula this calculator uses is:",
-        "formula1": "Draw Volume (mL) = (Desired Dose in mcg ÷ Total Peptide in mcg) × Total BAC Water Volume (mL)",
-        "thenLabel": "Then:",
-        "formula2": "Units on U-100 syringe = Draw Volume (mL) × 100",
-        "exampleTitle": "Example Calculation",
-        "example": {
-          "vialLabel": "Vial:",
-          "vialValue": "5mg (= 5,000mcg)",
-          "bacWaterLabel": "BAC water:",
-          "desiredDoseLabel": "Desired dose:",
-          "drawVolumeLabel": "Draw volume:"
-        },
-        "footnote": "This is the same calculation the peptide dosage calculator performs automatically — eliminating human error from every research session."
-      },
-      "syringeConversion": {
-        "title": "Syringe Unit Conversion",
-        "subtitle": "For Peptide Research",
-        "intro": "Understanding your syringe markings is essential for accurate peptide dosing. The vast majority of peptide research uses U-100 insulin syringes, which contain <bold>100 units per 1mL</bold>.",
-        "referenceTitle": "U-100 Reference",
-        "headers": {
-          "drawVolume": "Draw Volume",
-          "unitsU100": "= Units on U-100"
-        },
-        "warningTitle": "U-100 vs. U-40 Syringes",
-        "warningText": "Important: U-40 syringes contain only 40 units per mL and are used primarily for veterinary insulin. If you accidentally use a U-40 syringe while dosing based on U-100 calculations, your draw will be <bold>2.5× higher</bold> than intended. Always confirm your syringe type."
-      },
-      "whyAccuracy": {
-        "title": "Why Accurate Peptide Calculation Matters for Research",
-        "subtitle": "Manual dosage math introduces variables that compromise research reproducibility. A dedicated peptide reconstitution calculator:",
-        "items": {
-          "item1": "Eliminates conversion errors between mg, mcg, mL, and syringe units",
-          "item2": "Standardizes protocols across research sessions and researchers",
-          "item3": "Saves time during setup without sacrificing precision",
-          "item4": "Supports documentation with consistent, repeatable measurements",
-          "item5": "Reduces waste by calculating exact draw volumes for your target dose"
-        },
-        "footnote": "For research requiring consistent inter-session dosing, calculator-assisted measurement is the most reliable method available without laboratory-grade volumetric equipment."
-      },
-      "precision": {
-        "title": "Precision in Peptide Research",
-        "subtitle": "Why Every Unit Matters",
-        "paragraph1": "Peptide research outcomes are sensitive to dosing variability. A difference of even <bold>10–20 units</bold> on a syringe can represent a <bold>25–50% deviation</bold> from your target dose depending on concentration.",
-        "paragraph2": "That deviation alters pharmacokinetic profiles in observational studies, reduces inter-session reproducibility, and compromises data integrity across longitudinal research.",
-        "paragraph3": "Using a validated peptide dosage calculator — and cross-referencing with a BAC water mixing chart — ensures your research sessions begin with the highest possible measurement accuracy."
-      },
-      "cta": {
-        "badge": "Quality Assurance",
-        "title": "Start Your Research With <primary>Verified-Purity</primary> Peptides",
-        "description": "Precise dosing calculations mean nothing if your peptide isn't what the label claims. Every product in our catalog is manufactured under strict quality standards and ships with third-party Certificate of Analysis (CoA) documentation — so your research data reflects compound behavior, not contamination.",
-        "browseCatalog": "Browse Catalog",
-        "viewCoaStandards": "View COA Standards"
-      },
-      "faq": {
-        "title": "Calculator FAQ",
-        "description": "Common questions about peptide reconstitution and dosing mathematics.",
-        "q1": {
-          "question": "How much bacteriostatic water do I add to a 5mg peptide vial?",
-          "answer": "The standard ratio for a 5mg peptide vial is 2mL of bacteriostatic water. This creates a concentration of 2.5mg/mL, where every 0.1mL (10 units on a U-100 insulin syringe) delivers exactly 250mcg. You can adjust this ratio — use our peptide calculator above to recalculate for any water volume."
-        },
-        "q2": {
-          "question": "How many units is 250mcg on an insulin syringe?",
-          "answer": "The number of units for a 250mcg dose depends on your reconstitution ratio. For a 5mg vial mixed with 2mL of BAC water, 250mcg equals exactly 10 units (0.1mL) on a U-100 syringe. Use the peptide dosage calculator to find the precise unit count for your specific vial and water volume."
-        },
-        "q3": {
-          "question": "What is the difference between a U-100 and U-40 syringe for peptide dosing?",
-          "answer": "A U-100 syringe contains 100 units per 1mL. A U-40 syringe contains only 40 units per 1mL. Nearly all peptide research sessions use U-100 syringes. Drawing the same number of markings on a U-40 syringe delivers 2.5 times more volume than a U-100 — a critical distinction that can lead to significant dosing errors if unrecognized."
-        },
-        "q4": {
-          "question": "Do you shake or roll a peptide vial after adding bacteriostatic water?",
-          "answer": "Always roll, never shake. Shaking a peptide vial creates mechanical stress that can disrupt the amino acid chains in the compound. Instead, gently roll the vial between your palms in a smooth, circular motion until the lyophilized powder is fully dissolved in the bacteriostatic water."
-        },
-        "q5": {
-          "question": "How long does a reconstituted peptide last in the refrigerator?",
-          "answer": "Most peptide solutions reconstituted with bacteriostatic water remain stable for 28–30 days when stored at 2–8°C (standard refrigerator temperature). After this window, degradation accelerates. For extended storage, some researchers prefer to keep unreconstituted lyophilized peptides frozen and reconstitute only what is needed per research session."
-        },
-        "q6": {
-          "question": "How much BAC water should I use for a 10mg peptide vial?",
-          "answer": "For a 10mg vial, adding 2mL of bacteriostatic water creates a 5mg/mL concentration, where a 250mcg dose equals 5 units on a U-100 syringe. Adding 5mL instead creates a 2mg/mL concentration, where the same dose equals 12.5 units — easier to measure precisely. Use the peptide reconstitution calculator above to find the optimal ratio for your dose range."
-        },
-        "q7": {
-          "question": "What is peptide reconstitution?",
-          "answer": "Peptide reconstitution is the process of dissolving a lyophilized (freeze-dried) peptide powder into a sterile liquid carrier — typically bacteriostatic water — to create an injectable solution ready for research use. The ratio of peptide to water determines the concentration of the final solution, which dictates how many syringe units correspond to any given dose."
-        },
-        "q8": {
-          "question": "How do I convert mcg to mg for peptide dosing?",
-          "answer": "To convert micrograms (mcg) to milligrams (mg), divide by 1,000. For example, 500mcg = 0.5mg. To convert mg to mcg, multiply by 1,000. So a 5mg vial contains 5,000mcg of peptide. This conversion is the foundation of all peptide dosage calculations."
-        },
-        "q9": {
-          "question": "Can I use sterile water instead of bacteriostatic water for peptides?",
-          "answer": "Sterile water can technically dissolve peptides, but it lacks the 0.9% benzyl alcohol preservative found in bacteriostatic water. Without this preservative, microbial growth is possible and the reconstituted solution's shelf life is dramatically reduced — typically to 24 hours. For any research session extending beyond a single day, bacteriostatic water is strongly preferred."
-        },
-        "q10": {
-          "question": "Why does the BAC water volume I add matter for dosing accuracy?",
-          "answer": "The volume of bacteriostatic water you add determines your peptide solution's concentration — and therefore how many syringe units correspond to your target dose. Using inconsistent water volumes across sessions creates inconsistent dosing, even with the same vial. Always note the exact water volume used and recalculate using the peptide calculator if you change your reconstitution ratio."
-        }
-      }
-    }
-  },
   "blog": {
     "metaTitle": "Research Peptides Blog | Scientific Insights & Laboratory Protocols",
-    "metaDescription": "Explore premium peptide research articles, laboratory protocols, reconstitution guides, and scientific breakthroughs from Certified Aminos, a U.S. supplier of 99%+ pure research peptides.",
+    "metaDescription": "Explore premium peptide research articles, laboratory protocols, and scientific breakthroughs from Certified Aminos, a U.S. supplier of 99%+ pure research peptides.",
     "hero": {
       "title": "The U.S. Authority in Advanced Peptide Research & Scientific Insights",
-      "description": "Explore peer-reviewed peptide research, advanced laboratory protocols, reconstitution guides, and analytical testing standards curated for American scientific professionals. Trusted educational resources for 99%+ pure research compounds—strictly for in-vitro laboratory use only.",
+      "description": "Explore peer-reviewed peptide research, advanced laboratory protocols, and analytical testing standards curated for American scientific professionals. Trusted educational resources for 99%+ pure research compounds—strictly for in-vitro laboratory use only.",
       "exploreLatestLong": "Explore Latest Articles",
       "exploreLatestShort": "Explore Articles"
     },

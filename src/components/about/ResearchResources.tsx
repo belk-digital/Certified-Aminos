@@ -5,11 +5,10 @@ import { Link } from '@/i18n/navigation'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useTranslations } from 'next-intl'
-import { BookOpen, Calculator, FileCheck2, ArrowRight } from 'lucide-react'
+import { BookOpen, FileCheck2, ArrowRight } from 'lucide-react'
 
 const RESOURCE_META = [
   { key: 'journal', icon: BookOpen },
-  { key: 'calculator', icon: Calculator },
   { key: 'certificates', icon: FileCheck2 },
 ]
 
