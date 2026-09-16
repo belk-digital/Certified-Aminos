@@ -4,6 +4,7 @@ import configPromise from '@payload-config'
 import { attributeOrder } from '@/lib/affiliates/commission'
 import { appendOrderToSheet } from '@/lib/google/sheets'
 import { sendTrackedEmail } from '@/lib/emails/sendTrackedEmail'
+import { submitOrderToPepBoss } from '@/lib/pepboss/submitOrder'
 
 /**
  * Centralized post-checkout logic: marks the order paid, clears the cart, attributes the
@@ -67,6 +68,11 @@ export async function finalizeOrder(orderId: string | number, paymentIntentMetad
       order.paymentStatus = 'captured';
     }
 
+    // 1b. Submit PepBoss-sourced line items to the supplier for fulfillment. Never blocks or
+    // rolls back the (already captured) order — failures are recorded on the order for
+    // manual review instead of thrown.
+    await submitOrderToPepBoss(order).catch((err) => console.error('submitOrderToPepBoss threw unexpectedly:', err))
+
     // 2. Clear User Cart
     if (order.owner) {
       const userId = typeof order.owner === 'object' ? order.owner.id : order.owner
@@ -106,9 +112,9 @@ export async function finalizeOrder(orderId: string | number, paymentIntentMetad
             const invoiceHtml = await generateOrderInvoiceHtml(order, payload);
 
             await sendTrackedEmail(payload, {
-                from: 'Orders | Certified Aminos <support@certifiedaminos.com>',
+                from: 'Orders | Certified Aminos <support@certified-aminos.com>',
                 to: customerEmail,
-                bcc: 'support@certifiedaminos.com',
+                bcc: 'support@certified-aminos.com',
                 subject: `Order Confirmation #${order.orderNumber || order.id}`,
                 html: invoiceHtml,
             })

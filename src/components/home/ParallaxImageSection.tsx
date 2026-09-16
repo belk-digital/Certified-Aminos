@@ -29,7 +29,7 @@ export function ParallaxImageSection() {
         style={{ y }}
       >
         <Image
-          src="/HelixBio Images/ChatGPT Image Jul 20, 2026, 05_26_58 AM.webp"
+          src="/brand-images/hero_blog_research.jpg"
           alt={t('imageAlt')}
           fill
           className="object-cover"

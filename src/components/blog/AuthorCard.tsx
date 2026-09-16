@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import { Mail } from 'lucide-react'
 
-const PUBLISHER_EMAIL = 'support@certifiedaminos.com'
+const PUBLISHER_EMAIL = 'support@certified-aminos.com'
 
 export function AuthorCard({
   name,

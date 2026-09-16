@@ -85,17 +85,17 @@ export default async function Homepage() {
     console.error('Failed to fetch blog posts', e)
   }
   try {
-    const bestSellers = await getShopProducts({ limit: 8, bestSellersOnly: true })
+    const bestSellers = await getShopProducts({ limit: 12, bestSellersOnly: true })
     products = bestSellers.success && bestSellers.products ? (bestSellers.products as any[]) : []
 
     // Fill any remaining slots with other live products so the section is never sparse
     // before best sellers have been curated in the admin.
-    if (products.length < 8) {
-      const fallback = await getShopProducts({ limit: 8, sort: 'newest' })
+    if (products.length < 12) {
+      const fallback = await getShopProducts({ limit: 12, sort: 'newest' })
       if (fallback.success && fallback.products) {
         const existingIds = new Set(products.map((p: any) => p.id))
         const filler = (fallback.products as any[]).filter((p) => !existingIds.has(p.id))
-        products = [...products, ...filler].slice(0, 8)
+        products = [...products, ...filler].slice(0, 12)
       }
     }
   } catch (e) {
@@ -124,17 +124,17 @@ export default async function Homepage() {
             {
               '@context': 'https://schema.org',
               '@type': 'WebPage',
-              '@id': 'https://certifiedaminos.com/#webpage',
-              url: 'https://certifiedaminos.com/',
+              '@id': 'https://certified-aminos.com/#webpage',
+              url: 'https://certified-aminos.com/',
               name: title,
               description: description,
             },
             {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
-              '@id': 'https://certifiedaminos.com/#breadcrumb',
+              '@id': 'https://certified-aminos.com/#breadcrumb',
               itemListElement: [
-                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://certifiedaminos.com/' },
+                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://certified-aminos.com/' },
               ],
             },
             {
@@ -227,19 +227,19 @@ export default async function Homepage() {
               '@context': 'https://schema.org',
               '@type': 'Organization',
               name: 'Certified Aminos',
-              url: 'https://certifiedaminos.com',
+              url: 'https://certified-aminos.com',
               description: 'USA-based supplier of research-use-only synthetic peptides for laboratory research.',
-              email: 'support@certifiedaminos.com',
+              email: 'support@certified-aminos.com',
             },
             {
               '@context': 'https://schema.org',
               '@type': 'WebSite',
-              url: 'https://certifiedaminos.com',
+              url: 'https://certified-aminos.com',
               potentialAction: {
                 '@type': 'SearchAction',
                 target: {
                   '@type': 'EntryPoint',
-                  urlTemplate: 'https://certifiedaminos.com/shop?q={search_term_string}',
+                  urlTemplate: 'https://certified-aminos.com/shop?q={search_term_string}',
                 },
                 'query-input': 'required name=search_term_string',
               },

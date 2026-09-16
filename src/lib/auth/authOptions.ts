@@ -99,7 +99,7 @@ export const authOptions: NextAuthOptions = {
         try {
           const { sendTrackedEmail } = await import('@/lib/emails/sendTrackedEmail')
           await sendTrackedEmail(payload, {
-            from: 'Support | Certified Aminos <support@certifiedaminos.com>',
+            from: 'Support | Certified Aminos <support@certified-aminos.com>',
             to: linked.email,
             subject: 'A new sign-in method was added to your account',
             html: `<p>Google sign-in was just linked to your Certified Aminos account (${linked.email}). If this wasn't you, please contact support immediately.</p>`,

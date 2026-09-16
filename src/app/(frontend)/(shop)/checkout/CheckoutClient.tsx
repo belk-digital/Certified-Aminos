@@ -4,7 +4,7 @@ import React, { useState, useEffect, useRef } from 'react'
 import Image from 'next/image'
 import { Link } from '@/i18n/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Check, ChevronDown, ChevronUp, Lock, Loader2, ArrowRight, ArrowLeft, ShieldCheck, Tag, ShoppingCart, Sparkles, Truck, Zap, CreditCard, Wallet, Smartphone } from 'lucide-react'
+import { Check, ChevronDown, ChevronUp, Lock, Loader2, ArrowRight, ArrowLeft, ShieldCheck, Tag, ShoppingCart, Sparkles, Truck, Zap, CreditCard, Wallet, Smartphone, Bitcoin } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
@@ -20,15 +20,12 @@ import { useSession } from 'next-auth/react'
 import { loadStripe } from '@stripe/stripe-js'
 import { Elements } from '@stripe/react-stripe-js'
 import { StripeCheckoutForm } from './StripeCheckoutForm'
-import { createPaymentIntent, getShippingMethods } from './actions'
+import { createPaymentIntent, getShippingMethods, getPaymentGatewaySettings } from './actions'
 
 
 // Card payments are temporarily disabled in favor of Zelle. Flip this back to re-enable Stripe —
 // the rest of the Stripe integration below is left intact, just not rendered/called while off.
 const ENABLE_STRIPE = false
-
-// Toggle to enable/disable the CircoFlows hosted-card option without touching Stripe/Zelle/Amex.
-const ENABLE_CIRCOFLOWS = false
 
 const stripePromise = typeof window !== 'undefined' ? loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY || '') : null
 
@@ -56,7 +53,15 @@ export function CheckoutClient() {
   // Form State
   const [attemptedSubmit, setAttemptedSubmit] = useState(false)
   const [isProcessing, setIsProcessing] = useState(false)
-  const [selectedPaymentMethod, setSelectedPaymentMethod] = useState<'zelle' | 'amex' | 'circoflows' | 'stripe_link'>('zelle')
+  const [selectedPaymentMethod, setSelectedPaymentMethod] = useState<'zelle' | 'amex' | 'circoflows' | 'stripe_link' | 'dataopt'>('zelle')
+  // Which payment methods are enabled and in what order — managed in Payload (Checkout →
+  // Payment Gateway Settings). Seeded with a sane default so the UI isn't empty before the
+  // fetch below resolves.
+  const [gatewaySettings, setGatewaySettings] = useState<{ key: string; enabled: boolean; title?: string | null; description?: string | null }[]>([
+    { key: 'zelle', enabled: true },
+    { key: 'stripe_link', enabled: true },
+    { key: 'dataopt', enabled: true },
+  ])
   const [formData, setFormData] = useState({
     email: '',
     firstName: '',
@@ -173,18 +178,25 @@ export function CheckoutClient() {
   useEffect(() => {
     Promise.all([
       getShippingMethods(),
-      fetch('/api/processing-fees').then(res => res.json()).catch(() => ({}))
-    ]).then(([methods, data]) => {
+      fetch('/api/processing-fees').then(res => res.json()).catch(() => ({})),
+      getPaymentGatewaySettings().catch(() => [])
+    ]).then(([methods, data, gateways]) => {
       setAvailableShippingMethods(methods)
       if (methods.length > 0) {
         setShippingMethod(methods[0].method)
       }
-      
+
       if (data?.docs) {
         const active = data.docs.filter((f: any) => f.isActive && !f.isOptional)
         setActiveFees(active)
       }
-      
+
+      if (gateways && gateways.length > 0) {
+        setGatewaySettings(gateways)
+        const firstEnabled = gateways.find((g: any) => g.enabled)
+        if (firstEnabled) setSelectedPaymentMethod(firstEnabled.key as any)
+      }
+
       setDataLoaded(true)
     }).catch(() => {
       setDataLoaded(true)
@@ -535,6 +547,108 @@ export function CheckoutClient() {
     }
   }
 
+  // Manual-confirmation flow, same as Zelle: order is placed as pending, and the team follows
+  // up with the customer directly (email/SMS) with the crypto payment address/instructions.
+  // No payment gateway API call here — an admin marks the order paid once payment is confirmed.
+  const handleDataOptPlaceOrder = async () => {
+    setAttemptedSubmit(true)
+    if (!formData.email || !formData.firstName || !formData.address || !formData.city || !formData.state || !formData.zip || !formData.phone) {
+      toast.error(t('fillRequiredFieldsOrder'))
+      return
+    }
+
+    setIsProcessing(true)
+
+    try {
+      const { createPayloadOrder } = await import('./actions')
+      const orderRes = await createPayloadOrder(
+        items, shippingMethod, appliedCoupon?.code, isRedeemingPoints,
+        { ...formData, email: user?.email || formData.email },
+        'dataopt_pending',
+        user?.id as string,
+        'dataopt',
+        selectedAddressId === 'new'
+      )
+
+      if (orderRes.error || !orderRes.orderId) {
+        toast.error(orderRes.error || t('freeOrderInitFailed'))
+        if ((orderRes as any).priceChanged && (orderRes as any).updatedItems) {
+          useCartStore.getState().setItems((orderRes as any).updatedItems)
+        }
+        setIsProcessing(false)
+        return
+      }
+
+      toast.success(t('orderSuccessRedirecting'))
+      useCartStore.getState().clear()
+      window.location.href = `/order-confirmation/${orderRes.orderId}`
+    } catch (e: any) {
+      toast.error(t('unexpectedError'))
+      setIsProcessing(false)
+    }
+  }
+
+  // Visual chrome (icon/badges) + submit handler for each payment method — the actual title
+  // and description text is editable in Payload (Payment Gateway Settings) and falls back to
+  // these defaults when an admin hasn't overridden them. Which methods render, and in what
+  // order, comes from gatewaySettings.
+  const GATEWAY_META: Record<string, { labelContent: (selected: boolean, title: string) => React.ReactNode; defaultTitle: string; defaultDescription: string; iconBox?: React.ReactNode; handler: () => void }> = {
+    circoflows: {
+      handler: handleCircoFlowsPlaceOrder,
+      defaultTitle: t('payWithCard'),
+      defaultDescription: t('circoflowsCheckoutNote'),
+      labelContent: (selected, title) => (
+        <span className={`text-sm font-bold transition-colors flex items-center gap-2 ${selected ? 'text-black' : 'text-gray-700'}`}>
+          <CreditCard size={14} className="text-gray-400" />
+          {title}
+          <div className="flex gap-1.5 ml-2">
+            <span className="px-1.5 py-0.5 border border-gray-200 bg-white rounded shadow-sm text-[8px] font-black italic text-blue-900 tracking-wider">VISA</span>
+            <span className="px-1.5 py-0.5 border border-gray-200 bg-white rounded shadow-sm text-[8px] font-bold text-red-600 tracking-wider">MC</span>
+          </div>
+        </span>
+      ),
+    },
+    zelle: {
+      handler: handleZellePlaceOrder,
+      defaultTitle: 'Zelle',
+      defaultDescription: t('zelleCheckoutNote'),
+      labelContent: (selected, title) => (
+        <span className={`text-sm font-bold transition-colors flex items-center gap-2 ${selected ? 'text-black' : 'text-gray-700'}`}>
+          <Wallet size={14} className="text-purple-600" />
+          {title}
+          <span className="px-1.5 py-0.5 border border-gray-200 bg-[#741acb] rounded shadow-sm text-[8px] font-black text-white tracking-widest ml-2">Z</span>
+        </span>
+      ),
+    },
+    stripe_link: {
+      handler: handleStripeLinkPlaceOrder,
+      defaultTitle: 'Stripe (Custom Payment Link)',
+      defaultDescription: 'Secure payment via an emailed Stripe link.',
+      labelContent: (selected, title) => (
+        <span className={`text-sm font-bold transition-colors flex items-center gap-2 ${selected ? 'text-black' : 'text-gray-700'}`}>
+          <CreditCard size={14} className="text-gray-400" />
+          {title}
+        </span>
+      ),
+    },
+    dataopt: {
+      handler: handleDataOptPlaceOrder,
+      defaultTitle: 'Pay with Cryptocurrency',
+      defaultDescription: 'Place your order now — our team will get back to you with the cryptocurrency payment address and instructions via email or SMS to complete your purchase.',
+      iconBox: (
+        <div className="flex items-center justify-center w-9 h-9 rounded-[10px] bg-emerald-100 shrink-0">
+          <Bitcoin size={18} className="text-emerald-700" />
+        </div>
+      ),
+      labelContent: (selected, title) => (
+        <span className={`text-sm font-bold transition-colors ${selected ? 'text-black' : 'text-gray-700'}`}>
+          {title}
+        </span>
+      ),
+    },
+  }
+  const enabledGateways = gatewaySettings.filter(g => g.enabled && GATEWAY_META[g.key])
+
   useEffect(() => {
     if (storedCouponCode && !isVerifyingCoupon) {
       handleApplyCoupon(undefined, storedCouponCode)
@@ -677,7 +791,7 @@ export function CheckoutClient() {
                             <Sparkles size={14} />
                           </div>
                           <div className="flex flex-col">
-                            <span className={`text-sm font-bold ${isRedeemingPoints ? 'text-amber-700' : 'text-ink'}`}>HB Points</span>
+                            <span className={`text-sm font-bold ${isRedeemingPoints ? 'text-amber-700' : 'text-ink'}`}>CA Points</span>
                             <span className="text-xs font-medium text-ink/50">{t('youHavePoints', { points: Number(availablePoints.toFixed(2)) })}</span>
                           </div>
                         </div>
@@ -1053,93 +1167,40 @@ export function CheckoutClient() {
                 ) : (
                   <div className="flex flex-col gap-4">
                     <div className="flex flex-col gap-3">
-                      {ENABLE_CIRCOFLOWS && (
-                        <label className={`relative flex items-center justify-between p-5 rounded-[12px] border transition-all duration-200 ease-in-out cursor-pointer overflow-hidden ${
-                          selectedPaymentMethod === 'circoflows' ? 'border-black bg-[#fafafa] shadow-md ring-1 ring-black' : 'border-gray-200 bg-white hover:border-gray-300 shadow-sm'
-                        }`}>
-                          <div className="flex items-center gap-4 relative z-10">
-                            <input
-                              type="radio"
-                              name="paymentMethod"
-                              value="circoflows"
-                              className="sr-only"
-                              checked={selectedPaymentMethod === 'circoflows'}
-                              onChange={() => setSelectedPaymentMethod('circoflows')}
-                            />
-                            <div className={`w-5 h-5 rounded-full border flex items-center justify-center shrink-0 transition-colors duration-200 ${selectedPaymentMethod === 'circoflows' ? 'border-black bg-black' : 'border-gray-300 bg-white'}`}>
-                              {selectedPaymentMethod === 'circoflows' && <div className="w-2 h-2 bg-white rounded-full shadow-sm animate-in zoom-in duration-200" />}
+                      {enabledGateways.map((g) => {
+                        const meta = GATEWAY_META[g.key]
+                        const selected = selectedPaymentMethod === g.key
+                        const title = g.title || meta.defaultTitle
+                        const description = g.description || meta.defaultDescription
+                        return (
+                          <label key={g.key} className={`relative flex items-center justify-between p-5 rounded-[12px] border transition-all duration-200 ease-in-out cursor-pointer overflow-hidden ${
+                            selected ? 'border-black bg-[#fafafa] shadow-md ring-1 ring-black' : 'border-gray-200 bg-white hover:border-gray-300 shadow-sm'
+                          }`}>
+                            <div className="flex items-center gap-4 relative z-10">
+                              <input
+                                type="radio"
+                                name="paymentMethod"
+                                value={g.key}
+                                className="sr-only"
+                                checked={selected}
+                                onChange={() => setSelectedPaymentMethod(g.key as any)}
+                              />
+                              <div className={`w-5 h-5 rounded-full border flex items-center justify-center shrink-0 transition-colors duration-200 ${selected ? 'border-black bg-black' : 'border-gray-300 bg-white'}`}>
+                                {selected && <div className="w-2 h-2 bg-white rounded-full shadow-sm animate-in zoom-in duration-200" />}
+                              </div>
+                              {meta.iconBox}
+                              <div className="flex flex-col">
+                                {meta.labelContent(selected, title)}
+                                <span className="text-xs text-gray-500 mt-0.5">{description}</span>
+                              </div>
                             </div>
-                            <div className="flex flex-col">
-                              <span className={`text-sm font-bold transition-colors flex items-center gap-2 ${selectedPaymentMethod === 'circoflows' ? 'text-black' : 'text-gray-700'}`}>
-                                <CreditCard size={14} className="text-gray-400" />
-                                {t('payWithCard')}
-                                <div className="flex gap-1.5 ml-2">
-                                  <span className="px-1.5 py-0.5 border border-gray-200 bg-white rounded shadow-sm text-[8px] font-black italic text-blue-900 tracking-wider">VISA</span>
-                                  <span className="px-1.5 py-0.5 border border-gray-200 bg-white rounded shadow-sm text-[8px] font-bold text-red-600 tracking-wider">MC</span>
-                                </div>
-                              </span>
-                              <span className="text-xs text-gray-500 mt-0.5">{t('circoflowsCheckoutNote')}</span>
-                            </div>
-                          </div>
-                        </label>
-                      )}
-                      <label className={`relative flex items-center justify-between p-5 rounded-[12px] border transition-all duration-200 ease-in-out cursor-pointer overflow-hidden ${
-                        selectedPaymentMethod === 'zelle' ? 'border-black bg-[#fafafa] shadow-md ring-1 ring-black' : 'border-gray-200 bg-white hover:border-gray-300 shadow-sm'
-                      }`}>
-                        <div className="flex items-center gap-4 relative z-10">
-                          <input 
-                            type="radio" 
-                            name="paymentMethod" 
-                            value="zelle" 
-                            className="sr-only" 
-                            checked={selectedPaymentMethod === 'zelle'} 
-                            onChange={() => setSelectedPaymentMethod('zelle')} 
-                          />
-                          <div className={`w-5 h-5 rounded-full border flex items-center justify-center shrink-0 transition-colors duration-200 ${selectedPaymentMethod === 'zelle' ? 'border-black bg-black' : 'border-gray-300 bg-white'}`}>
-                            {selectedPaymentMethod === 'zelle' && <div className="w-2 h-2 bg-white rounded-full shadow-sm animate-in zoom-in duration-200" />}
-                          </div>
-                          <div className="flex flex-col">
-                            <span className={`text-sm font-bold transition-colors flex items-center gap-2 ${selectedPaymentMethod === 'zelle' ? 'text-black' : 'text-gray-700'}`}>
-                              <Wallet size={14} className="text-purple-600" />
-                              Zelle
-                              <span className="px-1.5 py-0.5 border border-gray-200 bg-[#741acb] rounded shadow-sm text-[8px] font-black text-white tracking-widest ml-2">Z</span>
-                            </span>
-                            <span className="text-xs text-gray-500 mt-0.5">{t('zelleCheckoutNote')}</span>
-                          </div>
-                        </div>
-                      </label>
-
-                      <label className={`relative flex items-center justify-between p-5 rounded-[12px] border transition-all duration-200 ease-in-out cursor-pointer overflow-hidden ${
-                        selectedPaymentMethod === 'stripe_link' ? 'border-black bg-[#fafafa] shadow-md ring-1 ring-black' : 'border-gray-200 bg-white hover:border-gray-300 shadow-sm'
-                      }`}>
-                        <div className="flex items-center gap-4 relative z-10">
-                          <input 
-                            type="radio" 
-                            name="paymentMethod" 
-                            value="stripe_link" 
-                            className="sr-only" 
-                            checked={selectedPaymentMethod === 'stripe_link'} 
-                            onChange={() => setSelectedPaymentMethod('stripe_link')} 
-                          />
-                          <div className={`w-5 h-5 rounded-full border flex items-center justify-center shrink-0 transition-colors duration-200 ${selectedPaymentMethod === 'stripe_link' ? 'border-black bg-black' : 'border-gray-300 bg-white'}`}>
-                            {selectedPaymentMethod === 'stripe_link' && <div className="w-2 h-2 bg-white rounded-full shadow-sm animate-in zoom-in duration-200" />}
-                          </div>
-                          <div className="flex flex-col">
-                            <span className={`text-sm font-bold transition-colors flex items-center gap-2 ${selectedPaymentMethod === 'stripe_link' ? 'text-black' : 'text-gray-700'}`}>
-                              <CreditCard size={14} className="text-gray-400" />
-                              Stripe (Custom Payment Link)
-                            </span>
-                            <span className="text-xs text-gray-500 mt-0.5">Secure payment via an emailed Stripe link.</span>
-                          </div>
-                        </div>
-                      </label>
+                          </label>
+                        )
+                      })}
                     </div>
 
                     <div className="w-full mt-6">
-                      <Button onClick={
-                        selectedPaymentMethod === 'circoflows' ? handleCircoFlowsPlaceOrder :
-                        selectedPaymentMethod === 'zelle' ? handleZellePlaceOrder : handleStripeLinkPlaceOrder
-                      } disabled={isProcessing} size="lg" className="w-full h-14 rounded-[12px] bg-black font-bold text-[11px] tracking-[0.2em] uppercase text-white shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all group">
+                      <Button onClick={GATEWAY_META[selectedPaymentMethod]?.handler || handleZellePlaceOrder} disabled={isProcessing} size="lg" className="w-full h-14 rounded-[12px] bg-black font-bold text-[11px] tracking-[0.2em] uppercase text-white shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all group">
                         {isProcessing ? <Loader2 className="animate-spin" /> : t('placeOrder')}
                       </Button>
                     </div>
@@ -1234,7 +1295,7 @@ export function CheckoutClient() {
                         <Sparkles size={14} />
                       </div>
                       <div className="flex flex-col">
-                        <span className={`text-[11px] font-bold uppercase tracking-widest ${isRedeemingPoints ? 'text-amber-700' : 'text-black'}`}>HB Points</span>
+                        <span className={`text-[11px] font-bold uppercase tracking-widest ${isRedeemingPoints ? 'text-amber-700' : 'text-black'}`}>CA Points</span>
                         <span className="text-[10px] font-bold uppercase tracking-widest text-gray-500 mt-1">{t('youHavePointsWithValue', { points: Number(availablePoints.toFixed(2)), value: availablePoints.toFixed(2) })}</span>
                       </div>
                     </div>

@@ -21,12 +21,6 @@ export async function GET(req: NextRequest) {
       ? searchParams.get('description')?.slice(0, 120) // Shorter limit for description
       : 'Research-grade excellence. Dedicated to purity.'
 
-    const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certifiedaminos.com'
-
-    // We must use a PNG or JPG because OG image generator does not support WebP —
-    // og-background.png is a pre-converted copy of HelixBio Images/multiple-vial.webp.
-    const bgUrl = `${serverUrl}/HelixBio%20Images/og-background.png`
-
     return new ImageResponse(
       (
         <div
@@ -37,26 +31,12 @@ export async function GET(req: NextRequest) {
             flexDirection: 'column',
             justifyContent: 'space-between',
             backgroundColor: '#050505',
-            backgroundImage: `url(${bgUrl})`,
-            backgroundSize: '100% 100%',
-            backgroundPosition: 'center',
+            backgroundImage: 'radial-gradient(circle at 15% 15%, #1a1a1a 0%, #050505 55%)',
             fontFamily: 'sans-serif',
             padding: '80px',
             position: 'relative'
           }}
         >
-          {/* Dark Overlay */}
-          <div
-            style={{
-              position: 'absolute',
-              top: 0,
-              left: 0,
-              right: 0,
-              bottom: 0,
-              backgroundColor: 'rgba(0, 0, 0, 0.75)',
-              zIndex: 1,
-            }}
-          />
 
           <div
             style={{
@@ -138,7 +118,7 @@ export async function GET(req: NextRequest) {
                   letterSpacing: '0.02em',
                 }}
               >
-                certifiedaminos.com
+                certified-aminos.com
               </div>
             </div>
           </div>

@@ -112,7 +112,7 @@ export default async function OrderConfirmationPage({ params }: { params: Promis
         variant: displayVariant, 
         quantity: item.quantity,
         price: typeof item.price === 'number' ? item.price : (productData?.price || productData?.basePrice || 0),
-        image: (variantImageUrl || productData?.images?.[0]?.image?.url || productData?.images?.[0]?.url || '/HelixBio Images/featured-research-2.webp').replace(/ /g, '%20')
+        image: (variantImageUrl || productData?.images?.[0]?.image?.url || productData?.images?.[0]?.url || '/brand-images/hero_vials_lab.jpg').replace(/ /g, '%20')
      }
   })
 

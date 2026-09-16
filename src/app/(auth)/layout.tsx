@@ -8,7 +8,7 @@ import '@/app/globals.css'
 const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID
 
 export const metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SERVER_URL || 'https://certifiedaminos.com'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SERVER_URL || 'https://certified-aminos.com'),
   title: 'Certified Aminos',
   description: 'Research-Grade Peptide Compounds',
 }

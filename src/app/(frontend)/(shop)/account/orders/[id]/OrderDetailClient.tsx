@@ -46,7 +46,7 @@ export function OrderDetailClient({ order }: OrderDetailProps) {
       const product = item.product || item.productSnapshot || {}
       if (product.id) {
         const title = product.title || product.name || t('unknownProduct')
-        const imageUrl = (product.images?.[0]?.image?.url || product.images?.[0]?.url || '/HelixBio Images/featured-research-2.webp').replace(/ /g, '%20')
+        const imageUrl = (product.images?.[0]?.image?.url || product.images?.[0]?.url || '/brand-images/hero_vials_lab.jpg').replace(/ /g, '%20')
         const price = typeof item.price === 'number' ? item.price : (product.basePrice || product.price || 0)
         addItem(
           { id: product.id, name: title, imageUrl, slug: product.slug },
@@ -191,7 +191,7 @@ export function OrderDetailClient({ order }: OrderDetailProps) {
                 const title = product.title || product.name || t('unknownProduct')
                 const price = (typeof item.price === 'number' ? item.price : (product.basePrice || product.price || 0))
                 let displayVariant = item.variant || t('standardVariant');
-                let imageUrl = product.images?.[0]?.image?.url || product.images?.[0]?.url || '/HelixBio Images/featured-research-2.webp'
+                let imageUrl = product.images?.[0]?.image?.url || product.images?.[0]?.url || '/brand-images/hero_vials_lab.jpg'
 
                 if (product?.variants?.length) {
                   const matchedVariant = product.variants.find((v: any) => v.sku === item.variant || (item.variant && item.variant.includes(v.sku)))

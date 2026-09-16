@@ -60,7 +60,7 @@ export async function generateMetadata({
   const title = `${post.title} | Certified Aminos`
   const description = post.excerpt || ''
   const path = `/${slug}`
-  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certifiedaminos.com'
+  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certified-aminos.com'
   const imageUrl = toAbsoluteUrl(baseUrl, getFeaturedImageUrl(post))
   const payload = await getPayload({ config: configPromise })
   const authorProfile = await payload.findGlobal({ slug: 'blog-author-profile' })
@@ -170,7 +170,7 @@ export default async function BlogPostPage({
 
   const { first: introContent, rest: restContent } = splitFirstParagraph(post.content)
 
-  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certifiedaminos.com'
+  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certified-aminos.com'
   const postUrl = `${baseUrl}/${slug}`
   const isoDate = post.publishedAt ? new Date(post.publishedAt).toISOString() : new Date(post.createdAt).toISOString()
 

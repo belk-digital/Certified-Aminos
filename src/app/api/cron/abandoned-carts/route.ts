@@ -45,7 +45,7 @@ export async function GET(req: Request) {
           const firstName = user.firstName || 'there'
 
           await resend.emails.send({
-            from: process.env.RESEND_FROM_EMAIL || 'Certified Aminos <support@certifiedaminos.com>',
+            from: process.env.RESEND_FROM_EMAIL || 'Certified Aminos <support@certified-aminos.com>',
             to: user.email,
             subject: 'Did you forget something in your cart?',
             html: `<!DOCTYPE html>
@@ -76,7 +76,7 @@ export async function GET(req: Request) {
     <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="container">
       <tr>
         <td class="header">
-          <a href="https://certifiedaminos.com" style="text-decoration: none;">
+          <a href="https://certified-aminos.com" style="text-decoration: none;">
             <span style="font-family: Arial, sans-serif; font-size: 24px; font-weight: 700; letter-spacing: 2px; color: #ffffff; text-transform: uppercase;">Certified Aminos</span>
           </a>
         </td>
@@ -91,7 +91,7 @@ export async function GET(req: Request) {
           <p>
             Return to the lab to secure your order and resume your research.
           </p>
-          <a href="https://certifiedaminos.com/cart" class="btn">Return to Cart</a>
+          <a href="https://certified-aminos.com/cart" class="btn">Return to Cart</a>
         </td>
       </tr>
       <tr>

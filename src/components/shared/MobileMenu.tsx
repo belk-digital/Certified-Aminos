@@ -159,7 +159,7 @@ export function MobileMenu({ isOpen, onClose, isLoggedIn = false, onSearchClick,
                       className="snap-center shrink-0 w-[240px] sm:w-[280px] aspect-[4/3] sm:aspect-video rounded-[20px] overflow-hidden relative group shadow-[0_4px_12px_rgba(0,0,0,0.05)] active:scale-95 transition-transform"
                     >
                       <Image 
-                        src={`/HelixBio Images/category-${(index % 8) + 1}.webp`} 
+                        src={`/brand-images/category-${(index % 8) + 1}.webp`} 
                         alt={cat.name} 
                         fill 
                         className="object-cover"

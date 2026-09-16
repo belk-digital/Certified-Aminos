@@ -44,7 +44,7 @@ export function AffiliatesCommissionBanner({ onApplyClick }: { onApplyClick: (e:
               <div className="w-[200px] h-[200px] border-2 border-blue-400/50 rounded-full absolute"></div>
               <div className="w-24 h-24 bg-blue-500 rounded-full blur-xl absolute opacity-50"></div>
               <div className="w-[220px] h-[220px] absolute rounded-full overflow-hidden shadow-2xl z-10 border border-white/20">
-                <img src="/HelixBio Images/affiliate-commission-badge.jpg" alt="Commission Badge" className="w-full h-full object-cover opacity-90" />
+                <img src="/brand-images/affiliate-commission-badge.jpg" alt="Commission Badge" className="w-full h-full object-cover opacity-90" />
               </div>
             </div>
           </div>

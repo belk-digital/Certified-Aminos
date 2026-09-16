@@ -2,7 +2,7 @@ import { emailLayout } from './emailLayout'
 
 export async function generateWelcomeEmail(user: any): Promise<string> {
   const name = user.firstName || 'there'
-  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certifiedaminos.com'
+  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certified-aminos.com'
   
   const content = `
     <!-- Huge Header -->
@@ -37,7 +37,7 @@ export async function generateWelcomeEmail(user: any): Promise<string> {
           <p style="margin: 4px 0 0 0; font-size: 14px; font-weight: 800; color: #9CA3AF; font-family: monospace;">03</p>
         </td>
         <td valign="top">
-          <h3 style="margin: 0 0 8px 0; font-size: 18px; color: #0A0A0A; font-weight: 800; letter-spacing: -0.5px;">Earn HB Points</h3>
+          <h3 style="margin: 0 0 8px 0; font-size: 18px; color: #0A0A0A; font-weight: 800; letter-spacing: -0.5px;">Earn CA Points</h3>
           <p style="margin: 0; font-size: 15px; color: #6B7280; line-height: 1.6;">Get rewarded on every single purchase for future discounts.</p>
         </td>
       </tr>
@@ -56,7 +56,7 @@ export async function generateWelcomeEmail(user: any): Promise<string> {
   return emailLayout({
     title: 'Welcome to Certified Aminos',
     content,
-    heroImage: 'https://pub-0b0f2f98407442588d161ae09cb84207.r2.dev/email-assets/ChatGPT%20Image%20Jul%2020%2C%202026%2C%2005_23_31%20AM.webp',
+    heroImage: '/brand-images/hero_vials_lab.jpg',
     serverUrl
   })
 }

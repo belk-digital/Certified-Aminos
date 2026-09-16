@@ -86,9 +86,9 @@ export async function POST(req: Request) {
 
     // Send to Support Email with Attachment
     await sendTrackedEmail(payload, {
-      from: `"${name} (Military)" <forms@certifiedaminos.com>`,
+      from: `"${name} (Military)" <forms@certified-aminos.com>`,
       replyTo: email,
-      to: 'support@certifiedaminos.com',
+      to: 'support@certified-aminos.com',
       subject: `[Military Discount] Verification Request: ${name}`,
       html: emailHtml,
       attachments: [

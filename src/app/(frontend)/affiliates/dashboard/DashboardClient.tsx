@@ -53,7 +53,7 @@ export function DashboardClient({ userName = 'Partner', tier = 'standard', stats
 
   // Formatting helpers
   const formatMoney = (dollars: number) => `$${dollars.toFixed(2)}`
-  const [baseUrl, setBaseUrl] = useState('https://certifiedaminos.com')
+  const [baseUrl, setBaseUrl] = useState('https://certified-aminos.com')
   
   React.useEffect(() => {
     setBaseUrl(window.location.origin)

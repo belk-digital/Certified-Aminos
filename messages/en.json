@@ -199,8 +199,8 @@
     "designedBy": "Designed & Developed by"
   },
   "home": {
-    "metaTitle": "Premium Research Peptides USA | 99% Purity | Certified Aminos",
-    "metaDescription": "Shop premium research peptides in the USA with verified purity, mass-spec testing, and complete COA documentation. Explore the Certified Aminos catalog now.",
+    "metaTitle": "Certified Aminos | US Research Peptides, HPLC-Verified",
+    "metaDescription": "Certified Aminos supplies HPLC- and mass-spec-verified research peptides from the USA, with a batch-specific COA on every order. Browse the catalog.",
     "hero": {
       "viewPeptidesShort": "View Peptides",
       "viewPeptidesLong": "View Research Peptides",
@@ -314,8 +314,8 @@
       "ctaText": "VIEW COA LIBRARY"
     },
     "difference": {
-      "titleLine1": "Vitality",
-      "titleLine2": "Collection.",
+      "titleLine1": "The Longevity",
+      "titleLine2": "Lineup.",
       "description": "A curated line built around longevity, recovery, and everyday research support, featuring some of our most-requested research compounds.",
       "ctaText": "View COA Library",
       "vialAlt": "Certified Aminos Vitality Collection research peptide vials.",
@@ -349,44 +349,44 @@
       "titleLine2": "ASKED",
       "items": {
         "ruoPeptide": {
-          "question": "What does \"Research Use Only\" (RUO) mean for these peptides?",
-          "answer": "Research Use Only means a compound is intended strictly for laboratory and scientific research, not for human or veterinary consumption, diagnosis, or treatment. Certified Aminos peptides are labeled and sold on this basis and are not evaluated by the FDA for safety or efficacy in those other contexts."
+          "question": "What does the \"Research Use Only\" (RUO) label actually restrict?",
+          "answer": "It restricts the compound to laboratory and scientific research settings only — it is not intended for human or animal consumption, diagnosis, or treatment. Every peptide Certified Aminos lists is manufactured and sold under that classification, and none of them have been reviewed by the FDA for use outside a research context."
         },
         "researchGradePurity": {
-          "question": "What is considered a research-grade peptide?",
-          "answer": "A research-grade peptide is synthesized and tested to a documented purity standard, typically 98% or higher, with identity and concentration confirmed through HPLC and mass spectrometry rather than estimated. It is sold with supporting batch documentation for laboratory use, not formulated or labeled for clinical administration."
+          "question": "What qualifies a peptide as \"research-grade\"?",
+          "answer": "Research-grade status comes from documented testing, not a marketing claim: the batch is run through HPLC and mass spectrometry to confirm both purity (generally 98%+) and molecular identity, and that data ships with the product rather than being estimated after the fact. It's prepared for bench use, not clinical dosing."
         },
         "coaContents": {
-          "question": "What should a peptide's certificate of analysis (COA) include?",
-          "answer": "A complete COA lists the batch or lot number, purity percentage as measured by HPLC, molecular weight confirmation by mass spectrometry, and the date of testing. Matching the batch number on the COA to the vial label confirms the document corresponds to the exact vial received."
+          "question": "What data does a peptide's Certificate of Analysis need to show?",
+          "answer": "A usable COA states the lot number, the HPLC-measured purity percentage, mass-spec confirmation of molecular weight, and the test date. Before trusting it, check that the lot number printed on the document matches the one on your vial — that's what ties the paperwork to the physical sample in your hand."
         },
         "massSpecIdentity": {
-          "question": "How do you verify peptide identity beyond mass spectrometry?",
-          "answer": "Mass spectrometry confirms molecular weight, while HPLC separately verifies purity by isolating the target compound from any related impurities. Used together, the two methods cross-check both identity and purity rather than relying on a single test to carry the whole result."
+          "question": "Why run both mass spectrometry and HPLC instead of just one test?",
+          "answer": "They check different things: mass spec confirms the compound's molecular weight, while HPLC isolates it from related impurities to establish purity. Neither test alone tells the full story, which is why a credible batch report includes both rather than leaning on a single number."
         },
         "lyophilizedStorage": {
-          "question": "What storage conditions are recommended for lyophilized peptides?",
-          "answer": "Unreconstituted (lyophilized) peptides are generally stored frozen or refrigerated, protected from light and moisture, until they're needed for a study. Once reconstituted, most peptides should stay refrigerated and be used within the window noted on the product page or COA."
+          "question": "How should lyophilized peptides be stored before and after reconstitution?",
+          "answer": "Before use, keep unreconstituted vials frozen or refrigerated and shielded from light and moisture. Once a peptide is reconstituted, refrigerate it and use it within the timeframe listed on the product page or COA — that window varies by compound."
         },
         "assayDevelopment": {
-          "question": "How do peptide reagents support laboratory research studies?",
-          "answer": "Research peptides serve as standardized reagents in cellular, biochemical, and pharmacological studies, giving researchers a consistent, purity-verified compound to test against a defined protocol. Batch-to-batch consistency, backed by COA documentation, is what makes results comparable across a study."
+          "question": "What role do research peptides play in lab study design?",
+          "answer": "They function as a controlled reagent — a purity-verified input researchers can test against a defined protocol in cellular, biochemical, or pharmacological work. What makes results comparable from one batch to the next is consistency, which is exactly what COA documentation is meant to establish."
         },
         "commonImpurities": {
-          "question": "What are common impurities in synthetic peptides?",
-          "answer": "Typical impurities include truncated or deletion sequences from incomplete synthesis cycles, residual solvents, and trace amounts of related by-product peptides. HPLC purity testing is specifically designed to detect and quantify these impurities rather than assume a batch is clean."
+          "question": "What kinds of impurities show up in synthetic peptide batches?",
+          "answer": "The usual suspects are truncated sequences left over from incomplete synthesis cycles, residual solvent, and trace related-compound by-products. HPLC testing exists specifically to catch and measure these rather than take a clean batch on faith."
         },
         "receptorBindingStudies": {
-          "question": "How do peptide reagents support receptor-binding studies?",
-          "answer": "In receptor-binding research, a peptide's purity and exact molecular identity directly affect how reliably it interacts with a target receptor in an assay. Verified purity and confirmed molecular weight reduce the risk that an impurity, rather than the compound itself, is driving an observed result."
+          "question": "Why does peptide purity matter for receptor-binding assays specifically?",
+          "answer": "In a binding assay, an impure sample can produce results driven by a contaminant rather than the compound under study. Confirmed identity and measured purity are what let a researcher trust that an observed interaction reflects the peptide itself."
         },
         "vendorQuestions": {
-          "question": "What questions should I ask about a peptide supplier?",
-          "answer": "Ask whether every batch is independently tested, whether the COA is available before you order, what purity threshold the supplier guarantees, and how orders are shipped and stored in transit. A supplier that answers all four clearly and documents them is easier to evaluate than one that only advertises purity claims."
+          "question": "What should I ask a peptide supplier before ordering from them?",
+          "answer": "Four questions cover most of it: Is every batch independently tested? Can I see the COA before I buy? What purity threshold do you guarantee? How is the order shipped and stored in transit? A supplier willing to answer all four with documentation, not just a claim on the label, is worth trusting more than one that isn't."
         },
         "supplierLegitimacy": {
-          "question": "How can I tell if a research peptide supplier is legitimate?",
-          "answer": "Look for third-party batch testing rather than in-house-only claims, a COA you can review before purchase, transparent research-use labeling, and clear company information rather than an anonymous storefront. Consistency between what's advertised and what the documentation actually shows is the strongest signal."
+          "question": "How do I tell a legitimate research peptide supplier from one that isn't?",
+          "answer": "Third-party (not just in-house) batch testing, a COA available before purchase, honest research-use-only labeling, and real, findable company information are the four signals worth checking. If what's advertised on the page matches what the documentation actually shows, that consistency is the strongest indicator you're dealing with a legitimate supplier."
         }
       }
     },
@@ -433,7 +433,7 @@
       "eyebrow": "MILITARY DISCOUNT",
       "titleLine1": "EXCLUSIVE DISCOUNT OF",
       "titleLine2": "FOR OUR HEROES",
-      "description": "Active-duty military, veterans, and first responders can request 30% off a research peptide order as a standing thank-you from the Certified Aminos team. Eligibility is verified at checkout.",
+      "description": "Certified Aminos offers 30% off research peptide orders to active-duty service members, veterans, and first responders as an ongoing thank-you. Status is confirmed before the discount is issued.",
       "privacyNoticeTitle": "Privacy & Security Notice",
       "privacyNoticeText": "For your protection, please <redact>redact (black out)</redact> sensitive information like your SSN. Documents are securely encrypted for review and <destroyed>permanently destroyed</destroyed> from our servers immediately upon approval.",
       "formTitle": "Verify Status",
@@ -475,8 +475,8 @@
     },
     "whatSetsUsApart": {
       "eyebrow": "Advantage",
-      "titleLine1": "What Sets",
-      "titleLine2": "Us Apart.",
+      "titleLine1": "Built On",
+      "titleLine2": "Documented Proof.",
       "description": "<strong>Certified Aminos</strong> specializes in high-purity synthetic peptides engineered specifically for research laboratory environments. Our commitment to analytical rigor and documentation transparency addresses the core needs of scientific research:",
       "clickCursorLine1": "CLICK ON",
       "clickCursorLine2": "THE NODES",
@@ -484,22 +484,22 @@
       "viewProtocolData": "View Protocol Data",
       "items": {
         "purityStandards": {
-          "title": "Verified Purity Standards",
+          "title": "Documented Purity Thresholds",
           "description": "Every batch is held to a documented purity threshold before it is listed, rather than an unverified marketing claim.",
           "shortLabel": "Verified"
         },
         "massSpecValidation": {
-          "title": "Mass Spectrometry Validation",
+          "title": "Dual-Method Identity Testing",
           "description": "Molecular identity is confirmed by mass spectrometry alongside HPLC purity testing, not by either method alone.",
           "shortLabel": "Mass"
         },
         "comprehensiveDocs": {
-          "title": "Comprehensive Documentation",
+          "title": "Batch-Level Paper Trail",
           "description": "A batch-specific certificate of analysis is available for every product, so purity and identity can be checked independently.",
           "shortLabel": "Comprehensive"
         },
         "researchOnly": {
-          "title": "Research-Only Positioning",
+          "title": "Strictly Research-Use Labeling",
           "description": "Certified Aminos markets exclusively to the research community, with RUO and not-for-human-consumption labeling kept visible, not buried in fine print.",
           "shortLabel": "Research-Only"
         }
@@ -510,36 +510,36 @@
       "clickToViewLine2": "To",
       "clickToViewLine3": "View",
       "eyebrow": "Why Choose Us",
-      "titleLine1": "Transparency",
-      "titleLine2": "You Can Trust.",
+      "titleLine1": "Proof, Not",
+      "titleLine2": "Just Promises.",
       "items": {
         "hplcPurity": {
           "tag": "Trusted & Verified",
-          "title": "HPLC-Verified Purity",
+          "title": "Chromatography-Confirmed Purity",
           "description": "High-performance liquid chromatography testing confirms the purity percentage published for every batch, rather than an assumed or estimated figure."
         },
         "msIdentity": {
           "tag": "Test It Free",
-          "title": "MS Identity Confirmation",
+          "title": "Mass Spec Cross-Check",
           "description": "Mass spectrometry independently confirms molecular weight and identity, cross-checking the HPLC purity result against the compound itself."
         },
         "coaDocumentation": {
           "tag": "Receptor Agonist Research",
-          "title": "Complete COA Documentation",
+          "title": "COA On Every Order",
           "description": "Every order is backed by a batch-specific certificate of analysis, available to review so purity and identity claims can be verified rather than taken on faith."
         }
       }
     },
     "trustBadges": {
       "eyebrow": "The Certified Aminos Standard",
-      "titleLine1": "ENGINEERED FOR",
-      "titleLine2": "ABSOLUTE PRECISION",
+      "titleLine1": "PRECISION,",
+      "titleLine2": "BY THE NUMBERS",
       "subtitle": "USA-Manufactured. Third-Party Verified.",
       "ctaText": "Discover Quality",
       "description": "Every compound in the Certified Aminos catalog is synthesized to a documented purity standard and verified before it's listed — not estimated, and not left to a marketing claim.",
       "cards": {
         "purity": {
-          "title": "99.1%+ Verified Purity",
+          "title": "99.1%+ Measured Purity",
           "description": "Each batch is independently tested by HPLC to confirm purity above 99.1%, with results published on the batch's certificate of analysis rather than kept in-house.",
           "tag": "USA Verified",
           "microcopy": "Independent HPLC Testing"
@@ -551,7 +551,7 @@
           "microcopy": "Stability Verified Per Batch"
         },
         "dosing": {
-          "title": "Exact Milligram Dosing",
+          "title": "Milligram-Accurate Fill",
           "description": "Vials are formulated to a precise milligram content per unit, confirmed by mass spectrometry, so researchers can calculate concentrations accurately during reconstitution.",
           "tag": "Precision Dosed",
           "microcopy": "Mass Spectrometry Confirmed"
@@ -655,90 +655,90 @@
       "loadingMore": "Loading more...",
       "reachedEndOfCatalog": "You've reached the end of the catalog.",
       "noProductsFound": "No peptides match your current filters",
-      "noProductsFoundDescription": "No peptides match your current filters right now. Try clearing your filters, or check back shortly — our catalog restocks regularly and every batch is COA-verified before it's listed.",
+      "noProductsFoundDescription": "Nothing in the catalog matches that combination of filters at the moment. Clear them and try again, or check back soon — new batches get added regularly, each one COA-verified before it goes live.",
       "clearAllFilters": "Clear All Filters",
       "faqTitle": "Questions",
       "faqDescription": "Common questions about research peptides, ordering, and site standards.",
       "faqs": {
         "availablePeptides": {
-          "question": "What research peptides are available in the Certified Aminos shop?",
-          "answer": "The Certified Aminos shop carries a curated catalog of research-use-only peptides for laboratory study, including BPC-157, TB-500, Semaglutide, Tirzepatide, Ipamorelin, CJC-1295, PT-141, Melanotan II, GHK-Cu, Thymosin Alpha-1, Epithalon, Selank, Semax, and related compounds. Each listing shows current stock status, available vial sizes, and a linked certificate of analysis."
+          "question": "What's in the Certified Aminos catalog?",
+          "answer": "A curated, research-use-only lineup for lab study — BPC-157, TB-500, Semaglutide, Tirzepatide, Ipamorelin, CJC-1295, PT-141, Melanotan II, GHK-Cu, Thymosin Alpha-1, Epithalon, Selank, Semax, and other related compounds. Every listing shows live stock status, the vial sizes on offer, and a link to that batch's certificate of analysis."
         },
         "purityQualityTested": {
-          "question": "Are all Certified Aminos products tested for purity and quality?",
-          "answer": "Yes. Every batch is verified through third-party HPLC and mass spectrometry testing before it is listed for sale, and the resulting certificate of analysis is made available at or before checkout so researchers can confirm purity and identity ahead of ordering."
+          "question": "Is every product here purity-tested before it's sold?",
+          "answer": "Yes — third-party HPLC and mass spectrometry testing happens before a batch is ever listed, and the resulting COA is posted at or before checkout, not after the sale."
         },
         "standardPurityLevels": {
-          "question": "What purity levels are standard for research peptides?",
-          "answer": "Reputable research peptide suppliers report purity of 98% or higher, with many premium compounds tested at 99%. Purity is confirmed by HPLC analysis and disclosed on each batch's certificate of analysis rather than estimated, so researchers can verify the figure independently."
+          "question": "What purity level should I expect from a research peptide?",
+          "answer": "98% or higher is the baseline among suppliers who actually test their product, and a lot of premium compounds land at 99%. What matters is that HPLC confirms the number rather than the listing just asserting it — check the COA rather than take the percentage at face value."
         },
         "interpretCoa": {
-          "question": "How do I interpret the certificate of analysis (COA)?",
-          "answer": "A COA lists the batch number, measured purity by HPLC, molecular weight confirmation by mass spectrometry, and the testing date. Matching the batch number on the vial label to the COA on file confirms that the document corresponds to the specific vial received."
+          "question": "How do I read a certificate of analysis?",
+          "answer": "Look for the batch number, the HPLC purity reading, mass-spec confirmation of molecular weight, and the date it was tested. Cross-check that batch number against the one printed on your vial — if they match, you know the COA actually belongs to what's in your hand."
         },
         "customSynthesis": {
-          "question": "Do you offer custom peptide synthesis for specific research needs?",
-          "answer": "Custom synthesis availability depends on compound, quantity, and lead time. Researchers with a specific sequence or scale requirement should reach out through the shop's support channel to confirm feasibility, pricing, and turnaround before placing a standard order."
+          "question": "Can you synthesize a peptide to a custom spec?",
+          "answer": "Sometimes, depending on the sequence, quantity, and how much lead time you can give. Reach out through support with your requirement before assuming it's off the shelf — we'll confirm feasibility, pricing, and turnaround directly."
         },
         "storageInstructions": {
-          "question": "What are proper storage instructions for research peptides?",
-          "answer": "Lyophilized (unreconstituted) peptides are generally stored frozen or refrigerated, away from light and moisture, until they are needed. Once reconstituted, most peptides should be kept refrigerated and used within the timeframe noted on the product page or COA."
+          "question": "How should research peptides be stored?",
+          "answer": "Keep lyophilized (unreconstituted) vials frozen or refrigerated and out of light until you're ready to use them. After reconstitution, refrigerate and use within the window listed on that product's page or COA — it varies by compound."
         },
         "reconstitution": {
-          "question": "How should I reconstitute lyophilized peptides for laboratory use?",
-          "answer": "Reconstitution typically involves adding bacteriostatic or sterile water slowly down the side of the vial to avoid disturbing the lyophilized powder, then gently swirling rather than shaking. Exact solvent volume varies by compound and is listed on the individual product page."
+          "question": "What's the right way to reconstitute a lyophilized peptide?",
+          "answer": "Add bacteriostatic or sterile water down the inside wall of the vial slowly, then swirl gently rather than shaking — agitation can damage the peptide bonds. The exact volume of solvent depends on the compound and is listed on its product page."
         },
         "shelfLife": {
-          "question": "What is the shelf life of research peptides?",
-          "answer": "Unopened, properly stored lyophilized peptides typically remain stable for one to two years, while reconstituted solutions have a much shorter usable window, often two to four weeks under refrigeration. Product pages and the COA note batch-specific stability guidance."
+          "question": "How long do research peptides last?",
+          "answer": "Stored properly and left unopened, lyophilized peptide is generally stable for one to two years. Once reconstituted, that window shrinks dramatically — often just two to four weeks refrigerated. Batch-specific guidance is on the COA and product page."
         },
         "shippingDamage": {
-          "question": "Can peptides be damaged during shipping or storage?",
-          "answer": "Yes. Heat exposure, repeated freeze-thaw cycles, and prolonged light exposure can all degrade peptide integrity. Certified Aminos ships with cold-chain packaging appropriate to the compound, and researchers should transfer vials to proper storage promptly upon arrival."
+          "question": "Can shipping conditions damage a peptide?",
+          "answer": "Yes — heat, repeated freeze-thaw cycling, and extended light exposure all degrade integrity. Orders ship in cold-chain packaging suited to the compound, but move vials into proper storage as soon as they arrive rather than leaving them on a counter."
         },
         "aliquotAfterReconstitution": {
-          "question": "Should I aliquot peptides after reconstitution?",
-          "answer": "Aliquoting reconstituted peptide into single-use portions reduces repeated freeze-thaw cycling and contamination risk, which helps preserve potency across a longer study. This is standard laboratory practice for any peptide expected to be used across multiple sessions."
+          "question": "Is it worth aliquoting after reconstitution?",
+          "answer": "For anything you'll use across more than one session, yes — splitting into single-use portions avoids repeated freeze-thaw cycles and cuts contamination risk, which keeps potency more consistent over the life of the study."
         },
         "orderDocumentation": {
-          "question": "What documentation comes with laboratory peptide purchases?",
-          "answer": "Each order includes an invoice and access to the batch-specific certificate of analysis. Institutional buyers can additionally request a wholesale account with consolidated invoicing for recurring or purchase-order-based procurement."
+          "question": "What paperwork ships with an order?",
+          "answer": "An invoice and a link to that batch's certificate of analysis, every time. Institutional buyers who need consolidated invoicing for recurring or PO-based purchasing can set up a wholesale account instead of ordering one-off."
         },
         "orderQuantities": {
-          "question": "Can I order research peptides in different quantities?",
-          "answer": "Most compounds are available in multiple vial sizes, and select peptides offer bundle or bulk pricing for larger research studies. Available sizes and quantity-based pricing are shown on each product listing within the shop."
+          "question": "Can I buy in bulk or does every order come as a single vial?",
+          "answer": "Most compounds list multiple vial sizes, and a number of them have bundle or bulk pricing built in for larger studies. Check the individual product listing — sizes and quantity pricing are shown right there."
         },
         "coaBeforeOrdering": {
-          "question": "Are COAs available before ordering to verify product specifications?",
-          "answer": "Yes. Certificates of analysis are linked directly from the product page, so researchers can review purity, batch number, and testing method before completing a purchase rather than waiting until after the order ships."
+          "question": "Can I see the COA before I buy, not just after?",
+          "answer": "Yes — it's linked straight from the product page, so you can check purity, batch number, and method before you commit rather than finding out what you got after it ships."
         },
         "findSpecificPeptides": {
-          "question": "How do I find specific peptides in your catalog?",
-          "answer": "The shop can be browsed by category, such as GLP-1 compounds, tissue-repair peptides, or cognitive research peptides, or searched directly by compound name. Filtering by stock status also narrows results to what is currently available."
+          "question": "What's the fastest way to find a specific compound?",
+          "answer": "Search by name directly, or browse by category — GLP-1, tissue repair, cognitive research, and so on. Stacking a stock-status filter on top narrows it further to what's actually available right now."
         },
         "productPageInfo": {
-          "question": "What information is included on product pages?",
-          "answer": "Each product page lists the compound name, available vial sizes, current price, stock status, a linked certificate of analysis, and relevant handling notes such as recommended storage and reconstitution guidance."
+          "question": "What's actually on a product page?",
+          "answer": "Compound name, the vial sizes we carry, current price, live stock status, a linked COA, and handling notes — storage conditions and reconstitution guidance specific to that peptide."
         },
         "manufacturedInUsa": {
-          "question": "Are all products manufactured in the USA for research compliance?",
-          "answer": "Certified Aminos sources and distributes from within the USA, and each batch is tested domestically before listing. Country-of-origin and testing details for a specific compound can be confirmed on request or within the linked COA."
+          "question": "Is everything sourced and tested domestically?",
+          "answer": "Certified Aminos operates and tests within the USA, with every batch cleared domestically before it's listed. If you need country-of-origin or testing specifics for a particular compound, ask and we'll confirm, or check the linked COA."
         },
         "researchUseOnlyMeaning": {
-          "question": "What does \"Research Use Only\" mean for these products?",
-          "answer": "Research Use Only (RUO) means a compound is intended strictly for laboratory and scientific research, not for human or veterinary consumption, diagnostic, or therapeutic use. RUO products are not evaluated by the FDA for safety or efficacy in those contexts."
+          "question": "What exactly does \"Research Use Only\" mean here?",
+          "answer": "It means the compound is sold strictly for laboratory and scientific research — not for human or animal consumption, diagnosis, or treatment. RUO products haven't been reviewed by the FDA for safety or efficacy outside that context, and we don't market them as if they had."
         },
         "specialHandling": {
-          "question": "Do research peptides require special handling or safety precautions?",
-          "answer": "Yes. Standard laboratory safety practices apply, including gloves, a clean work surface, and sterile technique during reconstitution. Peptides should be handled by trained research personnel in an appropriate laboratory setting, consistent with their RUO status."
+          "question": "Do I need any special precautions handling these?",
+          "answer": "Standard lab practice applies — gloves, a clean surface, sterile technique when reconstituting. These are RUO compounds, so handling belongs to trained research personnel working in an appropriate lab setting, not a kitchen counter."
         },
         "nonResearchUse": {
-          "question": "Can I use these peptides for any purpose outside of research?",
-          "answer": "No. Products sold through the Certified Aminos shop are labeled Research Use Only and are not intended, tested, or approved for human consumption, self-administration, or any clinical use. They are sold exclusively for qualified laboratory research."
+          "question": "Can these be used for anything other than lab research?",
+          "answer": "No. Everything in the Certified Aminos catalog is labeled Research Use Only — not intended, tested, or cleared for human consumption, self-administration, or any clinical application. Laboratory research is the only intended use."
         },
         "fdaApproval": {
-          "question": "Are your products approved by the FDA or other regulatory agencies?",
-          "answer": "No. Research Use Only peptides are not FDA-approved for human use and are not marketed as drugs, supplements, or cosmetics. They are sold strictly as laboratory research chemicals, consistent with their labeling and intended use."
+          "question": "Are any of these FDA-approved?",
+          "answer": "No. RUO peptides aren't approved for human use and we don't market them as drugs, supplements, or cosmetics — they're sold and labeled strictly as research chemicals."
         }
       }
     },
@@ -1355,7 +1355,7 @@
       "section3Item4": "Bulk or custom orders explicitly marked as final sale.",
       "section4Title": "How to Request a Refund",
       "section4Intro": "Follow these steps to start a refund request:",
-      "section4Item1": "Reach our support team at <email>support@certifiedaminos.com</email>, including your order number and the reason for the request.",
+      "section4Item1": "Reach our support team at <email>support@certified-aminos.com</email>, including your order number and the reason for the request.",
       "section4Item2": "Send photos of the item and its packaging if we ask for them.",
       "section4Item3": "We'll review the request and get back to you with a decision within 3–5 business days.",
       "section4Item4": "Approved refunds go back to your original payment method, or to store credit, whichever you prefer.",
@@ -1435,131 +1435,131 @@
       "closingText": "Our team is on hand to make sure every order gets to you safely and on schedule."
     },
     "medicalDisclaimer": {
-      "metaTitle": "Medical Disclaimer | Certified Aminos Research Peptides",
-      "metaDescription": "Certified Aminos' Medical Disclaimer explains that our research peptides are for laboratory use only, not medical advice, treatment, or human consumption.",
+      "metaTitle": "Medical Disclaimer | Certified Aminos",
+      "metaDescription": "What Certified Aminos' research peptides are and aren't — laboratory-only compounds, not medical advice, treatment, or anything meant for human use.",
       "eyebrow": "Legal Information",
       "titleLine1": "Certified Aminos",
       "titleLine2": "Medical Disclaimer",
       "effectiveDate": "Effective Date: August 2026",
-      "intro": "The information provided on this website, including any product descriptions, research summaries, or educational content, is for general informational purposes only. Nothing on this site constitutes medical advice, diagnosis, or treatment recommendations, and it should never be used as a substitute for guidance from a licensed physician or qualified healthcare provider.",
+      "intro": "Anything on this site — product descriptions, research summaries, educational content — is informational only. None of it is medical advice, a diagnosis, or a treatment recommendation, and it's not a substitute for a licensed physician or qualified healthcare provider.",
       "section1Title": "Introduction & No Medical Advice",
-      "section1Text": "Certified Aminos is a supplier of research compounds, not a healthcare provider, and no statement on this website should be interpreted as a claim to diagnose, treat, cure, or prevent any disease or medical condition. Always seek guidance from a licensed medical or scientific professional before acting on any information obtained from this site.",
+      "section1Text": "We supply research compounds; we're not a healthcare provider, and nothing stated on this site should be read as a claim to diagnose, treat, cure, or prevent any disease or condition. Talk to a licensed medical or scientific professional before acting on anything you read here.",
       "section2Title": "Product Usage Limitation",
-      "section2Text": "All products offered by Certified Aminos are intended for controlled laboratory or research environments. Any use outside of this context, including self-administration, is strictly prohibited and may violate local, state, or federal laws and regulations. Our products are not drugs, medicines, dietary supplements, or food, and they are not intended for human or veterinary use. Users are responsible for ensuring that all handling, storage, and usage comply with applicable research protocols and safety standards in their jurisdiction.",
+      "section2Text": "Everything Certified Aminos sells is meant for a controlled laboratory or research environment, full stop. Using it outside that context — self-administration included — is prohibited and may run afoul of local, state, or federal law. These aren't drugs, medicines, dietary supplements, or food, and none of it is intended for human or veterinary use. Handling, storing, and using our products in line with the research protocols and safety standards that apply in your jurisdiction is on you.",
       "section3Title": "Liability",
-      "section3Text": "Certified Aminos assumes no responsibility or liability for the misuse of products, improper handling, or any adverse effects resulting from unauthorized use. By using this website and purchasing our products, you acknowledge and agree that Certified Aminos is not liable for any direct, indirect, or consequential damages arising from your actions.",
+      "section3Text": "We don't take on responsibility or liability for a product being misused, mishandled, or for adverse effects from unauthorized use. Using this site and buying our products means you've acknowledged that Certified Aminos isn't liable for direct, indirect, or consequential damages arising from what you do with them.",
       "section4Title": "User Responsibility",
-      "section4Intro": "It is the responsibility of all users to:",
-      "section4Item1": "Follow all local, state, and federal laws regarding research chemicals.",
-      "section4Item2": "Use products only in designated research or laboratory settings.",
-      "section4Item3": "Exercise caution and adhere to proper safety protocols when handling compounds.",
-      "section4Item4": "Consult a qualified professional for any questions regarding research procedures, legal compliance, or scientific interpretation.",
+      "section4Intro": "Every user is expected to:",
+      "section4Item1": "Stay within local, state, and federal law regarding research chemicals.",
+      "section4Item2": "Keep product use confined to a designated research or laboratory setting.",
+      "section4Item3": "Handle compounds carefully, following proper safety protocol.",
+      "section4Item4": "Bring questions about procedure, legal compliance, or scientific interpretation to a qualified professional.",
       "section5Title": "Regulatory Compliance",
-      "section5Text": "The statements on this website have not been evaluated by the U.S. Food and Drug Administration. Products sold by Certified Aminos are offered strictly for research and laboratory purposes and are not intended to diagnose, treat, cure, or prevent any disease. Certified Aminos is not a compounding pharmacy and does not operate as a chemical compounding facility as defined under Section 503A of the Federal Food, Drug, and Cosmetic Act. Certified Aminos reserves the right to refuse service to any individual or organization where required to remain compliant with applicable law.",
+      "section5Text": "Nothing stated here has been evaluated by the FDA. What we sell is offered strictly for research and lab use, not to diagnose, treat, cure, or prevent disease. We're not a compounding pharmacy and don't operate as a chemical compounding facility under Section 503A of the Federal Food, Drug, and Cosmetic Act. We reserve the right to refuse service to any individual or organization where doing so is necessary to stay compliant with applicable law.",
       "section6Title": "Accuracy of Information",
-      "section6Text": "We make reasonable efforts to keep product descriptions, research references, and site content accurate and current. However, research literature evolves, and Certified Aminos does not guarantee that every statement on this site reflects the most recent findings. Users should independently verify information relevant to their own research before relying on it.",
+      "section6Text": "We put in real effort to keep product descriptions, research references, and site content accurate and current, but research literature moves — we can't guarantee every statement here reflects the latest findings. Verify anything relevant to your own work independently before relying on it.",
       "section7Title": "Changes to This Disclaimer",
-      "section7Text": "Certified Aminos may update this Medical Disclaimer at any time to reflect changes in our products, applicable regulations, or business practices. The effective date at the top of this page shows when the current version took effect, and continued use of the site after an update constitutes acceptance of the revised disclaimer.",
+      "section7Text": "This disclaimer can change whenever our products, applicable regulations, or business practices do. The effective date up top marks when the current version took hold, and continuing to use the site after that point means you've accepted the update.",
       "contactTitle": "Contact Us",
-      "contactIntro": "If you have questions regarding product use, safety or compliance, please contact our support team at:",
+      "contactIntro": "Questions about product use, safety, or compliance go to our support team at:",
       "orderQueriesLabel": "Order-related queries",
       "supportIssuesLabel": "Support & issues",
       "contactLabel": "Contact",
-      "closingText": "By accessing this website or purchasing our products, you agree to comply with this Medical Disclaimer and acknowledge that Certified Aminos is not responsible for any misuse or unauthorized application of our research materials.",
+      "closingText": "Accessing this site or buying our products means agreeing to this Medical Disclaimer, including that Certified Aminos carries no responsibility for research materials being misused or applied somewhere they weren't meant to be.",
       "faqTitle": "Questions",
       "faqDescription": "Quick answers about research use, liability, and compliance, written to be pulled directly into search results.",
       "faqs": {
         "researchUseOnlyMeaning": {
-          "question": "What does \"Research Use Only\" mean?",
-          "answer": "It means a product is sold exclusively for laboratory or scientific research and is not approved, tested, or intended for use in or on the human body."
+          "question": "What's actually restricted by \"Research Use Only\"?",
+          "answer": "Sale and use, confined strictly to laboratory or scientific research — none of it is approved, tested, or intended for use in or on the human body."
         },
         "intendedForHumanConsumption": {
-          "question": "Are Certified Aminos' products intended for human consumption?",
-          "answer": "No. Certified Aminos' products are not drugs, supplements, or food, and they are not intended for human or veterinary use of any kind."
+          "question": "Could any of these be consumed by a person?",
+          "answer": "No. None of it is a drug, supplement, or food, and none of it is intended for human or veterinary use in any form."
         },
         "isMedicalAdvice": {
-          "question": "Is the information on this website medical advice?",
-          "answer": "No. Content on this site is for general informational purposes only and should never replace guidance from a licensed physician or healthcare provider."
+          "question": "Does anything on this site count as medical advice?",
+          "answer": "No — it's general information only, and it doesn't stand in for a licensed physician or healthcare provider."
         },
         "whoCanPurchase": {
-          "question": "Who can purchase products from Certified Aminos?",
-          "answer": "Products are intended for qualified researchers and laboratories operating in controlled research environments, and buyers must be of legal age in their jurisdiction."
+          "question": "Who's actually allowed to buy from Certified Aminos?",
+          "answer": "Qualified researchers and labs working in a controlled research setting, and only buyers who meet the legal age requirement where they live."
         },
         "fdaRegulated": {
-          "question": "Are Certified Aminos' products regulated by the FDA?",
-          "answer": "Statements on this website have not been evaluated by the FDA, and these products are not approved to diagnose, treat, cure, or prevent any disease."
+          "question": "Is Certified Aminos FDA-regulated?",
+          "answer": "Nothing on this site has been evaluated by the FDA, and none of these products are approved to diagnose, treat, cure, or prevent disease."
         },
         "selfAdministration": {
-          "question": "Can I use these products for treatment or self-administration?",
-          "answer": "No. Self-administration or any use outside of a controlled research setting is strictly prohibited and may violate local, state, or federal law."
+          "question": "Can I self-administer any of these products?",
+          "answer": "No — self-administration, or any use outside a controlled research setting, isn't permitted and may break local, state, or federal law."
         },
         "misuseResponsibility": {
-          "question": "Who is responsible if a product is misused?",
-          "answer": "The end user assumes full responsibility for how a product is handled, stored, and used; Certified Aminos is not liable for misuse or unauthorized application."
+          "question": "If something gets misused, who's on the hook?",
+          "answer": "The end user — how a product is handled, stored, and used is their responsibility. Certified Aminos doesn't carry liability for misuse or unauthorized application."
         },
         "contactAboutDisclaimer": {
-          "question": "How can I contact Certified Aminos about this disclaimer?",
-          "answer": "Email support@certifiedaminos.com for general questions or orders@certifiedaminos.com for order-specific issues."
+          "question": "Who do I reach out to about this disclaimer?",
+          "answer": "support@certified-aminos.com for general questions, orders@certified-aminos.com for anything order-specific."
         }
       }
     },
     "termsAndConditions": {
-      "metaTitle": "Certified Aminos Terms & Conditions | Research Peptides",
-      "metaDescription": "Read Certified Aminos' Terms and Conditions covering orders, payments, shipping, and research-use policies for our peptide products. Clear terms, no surprises.",
+      "metaTitle": "Terms & Conditions | Certified Aminos",
+      "metaDescription": "The policies covering orders, payment, shipping, and research-use restrictions for anything purchased through Certified Aminos.",
       "eyebrow": "Legal Information",
       "titleLine1": "Certified Aminos",
       "titleLine2": "Terms and Conditions",
       "effectiveDate": "Effective Date: August 2026",
-      "intro": "Welcome to Certified Aminos. By accessing or using our website, purchasing products, or interacting with our services, you agree to be bound by the following Terms and Conditions. If you do not agree with any part of these terms, please discontinue use of the site and do not place an order. These Terms apply to every visitor, customer, and account holder on this website, and they work alongside our Privacy Policy and Shipping Policy, which are incorporated here by reference.",
+      "intro": "This page governs your use of Certified Aminos: browsing the site, buying a product, or interacting with any of our services all mean you've accepted the Terms and Conditions below. If any part of that doesn't work for you, please stop using the site rather than placing an order. These Terms bind every visitor, customer, and account holder here, and they sit alongside — not in place of — our Privacy Policy and Shipping Policy, both incorporated by reference.",
       "section1Title": "Acceptance of Terms",
-      "section1Text": "By accessing this website or purchasing any product from Certified Aminos, you agree to be bound by these Terms and Conditions. These Terms govern your access, use, and purchase of our research-grade peptides, small molecules, and related compounds, all of which are intended strictly for laboratory and research purposes and are not for human or veterinary use, diagnosis, or treatment.",
+      "section1Text": "Using this website or buying a product from Certified Aminos means you accept these Terms and Conditions. They cover how you access, use, and purchase our research-grade peptides, small molecules, and related compounds — all of which exist strictly for laboratory and research work, never for human or veterinary use, diagnosis, or treatment.",
       "section2Title": "Research Use & Product Disclaimer",
-      "section2Intro": "All products sold through our website are strictly for research purposes and are not intended for diagnostic, therapeutic, or veterinary application. By purchasing or using our products, you confirm that:",
-      "section2Item1": "You understand and accept that products are not intended for human consumption or medical use.",
-      "section2Item2": "You will use all products solely in approved laboratory or experimental settings.",
-      "section2Item3": "You accept full responsibility for the safe handling, storage, and disposal of products.",
+      "section2Intro": "Every product sold here is strictly for research — not diagnostic, therapeutic, or veterinary use. Purchasing or using anything from us confirms that:",
+      "section2Item1": "You understand these products aren't for human consumption or medical use, and you accept that.",
+      "section2Item2": "You'll use them only in an approved laboratory or experimental setting.",
+      "section2Item3": "Safe handling, storage, and disposal of the product are entirely your responsibility.",
       "section3Title": "Account & User Responsibilities",
-      "section3Item1": "Users must be 18 years or older, or of legal age in their jurisdiction, to create an account or place an order.",
-      "section3Item2": "Accurate and up-to-date personal and billing information must be provided at checkout.",
-      "section3Item3": "You are responsible for safeguarding your account credentials and for all activity that occurs under your account.",
-      "section3Item4": "Any misuse of your account or unauthorized purchases must be reported to our support team immediately.",
+      "section3Item1": "You must be 18 or older, or the age of majority where you live, to open an account or place an order.",
+      "section3Item2": "The personal and billing details you provide at checkout need to be accurate and current.",
+      "section3Item3": "Keeping your account credentials secure is on you, as is anything that happens under your account.",
+      "section3Item4": "Notice us right away if you spot misuse of your account or a purchase you didn't authorize.",
       "section4Title": "Ordering & Payment",
-      "section4Item1": "Orders are considered accepted once payment has been successfully processed.",
-      "section4Item2": "We accept the payment methods listed on the checkout page at the time of your order.",
-      "section4Item3": "All prices are listed in USD unless otherwise stated.",
-      "section4Item4": "Orders may be canceled or modified prior to shipment, subject to Certified Aminos' approval. If a pricing or listing error appears on the site, we reserve the right to correct it and to cancel any order placed at the incorrect price, with a full refund issued.",
+      "section4Item1": "An order counts as accepted once payment clears successfully.",
+      "section4Item2": "Whatever payment methods appear at checkout at the time you order are the ones we're accepting.",
+      "section4Item3": "Prices are in USD unless a page states otherwise.",
+      "section4Item4": "We can cancel or adjust an order before it ships, at our discretion. If a price or listing on the site turns out to be wrong, we can correct it and cancel any order placed at that incorrect price — with a full refund either way.",
       "section5Title": "Shipping & Delivery",
-      "section5Item1": "We ship only to regions we are approved to serve; certain products may carry additional restrictions under local law.",
-      "section5Item2": "Shipping timelines are estimates and may vary due to carrier logistics, customs processing, or regional handling delays.",
-      "section5Item3": "Certified Aminos is not responsible for delays, loss, or damage that occurs once a package has been handed to the carrier, though we're happy to help you file a claim.",
+      "section5Item1": "We ship only where we're approved to, and certain products carry extra restrictions depending on local law.",
+      "section5Item2": "Delivery estimates are just that — estimates, and carrier logistics, customs, or regional handling can shift them.",
+      "section5Item3": "Once a package leaves our hands and goes to the carrier, we're not liable for delay, loss, or damage — though we'll still help you file a claim if that happens.",
       "section6Title": "Product Liability & Safety",
-      "section6Item1": "Products are not approved for human or veterinary use.",
-      "section6Item2": "Users assume all risk associated with the storage, handling, and research application of any product purchased.",
-      "section6Item3": "Certified Aminos is not liable for misuse, accidental ingestion, or any application outside of approved laboratory or experimental use.",
+      "section6Item1": "Nothing we sell is approved for human or veterinary use.",
+      "section6Item2": "Storing, handling, or applying a product in research is a risk the purchaser assumes.",
+      "section6Item3": "We carry no liability for misuse, accidental ingestion, or use outside an approved lab or experimental setting.",
       "section7Title": "Intellectual Property",
-      "section7Item1": "All website content, product descriptions, images, branding, and design elements are the property of Certified Aminos and are protected under applicable copyright and trademark law. You may not copy, reproduce, distribute, or otherwise exploit this content for commercial purposes without written permission.",
-      "section7Item2": "Unauthorized use of our branding, product names, or site materials is strictly prohibited.",
+      "section7Item1": "Everything on this site — descriptions, images, branding, layout — belongs to Certified Aminos and is protected under copyright and trademark law. None of it may be copied, reproduced, redistributed, or otherwise used commercially without our written sign-off.",
+      "section7Item2": "Using our branding, product names, or site materials without authorization is not permitted.",
       "section8Title": "User Conduct",
-      "section8Intro": "By using our website, you agree not to:",
-      "section8Item1": "Engage in any illegal activity through the use of our products or services.",
-      "section8Item2": "Distribute, resell, or apply research products for any unapproved or unlawful purpose.",
-      "section8Item3": "Violate any applicable federal, state, or local laws or regulations in your jurisdiction.",
-      "section8Note": "Violations of these conduct terms may result in order cancellation, account suspension, or legal action.",
+      "section8Intro": "Using this site means agreeing that you won't:",
+      "section8Item1": "Use our products or services to do anything illegal.",
+      "section8Item2": "Resell, redistribute, or apply research products for a purpose we haven't approved or that's unlawful.",
+      "section8Item3": "Break any federal, state, or local law or regulation that applies to you.",
+      "section8Note": "Breaking these rules can lead to a canceled order, a suspended account, or legal action, depending on severity.",
       "section9Title": "Limitation of Liability",
-      "section9Intro": "To the maximum extent permitted by law:",
-      "section9Item1": "Certified Aminos is not liable for any damages resulting from misuse of our products, unauthorized applications, or errors on the website.",
-      "section9Item2": "Where liability cannot be excluded, our total liability for any product issue is limited to the purchase price of that product.",
+      "section9Intro": "To whatever extent the law allows:",
+      "section9Item1": "We're not liable for damages tied to misusing our products, applying them somewhere unapproved, or an error on the site.",
+      "section9Item2": "Where liability can't legally be waived entirely, it's capped at the purchase price of the product in question.",
       "section10Title": "Indemnification",
-      "section10Intro": "You agree to indemnify and hold harmless Certified Aminos, its employees, officers, and affiliates from any claims, damages, or expenses arising from:",
-      "section10Item1": "Improper use of our products.",
-      "section10Item2": "Violation of these Terms and Conditions.",
-      "section10Item3": "Breach of any local, state, or federal law related to product use.",
+      "section10Intro": "You agree to cover Certified Aminos, along with its employees, officers, and affiliates, against claims, damages, or expenses stemming from:",
+      "section10Item1": "Misusing our products.",
+      "section10Item2": "Breaking these Terms and Conditions.",
+      "section10Item3": "Violating a local, state, or federal law connected to how a product was used.",
       "section11Title": "Governing Law",
-      "section11Text": "These Terms are governed by the laws of the jurisdiction in which Certified Aminos operates, without regard to conflict-of-law principles. Any disputes arising from these Terms will be resolved under those laws.",
+      "section11Text": "Certified Aminos' home jurisdiction's laws govern these Terms, conflict-of-law rules aside, and any dispute arising from them gets resolved under that same law.",
       "section12Title": "Privacy & Data Use",
-      "section12Text": "Your use of Certified Aminos is also governed by our Privacy Policy, which explains how we collect, use, and protect your personal information. By using this site, you consent to the data practices described there.",
+      "section12Text": "Our Privacy Policy also applies to your use of this site — it covers how your personal information gets collected, used, and protected. Using the site means you're accepting those data practices.",
       "section13Title": "Changes to These Terms",
-      "section13Text": "Certified Aminos reserves the right to update or modify these Terms at any time. Changes take effect immediately upon posting to this page, and your continued use of the website or our products after that point constitutes acceptance of the updated Terms. We recommend checking this page periodically, particularly the effective date at the top, so you're always working from the current version.",
+      "section13Text": "We can revise these Terms whenever needed, and a change takes effect the moment it's posted here. Using the site or ordering from us after that point means you've accepted the update — so it's worth glancing at the effective date at the top periodically to stay current.",
       "contactTitle": "Customer Support",
       "contactIntro": "If you have questions about these Terms and Conditions, please contact:",
       "orderQueriesLabel": "Order-related queries",
@@ -1569,36 +1569,36 @@
       "faqDescription": "Quick answers about Certified Aminos' site policies, written to be pulled directly into search results.",
       "faqs": {
         "humanUseApproved": {
-          "question": "Are Certified Aminos' products approved for human use?",
-          "answer": "No. Every product on Certified Aminos is sold strictly for research purposes and is not approved for human consumption, medical treatment, or veterinary use."
+          "question": "Can any of these products be used by a person, not just in a lab?",
+          "answer": "No — nothing sold through Certified Aminos is approved for human consumption, medical treatment, or veterinary use. It's research-only, full stop."
         },
         "cancelOrder": {
-          "question": "Can I cancel or change my order after I've paid?",
-          "answer": "Yes, as long as the order hasn't shipped yet. Reach out to our support team as soon as possible — once an order ships, it can no longer be modified or canceled."
+          "question": "I already paid — can I still cancel or change my order?",
+          "answer": "As long as it hasn't shipped, yes. Contact support quickly, since once a package is out the door, it can't be modified or canceled anymore."
         },
         "shipsInternationally": {
-          "question": "Does Certified Aminos ship internationally?",
-          "answer": "Certified Aminos ships only to regions we're approved to serve, and some products carry additional restrictions depending on local law. Availability is confirmed at checkout based on your shipping address."
+          "question": "Do you ship outside the US?",
+          "answer": "Only to regions we're cleared to serve, and some products have additional restrictions depending on local law. Checkout will confirm availability based on your address."
         },
         "damagedOrDelayed": {
-          "question": "What happens if my order arrives damaged or delayed?",
-          "answer": "Contact support with your order number as soon as you notice an issue. While Certified Aminos isn't liable for carrier delays or damage once a package ships, we'll help you file a claim with the carrier."
+          "question": "My order showed up damaged or way later than expected — now what?",
+          "answer": "Message support with your order number as soon as you notice. We're not liable for carrier delays or damage after a package ships, but we will help you get a claim filed with the carrier."
         },
         "ageRequirement": {
-          "question": "Do I need to be a certain age to order from Certified Aminos?",
-          "answer": "Yes. You must be at least 18 years old, or the legal age of majority in your jurisdiction, to create an account or place an order."
+          "question": "Is there an age requirement to order?",
+          "answer": "Yes — 18 or the age of majority in your jurisdiction, whichever is higher, to create an account or place an order."
         },
         "currency": {
-          "question": "What currency are Certified Aminos' prices listed in?",
-          "answer": "All prices on the site are listed in US dollars (USD) unless a page specifically states otherwise."
+          "question": "What currency do prices show in?",
+          "answer": "USD across the site, unless a specific page says otherwise."
         },
         "orderQuestionsContact": {
-          "question": "Who do I contact with questions about an order?",
-          "answer": "For order-specific questions, email orders@certifiedaminos.com. For general support or account issues, email support@certifiedaminos.com."
+          "question": "Who do I email about an order?",
+          "answer": "orders@certified-aminos.com for anything order-specific; support@certified-aminos.com for general support or account issues."
         },
         "termsChangeNotice": {
-          "question": "Can Certified Aminos change these Terms without notice?",
-          "answer": "Certified Aminos can update these Terms at any time, and changes take effect as soon as they're posted. Continuing to use the site or order products after an update means you accept the revised Terms — so it's worth checking the effective date occasionally."
+          "question": "Will I be notified if these Terms change?",
+          "answer": "We can update them at any time, effective as soon as they're posted — there's no separate notification. Using the site or ordering after an update means you've accepted the new version, so checking the effective date now and then is worthwhile."
         }
       }
     },
@@ -1641,42 +1641,42 @@
   },
   "affiliate": {
     "landing": {
-      "metaTitle": "Peptide Affiliate Program | Earn 15% Commission | Certified Aminos",
-      "metaDescription": "Earn 15% commission promoting Certified Aminos research peptides, plus a 15% customer discount and monthly payouts. Apply to the affiliate program today.",
+      "metaTitle": "Certified Aminos Affiliates | 15% Commission Program",
+      "metaDescription": "Promote Certified Aminos research peptides and earn 15% per sale, with a 15% discount for the customers you refer and payouts every month. Apply now.",
       "heroJoinButtonLong": "Join the Affiliate Program Now",
       "heroJoinButtonShort": "Join the Program",
       "heroTitle": "Affiliates",
       "introEyebrow": "Affiliate Program",
-      "introTitle": "Earn Passive Income Promoting Premium Research Peptides",
-      "introDescription": "The Certified Aminos affiliate program is built for content creators, bloggers, and scientific-community voices who want a straightforward, well-tested way to earn from an audience already interested in research-grade peptides.",
-      "benefit1": "15% commission on every qualified sale",
-      "benefit2": "15% discount for your referred customers",
-      "benefit3": "Free, real-time commission tracking from day one",
-      "benefit4": "Monthly payouts via PayPal, Stripe, or bank transfer",
-      "benefit5": "7-day cookie duration for maximum time to convert",
+      "introTitle": "Turn an Audience That Already Trusts You Into Recurring Income",
+      "introDescription": "Built for bloggers, content creators, and voices in the scientific community who want an uncomplicated way to earn from readers who are already interested in research-grade peptides.",
+      "benefit1": "15% commission, credited on every qualified sale",
+      "benefit2": "A 15% discount you can offer the customers you send our way",
+      "benefit3": "Commission tracking that updates in real time from your first referral",
+      "benefit4": "Paid out monthly — PayPal, Stripe, or direct bank transfer",
+      "benefit5": "A 7-day cookie window so a click today can still convert later",
       "howItWorksTitle": "How It Works",
-      "howItWorksSubtitle": "Our affiliate program is designed with your success in mind, offering a straightforward way to earn from both sides of every referral.",
+      "howItWorksSubtitle": "Built so both sides of the referral come out ahead — here's the mechanics.",
       "commissionCardTitle": "Commission for You",
-      "commissionCardDesc": "Earn 15% commission on every qualified sale you refer — paid monthly, with no cap on how much you can earn.",
+      "commissionCardDesc": "15% on every qualified sale you send our way, paid out monthly with no ceiling on what you can earn.",
       "commissionCardMicrocopy": "REVENUE SHARE",
       "discountCardTitle": "Discount for Customers",
-      "discountCardDesc": "Your referred customers get 15% off their first order, which makes sharing your link an easy, low-friction recommendation rather than a hard sell.",
+      "discountCardDesc": "A 15% discount on their first order gives the people you refer a real reason to buy — so sharing your link reads as a genuine recommendation, not a sales pitch.",
       "discountCardMicrocopy": "INCREASE CONVERSIONS",
-      "stepsTitle": "Simple 4-Step Process to Start Earning",
+      "stepsTitle": "Four Steps From Sign-Up to Your First Payout",
       "step1Title": "Join the Program",
-      "step1Desc": "Apply and get approved to join the affiliate program — there's no cost and no minimum audience size required.",
+      "step1Desc": "Apply and get approved — no cost to join, and no minimum audience size to qualify.",
       "step1Tag": "Step 1",
       "step1Microcopy": "INSTANT APPROVAL",
       "step2Title": "Get Your Links",
-      "step2Desc": "Access your unique referral link and personal discount code from your affiliate dashboard as soon as you're approved.",
+      "step2Desc": "Your dashboard hands you a unique referral link and a personal discount code the moment you're approved.",
       "step2Tag": "Step 2",
       "step2Microcopy": "CUSTOM CODES",
       "step3Title": "Share Your Content",
-      "step3Desc": "Promote through your blog, social media, email list, or wherever your audience already spends time — following the program's content standards.",
+      "step3Desc": "Blog post, social feed, email list — wherever your audience already is, as long as it stays within the program's content standards.",
       "step3Tag": "Step 3",
       "step3Microcopy": "GROW AUDIENCE",
       "step4Title": "Earn Commissions",
-      "step4Desc": "Get paid monthly for every qualifying referral, tracked automatically through your link and discount code, with no cap on total earnings.",
+      "step4Desc": "Every qualifying referral is tracked automatically through your link and code, and payouts land monthly with no earnings cap.",
       "step4Tag": "Step 4",
       "step4Microcopy": "GET PAID",
       "commissionStructureTitle": "Competitive Commission Structure",
@@ -1693,64 +1693,64 @@
       "monthlyEarnings50Label": "50 referrals/mo",
       "statCookieValue": "7-Day",
       "statCookieLabel": "Cookie Duration",
-      "statCookieDesc": "If a customer clicks your link but buys within 7 days, you still receive full commission credit.",
+      "statCookieDesc": "A click today still earns you the commission if that customer buys anytime in the next 7 days.",
       "statDualValue": "Dual",
       "statDualLabel": "Attribution System",
-      "statDualDesc": "Both referral link tracking and coupon-code tracking ensure you never miss a commission.",
+      "statDualDesc": "Your link and your discount code are tracked separately, so a sale never slips through uncredited.",
       "statRealValue": "Real",
       "statRealLabel": "Time Dashboard",
-      "statRealDesc": "See total clicks, conversion rates, pending & approved commissions, and lifetime earnings instantly.",
+      "statRealDesc": "Clicks, conversion rate, pending and approved commissions, lifetime totals — all live, no waiting on a report.",
       "statMonthlyValue": "Monthly",
       "statMonthlyLabel": "Payouts",
-      "statMonthlyDesc": "Reliable payouts at the end of every month with zero minimum threshold requirements.",
-      "managementToolsTitle": "Comprehensive Management Tools",
+      "statMonthlyDesc": "Payouts go out every month, no minimum balance required to get paid.",
+      "managementToolsTitle": "Everything You Need to Run Your Side of It",
       "tool1Title": "Real-Time Analytics",
-      "tool1Desc": "Track clicks, conversions, and earnings as they happen from a live affiliate dashboard, rather than waiting on a delayed report.",
+      "tool1Desc": "Watch clicks, conversions, and earnings update live on your dashboard instead of waiting for a delayed report to land.",
       "tool1Tag": "Tracking",
       "tool1Microcopy": "LIVE DATA",
       "tool2Title": "Link Management",
-      "tool2Desc": "Generate and organize custom referral links for different campaigns, content pieces, or platforms, all from one place.",
+      "tool2Desc": "Build and organize separate referral links per campaign, platform, or piece of content — all managed from one dashboard.",
       "tool2Tag": "Links",
       "tool2Microcopy": "UNLIMITED",
       "tool3Title": "Discount Code Management",
-      "tool3Desc": "Assign your personal discount code to referrals so customers can convert directly at checkout, even without clicking your link first.",
+      "tool3Desc": "Your personal code lets a referred customer convert straight at checkout, even if they never click your link at all.",
       "tool3Tag": "Discounts",
       "tool3Microcopy": "CUSTOMIZED",
       "tool4Title": "Commission Reports & Resources",
-      "tool4Desc": "Download detailed commission statements and access approved marketing resources to support your promotion.",
+      "tool4Desc": "Pull detailed commission statements whenever you need them, and grab approved creative assets to support your promotion.",
       "tool4Tag": "Reports",
       "tool4Microcopy": "DOWNLOADABLE",
-      "whyChooseTitle": "Why Choose the Certified Aminos Affiliate Program",
+      "whyChooseTitle": "What Makes This Program Worth Your Time",
       "why1Title": "High Conversion Rates",
-      "why1Desc": "The built-in 15% customer discount gives your audience an immediate reason to buy, improving conversion on every link you share.",
+      "why1Desc": "That 15% discount does real work — it gives your audience an immediate reason to act instead of bookmarking the link for later.",
       "why2Title": "15% Commission",
-      "why2Desc": "One of the more competitive commission rates in the research-chemical affiliate space, paid on every qualifying referral.",
+      "why2Desc": "A commission rate that holds up well against the rest of the research-chemical affiliate space, paid on every referral that qualifies.",
       "why3Title": "No Technical Setup",
-      "why3Desc": "No coding, tracking pixels, or technical experience required — your dashboard, links, and codes are ready as soon as you're approved.",
+      "why3Desc": "Skip the coding and tracking pixels — your dashboard, links, and codes are live the moment you're approved.",
       "why4Title": "Dual Tracking System",
-      "why4Desc": "Both your referral link and your personal discount code are tracked independently, so you're credited for a sale no matter which one a customer uses.",
+      "why4Desc": "Link or discount code, it doesn't matter which one a customer actually uses — both are tracked independently, so you get credited either way.",
       "why5Title": "Real-Time Data",
-      "why5Desc": "Monitor clicks, conversions, and pending commissions as they happen, instead of waiting for a periodic report.",
+      "why5Desc": "Clicks, conversions, pending commissions — all visible as they happen, not bundled into a report you have to wait on.",
       "why6Title": "Growing Market",
-      "why6Desc": "Research peptides and the broader life-sciences supply space are an expanding market, giving your content room to keep finding new audience interest.",
+      "why6Desc": "Research peptides and life-sciences supply broadly are a market that's still expanding, which means room for your content to keep finding new readers.",
       "why7Title": "Premium Quality",
-      "why7Desc": "You're promoting a catalog backed by third-party HPLC and mass-spectrometry testing, which makes trust-based recommendations easier to stand behind.",
+      "why7Desc": "What you're recommending is backed by third-party HPLC and mass-spec testing, which makes it a lot easier to stand behind the recommendation.",
       "why8Title": "Dedicated Support",
-      "why8Desc": "A dedicated affiliate support contact is available for questions about tracking, payouts, or approved content.",
+      "why8Desc": "A real point of contact for tracking, payout, or content questions — not a ticket queue.",
       "why9Title": "Scalable Income",
-      "why9Desc": "There's no cap on total commission — earnings can grow alongside your audience and content output, with no artificial ceiling built into the program.",
+      "why9Desc": "No ceiling on commission — however far your audience and output grow, the earning potential grows with it.",
       "prohibitedTitle": "Prohibited Practices",
-      "prohibited1": "No medical, dosing, or human-use claims about any research peptide in affiliate content",
-      "prohibited2": "No bodybuilding, athletic-performance, or weight-loss outcome framing",
-      "prohibited3": "No bidding on \"Certified Aminos\" brand terms in paid search advertising",
-      "prohibited4": "No unauthorized use of the Certified Aminos logo, trademark, or brand assets",
-      "prohibited5": "No guaranteed-outcome, cure, or treatment claims of any kind",
+      "prohibited1": "No medical, dosing, or human-use claims anywhere in affiliate content",
+      "prohibited2": "No bodybuilding, athletic-performance, or weight-loss framing",
+      "prohibited3": "No bidding on \"Certified Aminos\" as a paid-search brand term",
+      "prohibited4": "No using the Certified Aminos logo, trademark, or brand assets without authorization",
+      "prohibited5": "No claims implying a guaranteed outcome, cure, or treatment",
       "contentStandardsTitle": "Content Standards",
-      "content1": "Maintain a research-focused, scientific tone consistent with the site's own RUO positioning",
-      "content2": "Disclose the affiliate relationship clearly, consistent with FTC guidance",
-      "content3": "Link only to current, approved product and category pages",
-      "content4": "Keep all messaging consistent with \"Research Use Only, not for human consumption\" labeling",
-      "content5": "Use only approved marketing assets and creatives provided through the affiliate dashboard",
+      "content1": "Keep the tone research-focused and scientific, matching how the site itself talks about RUO products",
+      "content2": "Disclose the affiliate relationship clearly, per FTC guidance",
+      "content3": "Link only to live, currently-approved product and category pages",
+      "content4": "Keep messaging aligned with \"Research Use Only, not for human consumption\" at all times",
+      "content5": "Stick to the approved creative assets provided in the affiliate dashboard",
       "applyEyebrow": "Apply Now",
       "applyTitle": "Partner Application",
       "approvedTitle": "You are an active partner!",
@@ -1795,34 +1795,34 @@
       "submitNow": "Submit Now",
       "faqTitle": "Questions",
       "faqSubtitle": "(faq)",
-      "faq1Question": "How does the affiliate program work?",
-      "faq1Answer": "You apply, get approved, and receive a unique referral link and discount code from your dashboard. When someone orders using either one within the 7-day cookie window, you earn a 15% commission and they get 15% off.",
-      "faq2Question": "How do I get paid as an affiliate?",
-      "faq2Answer": "Approved commissions are paid out monthly via PayPal, Stripe, or bank transfer, whichever you set as your preferred payout method in the affiliate dashboard.",
-      "faq3Question": "When do I receive my commissions?",
-      "faq3Answer": "Commissions are calculated after the order's return window closes, then paid out on the program's regular monthly payout schedule rather than immediately at time of sale.",
-      "faq4Question": "Can beginners join this affiliate program?",
-      "faq4Answer": "Yes. There's no minimum audience size or prior affiliate experience required to apply; the application is reviewed for fit with the program's content standards, not follower count.",
-      "faq5Question": "How are referrals tracked?",
-      "faq5Answer": "Referrals are tracked two ways at once — through your unique link and through your personal discount code — so a sale is credited to you whether the customer clicks through or types the code in directly.",
-      "faq6Question": "What is cookie duration and why does it matter?",
-      "faq6Answer": "Cookie duration is how long a referral click stays credited to you after someone visits through your link. Ours is 7 days, meaning a purchase made within that window still counts as your referral even without the code.",
-      "faq7Question": "Are there any costs to join the affiliate program?",
-      "faq7Answer": "No. The affiliate program is free to join, with no application fee, subscription cost, or minimum spend required to start earning commission.",
-      "faq8Question": "What marketing methods can I use?",
-      "faq8Answer": "Blogs, email newsletters, and social media are all permitted, provided your content follows the program's content standards — research-focused, RUO-consistent language rather than medical or dosing claims.",
-      "faq9Question": "Can I use my own discount code?",
-      "faq9Answer": "Yes. Every approved affiliate receives a personal discount code that customers can apply directly at checkout, in addition to their unique referral link.",
-      "faq10Question": "What products should I promote as an affiliate?",
-      "faq10Answer": "You can promote any research peptide in the Certified Aminos catalog, linking to specific product pages, category pages, or the shop as a whole, depending on what fits your audience.",
-      "faq11Question": "How do I maximize my affiliate earnings?",
-      "faq11Answer": "Consistent, research-focused content that highlights verified purity and testing tends to convert best. Using your dashboard's real-time data to see which links and content perform helps focus effort where it earns the most.",
-      "faq12Question": "What happens if someone uses another affiliate's code after clicking my link?",
-      "faq12Answer": "The dual tracking system credits the touchpoint that's actually used at checkout — if a different affiliate's code is applied at purchase, that affiliate receives the commission for that specific order.",
-      "faq13Question": "Can I promote on social media?",
-      "faq13Answer": "Yes, social media is an approved marketing channel, provided posts follow the same content standards as other channels — no prohibited claims, and no bidding on the Certified Aminos brand name in paid search.",
-      "finalCtaTitle": "Start Earning 15% Commission Today",
-      "finalCtaDesc": "Join a growing network of partners earning recurring commission promoting research-grade peptides backed by verified purity and real testing data.",
+      "faq1Question": "Walk me through how this actually works.",
+      "faq1Answer": "Apply, get approved, and your dashboard gives you a referral link plus a discount code. Either one used within the 7-day cookie window earns you 15% commission while the customer gets 15% off.",
+      "faq2Question": "How does payout actually happen?",
+      "faq2Answer": "Monthly, through whichever method you set as preferred in your dashboard — PayPal, Stripe, or a direct bank transfer.",
+      "faq3Question": "Why isn't commission paid out immediately after a sale?",
+      "faq3Answer": "Commission is calculated once the order's return window has closed, then it goes out on the next regular monthly payout run rather than the moment the sale happens.",
+      "faq4Question": "Do I need a big following to get accepted?",
+      "faq4Answer": "No — there's no audience-size threshold and no prior affiliate experience required. Applications get reviewed on fit with our content standards, not follower count.",
+      "faq5Question": "How does the system know a sale came from me?",
+      "faq5Answer": "Two independent tracking methods run at once: your link and your personal discount code. Whichever one the customer actually uses, the sale still gets credited to you.",
+      "faq6Question": "What does the 7-day cookie window actually mean for me?",
+      "faq6Answer": "It's how long a click through your link stays attributed to you. Someone can click today and buy up to 7 days later, and it still counts as your referral even without the code.",
+      "faq7Question": "Does it cost anything to join?",
+      "faq7Answer": "Nothing — no application fee, no subscription, no minimum spend before you start earning.",
+      "faq8Question": "Where am I actually allowed to promote this?",
+      "faq8Answer": "Blogs, email lists, social — all fine, as long as the content stays within our standards: research-focused language, no medical or dosing claims.",
+      "faq9Question": "Do I get my own discount code, separate from the link?",
+      "faq9Answer": "Yes — every approved affiliate gets a personal code customers can enter directly at checkout, on top of the referral link.",
+      "faq10Question": "Am I limited to promoting certain products?",
+      "faq10Answer": "No — anything in the Certified Aminos catalog is fair game, whether that's a single product page, a category, or just the shop overall, whatever fits your content best.",
+      "faq11Question": "What actually moves the needle on earnings?",
+      "faq11Answer": "Consistent content that leans on verified purity and testing tends to perform best. Check your dashboard's live data regularly — it'll show you which links and posts are actually converting so you can double down there.",
+      "faq12Question": "If someone uses a different affiliate's code after clicking my link, who gets the commission?",
+      "faq12Answer": "Whichever code or link is actually applied at checkout is what gets credited — so in that scenario, the other affiliate earns the commission for that order, not you.",
+      "faq13Question": "Is social media promotion allowed?",
+      "faq13Answer": "Yes, it's an approved channel — same rules as everywhere else apply: no prohibited claims, and no bidding on \"Certified Aminos\" in paid search.",
+      "finalCtaTitle": "Ready to Start Earning?",
+      "finalCtaDesc": "Join partners who are already earning recurring commission on a catalog backed by real, verifiable testing data — not marketing claims.",
       "finalCtaQuestions": "Questions? Contact us at",
       "finalCtaButton": "Apply for the Affiliate Program",
       "finalCtaBullet1": "Earnings figures kept honest, never inflated",
@@ -2045,32 +2045,32 @@
   },
   "content": {
     "aboutPage": {
-      "metaTitle": "Synthetic Research Peptides & Lab Standards | Certified Aminos",
-      "metaDescription": "Discover how Certified Aminos manufactures synthetic research peptides with documented purity testing and strict RUO compliance. Learn our story and standards.",
+      "metaTitle": "About Certified Aminos | Our Testing & Sourcing Standards",
+      "metaDescription": "The story behind Certified Aminos: how we test every batch of research peptide, what RUO compliance means for our catalog, and why documentation ships standard.",
       "faqTitle": "Questions",
       "faqDescription": "Common questions about research peptides, ordering, and lab standards",
       "faqs": {
         "trustworthySupplier": {
-          "question": "What makes a peptide supplier trustworthy?",
-          "answer": "A trustworthy peptide supplier documents every batch. That means a certificate of analysis for each lot, transparent sourcing of raw materials, and manufacturing practices that can be independently verified. Certified Aminos treats documentation as a baseline requirement, not an optional extra, because research decisions depend on knowing exactly what a compound is and how it was tested."
+          "question": "How do you tell a trustworthy peptide supplier from one that just says the right things?",
+          "answer": "The paperwork tells the real story — a per-lot certificate of analysis, raw-material sourcing you can actually trace, and manufacturing steps that hold up to outside verification. At Certified Aminos that documentation isn't a premium add-on; it's the minimum bar, because a research result is only as good as your certainty about what compound you were actually testing."
         },
         "analyticalQuality": {
-          "question": "How does Certified Aminos ensure analytical quality?",
-          "answer": "Every batch is evaluated against defined purity and identity specifications before it enters production, then verified again after synthesis using standard analytical methods such as HPLC and mass spectrometry. This two-stage check confirms that what leaves our facility matches what's stated on the label."
+          "question": "What does Certified Aminos actually do to guarantee analytical quality?",
+          "answer": "Raw batches get checked against purity and identity specs before production even starts, then re-verified after synthesis with HPLC and mass spectrometry. Two independent checkpoints, not one — so the compound that ships matches what the label claims."
         },
         "laboratoryResearchOnly": {
-          "question": "Are your peptides designated for laboratory research only?",
-          "answer": "Yes. All Certified Aminos products are synthetic compounds intended exclusively for laboratory and research applications. They are not manufactured, labeled, or sold for human or animal use, and they have not been evaluated by the FDA for any diagnostic, therapeutic, or preventive purpose."
+          "question": "Is everything you sell strictly for lab use?",
+          "answer": "Correct. Every Certified Aminos product is a synthetic compound made exclusively for laboratory and research applications — none of it is manufactured, labeled, or sold for human or animal use, and none of it has FDA review behind any diagnostic, therapeutic, or preventive claim."
         },
         "documentationProvided": {
-          "question": "What documentation is provided with products?",
-          "answer": "Each order can be paired with batch-specific documentation, including a certificate of analysis outlining purity, identity, and testing methodology. Researchers are encouraged to request this documentation before use so results can be properly attributed to a verified compound and lot."
+          "question": "What paperwork actually comes with an order?",
+          "answer": "Batch-specific documentation on request — a certificate of analysis covering purity, identity, and the method used to test it. Pull that documentation before you run anything, so your results trace back to a verified compound and lot rather than an assumption."
         }
       }
     },
     "contactPage": {
-      "metaTitle": "Contact Certified Aminos | Research Peptide Supplier Support",
-      "metaDescription": "Get in touch with Certified Aminos for order support, bulk quotes, and lab inquiries. Call, email, or use our US contact form to reach our team today."
+      "metaTitle": "Contact Certified Aminos | Order & Lab Support",
+      "metaDescription": "Reach the Certified Aminos team for order tracking, bulk pricing, or product questions — by email, phone, or the contact form below."
     },
     "contactForm": {
       "errorRequiredFields": "Please fill out all required fields.",
@@ -2090,15 +2090,15 @@
       "submit": "Submit Request"
     },
     "faqPage": {
-      "metaTitle": "Research Peptides FAQ | Purity & Compliance | Certified Aminos",
-      "metaDescription": "Answers to common research peptide questions: purity testing, COA documentation, storage, and research-use-only compliance. Read the Certified Aminos FAQ."
+      "metaTitle": "Certified Aminos FAQ | Purity, Storage & RUO Compliance",
+      "metaDescription": "Straight answers on COA documentation, purity testing, storage windows, and what Research Use Only actually means for orders placed through Certified Aminos."
     },
     "aboutHero": {
       "viewPeptidesShort": "View Peptides",
       "viewPeptidesLong": "View Research Peptides",
       "titleLine1": "ABOUT",
       "titleLine2": "CERTIFIED AMINOS",
-      "subtitle": "Certified Aminos manufactures synthetic research peptides for laboratories and research teams across the United States. Since 2018, we've built the business around one standard: every compound we supply should come with documentation a researcher can actually verify — purity data, identity confirmation, and a clear research-use-only classification, batch after batch. We're not a pharmacy, and nothing we sell is intended for human or animal use. We're a supplier built around the idea that \"research-grade\" should describe a testing process, not just a label.",
+      "subtitle": "Certified Aminos supplies synthetic research peptides to laboratories and research teams across the US. The company was founded on a simple premise: every compound leaving our facility should be backed by documentation a researcher can independently check — measured purity, confirmed identity, and a research-use-only classification that applies to every single batch, not just the first one. We're not a pharmacy, and nothing here is intended for human or animal use. To us, \"research-grade\" describes what a lab actually did to a compound, not just a phrase printed on a label.",
       "credentialIndex": "01",
       "credentialTitle": "Independently Batch-Tested Since 2018",
       "credentialDate": "EST. 2018",
@@ -2115,7 +2115,7 @@
       "titleLine2": "Statement",
       "subtitle": "Our compliance position, stated plainly",
       "statements": {
-        "researchOnly": "All products offered by Certified Aminos are synthetic research peptides intended for laboratory research use only.",
+        "researchOnly": "Everything sold through Certified Aminos is a synthetic research peptide, intended strictly for laboratory research use.",
         "notForHumanAnimalUse": "Not for human or animal use.",
         "notForDiagnosisTreatment": "Not for diagnosis, treatment, prevention, mitigation, or cure of any disease or condition, and not intended for administration of any kind.",
         "notFdaApproved": "Products have not been evaluated or approved by the U.S. Food and Drug Administration (FDA)."
@@ -2126,25 +2126,25 @@
       "title": "Principles & Values",
       "card1Label": "Our Standard",
       "card1Title": "Our Standard",
-      "card1Text": "Every batch is measured against the same purity and identity specification, with no exceptions for scale or speed.",
+      "card1Text": "One purity and identity spec applies to every batch — scale or turnaround time doesn't earn an exception.",
       "card2Label": "Our Approach",
       "card2Title": "Our Approach",
-      "card2Text": "Documentation ships with the product, not on request only, so verification never depends on asking twice.",
+      "card2Text": "Documentation goes out with the order by default, not only when someone thinks to ask for it.",
       "card3Label": "Research Integrity",
       "card3Title": "Research Integrity and Transparency",
-      "card3Text": "Our approach to research integrity starts with refusing to treat compliance as an afterthought. Every synthetic research peptide we supply is manufactured against defined purity and identity specifications, verified through independent analytical testing, and paired with documentation researchers can request before they ever place an order. We state our compliance position plainly rather than burying it in fine print — a supplier confident in its quality control shouldn't need to obscure how that quality control actually works. Transparency isn't a marketing claim here; it's the operating model."
+      "card3Text": "Compliance doesn't get bolted on after the fact here — it's part of how a batch gets made in the first place. Every peptide we supply is manufactured against a defined purity and identity spec, checked by independent analytical testing, and comes with documentation researchers can request before they place an order, not after. We put our compliance position in plain language instead of fine print, because a supplier that actually trusts its own quality control has no reason to hide how that control works. Transparency isn't a tagline for us — it's just how the operation runs."
     },
     "ourServices": {
       "capabilitiesLabel": "What We Supply",
       "titleLine1": "Synthetic Research",
       "titleLine2": "Peptide Supply",
-      "card1Title": "Laboratory-Grade Excellence",
-      "card1Text": "Certified Aminos supplies chemically pure synthetic research peptides built for advanced life-science research, from early-stage compound screening to established laboratory protocols. Purity and identity are confirmed for every batch, not sampled occasionally.",
+      "card1Title": "Built for Bench Work",
+      "card1Text": "Certified Aminos supplies chemically pure synthetic research peptides for advanced life-science work, whether that's early-stage compound screening or an established lab protocol. Every single batch gets purity and identity confirmation — not a spot-check sample here and there.",
       "card2Title": "Exclusive Application",
-      "card2Text1": "Every product we offer is intended exclusively for laboratory research. We don't market, label, or frame our peptides for human or animal use at any point in the supply chain, from product description through fulfillment.",
-      "card2Text2": "No member of our team offers medical consultation, dosing guidance, or usage recommendations of any kind.",
+      "card2Text1": "Laboratory research is the only intended use for anything we sell. From how a product is described to how it's fulfilled, we never market, label, or position our peptides for human or animal use at any point.",
+      "card2Text2": "Nobody on our team gives medical advice, dosing guidance, or usage recommendations — that's simply not what we do.",
       "footerLabel": "Research Commitment",
-      "footerTitle": "Supporting Controlled Scientific Environments",
+      "footerTitle": "Built to Support Controlled Research Settings",
       "footerText": "Certified Aminos functions solely as a research material supplier. Operational support includes:",
       "listItems": {
         "orderProcessing": "Internal Processing",
@@ -2155,9 +2155,9 @@
     },
     "whyChooseUsGrid": {
       "eyebrow": "Our Standards",
-      "title": "Research Focused Supply Practices",
-      "titleLine1": "Research Focused",
-      "titleLine2": "Supply Practices",
+      "title": "How We Handle Every Batch",
+      "titleLine1": "How We Handle",
+      "titleLine2": "Every Batch",
       "subtitle": "Delivering high-purity, laboratory-grade research peptides, rigorously tested for research and analytical applications.",
       "bgText": "ANALYTICAL PURITY",
       "features": {
@@ -2255,30 +2255,30 @@
       "faqSubtitle": "(faqs)",
       "faqs": {
         "contactInfo": {
-          "question": "What is the contact information for Certified Aminos in the United States?",
-          "answer": "Reach us via email at <email>support@certifiedaminos.com</email> for lab inquiries."
+          "question": "How do I actually reach someone at Certified Aminos?",
+          "answer": "Email is fastest: <email>support@certified-aminos.com</email> for anything lab-related."
         },
         "usLabsContact": {
-          "question": "How can US laboratories contact Certified Aminos for research peptide orders?",
-          "answer": "Use our US contact form, call during EST/PST hours, or chat for quick lab supply quotes, serving all 50 states."
+          "question": "I'm ordering for a US lab — what's the best way to get a quote?",
+          "answer": "The contact form works for most requests, or call in during EST/PST business hours for a faster turnaround on a supply quote. We work with labs in all 50 states."
         },
         "locationShipping": {
-          "question": "Where is Certified Aminos located for US shipping and support?",
-          "answer": "We operate nationwide from US facilities, ensuring fast domestic shipping to labs in California, Texas, New York, and beyond."
+          "question": "Where does Certified Aminos ship from?",
+          "answer": "Everything moves from US-based facilities, so domestic shipping to labs anywhere in the country — California, Texas, New York, wherever — stays fast."
         },
         "serviceHours": {
-          "question": "What are your customer service hours for US researchers?",
-          "answer": "Our US-based support team is available Monday through Friday, 9 AM to 5 PM EST, to assist with peptide specifications and bulk orders."
+          "question": "When is support actually available?",
+          "answer": "Monday through Friday, 9 AM to 5 PM EST — that's when our US-based team is on hand for specifications and bulk-order questions."
         }
       },
       "supportEmailTitle": "Support Email",
-      "supportEmailDescription": "Drop us an email anytime for lab inquiries, product specifications, or general support.",
+      "supportEmailDescription": "For lab inquiries, product specs, or anything general — email works any time.",
       "supportEmailMicrocopy": "24/7 TICKET SYSTEM",
       "ordersEmailTitle": "Orders Email",
-      "ordersEmailDescription": "For order tracking, bulk procurement, and wholesale account assistance.",
+      "ordersEmailDescription": "The right line for order tracking, bulk procurement, or setting up a wholesale account.",
       "ordersEmailMicrocopy": "PRIORITY HANDLING",
       "supportPhoneTitle": "Support Phone",
-      "supportPhoneDescription": "Speak directly with our US-based support team for immediate research assistance.",
+      "supportPhoneDescription": "Prefer to talk it through? Our US-based team takes calls for anything time-sensitive.",
       "supportPhoneMicrocopy": "9AM - 5PM EST",
       "disclaimerLabel": "Disclaimer",
       "disclaimerText": "This page is provided for general and operational inquiries related to <strong>orders, documentation, account access</strong> or <strong>website-related matters</strong>."
@@ -2286,7 +2286,7 @@
     "contactHero": {
       "getSupport": "Get Support",
       "title": "Contact Us",
-      "subtitle": "Certified Aminos supplies synthetic research peptides intended exclusively for laboratory and experimental research environments."
+      "subtitle": "Whether it's an order, a spec sheet, or a bulk quote — reach the Certified Aminos team below."
     },
     "faqHero": {
       "viewPeptidesShort": "View Peptides",

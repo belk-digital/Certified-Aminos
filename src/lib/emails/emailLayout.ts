@@ -2,15 +2,15 @@ export function emailLayout({
   title, 
   content, 
   heroImage = null, 
-  serverUrl = 'https://certifiedaminos.com' 
-}: { 
-  title: string, 
-  content: string, 
+  serverUrl = 'https://certified-aminos.com'
+}: {
+  title: string,
+  content: string,
   heroImage?: string | null,
-  serverUrl?: string 
+  serverUrl?: string
 }): string {
   // Enforce production domain for emails
-  serverUrl = 'https://certifiedaminos.com';
+  serverUrl = 'https://certified-aminos.com';
   
   return `
 <!DOCTYPE html>

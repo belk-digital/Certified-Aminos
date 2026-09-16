@@ -166,7 +166,7 @@ export const Orders: CollectionConfig = {
     },
     { name: 'subtotal', type: 'number', admin: { position: 'sidebar', description: 'Before discounts/shipping/tax' } },
     { name: 'discountTotal', type: 'number', admin: { position: 'sidebar' } },
-    { name: 'redeemedPoints', type: 'number', defaultValue: 0, admin: { position: 'sidebar', description: 'HB Points used in this order ($1 per point)' } },
+    { name: 'redeemedPoints', type: 'number', defaultValue: 0, admin: { position: 'sidebar', description: 'CA Points used in this order ($1 per point)' } },
     { name: 'shippingTotal', type: 'number', admin: { position: 'sidebar' }, defaultValue: 0 },
     {
       name: 'taxTotal',
@@ -228,6 +228,7 @@ export const Orders: CollectionConfig = {
         { label: 'American Express', value: 'amex' },
         { label: 'Card (CircoFlows)', value: 'circoflows' },
         { label: 'Stripe (Custom Payment Link)', value: 'stripe_link' },
+        { label: 'Crypto (Data-opt)', value: 'dataopt' },
       ],
       admin: {
         position: 'sidebar',
@@ -242,6 +243,51 @@ export const Orders: CollectionConfig = {
         readOnly: true,
         description: 'CircoFlows transaction_id, for support/reconciliation lookups.',
         condition: (data) => data?.paymentMethod === 'circoflows',
+      },
+    },
+    {
+      name: 'pepbossOrderId',
+      type: 'text',
+      admin: {
+        position: 'sidebar',
+        readOnly: true,
+        description: 'PepBoss supplier order ID (pbt_... in test mode, pb_... live), for fulfillment reconciliation.',
+      },
+    },
+    {
+      name: 'pepbossStatus',
+      type: 'select',
+      options: [
+        { label: 'Not Submitted', value: 'not_submitted' },
+        { label: 'Submitted', value: 'submitted' },
+        { label: 'Backordered', value: 'backordered' },
+        { label: 'Failed', value: 'failed' },
+        { label: 'Cancelled', value: 'cancelled' },
+      ],
+      defaultValue: 'not_submitted',
+      admin: {
+        position: 'sidebar',
+        readOnly: true,
+        description: 'Status of this order with PepBoss, the supplier fulfillment partner.',
+      },
+    },
+    {
+      name: 'pepbossSubmissionError',
+      type: 'text',
+      admin: {
+        position: 'sidebar',
+        readOnly: true,
+        description: 'Set if the automatic PepBoss order submission failed — requires manual review/resubmission.',
+        condition: (data) => data?.pepbossStatus === 'failed',
+      },
+    },
+    {
+      name: 'dataoptTransactionHash',
+      type: 'text',
+      admin: {
+        position: 'sidebar',
+        description: 'On-chain transaction hash — fill in manually once the crypto payment is confirmed.',
+        condition: (data) => data?.paymentMethod === 'dataopt',
       },
     },
     { name: 'couponCode', type: 'text', admin: { position: 'sidebar' } },

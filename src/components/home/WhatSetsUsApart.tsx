@@ -7,10 +7,10 @@ import { useTranslations } from 'next-intl'
 import { ArrowRight } from 'lucide-react'
 
 const ADVANTAGES = [
-  { key: 'purityStandards', image: '/HelixBio Images/ChatGPT Image Jul 20, 2026, 05_41_24 AM.webp' },
-  { key: 'massSpecValidation', image: '/HelixBio Images/ChatGPT Image Jul 20, 2026, 05_44_49 AM.webp' },
-  { key: 'comprehensiveDocs', image: '/HelixBio Images/ChatGPT Image Jul 20, 2026, 05_46_36 AM.webp' },
-  { key: 'researchOnly', image: '/HelixBio Images/ChatGPT Image Jul 20, 2026, 05_50_41 AM.webp' } 
+  { key: 'purityStandards', image: '/brand-images/blog-metabolic-research-hero.webp' },
+  { key: 'massSpecValidation', image: '/brand-images/blog-tissue-repair-hero.webp' },
+  { key: 'comprehensiveDocs', image: '/brand-images/military-2.webp' },
+  { key: 'researchOnly', image: '/brand-images/military-3.webp' } 
 ]
 
 export function WhatSetsUsApart() {

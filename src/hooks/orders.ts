@@ -139,14 +139,14 @@ export const afterOrderChange: CollectionAfterChangeHook = async ({ doc, previou
         }
       }
 
-      // Refund the used HB Points back to the user
+      // Refund the used CA Points back to the user
       if (doc.redeemedPoints && doc.redeemedPoints > 0 && doc.owner) {
         try {
           const userId = typeof doc.owner === 'object' ? doc.owner.id : doc.owner
           await releasePoints(req.payload, userId, doc.redeemedPoints)
-          req.payload.logger.info(`Refunded ${doc.redeemedPoints} HB points to user ${userId} for voided order ${doc.id}`)
+          req.payload.logger.info(`Refunded ${doc.redeemedPoints} CA points to user ${userId} for voided order ${doc.id}`)
         } catch (err) {
-          req.payload.logger.error({ err }, `Failed to refund HB points for order ${doc.id}`)
+          req.payload.logger.error({ err }, `Failed to refund CA points for order ${doc.id}`)
         }
       }
 
@@ -204,11 +204,11 @@ export const afterOrderChange: CollectionAfterChangeHook = async ({ doc, previou
           const { generateOrderInvoiceHtml } = await import('@/lib/emails/generateOrderEmail')
           const html = await generateOrderInvoiceHtml(doc, req.payload, undefined, label as 'failed' | 'cancelled' | 'refunded')
           await sendTrackedEmail(req.payload, {
-            from: 'Orders | Certified Aminos <support@certifiedaminos.com>',
+            from: 'Orders | Certified Aminos <support@certified-aminos.com>',
             to: customerEmail,
             // On payment failure, admin gets the identical invoice email (same cart/totals)
             // the customer receives, rather than a separate summary-only alert.
-            ...(label === 'failed' ? { bcc: 'support@certifiedaminos.com' } : {}),
+            ...(label === 'failed' ? { bcc: 'support@certified-aminos.com' } : {}),
             subject,
             html,
           })
@@ -252,7 +252,7 @@ export const afterOrderChange: CollectionAfterChangeHook = async ({ doc, previou
           const invoiceHtml = await generateOrderInvoiceHtml(doc, req.payload, customNote)
           
           await sendTrackedEmail(req.payload, {
-            from: 'Orders | Certified Aminos <support@certifiedaminos.com>',
+            from: 'Orders | Certified Aminos <support@certified-aminos.com>',
             to: customerEmail,
             subject: `Update regarding your Order #${doc.orderNumber || doc.id}`,
             html: invoiceHtml,
@@ -288,7 +288,7 @@ export const afterOrderChange: CollectionAfterChangeHook = async ({ doc, previou
         const invoiceHtml = await generateOrderInvoiceHtml(doc, req.payload, "Great news! Your order has been shipped. You can track your package using the tracking link below.")
         
         await sendTrackedEmail(req.payload, {
-          from: 'Orders | Certified Aminos <support@certifiedaminos.com>',
+          from: 'Orders | Certified Aminos <support@certified-aminos.com>',
           to: customerEmail,
           subject: `Your Order #${doc.orderNumber || doc.id} has shipped!`,
           html: invoiceHtml,

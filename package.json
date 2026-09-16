@@ -1,7 +1,7 @@
 {
   "name": "certified-aminos",
   "version": "1.0.0",
-  "description": "Certified Aminos — research peptide storefront (merged from Helix-Bio backend)",
+  "description": "Certified Aminos — research peptide storefront",
   "license": "MIT",
   "type": "module",
   "packageManager": "pnpm@10.18.2",

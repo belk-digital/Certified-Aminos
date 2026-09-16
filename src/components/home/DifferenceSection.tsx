@@ -58,7 +58,7 @@ export function DifferenceSection() {
 
             {/* The Image */}
             <Image
-              src="/HelixBio Images/helixbio-as-routine.webp"
+              src="/brand-images/hero_vials_lab.jpg"
               alt={t('vialAlt')}
               fill
               className="object-cover transition-transform duration-700 group-hover:scale-105"

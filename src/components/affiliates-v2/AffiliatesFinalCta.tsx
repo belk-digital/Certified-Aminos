@@ -43,7 +43,7 @@ export function AffiliatesFinalCta({ onApplyClick }: { onApplyClick: (e: React.M
               </p>
               <p className="final-cta-text text-white/50 text-sm font-semibold mb-8 flex flex-col sm:flex-row gap-1 sm:gap-2">
                 <span>{t('finalCtaQuestions')}</span>
-                <a href="mailto:support@certifiedaminos.com" className="text-blue-300 hover:text-white transition-colors font-bold underline underline-offset-4">support@certifiedaminos.com</a>
+                <a href="mailto:support@certified-aminos.com" className="text-blue-300 hover:text-white transition-colors font-bold underline underline-offset-4">support@certified-aminos.com</a>
               </p>
               <button
                 onClick={onApplyClick}

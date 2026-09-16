@@ -36,7 +36,7 @@ export async function requestPasswordReset(input: ForgotPasswordInput) {
 
       if (userDocs.docs.length > 0) {
         const user = userDocs.docs[0]
-        const base = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certifiedaminos.com'
+        const base = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certified-aminos.com'
         const locale = ''
         const url = `${base}${locale}/reset-password/${token}`
         
@@ -44,7 +44,7 @@ export async function requestPasswordReset(input: ForgotPasswordInput) {
         const html = await generateForgotPasswordEmail(url, user)
 
         await sendTrackedEmail(payload, {
-          from: 'support@certifiedaminos.com',
+          from: 'support@certified-aminos.com',
           to: parsed.data.email,
           subject: 'Reset Your Password - Certified Aminos',
           html,

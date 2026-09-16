@@ -20,7 +20,7 @@ export function MissionPhilosophyJourney() {
       title: t('card1Title'),
       text: t('card1Text'),
       icon: Microscope,
-      image: "/HelixBio Images/multiple-vial.webp",
+      image: "/brand-images/vial_on_sand_minimal.jpg",
       number: "01"
     },
     {
@@ -29,7 +29,7 @@ export function MissionPhilosophyJourney() {
       title: t('card2Title'),
       text: t('card2Text'),
       icon: ShieldCheck,
-      image: "/HelixBio Images/helixbio-as-routine.webp",
+      image: "/brand-images/hero_vials_lab.jpg",
       number: "02"
     },
     {
@@ -38,7 +38,7 @@ export function MissionPhilosophyJourney() {
       title: t('card3Title'),
       text: t('card3Text'),
       icon: FlaskConical,
-      image: "/HelixBio Images/package-box.webp",
+      image: "/brand-images/vial_on_sand_minimal.jpg",
       number: "03"
     }
   ]

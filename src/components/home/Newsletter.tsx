@@ -50,7 +50,7 @@ export function Newsletter() {
     <section className="relative z-10 w-full py-32 overflow-hidden border-t border-white/5">
       <div className="absolute inset-0 z-0 bg-black">
         <Image 
-          src="/HelixBio Images/ChatGPT Image Jul 20, 2026, 05_36_52 AM.webp"
+          src="/brand-images/hero_affiliates_elite.jpg"
           alt="Abstract dark laboratory-inspired background for the Certified Aminos newsletter signup"
           fill 
           className="object-cover opacity-60"

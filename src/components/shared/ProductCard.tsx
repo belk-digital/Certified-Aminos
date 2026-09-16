@@ -23,7 +23,7 @@ interface ProductVariant {
 }
 
 const getImageUrl = (prod: any) =>
-  prod.imageUrl || prod.image || prod.images?.[0]?.image?.url || '/HelixBio Images/featured-research-2.webp'
+  prod.imageUrl || prod.image || prod.images?.[0]?.image?.url || '/brand-images/hero_vials_lab.jpg'
 const getCategory = (prod: any) => prod.category || prod.categories?.[0]?.title || 'RESEARCH PEPTIDE'
 const getDescription = (prod: any) =>
   prod.shortDescription ||
@@ -31,7 +31,7 @@ const getDescription = (prod: any) =>
   'Highly purified synthetic peptide prepared for rigorous laboratory research.'
 const getPrice = (prod: any) => (prod.isFrom ? `From $${prod.price}` : (prod.priceRange ?? prod.price))
 const getVariants = (prod: any): ProductVariant[] =>
-  Array.isArray(prod.variants) ? prod.variants.filter((v: any) => v && v.sku) : []
+  Array.isArray(prod.variants) ? prod.variants.filter((v: any) => v && v.sku && v.isVisible !== false) : []
 const getBadge = (prod: any): string | null => prod.badge && prod.badge !== 'none' ? prod.badge : null
 
 export function ProductCard({ product }: ProductCardProps) {

@@ -476,7 +476,7 @@ export async function getShopProducts(params: {
     })
 
     const uiProducts = results.docs.map(doc => {
-      let imageUrl = '/HelixBio Images/featured-research-2.webp'
+      let imageUrl = '/brand-images/hero_vials_lab.jpg'
       let hoverImageUrl: string | undefined = undefined
 
       if (doc.images && doc.images.length > 0) {
@@ -505,7 +505,7 @@ export async function getShopProducts(params: {
       }
       
       // Fallback to variant images if no global image exists
-      if (imageUrl === '/HelixBio Images/featured-research-2.webp' && doc.hasVariants && doc.variants && doc.variants.length > 0) {
+      if (imageUrl === '/brand-images/hero_vials_lab.jpg' && doc.hasVariants && doc.variants && doc.variants.length > 0) {
         for (const variant of doc.variants) {
           if (variant.images && variant.images.length > 0 && typeof variant.images[0].image === 'object' && variant.images[0].image !== null) {
             const encodeUrl = (url: string) => {
@@ -679,7 +679,7 @@ export async function getUserHBPoints() {
 
     return typeof payloadUser?.hbPoints === 'number' ? payloadUser.hbPoints : 0
   } catch (error) {
-    console.error('Error fetching HB points:', error)
+    console.error('Error fetching CA points:', error)
     return 0
   }
 }

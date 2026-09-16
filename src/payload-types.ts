@@ -140,10 +140,12 @@ export interface Config {
   globals: {
     'affiliate-settings': AffiliateSetting;
     'blog-author-profile': BlogAuthorProfile;
+    'payment-gateway-settings': PaymentGatewaySetting;
   };
   globalsSelect: {
     'affiliate-settings': AffiliateSettingsSelect<false> | AffiliateSettingsSelect<true>;
     'blog-author-profile': BlogAuthorProfileSelect<false> | BlogAuthorProfileSelect<true>;
+    'payment-gateway-settings': PaymentGatewaySettingsSelect<false> | PaymentGatewaySettingsSelect<true>;
   };
   locale: 'en' | 'es';
   widgets: {
@@ -243,7 +245,7 @@ export interface User {
     | boolean
     | null;
   /**
-   * HB Points ($1 per point). Can be used by users at checkout.
+   * CA Points ($1 per point). Can be used by users at checkout.
    */
   hbPoints?: number | null;
   updatedAt: string;
@@ -408,6 +410,10 @@ export interface Product {
   seoDescription?: string | null;
   slug?: string | null;
   sku?: string | null;
+  /**
+   * PepBoss supplier SKU for this product (used for supplier order fulfillment). Leave blank if not sourced from PepBoss.
+   */
+  pepbossSku?: string | null;
   price: number;
   /**
    * If set, this price will override the regular price.
@@ -432,9 +438,17 @@ export interface Product {
     | {
         sku: string;
         /**
+         * PepBoss supplier SKU for this variant (used for supplier order fulfillment). Leave blank if not sourced from PepBoss.
+         */
+        pepbossSku?: string | null;
+        /**
          * Check this if this variant is a multi-item kit (used for coupon filtering).
          */
         isKit?: boolean | null;
+        /**
+         * Uncheck to hide this specific dose/variant from the storefront (e.g. no longer sourceable) while keeping the product's other variants purchasable.
+         */
+        isVisible?: boolean | null;
         /**
          * Optional specific images for this variant (e.g., 5mg vial vs 10mg kit)
          */
@@ -780,7 +794,7 @@ export interface Order {
   subtotal?: number | null;
   discountTotal?: number | null;
   /**
-   * HB Points used in this order ($1 per point)
+   * CA Points used in this order ($1 per point)
    */
   redeemedPoints?: number | null;
   shippingTotal?: number | null;
@@ -824,11 +838,27 @@ export interface Order {
   /**
    * Zelle orders require manual payment confirmation before fulfillment.
    */
-  paymentMethod?: ('stripe' | 'zelle' | 'amex' | 'circoflows' | 'stripe_link') | null;
+  paymentMethod?: ('stripe' | 'zelle' | 'amex' | 'circoflows' | 'stripe_link' | 'dataopt') | null;
   /**
    * CircoFlows transaction_id, for support/reconciliation lookups.
    */
   circoflowsTransactionId?: string | null;
+  /**
+   * PepBoss supplier order ID (pbt_... in test mode, pb_... live), for fulfillment reconciliation.
+   */
+  pepbossOrderId?: string | null;
+  /**
+   * Status of this order with PepBoss, the supplier fulfillment partner.
+   */
+  pepbossStatus?: ('not_submitted' | 'submitted' | 'backordered' | 'failed' | 'cancelled') | null;
+  /**
+   * Set if the automatic PepBoss order submission failed — requires manual review/resubmission.
+   */
+  pepbossSubmissionError?: string | null;
+  /**
+   * On-chain transaction hash — fill in manually once the crypto payment is confirmed.
+   */
+  dataoptTransactionHash?: string | null;
   couponCode?: string | null;
   /**
    * Affiliate ID if referred
@@ -1786,6 +1816,7 @@ export interface ProductsSelect<T extends boolean = true> {
   seoDescription?: T;
   slug?: T;
   sku?: T;
+  pepbossSku?: T;
   price?: T;
   salePrice?: T;
   stock?: T;
@@ -1803,7 +1834,9 @@ export interface ProductsSelect<T extends boolean = true> {
     | T
     | {
         sku?: T;
+        pepbossSku?: T;
         isKit?: T;
+        isVisible?: T;
         images?:
           | T
           | {
@@ -2034,6 +2067,10 @@ export interface OrdersSelect<T extends boolean = true> {
   sendTrackingEmail?: T;
   paymentMethod?: T;
   circoflowsTransactionId?: T;
+  pepbossOrderId?: T;
+  pepbossStatus?: T;
+  pepbossSubmissionError?: T;
+  dataoptTransactionHash?: T;
   couponCode?: T;
   affiliateId?: T;
   clickId?: T;
@@ -2498,6 +2535,33 @@ export interface BlogAuthorProfile {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "payment-gateway-settings".
+ */
+export interface PaymentGatewaySetting {
+  id: number;
+  /**
+   * Drag rows to reorder how payment methods appear on checkout. Uncheck "Enabled" to hide one without deleting it.
+   */
+  gateways?:
+    | {
+        key: 'zelle' | 'circoflows' | 'stripe_link' | 'dataopt';
+        enabled?: boolean | null;
+        /**
+         * Headline shown on the checkout option. Leave blank to use the built-in default.
+         */
+        title?: string | null;
+        /**
+         * Small helper text shown under the title. Leave blank to use the built-in default.
+         */
+        description?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  updatedAt?: string | null;
+  createdAt?: string | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "affiliate-settings_select".
  */
 export interface AffiliateSettingsSelect<T extends boolean = true> {
@@ -2526,6 +2590,24 @@ export interface BlogAuthorProfileSelect<T extends boolean = true> {
     | {
         platform?: T;
         url?: T;
+        id?: T;
+      };
+  updatedAt?: T;
+  createdAt?: T;
+  globalType?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "payment-gateway-settings_select".
+ */
+export interface PaymentGatewaySettingsSelect<T extends boolean = true> {
+  gateways?:
+    | T
+    | {
+        key?: T;
+        enabled?: T;
+        title?: T;
+        description?: T;
         id?: T;
       };
   updatedAt?: T;

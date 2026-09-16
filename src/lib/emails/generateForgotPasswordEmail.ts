@@ -2,7 +2,7 @@ import { emailLayout } from './emailLayout'
 
 export async function generateForgotPasswordEmail(url: string, user?: any): Promise<string> {
   const name = user?.firstName || 'there'
-  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certifiedaminos.com';
+  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certified-aminos.com';
   
   return emailLayout({
     title: 'Reset Your Password',

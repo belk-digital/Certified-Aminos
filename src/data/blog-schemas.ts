@@ -21,7 +21,7 @@ export const BLOG_SCHEMAS: Record<string, SchemaScript[]> = {
           name: 'Certified Aminos',
           logo: {
             '@type': 'ImageObject',
-            url: 'https://certifiedaminos.com/icon.png',
+            url: 'https://certified-aminos.com/icon.png',
           },
         },
         datePublished: '2026-08-04T08:00:00Z',
@@ -174,7 +174,7 @@ export const BLOG_SCHEMAS: Record<string, SchemaScript[]> = {
           name: 'Certified Aminos',
           logo: {
             '@type': 'ImageObject',
-            url: 'https://certifiedaminos.com/icon.png',
+            url: 'https://certified-aminos.com/icon.png',
           },
         },
         datePublished: '2026-08-04T08:00:00Z',

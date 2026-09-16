@@ -32,8 +32,8 @@ export async function submitContactForm(formData: FormData) {
     const html = generateContactFormEmail(name, email, department, subject, message)
 
     await sendTrackedEmail(payload, {
-      from: `"${name}" <forms@certifiedaminos.com>`,
-      to: 'support@certifiedaminos.com',
+      from: `"${name}" <forms@certified-aminos.com>`,
+      to: 'support@certified-aminos.com',
       replyTo: email,
       subject: `[Contact Form] ${subject}`,
       html: html,

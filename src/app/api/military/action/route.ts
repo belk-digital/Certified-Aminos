@@ -94,7 +94,7 @@ export async function GET(req: Request) {
       // Send Approval Email
       const emailHtml = generateMilitaryApprovalEmail(name, couponCode);
       await sendTrackedEmail(payload, {
-        from: 'Support | Certified Aminos <support@certifiedaminos.com>',
+        from: 'Support | Certified Aminos <support@certified-aminos.com>',
         to: email,
         subject: 'Military Discount Verified - Here is your code!',
         html: emailHtml,
@@ -119,7 +119,7 @@ export async function GET(req: Request) {
       // Send Rejection Email
       const emailHtml = generateMilitaryRejectionEmail(name);
       await sendTrackedEmail(payload, {
-        from: 'Support | Certified Aminos <support@certifiedaminos.com>',
+        from: 'Support | Certified Aminos <support@certified-aminos.com>',
         to: email,
         subject: 'Update on your Military Discount Request',
         html: emailHtml,

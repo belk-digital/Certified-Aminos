@@ -10,28 +10,28 @@ const STEPS = [
     id: 1,
     title: "Step 1.",
     heading: "Sourcing & Synthesis — Where purity starts",
-    image: "/HelixBio Images/ChatGPT Image Jul 20, 2026, 05_50_41 AM.webp",
+    image: "/brand-images/military-3.webp",
     type: "image" 
   },
   {
     id: 2,
     title: "Step 2.",
     heading: "Validating identity and mass with 3rd-Party Testing",
-    image: "/HelixBio Images/ChatGPT Image Jul 20, 2026, 05_41_24 AM.webp",
+    image: "/brand-images/blog-metabolic-research-hero.webp",
     type: "solid" 
   },
   {
     id: 3,
     title: "Step 3.",
     heading: "Securing compounds via Cold-Chain Packaging",
-    image: "/HelixBio Images/ChatGPT Image Jul 20, 2026, 05_51_21 AM.webp",
+    image: "/brand-images/vial_on_sand_minimal.jpg",
     type: "solid"
   },
   {
     id: 4,
     title: "Step 4.",
     heading: "Fast, tracked shipping straight to your lab",
-    image: "/HelixBio Images/package-box.webp",
+    image: "/brand-images/vial_on_sand_minimal.jpg",
     type: "image"
   }
 ]

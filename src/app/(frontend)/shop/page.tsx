@@ -30,8 +30,8 @@ const SHOP_FAQ_KEYS = [
   'fdaApproval',
 ]
 
-const title = 'Research Peptides Shop | Lab-Verified Purity | Certified Aminos'
-const description = 'Shop research peptides online with verified COA on every batch, 99% purity, and fast USA shipping. Browse the Certified Aminos catalog and order today.'
+const title = 'Certified Aminos Shop | Research Peptides, Batch-Tested'
+const description = 'Order research-use peptides online with a COA on every batch, HPLC-confirmed purity, and USA shipping. The full Certified Aminos catalog, updated regularly.'
 
 export async function generateMetadata({
   params,
@@ -107,7 +107,7 @@ export default async function ShopPage() {
     )
   }
 
-  const siteUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certifiedaminos.com'
+  const siteUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certified-aminos.com'
 
   const t = await getTranslations('shop.shopClient')
   const shopFaqs = SHOP_FAQ_KEYS.map((key) => ({

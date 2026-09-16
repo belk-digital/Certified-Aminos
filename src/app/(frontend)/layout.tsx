@@ -19,7 +19,7 @@ const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID
 export async function generateMetadata() {
   const t = await getTranslations('common')
   return {
-    metadataBase: new URL(process.env.NEXT_PUBLIC_SERVER_URL || 'https://certifiedaminos.com'),
+    metadataBase: new URL(process.env.NEXT_PUBLIC_SERVER_URL || 'https://certified-aminos.com'),
     title: 'Certified Aminos',
     description: t('siteTagline'),
     openGraph: {

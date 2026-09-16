@@ -149,7 +149,7 @@ export const afterAffiliateApplicationChange: CollectionAfterChangeHook = async 
           // Send Welcome Email to Affiliate
           const welcomeHtml = await generateAffiliateWelcomeEmail(newAffiliate, userDoc)
           await sendTrackedEmail(req.payload, {
-            from: 'Support | Certified Aminos <support@certifiedaminos.com>',
+            from: 'Support | Certified Aminos <support@certified-aminos.com>',
             to: userDoc.email,
             subject: 'Welcome to the Partner Program! 🎉',
             html: welcomeHtml,
@@ -159,12 +159,12 @@ export const afterAffiliateApplicationChange: CollectionAfterChangeHook = async 
           // Send Notification Email to Admin
           const adminHtml = generateAdminAffiliateNotificationEmail(doc, newAffiliate, userDoc)
           await sendTrackedEmail(req.payload, {
-            from: `"Affiliate System" <forms@certifiedaminos.com>`,
-            to: 'support@certifiedaminos.com',
+            from: `"Affiliate System" <forms@certified-aminos.com>`,
+            to: 'support@certified-aminos.com',
             subject: `New Affiliate Registered: ${newAffiliate.displayName}`,
             html: adminHtml,
           })
-          req.payload.logger.info(`Sent admin notification to support@certifiedaminos.com`)
+          req.payload.logger.info(`Sent admin notification to support@certified-aminos.com`)
         }
       } catch (emailErr) {
         req.payload.logger.error({ err: emailErr }, 'Error sending affiliate emails')

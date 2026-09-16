@@ -582,7 +582,7 @@ export function ClientHeader({ cartItemCount = 0, wishlistItemCount = 0, isLogge
                   {/* Background Image */}
                   <div className="absolute inset-0">
                     <Image
-                      src={`/HelixBio Images/category-${(index % 8) + 1}.webp`}
+                      src={`/brand-images/category-${(index % 8) + 1}.webp`}
                       alt={cat.name}
                       fill
                       className="object-cover transition-transform duration-700 group-hover:scale-110"

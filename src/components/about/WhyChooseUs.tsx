@@ -7,10 +7,10 @@ import { useTranslations } from 'next-intl'
 import { FadeUp } from '@/components/motion/FadeUp'
 
 const PILLAR_META = [
-  { id: '01', key: 'synthesis', image: '/HelixBio Images/category-3.webp' },
-  { id: '02', key: 'purity', image: '/HelixBio Images/category-1.webp' },
-  { id: '03', key: 'innovation', image: '/HelixBio Images/military-3.webp' },
-  { id: '04', key: 'transparency', image: '/HelixBio Images/category-8.webp' },
+  { id: '01', key: 'synthesis', image: '/brand-images/category-3.webp' },
+  { id: '02', key: 'purity', image: '/brand-images/category-1.webp' },
+  { id: '03', key: 'innovation', image: '/brand-images/military-3.webp' },
+  { id: '04', key: 'transparency', image: '/brand-images/category-8.webp' },
 ]
 
 export function WhyChooseUs() {

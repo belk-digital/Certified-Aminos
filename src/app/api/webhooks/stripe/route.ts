@@ -93,8 +93,8 @@ export async function POST(req: Request) {
         const payload = await getPayload({ config: configPromise })
         const { sendTrackedEmail } = await import('@/lib/emails/sendTrackedEmail')
         await sendTrackedEmail(payload, {
-          from: 'Orders | Certified Aminos <support@certifiedaminos.com>',
-          to: 'support@certifiedaminos.com',
+          from: 'Orders | Certified Aminos <support@certified-aminos.com>',
+          to: 'support@certified-aminos.com',
           subject: `⚠️ Stripe dispute opened — charge ${dispute.charge}`,
           html: `<p>A chargeback/dispute was opened for charge <strong>${dispute.charge}</strong>, amount ${dispute.amount} ${dispute.currency}. Review it in the Stripe dashboard.</p>`,
         })

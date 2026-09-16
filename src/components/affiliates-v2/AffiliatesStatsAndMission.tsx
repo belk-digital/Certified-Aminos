@@ -94,7 +94,7 @@ export function AffiliatesStatsAndMission() {
               </div>
 
               <div className="mission-ring absolute top-[20%] right-[20%] w-[40%] h-[40%] bg-white border border-slate-200 rounded-full shadow-sm flex items-center justify-center overflow-hidden">
-                <img src="/HelixBio Images/affiliate-mission-1.jpg" alt="Mission" className="w-[120%] h-[120%] object-cover opacity-80" />
+                <img src="/brand-images/affiliate-mission-1.jpg" alt="Mission" className="w-[120%] h-[120%] object-cover opacity-80" />
                 <div className="absolute top-[15%] left-[5%] w-2 h-2 bg-blue-400 rounded-full -translate-y-1/2 -translate-x-1/2">
                   <span className="absolute right-4 top-1/2 -translate-y-1/2 text-right whitespace-nowrap text-sm font-medium text-slate-700 leading-tight">Dashboard<br />Access</span>
                 </div>

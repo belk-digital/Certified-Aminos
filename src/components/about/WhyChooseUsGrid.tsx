@@ -10,22 +10,22 @@ const FEATURE_META = [
   {
     key: 'analyticalEvaluation',
     icon: Microscope,
-    image: "/HelixBio Images/category-2.webp",
+    image: "/brand-images/category-2.webp",
   },
   {
     key: 'clearClassification',
     icon: ShieldCheck,
-    image: "/HelixBio Images/military-2.webp",
+    image: "/brand-images/military-2.webp",
   },
   {
     key: 'controlledHandling',
     icon: Settings,
-    image: "/HelixBio Images/category-5.webp",
+    image: "/brand-images/category-5.webp",
   },
   {
     key: 'operationalTransparency',
     icon: FileCheck,
-    image: "/HelixBio Images/category-7.webp",
+    image: "/brand-images/category-7.webp",
   }
 ];
 

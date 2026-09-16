@@ -50,7 +50,7 @@ export default async function ContactPage({
   const tClient = await getTranslations({ locale, namespace: 'content.contactClient' })
   const title = t('metaTitle')
   const description = t('metaDescription')
-  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certifiedaminos.com'
+  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certified-aminos.com'
   const path = true ? `/${slug}` : `/${locale}/${slug}`
   const url = `${baseUrl}${path}`
 
@@ -61,7 +61,7 @@ export default async function ContactPage({
   const contactInfoFaq = {
     question: tClient('faqs.contactInfo.question'),
     answer:
-      'Reach us via email at support@certifiedaminos.com for lab inquiries.',
+      'Reach us via email at support@certified-aminos.com for lab inquiries.',
   }
 
   const schema = {
@@ -88,13 +88,13 @@ export default async function ContactPage({
         '@id': `${baseUrl}/#organization`,
         name: 'Certified Aminos',
         url: baseUrl,
-        email: 'support@certifiedaminos.com',
+        email: 'support@certified-aminos.com',
 
         contactPoint: [
           {
             '@type': 'ContactPoint',
             contactType: 'customer support',
-            email: 'support@certifiedaminos.com',
+            email: 'support@certified-aminos.com',
             areaServed: 'US',
             availableLanguage: ['English', 'Spanish'],
             hoursAvailable: 'Mo-Fr 09:00-17:00',

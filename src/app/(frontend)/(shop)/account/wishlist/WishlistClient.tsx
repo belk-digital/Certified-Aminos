@@ -143,7 +143,7 @@ export function WishlistClient({ items: serverItems }: AccountWishlistProps) {
                       className="w-full h-full relative"
                     >
                       <Image
-                        src={product.image || '/HelixBio Images/featured-research-2.webp'}
+                        src={product.image || '/brand-images/hero_vials_lab.jpg'}
                         alt={product.name}
                         fill
                         className="object-cover mix-blend-multiply"

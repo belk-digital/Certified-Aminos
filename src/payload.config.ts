@@ -36,6 +36,7 @@ import { MilitaryDiscountRequests } from './collections/MilitaryDiscountRequests
 import { Trash } from './collections/Trash'
 import { AffiliateSettings } from './globals/AffiliateSettings'
 import { BlogAuthorProfile } from './globals/BlogAuthorProfile'
+import { PaymentGatewaySettings } from './globals/PaymentGatewaySettings'
 import { OrderCounters } from './collections/OrderCounters'
 
 const filename = fileURLToPath(import.meta.url)
@@ -69,6 +70,7 @@ export default buildConfig({
   globals: [
     AffiliateSettings,
     BlogAuthorProfile,
+    PaymentGatewaySettings,
   ],
   collections: [
     Trash,
@@ -209,7 +211,7 @@ export default buildConfig({
       generateDescription: ({ doc }: any) => doc?.excerpt || doc?.seoDescription || '',
       generateImage: ({ doc }: any) => doc?.featuredImage || doc?.meta?.image,
       generateURL: ({ doc }: any) => {
-        const base = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certifiedaminos.com'
+        const base = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certified-aminos.com'
         return `${base}/${doc?.slug || ''}`
       },
     }),

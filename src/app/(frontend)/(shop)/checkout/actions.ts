@@ -38,6 +38,12 @@ export async function getShippingMethods() {
   ]
 }
 
+export async function getPaymentGatewaySettings(): Promise<{ key: string; enabled: boolean; title?: string | null; description?: string | null }[]> {
+  const payload = await getPayload({ config: configPromise })
+  const settings = await payload.findGlobal({ slug: 'payment-gateway-settings', depth: 0 })
+  return (settings?.gateways || []) as { key: string; enabled: boolean; title?: string | null; description?: string | null }[]
+}
+
 export async function getActiveProcessingFees() {
   const payload = await getPayload({ config: configPromise })
   const fees = await payload.find({
@@ -199,7 +205,7 @@ export async function createPayloadOrder(
   formData: any,
   paymentIntentId: string,
   userId?: string,
-  paymentMethod: 'stripe' | 'zelle' | 'amex' | 'circoflows' | 'stripe_link' = 'stripe',
+  paymentMethod: 'stripe' | 'zelle' | 'amex' | 'circoflows' | 'stripe_link' | 'dataopt' = 'stripe',
   isNewAddress = false
 ) {
   const payload = await getPayload({ config: configPromise })
@@ -508,9 +514,9 @@ export async function createPayloadOrder(
                const invoiceHtml = await generateOrderInvoiceHtml(order, payload);
 
                await sendTrackedEmail(payload, {
-                   from: 'Orders | Certified Aminos <support@certifiedaminos.com>',
+                   from: 'Orders | Certified Aminos <support@certified-aminos.com>',
                    to: customerEmail,
-                   bcc: 'support@certifiedaminos.com',
+                   bcc: 'support@certified-aminos.com',
                    subject: `Order Invoice #${order.orderNumber || order.id}`,
                    html: invoiceHtml,
                })
@@ -681,8 +687,8 @@ export async function notifyAdminFailedPayment(orderId: string, errorMessage: st
     })
 
     await sendTrackedEmail(payload, {
-      from: 'Support | Certified Aminos <support@certifiedaminos.com>',
-      to: 'support@certifiedaminos.com',
+      from: 'Support | Certified Aminos <support@certified-aminos.com>',
+      to: 'support@certified-aminos.com',
       subject: `⚠️ Payment Failed - Order #${orderNumber}`,
       html: html,
     })

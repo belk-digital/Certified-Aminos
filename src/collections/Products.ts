@@ -63,6 +63,14 @@ export const Products: CollectionConfig = {
       },
     },
     {
+      name: 'pepbossSku',
+      type: 'text',
+      admin: {
+        condition: (data) => !data.hasVariants,
+        description: 'PepBoss supplier SKU for this product (used for supplier order fulfillment). Leave blank if not sourced from PepBoss.',
+      },
+    },
+    {
       name: 'price',
       type: 'number',
       required: true,
@@ -122,6 +130,13 @@ export const Products: CollectionConfig = {
           required: true,
         },
         {
+          name: 'pepbossSku',
+          type: 'text',
+          admin: {
+            description: 'PepBoss supplier SKU for this variant (used for supplier order fulfillment). Leave blank if not sourced from PepBoss.',
+          },
+        },
+        {
           name: 'isKit',
           type: 'checkbox',
           label: 'Is this a Kit / Bundle?',
@@ -129,6 +144,15 @@ export const Products: CollectionConfig = {
           admin: {
             description: 'Check this if this variant is a multi-item kit (used for coupon filtering).',
           }
+        },
+        {
+          name: 'isVisible',
+          type: 'checkbox',
+          label: 'Visible for purchase',
+          defaultValue: true,
+          admin: {
+            description: 'Uncheck to hide this specific dose/variant from the storefront (e.g. no longer sourceable) while keeping the product\'s other variants purchasable.',
+          },
         },
         {
           name: 'images',

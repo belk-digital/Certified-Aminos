@@ -50,10 +50,10 @@ type OrderData = {
   discountTotal?: number
   redeemedPoints?: number
   couponCode?: string
-  paymentMethod: 'stripe' | 'zelle' | 'amex' | 'circoflows' | 'stripe_link'
+  paymentMethod: 'stripe' | 'zelle' | 'amex' | 'circoflows' | 'stripe_link' | 'dataopt'
 }
 
-const ZELLE_RECIPIENT_EMAIL = 'support@certifiedaminos.com'
+const ZELLE_RECIPIENT_EMAIL = 'support@certified-aminos.com'
 
 const CONFETTI_PIECES = [
   { x: -80, y: -60, color: '#92DCE5', delay: 0.0, rotation: 45, scale: 1.2 },
@@ -150,6 +150,7 @@ export function OrderConfirmationClient({ order }: { order: OrderData }) {
     amex: 'American Express',
     circoflows: t('paymentMethodCard'),
     stripe_link: 'Stripe (Custom Link)',
+    dataopt: 'Crypto',
   }
 
   const renderOrderSummary = () => (
@@ -206,7 +207,7 @@ export function OrderConfirmationClient({ order }: { order: OrderData }) {
           </div>
           {!!order.redeemedPoints && order.redeemedPoints > 0 && (
             <div className="flex justify-between text-gray-600 pt-1 pb-4 border-b border-gray-100">
-              <span>HB Points</span>
+              <span>CA Points</span>
               <span className="font-bold text-green-600">-${order.redeemedPoints.toFixed(2)}</span>
             </div>
           )}
@@ -220,7 +221,7 @@ export function OrderConfirmationClient({ order }: { order: OrderData }) {
       <div className="mt-6 text-center print:hidden">
         <span className="text-[11px] text-gray-400 font-medium">
           {t.rich('questionsContactSupport', {
-            link: (chunks) => <a href="mailto:support@certifiedaminos.com" className="text-gray-600 underline hover:text-black transition-colors">{chunks}</a>,
+            link: (chunks) => <a href="mailto:support@certified-aminos.com" className="text-gray-600 underline hover:text-black transition-colors">{chunks}</a>,
           })}
         </span>
       </div>

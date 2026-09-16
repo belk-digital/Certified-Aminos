@@ -4,7 +4,7 @@ import { emailLayout } from './emailLayout'
 export async function generateOrderInvoiceHtml(order: any, payload?: any, customNote?: string, statusContext: 'success' | 'failed' | 'cancelled' | 'refunded' = 'success'): Promise<string> {
   const orderNumber = order.orderNumber || order.id;
   const orderDate = order.createdAt ? new Date(order.createdAt).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) : new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
-  const serverUrl = 'https://certifiedaminos.com';
+  const serverUrl = 'https://certified-aminos.com';
   
   const formatMoney = (amount: number) => `$${(amount).toFixed(2)}`;
   
@@ -133,7 +133,7 @@ export async function generateOrderInvoiceHtml(order: any, payload?: any, custom
 
   const pointsRow = redeemedPoints > 0 ? `
     <tr>
-      <td style="padding: 8px 0; font-size: 14px; color: #6b7280;">HB Points Redeemed</td>
+      <td style="padding: 8px 0; font-size: 14px; color: #6b7280;">CA Points Redeemed</td>
       <td align="right" style="padding: 8px 0; font-size: 14px; color: #16a34a;">-${formatMoney(redeemedPoints)}</td>
     </tr>
   ` : '';
@@ -182,7 +182,7 @@ export async function generateOrderInvoiceHtml(order: any, payload?: any, custom
                 <h2 style="margin: 0 0 16px 0; font-size: 24px; color: #0A0A0A; font-weight: 800; letter-spacing: -0.5px;">Your order has been ${statusContext}</h2>
                 <p style="margin: 0 0 16px 0; font-size: 15px; color: #2A2A2A; line-height: 1.6;">Hi ${customerName},</p>
                 <p style="margin: 0 0 24px 0; font-size: 15px; color: #2A2A2A; line-height: 1.6;">Your order <strong>#${orderNumber}</strong> has been <strong>${statusContext}</strong>.</p>
-                ${order.redeemedPoints ? `<p style="margin: 0 0 16px 0; font-size: 15px; color: #2A2A2A; line-height: 1.6;">Any HB Points used on this order have been credited back to your account.</p>` : ''}
+                ${order.redeemedPoints ? `<p style="margin: 0 0 16px 0; font-size: 15px; color: #2A2A2A; line-height: 1.6;">Any CA Points used on this order have been credited back to your account.</p>` : ''}
               ` : `
                 <h2 style="margin: 0 0 16px 0; font-size: 24px; color: #0A0A0A; font-weight: 800; letter-spacing: -0.5px;">Thank you for your order, ${customerName}!</h2>
               `}
@@ -212,7 +212,7 @@ export async function generateOrderInvoiceHtml(order: any, payload?: any, custom
                 <div style="display: block; margin-bottom: 16px;">
                   <div style="background-color: #ffffff; border-radius: 8px; padding: 12px 24px; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">
                     <p style="margin: 0 0 4px 0; color: #A855F7; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">Send To</p>
-                    <p style="margin: 0; color: #6B21A8; font-size: 16px; font-weight: 700;">support@certifiedaminos.com</p>
+                    <p style="margin: 0; color: #6B21A8; font-size: 16px; font-weight: 700;">support@certified-aminos.com</p>
                   </div>
                 </div>
                 

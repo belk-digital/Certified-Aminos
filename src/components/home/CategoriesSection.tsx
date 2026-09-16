@@ -26,14 +26,14 @@ const CATEGORY_IMAGE_BY_NAME: Record<string, string> = {
 }
 
 const FALLBACK_CATEGORY_IMAGES = [
-  '/HelixBio Images/category-1.webp',
-  '/HelixBio Images/category-2.webp',
-  '/HelixBio Images/category-3.webp',
-  '/HelixBio Images/category-4.webp',
-  '/HelixBio Images/category-5.webp',
-  '/HelixBio Images/category-6.webp',
-  '/HelixBio Images/category-7.webp',
-  '/HelixBio Images/category-8.webp',
+  '/brand-images/category-1.webp',
+  '/brand-images/category-2.webp',
+  '/brand-images/category-3.webp',
+  '/brand-images/category-4.webp',
+  '/brand-images/category-5.webp',
+  '/brand-images/category-6.webp',
+  '/brand-images/category-7.webp',
+  '/brand-images/category-8.webp',
 ]
 
 function getCategoryImage(name: string, index: number) {

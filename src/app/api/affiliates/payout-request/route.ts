@@ -86,8 +86,8 @@ export async function POST(request: Request) {
 </html>
       `
       await sendTrackedEmail(payload, {
-        from: `"Payout Request" <forms@certifiedaminos.com>`,
-        to: 'support@certifiedaminos.com',
+        from: `"Payout Request" <forms@certified-aminos.com>`,
+        to: 'support@certified-aminos.com',
         subject: `[Payout Request] $${amount.toFixed(2)} from ${affiliate.displayName || affiliate.referralSlug}`,
         html: emailHtml,
       })

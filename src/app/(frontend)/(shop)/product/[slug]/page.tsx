@@ -38,7 +38,7 @@ export async function generateMetadata({
   if (product.images && product.images.length > 0 && typeof product.images[0].image === 'object' && product.images[0].image?.url) {
     imageUrl = product.images[0].image.url
     if (imageUrl.startsWith('/')) {
-      imageUrl = `${process.env.NEXT_PUBLIC_SERVER_URL || 'https://certifiedaminos.com'}${imageUrl}`
+      imageUrl = `${process.env.NEXT_PUBLIC_SERVER_URL || 'https://certified-aminos.com'}${imageUrl}`
     }
   }
 
@@ -94,6 +94,10 @@ export default async function ProductPage({
 
   const rawProduct = docs[0]
 
+  if (rawProduct.isVisible === false) {
+    notFound()
+  }
+
   // Map images
   const mappedImages = rawProduct.images?.map((img: any) => {
     if (typeof img.image === 'object' && img.image?.url) {
@@ -116,7 +120,7 @@ export default async function ProductPage({
     
     // Only push fallback if NO global images and NO variant images exist
     if (!hasVariantImages) {
-      mappedImages.push('/HelixBio Images/featured-research-2.webp')
+      mappedImages.push('/brand-images/hero_vials_lab.jpg')
     }
   }
 
@@ -128,7 +132,7 @@ export default async function ProductPage({
   // Map variants
   let mappedVariants = []
   if (rawProduct.hasVariants && rawProduct.variants?.length) {
-    mappedVariants = rawProduct.variants.map((v: any, index: number) => {
+    mappedVariants = rawProduct.variants.filter((v: any) => v.isVisible !== false).map((v: any, index: number) => {
       const mappedImages = v.images?.map((img: any) => {
         if (typeof img.image === 'object' && img.image?.url) {
           return encodeImageUrl(img.image.url)
@@ -284,7 +288,7 @@ export default async function ProductPage({
       })
 
       productData.relatedProducts = relatedDocs.map((p: any) => {
-        let imageUrl = '/HelixBio Images/featured-research-2.webp'
+        let imageUrl = '/brand-images/hero_vials_lab.jpg'
         let hoverImageUrl = undefined
         if (p.images && p.images.length > 0 && typeof p.images[0].image === 'object' && p.images[0].image?.url) {
           imageUrl = encodeImageUrl(p.images[0].image.url)
@@ -294,7 +298,7 @@ export default async function ProductPage({
         }
 
         // Fallback to variant images if no global image exists
-        if (imageUrl === '/HelixBio Images/featured-research-2.webp' && p.hasVariants && p.variants && p.variants.length > 0) {
+        if (imageUrl === '/brand-images/hero_vials_lab.jpg' && p.hasVariants && p.variants && p.variants.length > 0) {
           for (const variant of p.variants) {
             if (variant.images && variant.images.length > 0 && typeof variant.images[0].image === 'object' && variant.images[0].image?.url) {
               imageUrl = encodeImageUrl(variant.images[0].image.url)
@@ -340,7 +344,7 @@ export default async function ProductPage({
     })
 
     productData.relatedProducts = recentDocs.map((p: any) => {
-      let imageUrl = '/HelixBio Images/featured-research-2.webp'
+      let imageUrl = '/brand-images/hero_vials_lab.jpg'
       let hoverImageUrl = undefined
       if (p.images && p.images.length > 0 && typeof p.images[0].image === 'object' && p.images[0].image?.url) {
         imageUrl = encodeImageUrl(p.images[0].image.url)
@@ -350,7 +354,7 @@ export default async function ProductPage({
       }
 
       // Fallback to variant images if no global image exists
-      if (imageUrl === '/HelixBio Images/featured-research-2.webp' && p.hasVariants && p.variants && p.variants.length > 0) {
+      if (imageUrl === '/brand-images/hero_vials_lab.jpg' && p.hasVariants && p.variants && p.variants.length > 0) {
         for (const variant of p.variants) {
           if (variant.images && variant.images.length > 0 && typeof variant.images[0].image === 'object' && variant.images[0].image?.url) {
             imageUrl = encodeImageUrl(variant.images[0].image.url)
@@ -393,7 +397,7 @@ export default async function ProductPage({
   })
 
   const mappedBlogs = blogDocs.map((post: any) => {
-    let imageUrl = '/HelixBio Images/featured-research-2.webp'
+    let imageUrl = '/brand-images/hero_vials_lab.jpg'
     if (post.featuredImage && typeof post.featuredImage === 'object' && post.featuredImage.url) {
       imageUrl = encodeImageUrl(post.featuredImage.url)
     }
@@ -412,7 +416,7 @@ export default async function ProductPage({
 
   productData.suggestedBlogs = mappedBlogs
 
-  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certifiedaminos.com'
+  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certified-aminos.com'
   const productUrl = `${baseUrl}/product/${slug}`
   
   const productSchema = {
@@ -421,7 +425,7 @@ export default async function ProductPage({
     name: productData.name,
     description: productData.shortDescription,
     image: (productData.images.length > 0 ? productData.images : (
-      productData.variants.find(v => v.images?.length > 0)?.images || ['/HelixBio Images/featured-research-2.webp']
+      productData.variants.find(v => v.images?.length > 0)?.images || ['/brand-images/hero_vials_lab.jpg']
     )).map((img: string) => img.startsWith('http') ? img : `${baseUrl}${img}`),
     sku: productData.sku || productData.id,
     mpn: productData.sku || productData.id,

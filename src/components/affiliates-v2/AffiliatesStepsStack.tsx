@@ -9,7 +9,7 @@ import { useTranslations } from 'next-intl'
 
 gsap.registerPlugin(ScrollTrigger)
 
-const IMAGES = ['/HelixBio Images/affiliate-step1-1.jpg', '/HelixBio Images/affiliate-step2-1.jpg', '/HelixBio Images/affiliate-step3-1.jpg', '/HelixBio Images/affiliate-step4-1.jpg']
+const IMAGES = ['/brand-images/affiliate-step1-1.jpg', '/brand-images/affiliate-step2-1.jpg', '/brand-images/affiliate-step3-1.jpg', '/brand-images/affiliate-step4-1.jpg']
 
 export function AffiliatesStepsStack() {
   const sectionRef = useRef<HTMLDivElement>(null)

@@ -1,7 +1,7 @@
 import { emailLayout } from './emailLayout'
 
 export function generateMilitaryApprovalEmail(name: string, couponCode: string): string {
-  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certifiedaminos.com';
+  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certified-aminos.com';
   
   return emailLayout({
     title: 'Thank you for your service! 🇺🇸',

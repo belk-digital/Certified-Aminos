@@ -3,7 +3,7 @@ import { emailLayout } from './emailLayout'
 export async function generateAffiliateSaleEmail(affiliate: any, commissionAmount: number, isVoid: boolean): Promise<string> {
   const amount = (commissionAmount || 0).toFixed(2)
   const name = affiliate.displayName || 'Partner'
-  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certifiedaminos.com'
+  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certified-aminos.com'
 
   const title = isVoid ? 'Sale Tracked (Voided)' : 'New Sale Tracked!'
   const content = isVoid 

@@ -23,7 +23,7 @@ const GLOBAL_PRIVATE_PATHS = [
 ]
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certifiedaminos.com'
+  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certified-aminos.com'
 
   const disallow = [
     ...GLOBAL_PRIVATE_PATHS,

@@ -194,11 +194,11 @@ export const Users: CollectionConfig = {
     },
     {
       name: 'hbPoints',
-      label: 'HB Points',
+      label: 'CA Points',
       type: 'number',
       defaultValue: 0,
       admin: {
-        description: 'HB Points ($1 per point). Can be used by users at checkout.',
+        description: 'CA Points ($1 per point). Can be used by users at checkout.',
         readOnly: false,
       },// Only server-side code (checkout, refund hooks) using overrideAccess may change this —
       // never a customer's own PATCH request, or they could mint free store credit for themselves.
