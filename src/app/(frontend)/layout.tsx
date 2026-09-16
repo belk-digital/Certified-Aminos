@@ -30,7 +30,7 @@ export async function generateMetadata() {
       images: [getOgImageUrl('Certified Aminos', t('siteTagline'))],
     },
     icons: {
-      icon: '/favicon.jpeg',
+      icon: '/brand-images/favicon.png',
     },
   }
 }
