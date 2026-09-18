@@ -6,7 +6,7 @@ import { Container } from '@/components/ui/container'
 import { FilterSidebar } from '@/components/shop/FilterSidebar'
 import { ProductCard } from '@/components/shared/ProductCard'
 import { Product } from '@/components/shop/PrimaryProductCard' // Re-use interface for now
-import { motion, useInView, useScroll, useMotionValueEvent } from 'framer-motion'
+import { motion, useInView } from 'framer-motion'
 import { X, Filter, Search, ShieldCheck, FlaskConical, Award, ArrowRight, Flag, ArrowUpRight, ChevronLeft, ChevronRight } from 'lucide-react'
 import Image from 'next/image'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
@@ -59,23 +59,6 @@ function ShopClientInner({ initialProducts, totalPages, categories }: ShopClient
   const [currentPage, setCurrentPage] = useState(1)
   const [isLoadingMore, setIsLoadingMore] = useState(false)
   const [hasMore, setHasMore] = useState(totalPages > 1)
-  const [isScrollingDown, setIsScrollingDown] = useState(false)
-  const lastScrollYRef = React.useRef(0)
-
-  const { scrollY } = useScroll()
-
-  useMotionValueEvent(scrollY, "change", (latest) => {
-    if (typeof window !== 'undefined') {
-      const currentScrollY = latest
-      if (currentScrollY > lastScrollYRef.current && currentScrollY > 100) {
-        if (!isScrollingDown) setIsScrollingDown(true)
-      } else if (currentScrollY < lastScrollYRef.current) {
-        if (isScrollingDown) setIsScrollingDown(false)
-      }
-      lastScrollYRef.current = currentScrollY
-    }
-  })
-  
   const loadMoreRef = React.useRef<HTMLDivElement>(null)
   const isInView = useInView(loadMoreRef, { margin: "400px" })
 
@@ -220,7 +203,7 @@ function ShopClientInner({ initialProducts, totalPages, categories }: ShopClient
 
       <Container size="wide" className="pb-12 max-w-[1600px] w-full" id="products-grid">
         {/* Modern Minimal Category Pills */}
-        <div className={`flex flex-col gap-3 sm:gap-4 mb-8 sm:mb-12 py-4 sticky z-40 transition-all duration-300 ${isScrollingDown ? 'top-4 sm:top-6 opacity-100 translate-y-0' : 'top-[160px] sm:top-[180px] md:top-[200px] opacity-100 translate-y-0'}`}>
+        <div className="flex flex-col gap-3 sm:gap-4 mb-8 sm:mb-12 py-4">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between w-full bg-white/95 backdrop-blur-3xl rounded-2xl p-2 sm:p-3 border border-black/5 shadow-[0_4px_25px_rgb(0,0,0,0.04)] gap-2 sm:gap-0">
             
             {/* Scrollable Categories */}
