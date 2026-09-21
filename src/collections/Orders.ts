@@ -228,7 +228,9 @@ export const Orders: CollectionConfig = {
         { label: 'American Express', value: 'amex' },
         { label: 'Card (CircoFlows)', value: 'circoflows' },
         { label: 'Stripe (Custom Payment Link)', value: 'stripe_link' },
-        { label: 'Crypto (Data-opt)', value: 'dataopt' },
+        { label: 'Crypto (Payzentric)', value: 'payzentric' },
+        // Legacy: kept so existing Data-opt orders stay valid in the payment_method enum.
+        { label: 'Crypto (Data-opt, legacy)', value: 'dataopt' },
       ],
       admin: {
         position: 'sidebar',
@@ -282,12 +284,23 @@ export const Orders: CollectionConfig = {
       },
     },
     {
-      name: 'dataoptTransactionHash',
+      name: 'payzentricReceiptId',
       type: 'text',
       admin: {
         position: 'sidebar',
-        description: 'On-chain transaction hash — fill in manually once the crypto payment is confirmed.',
-        condition: (data) => data?.paymentMethod === 'dataopt',
+        readOnly: true,
+        description: 'Payzentric receipt ID, for support/reconciliation lookups.',
+        condition: (data) => data?.paymentMethod === 'payzentric',
+      },
+    },
+    {
+      name: 'payzentricTransactionHash',
+      type: 'text',
+      admin: {
+        position: 'sidebar',
+        readOnly: true,
+        description: 'On-chain transaction hash once the crypto payment confirms.',
+        condition: (data) => data?.paymentMethod === 'payzentric',
       },
     },
     { name: 'couponCode', type: 'text', admin: { position: 'sidebar' } },

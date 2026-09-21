@@ -53,14 +53,14 @@ export function CheckoutClient() {
   // Form State
   const [attemptedSubmit, setAttemptedSubmit] = useState(false)
   const [isProcessing, setIsProcessing] = useState(false)
-  const [selectedPaymentMethod, setSelectedPaymentMethod] = useState<'zelle' | 'amex' | 'circoflows' | 'stripe_link' | 'dataopt'>('zelle')
+  const [selectedPaymentMethod, setSelectedPaymentMethod] = useState<'zelle' | 'amex' | 'circoflows' | 'stripe_link' | 'payzentric'>('zelle')
   // Which payment methods are enabled and in what order — managed in Payload (Checkout →
   // Payment Gateway Settings). Seeded with a sane default so the UI isn't empty before the
   // fetch below resolves.
   const [gatewaySettings, setGatewaySettings] = useState<{ key: string; enabled: boolean; title?: string | null; description?: string | null }[]>([
     { key: 'zelle', enabled: true },
     { key: 'stripe_link', enabled: true },
-    { key: 'dataopt', enabled: true },
+    { key: 'payzentric', enabled: true },
   ])
   const [formData, setFormData] = useState({
     email: '',
@@ -547,10 +547,7 @@ export function CheckoutClient() {
     }
   }
 
-  // Manual-confirmation flow, same as Zelle: order is placed as pending, and the team follows
-  // up with the customer directly (email/SMS) with the crypto payment address/instructions.
-  // No payment gateway API call here — an admin marks the order paid once payment is confirmed.
-  const handleDataOptPlaceOrder = async () => {
+  const handlePayzentricPlaceOrder = async () => {
     setAttemptedSubmit(true)
     if (!formData.email || !formData.firstName || !formData.address || !formData.city || !formData.state || !formData.zip || !formData.phone) {
       toast.error(t('fillRequiredFieldsOrder'))
@@ -560,17 +557,15 @@ export function CheckoutClient() {
     setIsProcessing(true)
 
     try {
-      const { createPayloadOrder } = await import('./actions')
-      const orderRes = await createPayloadOrder(
+      const { createPayzentricPayment } = await import('./payzentricActions')
+      const orderRes = await createPayzentricPayment(
         items, shippingMethod, appliedCoupon?.code, isRedeemingPoints,
         { ...formData, email: user?.email || formData.email },
-        'dataopt_pending',
         user?.id as string,
-        'dataopt',
         selectedAddressId === 'new'
       )
 
-      if (orderRes.error || !orderRes.orderId) {
+      if (orderRes.error || !orderRes.redirectUrl) {
         toast.error(orderRes.error || t('freeOrderInitFailed'))
         if ((orderRes as any).priceChanged && (orderRes as any).updatedItems) {
           useCartStore.getState().setItems((orderRes as any).updatedItems)
@@ -579,9 +574,10 @@ export function CheckoutClient() {
         return
       }
 
-      toast.success(t('orderSuccessRedirecting'))
-      useCartStore.getState().clear()
-      window.location.href = `/order-confirmation/${orderRes.orderId}`
+      // Cart is intentionally left intact here — the customer hasn't paid yet, they're only
+      // being redirected to Payzentric's payment portal. It's cleared once payment actually
+      // succeeds (see OrderConfirmationClient's sync fallback / the webhook-driven finalize).
+      window.location.href = orderRes.redirectUrl
     } catch (e: any) {
       toast.error(t('unexpectedError'))
       setIsProcessing(false)
@@ -631,10 +627,10 @@ export function CheckoutClient() {
         </span>
       ),
     },
-    dataopt: {
-      handler: handleDataOptPlaceOrder,
+    payzentric: {
+      handler: handlePayzentricPlaceOrder,
       defaultTitle: 'Pay with Cryptocurrency',
-      defaultDescription: 'Place your order now — our team will get back to you with the cryptocurrency payment address and instructions via email or SMS to complete your purchase.',
+      defaultDescription: 'Pay securely with cryptocurrency via a secure payment portal.',
       iconBox: (
         <div className="flex items-center justify-center w-9 h-9 rounded-[10px] bg-emerald-100 shrink-0">
           <Bitcoin size={18} className="text-emerald-700" />

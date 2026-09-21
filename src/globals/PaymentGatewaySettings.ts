@@ -31,7 +31,7 @@ export const PaymentGatewaySettings: GlobalConfig = {
             { label: 'Zelle', value: 'zelle' },
             { label: 'Card (CircoFlows)', value: 'circoflows' },
             { label: 'Stripe (Custom Payment Link)', value: 'stripe_link' },
-            { label: 'Crypto (Data-opt)', value: 'dataopt' },
+            { label: 'Crypto (Payzentric)', value: 'payzentric' },
           ],
         },
         {
@@ -58,7 +58,7 @@ export const PaymentGatewaySettings: GlobalConfig = {
         { key: 'zelle', enabled: true, title: 'Zelle', description: "You'll receive Zelle payment instructions on the next page after placing your order." },
         { key: 'circoflows', enabled: false, title: 'Credit / Debit Card', description: "You'll be securely redirected to enter your card details." },
         { key: 'stripe_link', enabled: true, title: 'Stripe (Custom Payment Link)', description: 'Secure payment via an emailed Stripe link.' },
-        { key: 'dataopt', enabled: true, title: 'Pay with Cryptocurrency', description: 'Place your order now — our team will get back to you with the cryptocurrency payment address and instructions via email or SMS to complete your purchase.' },
+        { key: 'payzentric', enabled: true, title: 'Pay with Cryptocurrency', description: 'Pay securely with cryptocurrency via a secure payment portal.' },
       ],
     },
   ],

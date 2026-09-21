@@ -838,7 +838,7 @@ export interface Order {
   /**
    * Zelle orders require manual payment confirmation before fulfillment.
    */
-  paymentMethod?: ('stripe' | 'zelle' | 'amex' | 'circoflows' | 'stripe_link' | 'dataopt') | null;
+  paymentMethod?: ('stripe' | 'zelle' | 'amex' | 'circoflows' | 'stripe_link' | 'payzentric' | 'dataopt') | null;
   /**
    * CircoFlows transaction_id, for support/reconciliation lookups.
    */
@@ -856,9 +856,13 @@ export interface Order {
    */
   pepbossSubmissionError?: string | null;
   /**
-   * On-chain transaction hash — fill in manually once the crypto payment is confirmed.
+   * Payzentric receipt ID, for support/reconciliation lookups.
    */
-  dataoptTransactionHash?: string | null;
+  payzentricReceiptId?: string | null;
+  /**
+   * On-chain transaction hash once the crypto payment confirms.
+   */
+  payzentricTransactionHash?: string | null;
   couponCode?: string | null;
   /**
    * Affiliate ID if referred
@@ -2070,7 +2074,8 @@ export interface OrdersSelect<T extends boolean = true> {
   pepbossOrderId?: T;
   pepbossStatus?: T;
   pepbossSubmissionError?: T;
-  dataoptTransactionHash?: T;
+  payzentricReceiptId?: T;
+  payzentricTransactionHash?: T;
   couponCode?: T;
   affiliateId?: T;
   clickId?: T;
@@ -2544,7 +2549,7 @@ export interface PaymentGatewaySetting {
    */
   gateways?:
     | {
-        key: 'zelle' | 'circoflows' | 'stripe_link' | 'dataopt';
+        key: 'zelle' | 'circoflows' | 'stripe_link' | 'payzentric';
         enabled?: boolean | null;
         /**
          * Headline shown on the checkout option. Leave blank to use the built-in default.

@@ -7,7 +7,7 @@ const LABELS: Record<string, string> = {
   zelle: 'Zelle',
   circoflows: 'Card (CircoFlows)',
   stripe_link: 'Stripe (Custom Payment Link)',
-  dataopt: 'Crypto (Data-opt)',
+  payzentric: 'Crypto (Payzentric)',
 }
 
 export const PaymentGatewayRowLabel: React.FC = () => {

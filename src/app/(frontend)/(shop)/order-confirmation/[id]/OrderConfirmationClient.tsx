@@ -50,7 +50,7 @@ type OrderData = {
   discountTotal?: number
   redeemedPoints?: number
   couponCode?: string
-  paymentMethod: 'stripe' | 'zelle' | 'amex' | 'circoflows' | 'stripe_link' | 'dataopt'
+  paymentMethod: 'stripe' | 'zelle' | 'amex' | 'circoflows' | 'stripe_link' | 'payzentric'
 }
 
 const ZELLE_RECIPIENT_EMAIL = 'support@certified-aminos.com'
@@ -137,6 +137,9 @@ export function OrderConfirmationClient({ order }: { order: OrderData }) {
     if (order.paymentMethod === 'circoflows') {
       import('../../checkout/circoflowsActions').then(m => m.syncCircoFlowsPaymentStatus(order.orderId))
     }
+    if (order.paymentMethod === 'payzentric') {
+      import('../../checkout/payzentricActions').then(m => m.syncPayzentricPaymentStatus(order.orderId))
+    }
   }, [order.paymentMethod, order.orderId])
 
   const handleCopyOrderId = () => {
@@ -150,7 +153,7 @@ export function OrderConfirmationClient({ order }: { order: OrderData }) {
     amex: 'American Express',
     circoflows: t('paymentMethodCard'),
     stripe_link: 'Stripe (Custom Link)',
-    dataopt: 'Crypto',
+    payzentric: 'Crypto',
   }
 
   const renderOrderSummary = () => (
