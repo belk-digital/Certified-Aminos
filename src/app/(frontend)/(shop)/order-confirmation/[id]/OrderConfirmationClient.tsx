@@ -50,7 +50,7 @@ type OrderData = {
   discountTotal?: number
   redeemedPoints?: number
   couponCode?: string
-  paymentMethod: 'stripe' | 'zelle' | 'amex' | 'circoflows' | 'stripe_link' | 'payzentric'
+  paymentMethod: 'stripe' | 'zelle' | 'amex' | 'circoflows' | 'stripe_link' | 'payzentric' | 'dataopt'
 }
 
 const ZELLE_RECIPIENT_EMAIL = 'support@certified-aminos.com'
@@ -154,6 +154,7 @@ export function OrderConfirmationClient({ order }: { order: OrderData }) {
     circoflows: t('paymentMethodCard'),
     stripe_link: 'Stripe (Custom Link)',
     payzentric: 'Crypto',
+    dataopt: 'Crypto',
   }
 
   const renderOrderSummary = () => (
