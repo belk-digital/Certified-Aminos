@@ -1,3 +1,4 @@
+import { SITE_URL } from '@/lib/siteUrl'
 import { Hero } from '@/components/home/Hero'
 import { BestSellerSection } from '@/components/home/BestSellerSection'
 import { WhyPeptides } from '@/components/home/WhyPeptides'
@@ -124,17 +125,17 @@ export default async function Homepage() {
             {
               '@context': 'https://schema.org',
               '@type': 'WebPage',
-              '@id': 'https://certified-aminos.com/#webpage',
-              url: 'https://certified-aminos.com/',
+              '@id': `${SITE_URL}/#webpage`,
+              url: `${SITE_URL}/`,
               name: title,
               description: description,
             },
             {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
-              '@id': 'https://certified-aminos.com/#breadcrumb',
+              '@id': `${SITE_URL}/#breadcrumb`,
               itemListElement: [
-                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://certified-aminos.com/' },
+                { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_URL}/` },
               ],
             },
             {
@@ -219,19 +220,19 @@ export default async function Homepage() {
               '@context': 'https://schema.org',
               '@type': 'Organization',
               name: 'Certified Aminos',
-              url: 'https://certified-aminos.com',
+              url: `${SITE_URL}`,
               description: 'USA-based supplier of research-use-only synthetic peptides for laboratory research.',
               email: 'support@certified-aminos.com',
             },
             {
               '@context': 'https://schema.org',
               '@type': 'WebSite',
-              url: 'https://certified-aminos.com',
+              url: `${SITE_URL}`,
               potentialAction: {
                 '@type': 'SearchAction',
                 target: {
                   '@type': 'EntryPoint',
-                  urlTemplate: 'https://certified-aminos.com/shop?q={search_term_string}',
+                  urlTemplate: `${SITE_URL}/shop?q={search_term_string}`,
                 },
                 'query-input': 'required name=search_term_string',
               },

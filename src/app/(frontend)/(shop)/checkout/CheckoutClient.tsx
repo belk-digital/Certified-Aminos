@@ -4,7 +4,7 @@ import React, { useState, useEffect, useRef } from 'react'
 import Image from 'next/image'
 import { Link } from '@/i18n/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Check, ChevronDown, ChevronUp, Lock, Loader2, ArrowRight, ArrowLeft, ShieldCheck, Tag, ShoppingCart, Sparkles, Truck, Zap, CreditCard, Wallet, Smartphone, Bitcoin } from 'lucide-react'
+import { Check, ChevronDown, ChevronUp, Lock, Loader2, ArrowRight, ArrowLeft, ShieldCheck, Tag, ShoppingCart, Sparkles, Truck, Zap, CreditCard, Wallet, Smartphone } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
@@ -629,13 +629,8 @@ export function CheckoutClient() {
     },
     payzentric: {
       handler: handlePayzentricPlaceOrder,
-      defaultTitle: 'Pay with Cryptocurrency',
-      defaultDescription: 'Pay securely with cryptocurrency via a secure payment portal.',
-      iconBox: (
-        <div className="flex items-center justify-center w-9 h-9 rounded-[10px] bg-emerald-100 shrink-0">
-          <Bitcoin size={18} className="text-emerald-700" />
-        </div>
-      ),
+      defaultTitle: 'Secure Payment Portal',
+      defaultDescription: "You'll be securely redirected to complete payment through our payment portal.",
       labelContent: (selected, title) => (
         <span className={`text-sm font-bold transition-colors ${selected ? 'text-black' : 'text-gray-700'}`}>
           {title}

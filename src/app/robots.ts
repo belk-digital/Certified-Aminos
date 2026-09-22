@@ -1,3 +1,4 @@
+import { SITE_URL } from '@/lib/siteUrl'
 import type { MetadataRoute } from 'next'
 
 // Paths that exist under the application.
@@ -23,7 +24,7 @@ const GLOBAL_PRIVATE_PATHS = [
 ]
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certified-aminos.com'
+  const baseUrl = SITE_URL
 
   const disallow = [
     ...GLOBAL_PRIVATE_PATHS,
@@ -33,7 +34,9 @@ export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
       userAgent: '*',
-      allow: '/',
+      // /api/og serves the social/share preview images referenced by og:image — must stay crawlable
+      // (the longer path wins over the /api disallow below).
+      allow: ['/', '/api/og'],
       disallow,
     },
     sitemap: `${baseUrl}/sitemap.xml`,

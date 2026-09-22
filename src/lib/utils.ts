@@ -1,3 +1,4 @@
+import { SITE_URL } from '@/lib/siteUrl'
 import { clsx, type ClassValue } from 'clsx'
 import { twMerge } from 'tailwind-merge'
 
@@ -5,7 +6,7 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
 export function getOgImageUrl(title: string, description?: string) {
-  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certified-aminos.com'
+  const baseUrl = SITE_URL
   const url = new URL('/api/og', baseUrl)
   url.searchParams.set('title', title)
   if (description) {

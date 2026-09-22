@@ -1,3 +1,4 @@
+import { SITE_URL } from '@/lib/siteUrl'
 import React from 'react'
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages } from 'next-intl/server'
@@ -8,7 +9,7 @@ import '@/app/globals.css'
 const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID
 
 export const metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SERVER_URL || 'https://certified-aminos.com'),
+  metadataBase: new URL(SITE_URL),
   title: 'Certified Aminos',
   description: 'Research-Grade Peptide Compounds',
 }

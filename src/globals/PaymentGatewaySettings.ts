@@ -58,7 +58,7 @@ export const PaymentGatewaySettings: GlobalConfig = {
         { key: 'zelle', enabled: true, title: 'Zelle', description: "You'll receive Zelle payment instructions on the next page after placing your order." },
         { key: 'circoflows', enabled: false, title: 'Credit / Debit Card', description: "You'll be securely redirected to enter your card details." },
         { key: 'stripe_link', enabled: true, title: 'Stripe (Custom Payment Link)', description: 'Secure payment via an emailed Stripe link.' },
-        { key: 'payzentric', enabled: true, title: 'Pay with Cryptocurrency', description: 'Pay securely with cryptocurrency via a secure payment portal.' },
+        { key: 'payzentric', enabled: true, title: 'Secure Payment Portal', description: "You'll be securely redirected to complete payment through our payment portal." },
       ],
     },
   ],

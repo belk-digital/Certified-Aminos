@@ -1,9 +1,10 @@
+import { SITE_URL } from '@/lib/siteUrl'
 import type { MetadataRoute } from 'next'
 import { getPayload } from 'payload'
 import configPromise from '@payload-config'
 import * as Sentry from '@sentry/nextjs'
 
-const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certified-aminos.com'
+const baseUrl = SITE_URL
 
 // Grouped by crawl priority rather than alphabetically, so the sitemap's own ordering
 // reflects which pages matter most (highest first) — homepage/shop first, then core
@@ -30,7 +31,9 @@ function entry(
 ) {
   return {
     url: `${baseUrl}${path}`,
-    lastModified: opts?.lastModified || new Date(),
+    // Only emit lastmod when we know a real modification date — stamping "now" on every page teaches
+    // Google to ignore the field.
+    ...(opts?.lastModified ? { lastModified: opts.lastModified } : {}),
     ...(opts?.priority !== undefined ? { priority: opts.priority } : {}),
     ...(opts?.changeFrequency ? { changeFrequency: opts.changeFrequency } : {}),
   }

@@ -1,3 +1,4 @@
+import { SITE_URL } from '@/lib/siteUrl'
 import React from 'react'
 import { Metadata } from 'next'
 import { getTranslations } from 'next-intl/server'
@@ -70,7 +71,7 @@ export default async function FaqPage({
     }))
   );
 
-  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certified-aminos.com'
+  const baseUrl = SITE_URL
   const path = true ? `/${slug}` : `/${locale}/${slug}`
   const url = `${baseUrl}${path}`
 

@@ -1,3 +1,4 @@
+import { SITE_URL } from '@/lib/siteUrl'
 import React from 'react'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
@@ -60,7 +61,7 @@ export async function generateMetadata({
   const title = `${post.title} | Certified Aminos`
   const description = post.excerpt || ''
   const path = `/${slug}`
-  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certified-aminos.com'
+  const baseUrl = SITE_URL
   const imageUrl = toAbsoluteUrl(baseUrl, getFeaturedImageUrl(post))
   const payload = await getPayload({ config: configPromise })
   const authorProfile = await payload.findGlobal({ slug: 'blog-author-profile' })
@@ -170,7 +171,7 @@ export default async function BlogPostPage({
 
   const { first: introContent, rest: restContent } = splitFirstParagraph(post.content)
 
-  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certified-aminos.com'
+  const baseUrl = SITE_URL
   const postUrl = `${baseUrl}/${slug}`
   const isoDate = post.publishedAt ? new Date(post.publishedAt).toISOString() : new Date(post.createdAt).toISOString()
 

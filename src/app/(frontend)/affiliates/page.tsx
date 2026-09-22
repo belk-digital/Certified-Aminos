@@ -1,3 +1,4 @@
+import { SITE_URL } from '@/lib/siteUrl'
 import { getPayloadUser } from '@/lib/auth/getPayloadUser'
 import { getPayload } from 'payload'
 import config from '@payload-config'
@@ -55,7 +56,7 @@ export default async function AffiliatesLandingPage({
   const t = await getTranslations('affiliate.landing')
   const title = t('metaTitle')
   const description = t('metaDescription')
-  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certified-aminos.com'
+  const baseUrl = SITE_URL
   const path = true ? `/${slug}` : `/${locale}/${slug}`
   const url = `${baseUrl}${path}`
 

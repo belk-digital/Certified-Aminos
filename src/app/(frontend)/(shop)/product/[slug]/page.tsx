@@ -1,3 +1,4 @@
+import { SITE_URL } from '@/lib/siteUrl'
 import React from 'react'
 import { ProductClient } from './ProductClient'
 import { getOgImageUrl, encodeImageUrl } from '@/lib/utils'
@@ -30,7 +31,9 @@ export async function generateMetadata({
   }
 
   const product = docs[0]
-  const title = product.seoTitle || product.name || 'Product'
+  // A bare product name ("Semaglutide") gives search engines nothing to rank on beyond a single word —
+  // fall back to name + category qualifier + trust signal + brand unless an explicit seoTitle is set.
+  const title = product.seoTitle || (product.name ? `${product.name} for Research | COA-Verified | Certified Aminos` : 'Product')
   const description = product.seoDescription || product.description?.substring(0, 160) || ''
 
   // Get primary image for open graph
@@ -38,7 +41,7 @@ export async function generateMetadata({
   if (product.images && product.images.length > 0 && typeof product.images[0].image === 'object' && product.images[0].image?.url) {
     imageUrl = product.images[0].image.url
     if (imageUrl.startsWith('/')) {
-      imageUrl = `${process.env.NEXT_PUBLIC_SERVER_URL || 'https://certified-aminos.com'}${imageUrl}`
+      imageUrl = `${SITE_URL}${imageUrl}`
     }
   }
 
@@ -416,7 +419,7 @@ export default async function ProductPage({
 
   productData.suggestedBlogs = mappedBlogs
 
-  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certified-aminos.com'
+  const baseUrl = SITE_URL
   const productUrl = `${baseUrl}/product/${slug}`
   
   const productSchema = {

@@ -1,3 +1,4 @@
+import { SITE_URL } from '@/lib/siteUrl'
 export interface SchemaScript {
   id: string
   jsonLd: Record<string, any>
@@ -21,7 +22,7 @@ export const BLOG_SCHEMAS: Record<string, SchemaScript[]> = {
           name: 'Certified Aminos',
           logo: {
             '@type': 'ImageObject',
-            url: 'https://certified-aminos.com/icon.png',
+            url: `${SITE_URL}/icon.png`,
           },
         },
         datePublished: '2026-08-04T08:00:00Z',
@@ -150,7 +151,7 @@ export const BLOG_SCHEMAS: Record<string, SchemaScript[]> = {
           name: 'Certified Aminos',
           logo: {
             '@type': 'ImageObject',
-            url: 'https://certified-aminos.com/icon.png',
+            url: `${SITE_URL}/icon.png`,
           },
         },
         datePublished: '2026-08-04T08:00:00Z',

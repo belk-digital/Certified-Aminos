@@ -63,6 +63,9 @@ export function Hero() {
           <div className="w-full">
             <h1 className="hero-title-main font-syncopate font-normal uppercase leading-[1.1] tracking-wide text-[2.2rem] sm:text-[8vw] lg:text-[5vw] text-center lg:text-left">
               PRECISION BEYOND
+              {/* The visual headline continues in the "PURITY" element below; this completes the heading for
+                  crawlers/screen readers and names what the page is about. */}
+              <span className="sr-only"> Purity: HPLC-Verified Research Peptides</span>
             </h1>
           </div>
           <div className="flex justify-between items-start mt-0 lg:mt-6 flex-col lg:flex-row items-center lg:items-start">
@@ -76,7 +79,7 @@ export function Hero() {
                 EXPLORE CATALOGUE <span>→</span>
               </button>
             </div>
-            <div className="order-1 lg:order-2 hero-title-sub font-syncopate font-normal uppercase leading-[1.1] tracking-wide text-[2.2rem] sm:text-[8vw] lg:text-[5.5vw] text-center lg:text-left">
+            <div aria-hidden="true" className="order-1 lg:order-2 hero-title-sub font-syncopate font-normal uppercase leading-[1.1] tracking-wide text-[2.2rem] sm:text-[8vw] lg:text-[5.5vw] text-center lg:text-left">
               PURITY
             </div>
           </div>

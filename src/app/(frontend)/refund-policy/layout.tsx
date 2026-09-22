@@ -1,3 +1,4 @@
+import { SITE_URL } from '@/lib/siteUrl'
 import React from 'react'
 import type { Metadata } from 'next'
 import { getTranslations } from 'next-intl/server'
@@ -45,7 +46,7 @@ export default async function RefundPolicyLayout({
   const t = await getTranslations('legal.refundPolicy')
   const title = t('metaTitle')
   const description = t('metaDescription')
-  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certified-aminos.com'
+  const baseUrl = SITE_URL
   const path = true ? '/refund-policy' : `/${locale}/refund-policy`
   const url = `${baseUrl}${path}`
 

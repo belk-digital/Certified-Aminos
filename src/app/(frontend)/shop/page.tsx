@@ -1,3 +1,4 @@
+import { SITE_URL } from '@/lib/siteUrl'
 import React from 'react'
 import { ShopClient } from '@/components/shop/ShopClient'
 import { Metadata } from 'next'
@@ -102,7 +103,7 @@ export default async function ShopPage() {
     )
   }
 
-  const siteUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://certified-aminos.com'
+  const siteUrl = SITE_URL
 
   const t = await getTranslations('shop.shopClient')
   const shopFaqs = SHOP_FAQ_KEYS.map((key) => ({
