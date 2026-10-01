@@ -35,16 +35,13 @@ async function getPost(slug: string) {
   return docs[0] || null
 }
 
-export async function generateStaticParams() {
-  const payload = await getPayload({ config: configPromise })
-  const { docs } = await payload.find({
-    collection: 'blog-posts',
-    where: { status: { equals: 'published' } },
-    limit: 200,
-    depth: 0,
-  })
-  return docs.map((post: any) => ({ slug: post.slug }))
-}
+// Intentionally no generateStaticParams here: this route already reads `headers()`
+// (via the shared Header component), which forces fully dynamic rendering on every
+// request regardless — so a static-params list never actually prerenders anything,
+// it only leaves Vercel's ISR/static routing layer wired up for a route that never
+// uses it, which crashed every /[slug] request in production (FUNCTION_INVOCATION_FAILED,
+// "ISR Cache Miss"). Every post is now server-rendered fresh per request, same as
+// /blog and /product/[slug].
 
 export async function generateMetadata({
   params,
