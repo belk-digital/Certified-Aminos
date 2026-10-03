@@ -21,7 +21,7 @@ const CartDrawer = dynamic(() => import('@/components/cart/CartDrawer').then(mod
 // Only the free-shipping line stays — the coupon-code announcements (PURITY20, NEW25, KITS15)
 // were removed per request. A single-entry array keeps the existing rotation/countdown code
 // paths intact (they just become no-ops) rather than ripping that logic out.
-const ANNOUNCEMENTS = [
+const ANNOUNCEMENTS: { key: string; couponCode: string | null; expiresAt: string | null }[] = [
   {
     key: "freeShipping",
     couponCode: null,
@@ -410,6 +410,10 @@ export function ClientHeader({ cartItemCount = 0, wishlistItemCount = 0, isLogge
     </div>
   )
 
+  // Narrowed local (rather than repeated ANNOUNCEMENTS[announcementIndex] lookups) so TS can
+  // actually verify couponCode/expiresAt are non-null together at each usage below.
+  const currentAnnouncement = ANNOUNCEMENTS[announcementIndex]
+
   return (
     <>
       {!pathname.includes('/account') && (
@@ -447,12 +451,12 @@ export function ClientHeader({ cartItemCount = 0, wishlistItemCount = 0, isLogge
                     {/* Desktop & Tablet Layout */}
                     <div className="hidden sm:flex flex-row items-center justify-center gap-4 lg:gap-6 w-full">
                       <span className="text-[10px] lg:text-[11px] font-heading font-extrabold tracking-[0.2em] uppercase text-center shrink-0 mt-[2px] drop-shadow-sm">
-                        {t(`announcements.${ANNOUNCEMENTS[announcementIndex].key}`)}
+                        {t(`announcements.${currentAnnouncement.key}`)}
                       </span>
-                      {ANNOUNCEMENTS[announcementIndex].couponCode && ANNOUNCEMENTS[announcementIndex].expiresAt && (
+                      {currentAnnouncement.couponCode && currentAnnouncement.expiresAt && (
                         <div className="flex items-center gap-3 shrink-0">
-                          <CountdownTimer expiresAt={ANNOUNCEMENTS[announcementIndex].expiresAt} />
-                          <CouponBox code={ANNOUNCEMENTS[announcementIndex].couponCode} />
+                          <CountdownTimer expiresAt={currentAnnouncement.expiresAt} />
+                          <CouponBox code={currentAnnouncement.couponCode} />
                         </div>
                       )}
                     </div>
@@ -460,7 +464,7 @@ export function ClientHeader({ cartItemCount = 0, wishlistItemCount = 0, isLogge
                     {/* Mobile Layout */}
                     <div className="flex sm:hidden flex-row items-center justify-center w-full h-full relative">
                       <AnimatePresence mode="wait">
-                        {(!ANNOUNCEMENTS[announcementIndex].couponCode || !showMobileTimer) ? (
+                        {!(currentAnnouncement.couponCode && currentAnnouncement.expiresAt && showMobileTimer) ? (
                           <motion.span
                             key={`text-${announcementIndex}`}
                             initial={{ y: 10, opacity: 0 }}
@@ -469,7 +473,7 @@ export function ClientHeader({ cartItemCount = 0, wishlistItemCount = 0, isLogge
                             transition={{ duration: 0.2 }}
                             className="text-[9px] font-heading font-extrabold tracking-[0.1em] uppercase text-center mt-[1px] absolute w-full px-6 leading-snug drop-shadow-sm"
                           >
-                            {t(`announcements.${ANNOUNCEMENTS[announcementIndex].key}`)}
+                            {t(`announcements.${currentAnnouncement.key}`)}
                           </motion.span>
                         ) : (
                           <motion.div
@@ -480,8 +484,8 @@ export function ClientHeader({ cartItemCount = 0, wishlistItemCount = 0, isLogge
                             transition={{ duration: 0.2 }}
                             className="flex items-center justify-center gap-2 scale-90 absolute w-full"
                           >
-                            <CountdownTimer expiresAt={ANNOUNCEMENTS[announcementIndex].expiresAt} />
-                            <CouponBox code={ANNOUNCEMENTS[announcementIndex].couponCode} />
+                            <CountdownTimer expiresAt={currentAnnouncement.expiresAt} />
+                            <CouponBox code={currentAnnouncement.couponCode} />
                           </motion.div>
                         )}
                       </AnimatePresence>
