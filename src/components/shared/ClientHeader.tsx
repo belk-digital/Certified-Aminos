@@ -18,24 +18,12 @@ import { getCategoryDisplayName } from '@/lib/categoryDisplay'
 
 const CartDrawer = dynamic(() => import('@/components/cart/CartDrawer').then(mod => mod.CartDrawer), { ssr: false })
 
+// Only the free-shipping line stays — the coupon-code announcements (PURITY20, NEW25, KITS15)
+// were removed per request. A single-entry array keeps the existing rotation/countdown code
+// paths intact (they just become no-ops) rather than ripping that logic out.
 const ANNOUNCEMENTS = [
   {
-    key: "puritySale",
-    couponCode: "PURITY20",
-    expiresAt: new Date(Date.now() + 86400000).toISOString() // 24 hours
-  },
-  {
     key: "freeShipping",
-    couponCode: null,
-    expiresAt: null
-  },
-  {
-    key: "newCustomerDiscount",
-    couponCode: null,
-    expiresAt: null
-  },
-  {
-    key: "kitsDiscount",
     couponCode: null,
     expiresAt: null
   }
