@@ -206,6 +206,8 @@ export async function generateOrderInvoiceHtml(order: any, payload?: any, custom
 
                 <div style="display: block; margin-bottom: 20px;">
                   <div style="background-color: #ffffff; border: 1px solid #E9D5FF; border-radius: 12px; padding: 8px; display: inline-block;">
+                    <!-- Same static QR image as the on-site order-confirmation page -->
+                    <img src="https://res.cloudinary.com/denskvdyt/image/upload/v1783110064/zelle-qr_h2xhvt.jpg" width="160" height="160" alt="Zelle QR code" style="display: block; width: 160px; height: 160px; object-fit: contain;" />
                   </div>
                 </div>
                 
