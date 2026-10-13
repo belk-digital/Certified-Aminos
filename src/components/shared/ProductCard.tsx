@@ -18,6 +18,7 @@ export interface ProductCardProps {
 interface ProductVariant {
   sku: string
   price: number
+  originalPrice?: number
   dose: string
   image?: string
 }
@@ -109,6 +110,7 @@ export function ProductCard({ product }: ProductCardProps) {
         1,
         variant.price || 0,
         variant.dose,
+        variant.originalPrice,
       )
       toast.success(`Added ${variant.dose} to cart`, { action: { label: 'VIEW', onClick: cartStore.openCart } })
       cartStore.openCart()
@@ -117,12 +119,15 @@ export function ProductCard({ product }: ProductCardProps) {
 
     const priceRaw = getPrice(product)
     const priceVal = typeof priceRaw === 'string' ? parseFloat(priceRaw.replace(/[^0-9.]/g, '')) : Number(priceRaw)
+    const originalVal = product.originalPrice ? parseFloat(String(product.originalPrice).replace(/[^0-9.]/g, '')) : undefined
 
     cartStore.addItem(
       { id: product.id || product.slug, name: product.name, imageUrl: getImageUrl(product), slug: product.slug },
       'Default',
       1,
       priceVal || 0,
+      undefined,
+      originalVal,
     )
     toast.success('Added to cart', { action: { label: 'VIEW', onClick: cartStore.openCart } })
     cartStore.openCart()
@@ -132,6 +137,16 @@ export function ProductCard({ product }: ProductCardProps) {
   const displayPrice = selectedVariant ? `$${selectedVariant.price}` : (() => {
     const price = getPrice(product)
     return typeof price === 'string' && price.includes('$') ? price.replace('From ', '') : `$${price}`
+  })()
+  const displayOriginalPrice = selectedVariant
+    ? (selectedVariant.originalPrice ? `$${selectedVariant.originalPrice}` : undefined)
+    : product.originalPrice
+  const displayDiscountPercent = (() => {
+    if (!displayOriginalPrice) return undefined
+    const orig = parseFloat(displayOriginalPrice.replace(/[^0-9.]/g, ''))
+    const sale = parseFloat(displayPrice.replace(/[^0-9.]/g, ''))
+    if (!orig || orig <= sale) return undefined
+    return Math.round(((orig - sale) / orig) * 100)
   })()
 
   return (
@@ -218,9 +233,21 @@ export function ProductCard({ product }: ProductCardProps) {
         </div>
 
         <div className="flex justify-between items-center mt-auto pointer-events-auto">
-          <span className="text-navy-deep font-bold text-lg md:text-xl">
-            {displayPrice}
-          </span>
+          <div className="flex items-baseline gap-1.5 flex-wrap">
+            {displayOriginalPrice && (
+              <span className="text-xs md:text-sm text-gray-400 line-through font-medium">
+                {displayOriginalPrice}
+              </span>
+            )}
+            <span className="text-navy-deep font-bold text-lg md:text-xl">
+              {displayPrice}
+            </span>
+            {displayDiscountPercent !== undefined && (
+              <span className="px-1.5 py-0.5 rounded-md bg-red-50 text-red-600 text-[10px] font-bold tracking-tight whitespace-nowrap">
+                -{displayDiscountPercent}%
+              </span>
+            )}
+          </div>
           <button
             onClick={handleAddToCart}
             aria-label="Add to cart"

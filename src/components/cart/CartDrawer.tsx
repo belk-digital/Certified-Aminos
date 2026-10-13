@@ -212,9 +212,16 @@ export function CartDrawer() {
                                   size="responsive"
                                 />
                               </div>
-                              <span className="text-sm font-extrabold text-slate-900 tracking-wide">
-                                ${(item.priceSnapshot * item.quantity).toFixed(2)}
-                              </span>
+                              <div className="flex items-baseline gap-1.5">
+                                {item.originalPriceSnapshot && item.originalPriceSnapshot > item.priceSnapshot && (
+                                  <span className="text-xs text-slate-400 line-through font-medium">
+                                    ${(item.originalPriceSnapshot * item.quantity).toFixed(2)}
+                                  </span>
+                                )}
+                                <span className="text-sm font-extrabold text-slate-900 tracking-wide">
+                                  ${(item.priceSnapshot * item.quantity).toFixed(2)}
+                                </span>
+                              </div>
                             </div>
                           </div>
                         </motion.div>

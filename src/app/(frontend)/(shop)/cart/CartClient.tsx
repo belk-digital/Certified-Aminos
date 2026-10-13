@@ -465,9 +465,16 @@ export function CartClient() {
 
                   {/* Mobile Price & Stepper Row */}
                   <div className="flex items-center justify-between sm:hidden mt-2 w-full">
-                    <span className="text-sm font-bold text-black">
-                      ${(item.priceSnapshot * item.quantity).toFixed(2)}
-                    </span>
+                    <div className="flex items-baseline gap-1.5">
+                      {item.originalPriceSnapshot && item.originalPriceSnapshot > item.priceSnapshot && (
+                        <span className="text-xs text-gray-400 line-through font-medium">
+                          ${(item.originalPriceSnapshot * item.quantity).toFixed(2)}
+                        </span>
+                      )}
+                      <span className="text-sm font-bold text-black">
+                        ${(item.priceSnapshot * item.quantity).toFixed(2)}
+                      </span>
+                    </div>
                     <div className="flex items-center justify-center border border-gray-200 rounded-full bg-transparent px-2 h-8 w-20">
                       <button onClick={() => updateQuantity(item.lineId, Math.max(1, item.quantity - 1))} className="px-2 text-gray-500 hover:text-black transition-colors">-</button>
                       <span className="flex-1 text-center text-[10px] font-bold text-black">{item.quantity}</span>
@@ -484,6 +491,11 @@ export function CartClient() {
 
                   {/* Desktop Total Price */}
                   <div className="hidden sm:flex flex-col items-end min-w-[80px]">
+                    {item.originalPriceSnapshot && item.originalPriceSnapshot > item.priceSnapshot && (
+                      <span className="text-xs text-gray-400 line-through font-medium">
+                        ${(item.originalPriceSnapshot * item.quantity).toFixed(2)}
+                      </span>
+                    )}
                     <span className="text-base font-bold text-black">
                       ${(item.priceSnapshot * item.quantity).toFixed(2)}
                     </span>

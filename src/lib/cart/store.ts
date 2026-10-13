@@ -27,6 +27,10 @@ export type CartLine = {
   variantTitle?: string | null
   quantity: number
   priceSnapshot: number
+  // The pre-discount price, when this line was added while on sale — used to render the
+  // crossed-out "was" price next to the charged price in the cart drawer/page. Omitted
+  // entirely when there's no genuine discount (e.g. the price only went up, or was unset).
+  originalPriceSnapshot?: number
   product: MinimalProduct
 }
 
@@ -41,7 +45,8 @@ interface CartState {
     variantSku: string | null,
     quantity: number,
     priceSnapshot: number,
-    variantTitle?: string | null
+    variantTitle?: string | null,
+    originalPriceSnapshot?: number
   ) => void
   removeItem: (lineId: string) => void
   updateQuantity: (lineId: string, quantity: number) => void
@@ -92,7 +97,7 @@ export const useCartStore = create<CartState>()(
 
       setItems: (items) => set({ items }),
 
-      addItem: (product, variantSku, quantity, priceSnapshot, variantTitle) => {
+      addItem: (product, variantSku, quantity, priceSnapshot, variantTitle, originalPriceSnapshot) => {
         set((state) => {
           const existingItemIndex = state.items.findIndex(
             (item) => String(item.productId) === String(product.id) && item.variantSku === variantSku,
@@ -102,6 +107,7 @@ export const useCartStore = create<CartState>()(
             const newItems = [...state.items]
             newItems[existingItemIndex].quantity += quantity
             newItems[existingItemIndex].priceSnapshot = priceSnapshot
+            newItems[existingItemIndex].originalPriceSnapshot = originalPriceSnapshot
             if (variantTitle) newItems[existingItemIndex].variantTitle = variantTitle
             syncCartToPayload(newItems).catch(console.error)
             return { items: newItems, isOpen: true }
@@ -116,6 +122,7 @@ export const useCartStore = create<CartState>()(
               variantTitle: variantTitle || variantSku,
               quantity,
               priceSnapshot,
+              originalPriceSnapshot,
               product,
             },
           ]

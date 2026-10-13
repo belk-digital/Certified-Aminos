@@ -607,9 +607,11 @@ export async function getShopProducts(params: {
                   }
                 }
               }
+              const hasVariantSale = typeof v.salePrice === 'number' && v.salePrice > 0
               return {
                 sku: v.sku,
-                price: typeof v.salePrice === 'number' && v.salePrice > 0 ? v.salePrice : v.price,
+                price: hasVariantSale ? v.salePrice : v.price,
+                originalPrice: hasVariantSale ? v.price : undefined,
                 dose: doseOption?.value || v.sku,
                 image: variantImage,
               }
