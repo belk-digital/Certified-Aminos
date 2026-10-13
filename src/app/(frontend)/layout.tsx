@@ -9,6 +9,7 @@ import { Header } from '@/components/shared/Header'
 import { Footer } from '@/components/shared/Footer'
 import { SmoothScroll } from '@/components/shared/SmoothScroll'
 import { Toaster } from '@/components/ui/sonner'
+import { AgeGate } from '@/components/shared/AgeGate'
 import { GlobalNavigationSpinner } from '@/components/shared/GlobalNavigationSpinner'
 import { CustomScrollbar } from '@/components/shared/CustomScrollbar'
 import { getOgImageUrl } from '@/lib/utils'
@@ -87,6 +88,7 @@ export default async function FrontendLayout({ children }: { children: React.Rea
                 <LayoutClientWrapper header={<Header />} footer={<Footer />}>
                   {children}
                 </LayoutClientWrapper>
+                <AgeGate />
                 <Toaster />
               </SmoothScroll>
             </div>

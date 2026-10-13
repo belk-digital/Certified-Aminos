@@ -67,22 +67,14 @@
     }
   },
   "ageGate": {
-    "restrictedAccess": "Restricted Access",
-    "titleLine1": "Age",
-    "titleLine2": "Verification",
-    "disclaimerLabel": "RESEARCH PURPOSES ONLY",
-    "disclaimerText": "The products on this website are strictly for in-vitro laboratory research. They are <strong>not</strong> for human consumption, supplements, or drugs.",
-    "consentText": "By clicking confirm, you acknowledge the intended use of these compounds and verify you are of legal age.",
-    "confirmButton": "18+ Older",
-    "denyButton": "Under 18",
-    "agreementPrefix": "By entering, you agree to our",
-    "termsLink": "Terms of Service",
-    "deniedTitle": "Access Denied",
-    "deniedText": "Due to the strict nature of research chemicals, you must be 18 years of age or older to enter this site.",
-    "goBack": "Wait, I made a mistake",
-    "purityGuaranteed": "Purity Guaranteed",
-    "hplcVerifiedLine1": "99.1% HPLC",
-    "hplcVerifiedLine2": "Verified"
+    "eyebrow": "AGE VERIFICATION",
+    "heading": "RESEARCH PURPOSES ONLY",
+    "body": "The products on this website are strictly for in-vitro laboratory research use only. By entering, you confirm you are 21 years of age or older and understand these compounds are not for human or veterinary use.",
+    "confirmButton": "I AM 21 OR OLDER — ENTER",
+    "declineButton": "I AM UNDER 21",
+    "deniedHeading": "ACCESS RESTRICTED",
+    "deniedBody": "You must be 21 years of age or older to enter this site.",
+    "goBack": "Go back"
   },
   "nav": {},
   "searchOverlay": {

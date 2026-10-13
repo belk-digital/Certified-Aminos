@@ -73,11 +73,9 @@ const mockApplication = {
   socialLinks: [{ platform: 'Instagram', url: 'https://instagram.com/alexdoe' }],
 }
 
-// certifiedaminos.com isn't verified in Resend yet (see email-logs — every send has been
-// failing since at least Aug 23). Falling back to Resend's built-in sandbox sender here so we
-// can still test template rendering/delivery; this override is local to this script only and
-// doesn't touch the real RESEND_FROM_EMAIL used by the app.
-const TEST_FROM = 'Certified Aminos (Test) <onboarding@resend.dev>'
+// certified-aminos.com is now verified in Resend, so send from the real configured address
+// (falls back to Resend's sandbox sender only if RESEND_FROM_EMAIL isn't set locally).
+const TEST_FROM = process.env.RESEND_FROM_EMAIL || 'Certified Aminos (Test) <onboarding@resend.dev>'
 
 async function send(payload: any, subject: string, html: string) {
   await sendTrackedEmail(payload, { to: TEST_TO, from: TEST_FROM, subject: `[TEST] ${subject}`, html })
