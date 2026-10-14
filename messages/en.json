@@ -1133,6 +1133,8 @@
       "phoneForDelivery": "Phone (for delivery updates)",
       "shippingMethod": "Shipping Method",
       "businessDays": "{days} business days",
+      "freeShippingProgress": "Add ${amount} more for free shipping",
+      "freeShippingUnlocked": "🎉 You've unlocked free shipping!",
       "freeShippingUnlockedToast": "Congratulations, you get Free Shipping!",
       "payment": "Payment",
       "encryptionNotice": "All transactions are 256-bit encrypted and secure.",

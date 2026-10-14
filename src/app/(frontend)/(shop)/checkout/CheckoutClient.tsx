@@ -277,6 +277,12 @@ export function CheckoutClient() {
     }
   }, [subtotal, availableShippingMethods, shippingMethod, isInternational])
 
+  const freeShippingThreshold = isInternational
+    ? null
+    : availableShippingMethods.find((m: any) => !m.isInternational && m.price === 0 && m.minOrderAmount > 0)?.minOrderAmount ?? null
+  const amountToFreeShipping = freeShippingThreshold ? Math.max(freeShippingThreshold - subtotal, 0) : 0
+  const progressToFreeShipping = freeShippingThreshold ? Math.min((subtotal / freeShippingThreshold) * 100, 100) : 0
+
   const selectedMethodObj = visibleShippingMethods.find(m => m.method === shippingMethod) || visibleShippingMethods[0]
   const shippingCost = selectedMethodObj?.price || 0
   const isExpressShipping = shippingMethod.toLowerCase().includes('express')
@@ -1089,6 +1095,23 @@ export function CheckoutClient() {
               {/* Shipping Method */}
               <section className="flex flex-col gap-4">
                 <h2 className="text-sm font-bold uppercase tracking-widest text-black mb-2 mt-6">{t('shippingMethod')}</h2>
+                {freeShippingThreshold !== null && (
+                  <div className="p-4 rounded-[12px] border border-gray-200 bg-[#fafafa]">
+                    <p className="text-[10px] font-bold uppercase tracking-widest text-gray-500 mb-2">
+                      {amountToFreeShipping > 0
+                        ? t('freeShippingProgress', { amount: amountToFreeShipping.toFixed(2) })
+                        : t('freeShippingUnlocked')}
+                    </p>
+                    <div className="w-full h-1.5 bg-gray-200 rounded-full overflow-hidden">
+                      <motion.div
+                        className="h-full bg-black rounded-full"
+                        initial={{ width: 0 }}
+                        animate={{ width: `${progressToFreeShipping}%` }}
+                        transition={{ duration: 0.8, ease: 'easeOut' }}
+                      />
+                    </div>
+                  </div>
+                )}
                 <div className="flex flex-col gap-3">
                   {visibleShippingMethods.map((method: any) => (
                     <label key={method.method} className={`relative flex items-center justify-between p-5 rounded-[12px] border transition-all duration-200 ease-in-out cursor-pointer overflow-hidden ${shippingMethod === method.method ? 'border-black bg-[#fafafa] shadow-md ring-1 ring-black' : 'border-gray-200 bg-white hover:border-gray-300 shadow-sm'}`}>

@@ -1,3 +1,4 @@
+import { SOCIAL_URLS } from '@/lib/socials'
 import { SITE_URL } from '@/lib/siteUrl'
 import React from 'react'
 import { ShopClient } from '@/components/shop/ShopClient'
@@ -159,6 +160,7 @@ export default async function ShopPage() {
                 '@id': `${siteUrl}/#organization`,
                 name: 'Certified Aminos',
                 url: siteUrl,
+                sameAs: SOCIAL_URLS,
                 description: 'USA-based supplier of research-use-only synthetic peptides for laboratory research.',
               },
               {

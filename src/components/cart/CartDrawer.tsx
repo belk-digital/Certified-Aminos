@@ -14,6 +14,7 @@ import { ShoppingBag } from 'lucide-react'
 import { useLenis } from 'lenis/react'
 import { FluidButton } from '@/components/ui/fluid-button'
 import { toast } from 'sonner'
+import { getShippingMethods } from '@/app/(frontend)/(shop)/checkout/actions'
 
 
 export function CartDrawer() {
@@ -58,19 +59,15 @@ export function CartDrawer() {
 
   useEffect(() => {
     let active = true
-    fetch('/api/shippingzones')
-      .then(res => res.json())
-      .then(data => {
-        if (active && data?.docs?.length > 0) {
-          const methods = data.docs[0].methods || []
-          const freeMethod = methods.find((m: any) => m.price === 0 && m.minOrderAmount > 0)
-          if (freeMethod) {
-            setFreeShippingThreshold(freeMethod.minOrderAmount)
-          }
+    getShippingMethods()
+      .then((methods: any[]) => {
+        const freeMethod = methods.find((m: any) => m.price === 0 && m.minOrderAmount > 0)
+        if (active && freeMethod) {
+          setFreeShippingThreshold(freeMethod.minOrderAmount)
         }
       })
-      .catch(err => console.error("Error fetching shipping zones for cart drawer", err))
-      
+      .catch(err => console.error("Error fetching shipping methods for cart drawer", err))
+
     return () => { active = false }
   }, [])
 

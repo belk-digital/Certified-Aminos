@@ -1,3 +1,5 @@
+import { SOCIAL_LINKS } from '@/lib/socials'
+
 export function emailLayout({ 
   title, 
   content, 
@@ -68,6 +70,11 @@ export function emailLayout({
                     <a href="${serverUrl}/shop" style="color: #0A0A0A; text-decoration: none; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; margin: 0 12px;">Shop</a>
                     <a href="${serverUrl}/account" style="color: #0A0A0A; text-decoration: none; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; margin: 0 12px;">Account</a>
                     <a href="${serverUrl}/contact-us" style="color: #0A0A0A; text-decoration: none; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; margin: 0 12px;">Support</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" style="padding-top: 12px;">
+                    ${SOCIAL_LINKS.map((s) => `<a href="${s.url}" target="_blank" style="color: #6B7280; text-decoration: none; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; margin: 0 12px;">${s.platform}</a>`).join('')}
                   </td>
                 </tr>
               </table>

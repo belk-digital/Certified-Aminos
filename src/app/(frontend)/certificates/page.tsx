@@ -1,3 +1,4 @@
+import { SOCIAL_URLS } from '@/lib/socials'
 import { SITE_URL } from '@/lib/siteUrl'
 import { getPayload } from 'payload'
 import configPromise from '@payload-config'
@@ -118,6 +119,7 @@ export default async function CertificatesPage() {
         '@id': `${baseUrl}/#organization`,
         name: 'Certified Aminos',
         url: baseUrl,
+        sameAs: SOCIAL_URLS,
       },
     ],
   }

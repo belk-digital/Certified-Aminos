@@ -4,6 +4,7 @@ import React, { useRef, useState, useEffect } from 'react'
 import { Link } from '@/i18n/navigation'
 import { ArrowRight, Check } from 'lucide-react'
 import { useLenis } from 'lenis/react'
+import { SocialLinks } from './SocialLinks'
 
 const FooterContent = () => {
   const lenis = useLenis()
@@ -152,6 +153,7 @@ const FooterContent = () => {
               Aminos
             </div>
             <div className="flex flex-col gap-3">
+              <SocialLinks className="text-[#aed2f2] mb-1" />
               <div className="flex items-center flex-wrap gap-2 sm:gap-4 text-[#aed2f2] text-sm">
                 <span>© {new Date().getFullYear()} Certified Aminos</span>
                 <span className="flex items-center gap-2 sm:gap-4">
