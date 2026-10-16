@@ -55,8 +55,8 @@ export async function generateMetadata({
     return { title: 'Post Not Found | Certified Aminos' }
   }
 
-  const title = `${post.title} | Certified Aminos`
-  const description = post.excerpt || ''
+  const title = post.meta?.title || `${post.title} | Certified Aminos`
+  const description = post.meta?.description || post.excerpt || ''
   const path = `/${slug}`
   const baseUrl = SITE_URL
   const imageUrl = toAbsoluteUrl(baseUrl, getFeaturedImageUrl(post))
