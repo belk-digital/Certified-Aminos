@@ -1,5 +1,6 @@
 'use client'
 
+import { SocialLinks } from '@/components/shared/SocialLinks'
 import React from 'react'
 import { motion } from 'framer-motion'
 import { Mail, Phone, Info, ShoppingCart } from 'lucide-react'
@@ -61,6 +62,11 @@ export function ContactClient() {
               scrollFanning={true}
             />
           </motion.a>
+
+          <div className="flex flex-col items-center gap-3 text-ink/60">
+            <span className="text-[10px] font-bold uppercase tracking-widest">Follow us</span>
+            <SocialLinks className="[&_a:hover]:text-primary" iconClassName="w-6 h-6" />
+          </div>
 
 
 

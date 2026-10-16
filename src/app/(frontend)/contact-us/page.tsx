@@ -1,3 +1,4 @@
+import { SOCIAL_URLS } from '@/lib/socials'
 import { SITE_URL } from '@/lib/siteUrl'
 import React from 'react'
 import { Metadata } from 'next'
@@ -90,6 +91,7 @@ export default async function ContactPage({
         name: 'Certified Aminos',
         url: baseUrl,
         email: 'support@certified-aminos.com',
+        sameAs: SOCIAL_URLS,
 
         contactPoint: [
           {
