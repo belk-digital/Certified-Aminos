@@ -44,6 +44,7 @@ export const BlogPosts: CollectionConfig = {
         { label: 'Recovery protocols', value: 'Recovery protocols' },
         { label: 'Growth research', value: 'Growth research' },
         { label: 'Muscle studies', value: 'Muscle studies' },
+        { label: 'Research methods', value: 'Research methods' },
       ],
     },
     {
