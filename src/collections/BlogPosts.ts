@@ -46,6 +46,7 @@ export const BlogPosts: CollectionConfig = {
         { label: 'Muscle studies', value: 'Muscle studies' },
         { label: 'Research methods', value: 'Research methods' },
         { label: 'Cosmetic & Skin', value: 'Cosmetic & Skin' },
+        { label: 'Compliance & Regulatory', value: 'Compliance & Regulatory' },
       ],
     },
     {
