@@ -350,10 +350,18 @@ export async function createPayloadOrder(
       overrideAccess: true,
     })
     const possibleDuplicate = recentOrders.docs[0]
+    // Only reuse an order that is genuinely identical — same total, coupon and shipping. Matching
+    // on item count alone returned a stale total after a coupon/shipping/points change, which then
+    // disagreed with the payment amount. An order that already has a Payzentric receipt is never
+    // reused either, since a receipt id can't be created twice.
     if (
       possibleDuplicate &&
       Array.isArray(possibleDuplicate.items) &&
-      possibleDuplicate.items.length === items.length
+      possibleDuplicate.items.length === items.length &&
+      Math.round((possibleDuplicate.total || 0) * 100) === Math.round(total * 100) &&
+      (possibleDuplicate.couponCode || '') === (couponCode || '') &&
+      possibleDuplicate.shippingMethod === (selectedMethod?.method || shippingMethodName) &&
+      !(possibleDuplicate as any).payzentricReceiptId
     ) {
       return { orderId: String(possibleDuplicate.id) }
     }

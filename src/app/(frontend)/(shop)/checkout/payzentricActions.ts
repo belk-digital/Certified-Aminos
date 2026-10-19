@@ -55,10 +55,21 @@ export async function createPayzentricPayment(
   if (order.taxTotal) lineItems.push({ label: 'Tax', priceUsd: order.taxTotal })
   if (order.feeTotal) lineItems.push({ label: 'Processing Fee', priceUsd: order.feeTotal })
 
+  // The portal shows (and may validate) these line items against totalUsd. Coupon discounts and
+  // redeemed points reduce the total but aren't itemised above, so the receipt would list more
+  // than the customer is actually charged. Whenever the items don't add up to the order total
+  // to the cent, send a single line at the real total instead of a misleading breakdown.
+  const lineItemsCents = lineItems.reduce((sum, li) => sum + Math.round(li.priceUsd * 100) * (li.qty || 1), 0)
+  const orderTotalCents = Math.round((order.total || 0) * 100)
+  const receiptLineItems: PayzentricLineItem[] =
+    lineItemsCents === orderTotalCents
+      ? lineItems
+      : [{ label: `Order #${order.orderNumber || order.id}`, priceUsd: order.total || 0, qty: 1 }]
+
   try {
     const receipt = await createReceipt({
       id: String(order.id),
-      lineItems,
+      lineItems: receiptLineItems,
       totalUsd: order.total || 0,
       redirectUrl: `${origin}/order-confirmation/${order.id}`,
       webhookUrl: `${origin}/api/webhooks/payzentric`,
