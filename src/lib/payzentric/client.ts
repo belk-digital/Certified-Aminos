@@ -47,10 +47,10 @@ async function payzentricFetch<T>(path: string, init: RequestInit = {}): Promise
   return (data?.data ?? data) as T
 }
 
+// The API's USD line item has only label + priceUsd (no qty); priceUsd is the full line amount.
 export interface PayzentricLineItem {
   label: string
   priceUsd: number
-  qty?: number
 }
 
 export interface PayzentricReceipt {
