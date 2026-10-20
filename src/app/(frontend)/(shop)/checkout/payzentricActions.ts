@@ -46,19 +46,36 @@ export async function createPayzentricPayment(
   const headersList = await headers()
   const origin = headersList.get('origin') || `https://${headersList.get('host')}`
 
-  const lineItems: PayzentricLineItem[] = (order.items || []).map((item: any) => ({
-    label: item.variantTitle || item.variant || 'Item',
-    priceUsd: item.price,
-    qty: item.quantity,
-  }))
+  // Payzentric's USD line items only carry a label and priceUsd — there is no qty field, and the
+  // portal treats priceUsd as the whole line amount. Sending a unit price with qty made it bill
+  // one unit (e.g. $119 instead of $238), so the quantity is folded into the amount here.
+  const lineItems: PayzentricLineItem[] = (order.items || []).map((item: any) => {
+    const qty = item.quantity || 1
+    const title = item.variantTitle || item.variant || 'Item'
+    return {
+      label: qty > 1 ? `${title} × ${qty}` : title,
+      priceUsd: Math.round(item.price * qty * 100) / 100,
+    }
+  })
   if (order.shippingTotal) lineItems.push({ label: 'Shipping', priceUsd: order.shippingTotal })
   if (order.taxTotal) lineItems.push({ label: 'Tax', priceUsd: order.taxTotal })
   if (order.feeTotal) lineItems.push({ label: 'Processing Fee', priceUsd: order.feeTotal })
 
+  // The portal shows (and may validate) these line items against totalUsd. Coupon discounts and
+  // redeemed points reduce the total but aren't itemised above, so the receipt would list more
+  // than the customer is actually charged. Whenever the items don't add up to the order total
+  // to the cent, send a single line at the real total instead of a misleading breakdown.
+  const lineItemsCents = lineItems.reduce((sum, li) => sum + Math.round(li.priceUsd * 100), 0)
+  const orderTotalCents = Math.round((order.total || 0) * 100)
+  const receiptLineItems: PayzentricLineItem[] =
+    lineItemsCents === orderTotalCents
+      ? lineItems
+      : [{ label: `Order #${order.orderNumber || order.id}`, priceUsd: order.total || 0 }]
+
   try {
     const receipt = await createReceipt({
       id: String(order.id),
-      lineItems,
+      lineItems: receiptLineItems,
       totalUsd: order.total || 0,
       redirectUrl: `${origin}/order-confirmation/${order.id}`,
       webhookUrl: `${origin}/api/webhooks/payzentric`,

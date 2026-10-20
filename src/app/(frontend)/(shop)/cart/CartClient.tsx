@@ -17,6 +17,7 @@ import { StaggerChildren, staggerItemVariants } from '@/components/motion/Stagge
 
 import { useSearchParams, useRouter } from 'next/navigation'
 import { getProductsFromAffiliateCart } from '@/app/(frontend)/actions/cart'
+import { getShippingMethods } from '@/app/(frontend)/(shop)/checkout/actions'
 
 export function CartClient() {
   const t = useTranslations('checkout.cartClient')
@@ -25,9 +26,8 @@ export function CartClient() {
   const router = useRouter()
 
   // Dynamic Data States
-  const [shippingCost, setShippingCost] = useState<number | null>(null)
-  const [taxAmount, setTaxAmount] = useState<number>(0)
-  const [feePercentage, setFeePercentage] = useState<number | null>(null)
+  const [shippingMethods, setShippingMethods] = useState<any[] | null>(null)
+  const [feeRules, setFeeRules] = useState<any[]>([])
   const [isLoadingData, setIsLoadingData] = useState(true)
 
   // Cart Hydration State — zustand's persist middleware reads localStorage asynchronously,
@@ -119,44 +119,19 @@ export function CartClient() {
     async function fetchCartData() {
       setIsLoadingData(true)
       try {
-        // Fetch Shipping Zones to get an estimated base shipping cost
-        const shippingRes = await fetch('/api/shippingzones')
-        const shippingData = await shippingRes.json()
-        
-        let estimatedShipping = 15 // Fallback
-        if (shippingData?.docs?.length > 0) {
-          // Grab the first available shipping method price from the first zone
-          const firstZone = shippingData.docs[0]
-          if (firstZone.methods?.length > 0) {
-            estimatedShipping = firstZone.methods[0].price // Use dollar value directly
-          }
-        }
-        
-        // Fetch Processing Fees (Taxes/Fees)
+        // Same source checkout uses (shipping zone, or its built-in fallback methods), so the
+        // estimate here can't drift from what checkout actually charges.
+        const methods = await getShippingMethods()
+
         const feesRes = await fetch('/api/processing-fees')
         const feesData = await feesRes.json()
-        
-        let calculatedTax = 0
-        let percentageFee: number | null = null
-        if (feesData?.docs?.length > 0) {
-          feesData.docs.forEach((fee: any) => {
-            if (fee.isActive && !fee.isOptional) {
-              if (fee.type === 'percentage') {
-                calculatedTax += subtotal * (fee.amount / 100)
-                percentageFee = fee.amount
-              } else if (fee.type === 'fixed_amount') {
-                calculatedTax += fee.amount
-              }
-            }
-          })
-        }
+        const rules = (feesData?.docs || []).filter((fee: any) => fee.isActive && !fee.isOptional)
 
-        setShippingCost(estimatedShipping)
-        setTaxAmount(calculatedTax)
-        setFeePercentage(percentageFee)
+        setShippingMethods(methods as any[])
+        setFeeRules(rules)
       } catch (err) {
         console.error("Error fetching dynamic cart data", err)
-        setShippingCost(15) // Fallback
+        setShippingMethods([{ method: 'Standard Shipping', price: 25 }]) // Mirrors checkout's fallback
       } finally {
         setIsLoadingData(false)
       }
@@ -359,17 +334,36 @@ export function CartClient() {
     })
 
     if (activeCoupon.type === 'percentage') {
-      discountAmount = eligibleSubtotal * (activeCoupon.value / 100)
+      // Server rounds percentage discounts down to whole dollars (verifyCoupon in (shop)/actions.ts)
+      discountAmount = Math.floor(eligibleSubtotal * (activeCoupon.value / 100))
     } else if (activeCoupon.type === 'fixed_amount') {
-      discountAmount = Math.min((activeCoupon.value / 100), eligibleSubtotal)
+      // Coupon value is stored in dollars (see Coupons.ts), same as the server treats it
+      discountAmount = Math.min(activeCoupon.value, eligibleSubtotal)
     }
   }
 
   // Mirrors the rule enforced server-side in checkout/actions.ts —
   // Express shipping is never free.
   const qualifiesForFreeShipping = isFreeShipping || false
-  const finalShipping = (qualifiesForFreeShipping || subtotal === 0) ? 0 : (shippingCost || 0)
-  const finalTotal = Math.max(0, subtotal - discountAmount + finalShipping + taxAmount)
+  // Estimated shipping: what checkout pre-selects — the cheapest domestic, non-express method whose
+  // minimum order amount the subtotal meets (so the free-shipping-over-$300 method kicks in).
+  const estimatedShipping = (shippingMethods || [])
+    .filter((m: any) => !m.isInternational && !m.method?.toLowerCase().includes('express') && (!m.minOrderAmount || subtotal >= m.minOrderAmount))
+    .reduce((min: number | null, m: any) => (min === null || m.price < min ? m.price : min), null as number | null)
+  const finalShipping = (qualifiesForFreeShipping || subtotal === 0) ? 0 : (estimatedShipping ?? 0)
+
+  // Processing fees apply to the subtotal AFTER the coupon discount, rounded to the cent per fee —
+  // identical to createPaymentIntent/createPayloadOrder.
+  const subtotalAfterDiscount = Math.max(0, subtotal - discountAmount)
+  let feePercentage: number | null = null
+  const taxAmount = feeRules.reduce((sum: number, fee: any) => {
+    if (fee.type === 'percentage') {
+      feePercentage = fee.amount
+      return sum + Math.round(subtotalAfterDiscount * (fee.amount / 100) * 100) / 100
+    }
+    return sum + (fee.type === 'fixed_amount' ? fee.amount : 0)
+  }, 0)
+  const finalTotal = Math.max(0, subtotalAfterDiscount + finalShipping + taxAmount)
 
   if (!hasHydrated) {
     return (

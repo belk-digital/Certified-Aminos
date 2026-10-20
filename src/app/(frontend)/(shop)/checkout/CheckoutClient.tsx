@@ -296,7 +296,8 @@ export function CheckoutClient() {
   let activeFeePercentage: number | null = null
   activeFees.forEach((fee: any) => {
     if (fee.type === 'percentage') {
-      processingFeeAmount += subtotalAfterDiscount * (fee.amount / 100)
+      // Rounded to the cent per fee, exactly like the server, so the displayed total equals the charge
+      processingFeeAmount += Math.round(subtotalAfterDiscount * (fee.amount / 100) * 100) / 100
       activeFeePercentage = fee.amount
     } else if (fee.type === 'fixed_amount') {
       processingFeeAmount += fee.amount
