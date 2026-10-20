@@ -47,6 +47,7 @@ export const BlogPosts: CollectionConfig = {
         { label: 'Research methods', value: 'Research methods' },
         { label: 'Cosmetic & Skin', value: 'Cosmetic & Skin' },
         { label: 'Compliance & Regulatory', value: 'Compliance & Regulatory' },
+        { label: 'Cognitive & Nootropic', value: 'Cognitive & Nootropic' },
       ],
     },
     {
