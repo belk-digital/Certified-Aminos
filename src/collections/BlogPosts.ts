@@ -48,6 +48,7 @@ export const BlogPosts: CollectionConfig = {
         { label: 'Cosmetic & Skin', value: 'Cosmetic & Skin' },
         { label: 'Compliance & Regulatory', value: 'Compliance & Regulatory' },
         { label: 'Cognitive & Nootropic', value: 'Cognitive & Nootropic' },
+        { label: 'Sexual & Hormonal', value: 'Sexual & Hormonal' },
       ],
     },
     {
