@@ -386,18 +386,39 @@ export default async function ProductPage({
 
   // Generate JSON-LD Schemas
   
-  // Fetch Suggested Blogs
-  const { docs: blogDocs } = await payload.find({
+  // Fetch Suggested Blogs — prefer posts that explicitly reference this product via
+  // relatedProducts, falling back to the newest published posts to fill any remaining slots.
+  const { docs: productBlogDocs } = await payload.find({
     collection: 'blog-posts',
     where: {
-      status: {
-        equals: 'published'
-      }
+      and: [
+        { status: { equals: 'published' } },
+        { relatedProducts: { in: [rawProduct.id] } },
+      ],
     },
     sort: '-publishedAt',
     limit: 3,
     depth: 1,
   })
+
+  let blogDocs = productBlogDocs
+
+  if (blogDocs.length < 3) {
+    const excludeIds = blogDocs.map((d: any) => d.id)
+    const { docs: recentBlogDocs } = await payload.find({
+      collection: 'blog-posts',
+      where: {
+        and: [
+          { status: { equals: 'published' } },
+          ...(excludeIds.length > 0 ? [{ id: { not_in: excludeIds } }] : []),
+        ],
+      },
+      sort: '-publishedAt',
+      limit: 3 - blogDocs.length,
+      depth: 1,
+    })
+    blogDocs = [...blogDocs, ...recentBlogDocs]
+  }
 
   const mappedBlogs = blogDocs.map((post: any) => {
     let imageUrl = '/brand-images/hero_vials_lab.jpg'

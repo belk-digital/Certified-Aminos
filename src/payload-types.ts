@@ -1015,7 +1015,19 @@ export interface BlogPost {
   } | null;
   publishedAt?: string | null;
   status?: ('draft' | 'published') | null;
-  category?: ('Metabolic research' | 'Recovery protocols' | 'Growth research' | 'Muscle studies') | null;
+  category?:
+    | (
+        | 'Metabolic research'
+        | 'Recovery protocols'
+        | 'Growth research'
+        | 'Muscle studies'
+        | 'Research methods'
+        | 'Cosmetic & Skin'
+        | 'Compliance & Regulatory'
+        | 'Cognitive & Nootropic'
+        | 'Sexual & Hormonal'
+      )
+    | null;
   relatedProducts?: (number | Product)[] | null;
   /**
    * e.g. '12 min read'. Leave blank to auto-calculate from content length when rendered.
